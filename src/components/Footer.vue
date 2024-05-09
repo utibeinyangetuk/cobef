@@ -35,7 +35,7 @@
 		</div>
 
 		<div class="copyright">
-			<span>Copyright © 2024 Cobef International Ltd.</span>
+			<p>Copyright © 2024 Cobef International Ltd.</p>
 		</div>
 	</footer>
 </template>
@@ -114,7 +114,7 @@
 	}
 	.copyright {
 		text-align: center;
-		font-size: 12px;
+		font-size: 10px;
 		letter-spacing: 1px;
 	}
 </style>
