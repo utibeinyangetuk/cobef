@@ -1,10 +1,11 @@
 <script setup>
 	import CurrentPage from '@/components/CurrentPage.vue';
+	import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
+	<currentPage />
 	<div class="container">
-		<currentPage />
 		<div class="row">
 			<div class="wrapper">
 				<h1><span>About</span> Our Company</h1>
@@ -67,6 +68,7 @@
 			</div>
 		</div>
 	</div>
+	<Footer />
 </template>
 
 <style scoped>
@@ -250,7 +252,7 @@
 
 	.grid-item {
 		overflow: hidden;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		/** box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); **/
 		border: 1px solid rgba(128, 128, 128, 0.385);
 		border-radius: 5px;
 		padding: 5px;
