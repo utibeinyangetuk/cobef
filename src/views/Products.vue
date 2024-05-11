@@ -95,8 +95,6 @@
 
 	.image-container {
 		position: relative;
-		border: 1px solid;
-		border-radius: 5px;
 		min-height: 250px;
 		min-width: 300px;
 		padding: 5px;
@@ -106,6 +104,8 @@
 		width: 100%;
 		height: 250px;
 		display: block;
+		border: 1px solid;
+		border-radius: 5px;
 		transition: filter 0.3s ease;
 	}
 
