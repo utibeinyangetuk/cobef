@@ -9,51 +9,51 @@
 		<h1>we manufacture</h1>
 		<div class="wrapper">
 			<div class="image-container">
-				<img src="#" alt="Image 1" class="grid-image" />
-				<div class="image-overlay">Image 1</div>
+				<img src="../assets/HDPE-Pipe.jpg" alt="HDPE pipes" class="grid-image" />
+				<div class="image-overlay">HDPE Pipes</div>
 			</div>
 			<div class="image-container">
-				<img src="#" alt="Image 2" class="grid-image" />
-				<div class="image-overlay">Image 2</div>
+				<img src="../assets/LAPETA.jpg" alt="Lapeta" class="grid-image" />
+				<div class="image-overlay">Lapeta</div>
 			</div>
 			<div class="image-container">
-				<img src="#" alt="Image 3" class="grid-image" />
-				<div class="image-overlay">Image 3</div>
+				<img src="../assets/Tank.jpeg" alt="Tanks" class="grid-image" />
+				<div class="image-overlay">Tanks</div>
 			</div>
 			<div class="image-container">
-				<img src="#" alt="Image 4" class="grid-image" />
+				<img src="../assets/Pipe1.jpg" alt="Pipes" class="grid-image" />
+				<div class="image-overlay">Pipes</div>
+			</div>
+			<div class="image-container">
+				<img src="../assets/PRESURE.jpg" alt="Pressure pipes" class="grid-image" />
+				<div class="image-overlay">Pressure pipes</div>
+			</div>
+			<div class="image-container">
+				<img src="../assets/#" alt="Image 4" class="grid-image" />
 				<div class="image-overlay">Image 4</div>
 			</div>
 			<div class="image-container">
-				<img src="#" alt="Image 4" class="grid-image" />
+				<img src="../assets/#" alt="Image 4" class="grid-image" />
 				<div class="image-overlay">Image 4</div>
 			</div>
 			<div class="image-container">
-				<img src="#" alt="Image 4" class="grid-image" />
+				<img src="../assets/#" alt="Image 4" class="grid-image" />
 				<div class="image-overlay">Image 4</div>
 			</div>
 			<div class="image-container">
-				<img src="#" alt="Image 4" class="grid-image" />
+				<img src="../assets/#" alt="Image 4" class="grid-image" />
 				<div class="image-overlay">Image 4</div>
 			</div>
 			<div class="image-container">
-				<img src="#" alt="Image 4" class="grid-image" />
+				<img src="../assets/#" alt="Image 4" class="grid-image" />
 				<div class="image-overlay">Image 4</div>
 			</div>
 			<div class="image-container">
-				<img src="#" alt="Image 4" class="grid-image" />
+				<img src="../assets/#" alt="Image 4" class="grid-image" />
 				<div class="image-overlay">Image 4</div>
 			</div>
 			<div class="image-container">
-				<img src="#" alt="Image 4" class="grid-image" />
-				<div class="image-overlay">Image 4</div>
-			</div>
-			<div class="image-container">
-				<img src="#" alt="Image 4" class="grid-image" />
-				<div class="image-overlay">Image 4</div>
-			</div>
-			<div class="image-container">
-				<img src="#" alt="Image 4" class="grid-image" />
+				<img src="../assets/#" alt="Image 4" class="grid-image" />
 				<div class="image-overlay">Image 4</div>
 			</div>
 		</div>
@@ -104,20 +104,24 @@
 
 	.grid-image {
 		width: 100%;
-		height: auto;
+		height: 250px;
 		display: block;
 		transition: filter 0.3s ease;
 	}
 
 	.image-overlay {
-		font-size: 20px;
+		font-size: 25px;
 		letter-spacing: 1.5px;
-		text-transform: capitalize;
+		text-transform: uppercase;
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		background-color: rgba(255, 255, 255, 0.8);
+		/**background-color: rgba(255, 255, 255, 0.8);**/
+		text-align: center;
+		color: #000000;
+		font-weight: bold;
+		width: 100%;
 		padding: 10px;
 		border-radius: 5px;
 		opacity: 0;
@@ -126,7 +130,7 @@
 	}
 
 	.image-container:hover .grid-image {
-		filter: blur(10px);
+		filter: blur(15px);
 	}
 
 	.image-container:hover .image-overlay {
