@@ -24,8 +24,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { RouterLink } from 'vue-router'
+import { ref } from 'vue';
+import { RouterLink } from 'vue-router';
 
 const isOpen = ref(false)
 const toggleMenu = () => {
@@ -50,7 +50,8 @@ const toggleMenu = () => {
    width: 50px;
    height: 8px;
    margin-bottom: 5px;
-   background-color: #333;
+   background-color: #fdf5e5;
+   border-radius: 5px;
    transition: transform 0.6s ease;
 }
 
