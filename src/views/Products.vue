@@ -11,51 +11,51 @@
 		<h1>we manufacture</h1>
 		<div class="wrapper">
 			<div class="image-container">
-				<img src="../assets/HDPE-Pipe.jpg" alt="HDPE pipes" class="grid-image" />
+				<img src="../assets/materials/HDPE-Pipe.jpg" alt="HDPE pipes" class="grid-image" />
 				<div class="image-overlay">HDPE Pipes</div>
 			</div>
 			<div class="image-container">
-				<img src="../assets/LAPETA.jpg" alt="Lapeta" class="grid-image" />
+				<img src="../assets/materials/LAPETA.jpg" alt="Lapeta" class="grid-image" />
 				<div class="image-overlay">Lapeta</div>
 			</div>
 			<div class="image-container">
-				<img src="../assets/Tank.jpeg" alt="Tanks" class="grid-image" />
+				<img src="../assets/materials/Tank.jpeg" alt="Tanks" class="grid-image" />
 				<div class="image-overlay">Tanks</div>
 			</div>
 			<div class="image-container">
-				<img src="../assets/Pipe1.jpg" alt="Pipes" class="grid-image" />
+				<img src="../assets/materials/Pipe1.jpg" alt="Pipes" class="grid-image" />
 				<div class="image-overlay">Pipes</div>
 			</div>
 			<div class="image-container">
-				<img src="../assets/PRESURE.jpg" alt="Pressure pipes" class="grid-image" />
+				<img src="../assets/materials/PRESURE.jpg" alt="Pressure pipes" class="grid-image" />
 				<div class="image-overlay">Pressure pipes</div>
 			</div>
 			<div class="image-container">
-				<img src="../assets/#" alt="Suction Hose" class="grid-image" />
+				<img src="../assets/materials/#" alt="Suction Hose" class="grid-image" />
 				<div class="image-overlay">Suction Hose</div>
 			</div>
 			<div class="image-container">
-				<img src="../assets/#" alt="Garden Tubes" class="grid-image" />
+				<img src="../assets/materials/#" alt="Garden Tubes" class="grid-image" />
 				<div class="image-overlay">Garden Tubes</div>
 			</div>
 			<div class="image-container">
-				<img src="../assets/#" alt="Jerry Cans" class="grid-image" />
+				<img src="../assets/materials/#" alt="Jerry Cans" class="grid-image" />
 				<div class="image-overlay">Jerry Cans</div>
 			</div>
 			<div class="image-container">
-				<img src="../assets/#" alt="Fittings" class="grid-image" />
+				<img src="../assets/materials/#" alt="Fittings" class="grid-image" />
 				<div class="image-overlay">Fittings</div>
 			</div>
 			<div class="image-container">
-				<img src="../assets/#" alt="Image 4" class="grid-image" />
+				<img src="../assets/materials/#" alt="Image 4" class="grid-image" />
 				<div class="image-overlay">Image 4</div>
 			</div>
 			<div class="image-container">
-				<img src="../assets/#" alt="Image 4" class="grid-image" />
+				<img src="../assets/materials/#" alt="Image 4" class="grid-image" />
 				<div class="image-overlay">Image 4</div>
 			</div>
 			<div class="image-container">
-				<img src="../assets/#" alt="Image 4" class="grid-image" />
+				<img src="../assets/materials/#" alt="Image 4" class="grid-image" />
 				<div class="image-overlay">Image 4</div>
 			</div>
 		</div>
