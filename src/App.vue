@@ -19,7 +19,7 @@
 		text-decoration: none;
 		list-style: none;
 		::-webkit-scrollbar {
-			width: 6px;
+			width: 10px;
 		}
 		::-webkit-scrollbar-track {
 			background: #000000;
