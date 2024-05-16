@@ -30,40 +30,40 @@
 		<div class="clients">
 			<h2>Our clients</h2>
 			<div class="client-container">
-				<div class="client-item"><img src="#" alt="company logo">
+				<div class="client-item"><img src="../assets/client logos/#" alt="company logo">
 					<li>Hydrocarbon Pollution Remediation Project (HYPREP)</li>
 				</div>
-				<div class="client-item"><img src="#" alt="company logo">
+				<div class="client-item"><img src="../assets/client logos/darycet.webp" alt="company logo">
 					<li>Darycent International</li>
 				</div>
-				<div class="client-item"><img src="#" alt="company logo">
+				<div class="client-item"><img src="../assets/client logos/briscoeGroup.jpg" alt="company logo">
 					<li>Briscoe Group Limited</li>
 				</div>
-				<div class="client-item"><img src="#" alt="company logo">
+				<div class="client-item"><img src="../assets/client logos/#" alt="company logo">
 					<li>Ministry of Water and Rural Development Rivers State</li>
 				</div>
-				<div class="client-item"><img src="#" alt="company logo">
+				<div class="client-item"><img src="../assets/client logos/shell.jpg" alt="company logo">
 					<li>Shell Petroleum Development Company</li>
 				</div>
-				<div class="client-item"><img src="#" alt="company logo">
+				<div class="client-item"><img src="../assets/client logos/julius berger.jpg" alt="company logo">
 					<li>Julius Berger</li>
 				</div>
-				<div class="client-item"><img src="#" alt="company logo">
+				<div class="client-item"><img src="../assets/client logos/kinetic.png" alt="company logo">
 					<li>Kinetic Electromechanic Nigeria Limited</li>
 				</div>
-				<div class="client-item"><img src="#" alt="company logo">
+				<div class="client-item"><img src="../assets/client logos/#" alt="company logo">
 					<li>Top Engineering International</li>
 				</div>
-				<div class="client-item"><img src="#" alt="company logo">
+				<div class="client-item"><img src="../assets/client logos/#" alt="company logo">
 					<li>Felian Ventures</li>
 				</div>
-				<div class="client-item"><img src="#" alt="company logo">
+				<div class="client-item"><img src="../assets/client logos/#" alt="company logo">
 					<li>Cylon Nigeria Limited</li>
 				</div>
-				<div class="client-item"><img src="#" alt="company logo">
+				<div class="client-item"><img src="../assets/client logos/#" alt="company logo">
 					<li>Altruist Ideals</li>
 				</div>
-				<div class="client-item"><img src="#" alt="company logo">
+				<div class="client-item"><img src="../assets/client logos/#" alt="company logo">
 					<li>Alcon Nigeria Limited</li>
 				</div>
 			</div>
@@ -165,9 +165,11 @@ import Footer from '../components/Footer.vue';
 }
 
 .client-item img {
-	height: 30px;
-	width: 30px;
+	height: 40px;
+	width: 40px;
 	margin-right: 10px;
+	border: 1px solid #ffffff7d;
+	border-radius: 50px;
 }
 
 .client-item li {
