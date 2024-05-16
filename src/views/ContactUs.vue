@@ -3,6 +3,11 @@
    <section>
       <div class="email">
          <p>Send us a mail</p>
+         <form action="#">
+            <input type="email" placeholder="your email" />
+            <textarea placeholder="your message goes here" cols="30" rows="10" />
+            <button type="submit">send email</button>
+         </form>
       </div>
       <div class="wrapper2">
          <div class="contact">
@@ -34,7 +39,7 @@
 </template>
 
 <script setup>
-import Currentpage from '../components/CurrentPage.vue'
+import Currentpage from '../components/CurrentPage.vue';
 </script>
 
 <style scoped>
@@ -79,18 +84,71 @@ section p {
    border: 1px solid rgba(128, 128, 128, 0.263);
    border-radius: 5px;
 }
+
 .contact ul {
    padding: 5px;
    line-height: 25px;
 }
+
 .social ul {
    padding: 5px;
    line-height: 25px;
    list-style: disc;
 }
+
 .location ul {
    padding: 5px;
    line-height: 25px;
    list-style: disc;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   justify-content: center;
+}
+
+form input {
+   border-radius: 3px;
+   font-size: 13px;
+   height: 40px;
+   border: 1px solid gray;
+   margin-bottom: 10px;
+   padding: 5px
+}
+
+form input::placeholder {
+   letter-spacing: 1px;
+   text-transform: capitalize;
+}
+
+form textarea {
+   border-radius: 5px;
+   padding: 3px;
+   border: 1px solid gray;
+   margin-bottom: 10px;
+}
+
+form textarea::placeholder {
+   letter-spacing: 1px;
+   text-transform: capitalize;
+}
+
+button {
+   height: 40px;
+   cursor: pointer;
+   background-color: #020e2ade;
+   border: none;
+   color: #ffffff;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   font-size: 15px;
+   border-radius: 3px;
+   font-weight: bold;
+}
+
+button:hover {
+   background-color: #020e2a
 }
 </style>
