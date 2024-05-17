@@ -5,7 +5,7 @@
          <p>Send us a mail</p>
          <form action="#">
             <input type="email" placeholder="your email" />
-            <textarea placeholder="your message goes here" cols="30" rows="10" />
+            <textarea placeholder="your message goes here" cols="30" rows="14" />
             <button type="submit">send email</button>
          </form>
       </div>
@@ -31,7 +31,7 @@
          <div class="location">
             <p>Address</p>
             <ul>
-               <li>Km 17 Port Harcourt/Aba Express Way P. O. Box, 2769 Port Harcourt,</li>
+               <li>Km 17 Port Harcourt/Aba Express Way P. O. Box, 2769 Port Harcourt.</li>
             </ul>
          </div>
       </div>
@@ -150,5 +150,37 @@ button {
 
 button:hover {
    background-color: #020e2a
+}
+
+@media only screen and (max-width: 600px) {
+   section {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+   }
+
+   .email {
+      width: 100%;
+      margin-bottom: 10px;
+      box-shadow: 4px 4px 5px #888888;
+   }
+
+   .wrapper2 {
+      width: 100%;
+      margin: 0px;
+   }
+
+   .contact,
+   .social,
+   .location {
+      margin-bottom: 20px;
+      box-shadow: 4px 4px 5px #888888;
+   }
+
+   .wrapper2 li {
+      font-size: small;
+      letter-spacing: 1.5px;
+   }
 }
 </style>
