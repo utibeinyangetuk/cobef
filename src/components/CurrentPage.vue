@@ -70,4 +70,24 @@ header .link {
    font-size: 18px;
    font-weight: bold;
 }
+
+@media only screen and (max-width: 600px) {
+   header {
+      text-align: center;
+   }
+
+   header h1 {
+      font-size: 25px;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+   }
+
+   header span {
+      font-size: 15px
+   }
+
+   header .link {
+      font-size: 15px;
+   }
+}
 </style>
