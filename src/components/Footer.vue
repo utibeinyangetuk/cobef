@@ -15,10 +15,11 @@
 			<div class="contact">
 				<h1>How to reach us?</h1>
 				<div class="wrapper">
-					<i class="uil uil-location-point"><span>Km 17 Port Harcourt/Aba Express Way P. O. Box, 2769 Port Harcourt.</span></i>
+					<i class="uil uil-location-point"><span>Km 17 Port Harcourt/Aba Express Way P. O. Box, 2769 Port
+							Harcourt.</span></i>
 					<i class="uil uil-envelope"><span>info@cobefinternationalltd.com</span></i>
 					<i class="uil uil-phone">
-						<span class="numbers"> (+234) xxx xxx xxxx, (+234) xxx xxx xxxx, (+234) xxx xxx xxxx </span>
+						<span class="numbers"> (+234) xxx xxx xxxx,<br> (+234) xxx xxx xxxx,<br> (+234) xxx xxx xxxx </span>
 					</i>
 				</div>
 			</div>
@@ -41,80 +42,134 @@
 </template>
 
 <style scoped>
-	footer {
-		background-color: #020e2a;
-		color: #ffffff;
-	}
+footer {
+	background-color: #020e2a;
+	color: #ffffff;
+}
 
+.main-wrapper {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+.sitemap h1 {
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.sitemap ul a {
+	color: #ffffff6e;
+	line-height: 35px;
+	letter-spacing: 1.5px;
+}
+
+.sitemap ul a:hover {
+	color: orange;
+}
+
+.contact h1 {
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper i {
+	font-size: 25px;
+	line-height: 40px;
+}
+
+.wrapper span {
+	color: #ffffff6e;
+	font-style: normal;
+	font-size: 15px;
+	margin-left: 4px;
+}
+
+.socials {
+	margin-left: -10%;
+}
+
+.socials h1 {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.icons {
+	line-height: 35px;
+	display: flex;
+	flex-direction: column;
+}
+
+.icons i {
+	font-size: 25px;
+}
+
+.icons span {
+	font-style: normal;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+	color: #ffffff6e;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 10px;
+	letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 600px) {
 	.main-wrapper {
 		display: flex;
-		justify-content: space-around;
-		padding: 20px;
+		flex-direction: column;
+		padding: 10px;
 	}
 
-	.sitemap h1 {
-		font-size: 18px;
-		letter-spacing: 2px;
-		font-weight: bold;
-		text-transform: capitalize;
+	.socials {
+		margin: 0%;
+		border: 1px solid #ffffff1f;
+		border-radius: 5px;
+		padding: 5px;
 	}
 
-	.sitemap ul a {
-		color: #ffffff6e;
-		line-height: 35px;
-		letter-spacing: 1.5px;
-	}
-
-	.sitemap ul a:hover {
-		color: orange;
-	}
-
-	.contact h1 {
-		font-size: 18px;
-		letter-spacing: 2px;
-		font-weight: bold;
-		text-transform: capitalize;
+	.sitemap {
+		border: 1px solid #ffffff1f;
+		padding: 10px;
 		margin-bottom: 10px;
 	}
 
-	.wrapper {
-		display: flex;
-		flex-direction: column;
+	.sitemap h1 {
+		margin-bottom: 13px;
 	}
+
+	.contact {
+		border: 1px solid #ffffff1f;
+		margin-bottom: 15px;
+		border-radius: 5px;
+		padding: 10px;
+	}
+
+	.copyright {
+		padding: 10px;
+	}
+
 	.wrapper i {
-		font-size: 25px;
+		font-size: 20px;
 		line-height: 40px;
 	}
+
 	.wrapper span {
-		color: #ffffff6e;
-		font-style: normal;
-		font-size: 15px;
-		margin-left: 4px;
+		font-size: small;
+		margin-left: 5px;
 	}
-	.socials {
-		margin-left: -10%;
-	}
-	.socials h1 {
-		font-size: 18px;
-		margin-bottom: 15px;
-	}
-	.icons {
-		line-height: 35px;
-		display: flex;
-		flex-direction: column;
-	}
-	.icons i {
-		font-size: 25px;
-	}
-	.icons span {
-		font-style: normal;
-		font-size: 15px;
-		letter-spacing: 1.5px;
-		color: #ffffff6e;
-	}
-	.copyright {
-		text-align: center;
-		font-size: 10px;
-		letter-spacing: 1px;
-	}
+}
 </style>
