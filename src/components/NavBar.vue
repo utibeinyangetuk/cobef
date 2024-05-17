@@ -27,10 +27,10 @@
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
 
-const isOpen = ref(false)
+const isOpen = ref(false);
 const toggleMenu = () => {
-   isOpen.value = !isOpen.value
-}
+   isOpen.value = !isOpen.value;
+};
 </script>
 
 <style scoped>
@@ -98,6 +98,7 @@ const toggleMenu = () => {
    letter-spacing: 1.2px;
    text-transform: uppercase;
 }
+
 .fullscreen-menu nav ul li:hover {
    border: 1px solid #fdf5e5;
    border-radius: 5px;
@@ -107,5 +108,22 @@ const toggleMenu = () => {
    text-decoration: none;
    color: #fdf5e5;
    font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+   .hamburger-menu {
+      position: fixed;
+      top: 30px;
+      right: 8px;
+   }
+
+   .hamburger-menu span {
+      width: 40px;
+      height: 5px;
+   }
+
+   .hamburger-menu.open span:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+   }
 }
 </style>
