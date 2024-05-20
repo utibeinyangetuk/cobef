@@ -19,7 +19,7 @@
 							Harcourt.</span></i>
 					<i class="uil uil-envelope"><span>info@cobefinternationalltd.com</span></i>
 					<i class="uil uil-phone">
-						<span class="numbers"> (+234) xxx xxx xxxx,<br> (+234) xxx xxx xxxx,<br> (+234) xxx xxx xxxx </span>
+						<span class="numbers"> (+234) xxx xxx xxxx, (+234) xxx xxx xxxx,<br> (+234) xxx xxx xxxx </span>
 					</i>
 				</div>
 			</div>
