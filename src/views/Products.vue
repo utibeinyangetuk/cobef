@@ -96,9 +96,8 @@
 
 	.image-container {
 		position: relative;
-		min-height: 250px;
-		min-width: 300px;
-		padding: 5px;
+		overflow: hidden;
+		display: inline-block;
 	}
 
 	.grid-image {
@@ -107,34 +106,36 @@
 		display: block;
 		border: 1px solid;
 		border-radius: 5px;
-		transition: filter 0.3s ease;
+		transition: transform 0.5s ease-out;
 	}
 
 	.image-overlay {
-		font-size: 25px;
-		letter-spacing: 1.5px;
-		text-transform: uppercase;
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		/**background-color: rgba(255, 255, 255, 0.8);**/
-		text-align: center;
-		color: #000000;
-		font-weight: bold;
+		bottom: 0;
+		left: 0;
 		width: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		color: #fff;
+		text-align: center;
 		padding: 10px;
-		border-radius: 5px;
-		opacity: 0;
-		transition: opacity 0.3s ease;
-		pointer-events: none;
-	}
-
-	.image-container:hover .grid-image {
-		filter: blur(15px);
+		transform: translateY(100%);
+		transition: transform 0.5s ease-out;
 	}
 
 	.image-container:hover .image-overlay {
-		opacity: 1;
+		transform: translateY(0);
+	}
+
+	@media only screen and (max-width: 600px) {
+		.container p {
+			font-size: 14px;
+		}
+		.container h1 {
+			font-size: 35px;
+		}
+		.wrapper {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 </style>
