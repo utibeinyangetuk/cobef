@@ -59,25 +59,23 @@
 <style scoped>
 	.indicators {
 		position: absolute;
-		top: 40%;
-		left: 4%;
+		bottom: 10px;
+		left: 50%;
 		transform: translateX(-50%);
 		display: flex;
-		flex-direction: column;
 	}
 
 	.indicator {
-		width: 15px;
-		height: 4px;
-		background-color: #fab60f;
-		border-radius: 5px;
-		margin: 0 5px 15px;
+		width: 10px;
+		height: 10px;
+		margin: 0 5px;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 50%;
 		cursor: pointer;
 	}
 
 	.indicator.active {
-		background-color: #fab60f;
-		width: 60px;
+		background-color: rgba(255, 255, 255, 1);
 	}
 
 	.carousel {
@@ -90,14 +88,24 @@
 	.carousel-inner {
 		display: flex;
 		transition: transform 0.5s ease;
+		height: 100%;
 	}
 
 	.carousel-slide {
-		flex: 0 0 100%;
+		min-width: 100%;
+		box-sizing: border-box;
+		height: 100%;
 	}
 
 	.carousel-image {
 		width: 100%;
 		height: 100%;
+	}
+
+	/** media query **/
+	@media only screen and (max-width: 600px) {
+		.carousel {
+			height: 300px;
+		}
 	}
 </style>
