@@ -7,7 +7,7 @@
 			commercial experience necessary to address technically challenging projects.
 		</p>
 		<div class="projects">
-			<h2>some of the several projects we have completed.</h2>
+			<h2>projects we have completed.</h2>
 			<ul>
 				<li>REHABILITATION OF ALESA AGBONCHIA AND ALESA WATER WORKS, IN OGONI LAND</li>
 				<li>SUPPLY AND PIPE LAYING IN OBAGI COMMUNITY, RIVERS STATE</li>
@@ -19,11 +19,9 @@
 		</div>
 		<div class="gallery">
 			<h2>Gallery</h2>
-			<p>lorem ipsum dolor et setklfjkjskgbjdbgfjgbfjfgbjdfhb</p>
-			<p>lorem ipsum dolor et setklfjkjskgbjdbgfjgbfjfgbjdfhb</p>
-			<p>lorem ipsum dolor et setklfjkjskgbjdbgfjgbfjfgbjdfhb</p>
-			<p>lorem ipsum dolor et setklfjkjskgbjdbgfjgbfjfgbjdfhb</p>
-			<p>lorem ipsum dolor et setklfjkjskgbjdbgfjgbfjfgbjdfhb</p>
+			<div class="carousel">
+				<carousel :images="ProjectImages" />
+			</div>
 		</div>
 		<div class="clients">
 			<h2>Our clients</h2>
@@ -83,8 +81,15 @@
 </template>
 
 <script setup>
+	import image4 from '@/assets/projects/four.jpg';
+	import image1 from '@/assets/projects/one.jpg';
+	import image3 from '@/assets/projects/three.jpg';
+	import image2 from '@/assets/projects/two.jpg';
+	import carousel from '../components/Carousel.vue';
 	import currentPage from '../components/CurrentPage.vue';
 	import Footer from '../components/Footer.vue';
+
+	const ProjectImages = [image1, image2, image3, image4];
 </script>
 <style scoped>
 	.wrapper {
@@ -188,6 +193,25 @@
 	@media only screen and (max-width: 600px) {
 		.wrapper {
 			padding: 10px;
+		}
+		.wrapper p {
+			line-height: 1.7em;
+			font-size: 15px;
+			text-align: left;
+		}
+		.projects h2 {
+			font-size: 17px;
+			text-align: center;
+			margin-bottom: 13px;
+		}
+		.projects ul {
+			margin-left: 15px;
+		}
+		.projects li {
+			letter-spacing: 0px;
+			line-height: 1.7em;
+			margin-bottom: 20px;
+			font-size: 14px;
 		}
 	}
 </style>
