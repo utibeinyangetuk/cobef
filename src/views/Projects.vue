@@ -133,8 +133,6 @@
 	}
 
 	.gallery {
-		border: 1px solid;
-		border-radius: 5px;
 		margin-bottom: 2em;
 		background-color: #020e2a;
 	}
@@ -212,6 +210,13 @@
 			line-height: 1.7em;
 			margin-bottom: 20px;
 			font-size: 14px;
+		}
+		.clients li {
+			font-size: 14px;
+		}
+		.clients h2{
+			background-color: #020e2a;
+			border-radius: 5px;
 		}
 	}
 </style>
