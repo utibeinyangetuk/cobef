@@ -1,9 +1,14 @@
 <template>
 	<div>
-		<navbar />
 		<header>
-			<h1>{{ currentRouteName }}</h1>
-			<router-link to="/" class="link">Home / </router-link> <span>{{ currentPage }}</span>
+			<div class="logo-container">
+				<img src="../assets/COBEF_LOGO.png" alt="Cobef International Limited Logo" class="logo" />
+			</div>
+			<div class="route-name">
+				<h1>{{ currentRouteName }}</h1>
+				<router-link to="/" class="link">Home / </router-link> <span>{{ currentPage }}</span>
+			</div>
+			<navbar />
 		</header>
 	</div>
 </template>
@@ -50,9 +55,16 @@
 		background-color: #020e2a;
 		padding: 20px;
 		text-align: center;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.logo-container img {
+		width: 100px;
+		height: 100px;
 	}
 
-	header h1 {
+	.route-name h1 {
 		text-transform: uppercase;
 		color: #ffffff;
 		letter-spacing: 2px;
@@ -60,12 +72,12 @@
 		margin-bottom: 15px;
 	}
 
-	header span {
+	.route-name span {
 		color: orange;
 		font-size: 18px;
 	}
 
-	header .link {
+	.route-name .link {
 		color: #ffffff;
 		font-size: 18px;
 		font-weight: bold;
@@ -73,20 +85,27 @@
 
 	@media only screen and (max-width: 600px) {
 		header {
-			text-align: center;
+			padding: 10px;
+			display: flex;
+			align-items: center;
 		}
 
-		header h1 {
+		.logo-container img {
+			width: 70px;
+			height: 70px;
+		}
+		.route-name {
+			line-height: 15px;
+			align-items: center;
+			margin-right: 50px;
+		}
+		.route-name h1 {
 			font-size: 25px;
-			margin-bottom: 10px;
-			letter-spacing: 2px;
 		}
-
-		header span {
+		.route-name span {
 			font-size: 15px;
 		}
-
-		header .link {
+		.route-name .link {
 			font-size: 15px;
 		}
 	}
