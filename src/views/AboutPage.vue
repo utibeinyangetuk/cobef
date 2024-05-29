@@ -41,13 +41,13 @@
 		<div class="values">
 			<h1>Our <span>core values</span></h1>
 			<div class="cover">
-				<li><span class="heading">Integrity: </span>Trustworthy and undiluted productions.</li>
-				<li><span class="heading">Consistency: </span>Constantly maintains high level quality standards.</li>
-				<li><span class="heading">Innovation: </span>We drive change and challenge the status quo to exceed our customer's expectation.</li>
+				<li><span class="heading">Integrity:</span> Trustworthy and undiluted productions.</li>
+				<li><span class="heading">Consistency:</span> Constantly maintains high level quality standards.</li>
+				<li><span class="heading">Innovation:</span> We drive change and challenge the status quo to exceed our customer's expectation.</li>
 				<li><span class="heading">Cooperation:</span> We work as a team to achieve our common vision.</li>
 				<li><span class="heading">Respect:</span> We demonstrate respect among colleagues, customers and suppliers.</li>
 				<li><span class="heading">Customer Convenience:</span> We serve our customers to save their time and efforts.</li>
-				<li><span class="heading">Customer Satisfaction: </span>Making sure customers' expectations are met timely.</li>
+				<li><span class="heading">Customer Satisfaction:</span> Making sure customers' expectations are met timely.</li>
 			</div>
 		</div>
 		<div class="certifications">
@@ -236,5 +236,82 @@
 		display: block;
 		height: 250px;
 		max-width: 100%;
+	}
+
+	@media only screen and (max-width: 600px) {
+		.images {
+			display: flex;
+			flex-direction: column;
+		}
+		.grid-item:hover {
+			transform: none;
+		}
+		.row {
+			display: flex;
+			flex-direction: column;
+		}
+		.wrapper {
+			width: 100%;
+			margin-top: -40px;
+		}
+		.wrapper h1 {
+			font-size: 26px;
+		}
+		.wrapper h4 {
+			font-size: 17px;
+			margin-bottom: 22px;
+		}
+		.wrapper span {
+			font-weight: bold;
+		}
+		.wrapper p {
+			width: 100%;
+		}
+		.image-wrapper {
+			width: 100%;
+			height: 250px;
+		}
+		.section-wrapper {
+			display: flex;
+			flex-direction: column;
+		}
+		.vision,
+		.mission {
+			width: 100%;
+			height: 100%;
+			margin-bottom: 10px;
+			border: 1px solid;
+			border-radius: 3px;
+		}
+		.vision p,
+		.mission p {
+			font-size: 14px;
+		}
+		.values {
+			border: 1px solid;
+			padding: 10px;
+			border-radius: 3px;
+		}
+		.values h1 {
+			font-size: 25px;
+			text-align: center;
+			width: 100%;
+			margin-bottom: 30px;
+		}
+		.cover .heading {
+			font-size: 20px;
+			text-decoration-line: overline;
+		}
+		.cover li {
+			list-style-type: none;
+			line-height: 1.5em;
+			margin-bottom: 20px;
+			font-size: 16px;
+		}
+		.certifications h1 {
+			background-color: #020e2a;
+			border-radius: 5px;
+			padding: 5px;
+		}
 	}
 </style>
