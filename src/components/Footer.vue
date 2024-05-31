@@ -61,7 +61,7 @@ footer {
 }
 
 .sitemap ul a {
-	color: #ffffff6e;
+	color: #ffffffa0;
 	line-height: 35px;
 	letter-spacing: 1.5px;
 }
@@ -89,7 +89,7 @@ footer {
 }
 
 .wrapper span {
-	color: #ffffff6e;
+	color: #ffffffa0;
 	font-style: normal;
 	font-size: 15px;
 	margin-left: 4px;
@@ -118,7 +118,7 @@ footer {
 	font-style: normal;
 	font-size: 15px;
 	letter-spacing: 1.5px;
-	color: #ffffff6e;
+	color: #ffffffa0;
 }
 
 .copyright {
