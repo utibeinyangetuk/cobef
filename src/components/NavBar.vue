@@ -15,7 +15,7 @@
 					<li><router-link to="/">Home</router-link></li>
 					<li><router-link to="/about">About us</router-link></li>
 					<li><router-link to="/products">Our products</router-link></li>
-					<li><router-link to="/projects">projects</router-link></li>
+					<li><router-link to="/projects">Projects</router-link></li>
 					<li><router-link to="/contact">Contact us</router-link></li>
 				</ul>
 			</nav>
@@ -109,7 +109,7 @@
 	.fullscreen-menu nav ul li a {
 		text-decoration: none;
 		color: #fdf5e5;
-		font-size: 30px;
+		font-size: 24px;
 	}
 
 	@media only screen and (max-width: 600px) {
