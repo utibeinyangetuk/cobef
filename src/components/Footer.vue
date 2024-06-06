@@ -15,11 +15,13 @@
 			<div class="contact">
 				<h1>How to reach us?</h1>
 				<div class="wrapper">
-					<i class="uil uil-location-point"><span>Km 17 Port Harcourt/Aba Express Way P. O. Box, 2769 Port
-							Harcourt.</span></i>
+					<i class="uil uil-location-point"><span>Km 17 Port Harcourt/Aba Express Way P. O. Box, 2769 Port Harcourt.</span></i>
 					<i class="uil uil-envelope"><span>info@cobefinternationalltd.com</span></i>
 					<i class="uil uil-phone">
-						<span class="numbers"> (+234) xxx xxx xxxx, (+234) xxx xxx xxxx,<br> (+234) xxx xxx xxxx </span>
+						<span class="numbers">
+							(+234) xxx xxx xxxx, (+234) xxx xxx xxxx,<br />
+							(+234) xxx xxx xxxx
+						</span>
 					</i>
 				</div>
 			</div>
@@ -27,9 +29,9 @@
 			<div class="socials">
 				<h1>Follow us on our socials</h1>
 				<div class="icons">
-					<i class="uil uil-linkedin"><span> Linkedin</span></i>
+					<i class="uil uil-linkedin-alt"><span> Linkedin</span></i>
 					<i class="uil uil-whatsapp"><span> Whatsapp</span></i>
-					<i class="uil uil-twitter"><span> Twitter</span></i>
+					<i class="uil uil-twitter-alt"><span> Twitter</span></i>
 					<i class="uil uil-facebook"><span> Facebook</span></i>
 				</div>
 			</div>
@@ -42,134 +44,135 @@
 </template>
 
 <style scoped>
-footer {
-	background-color: #020e2a;
-	color: #ffffff;
-}
-
-.main-wrapper {
-	display: flex;
-	justify-content: space-around;
-	padding: 20px;
-}
-
-.sitemap h1 {
-	font-size: 18px;
-	letter-spacing: 2px;
-	font-weight: bold;
-	text-transform: capitalize;
-}
-
-.sitemap ul a {
-	color: #ffffffa0;
-	line-height: 35px;
-	letter-spacing: 1.5px;
-}
-
-.sitemap ul a:hover {
-	color: orange;
-}
-
-.contact h1 {
-	font-size: 18px;
-	letter-spacing: 2px;
-	font-weight: bold;
-	text-transform: capitalize;
-	margin-bottom: 10px;
-}
-
-.wrapper {
-	display: flex;
-	flex-direction: column;
-}
-
-.wrapper i {
-	font-size: 25px;
-	line-height: 40px;
-}
-
-.wrapper span {
-	color: #ffffffa0;
-	font-style: normal;
-	font-size: 15px;
-	margin-left: 4px;
-}
-
-.socials {
-	margin-left: -10%;
-}
-
-.socials h1 {
-	font-size: 18px;
-	margin-bottom: 15px;
-}
-
-.icons {
-	line-height: 35px;
-	display: flex;
-	flex-direction: column;
-}
-
-.icons i {
-	font-size: 25px;
-}
-
-.icons span {
-	font-style: normal;
-	font-size: 15px;
-	letter-spacing: 1.5px;
-	color: #ffffffa0;
-}
-
-.copyright {
-	text-align: center;
-	font-size: 10px;
-	letter-spacing: 1px;
-}
-
-@media only screen and (max-width: 600px) {
+	footer {
+		background-color: #020e2a;
+		color: #ffffff;
+	}
 	.main-wrapper {
 		display: flex;
-		flex-direction: column;
-		padding: 10px;
+		justify-content: space-around;
+		padding: 20px;
+	}
+	.main-wrapper h1 {
+		color: orange;
+	}
+	.sitemap h1 {
+		font-size: 18px;
+		letter-spacing: 2px;
+		font-weight: bold;
+		text-transform: capitalize;
 	}
 
-	.socials {
-		margin: 0%;
-		border: 1px solid #ffffff1f;
-		border-radius: 5px;
-		padding: 5px;
+	.sitemap ul a {
+		color: #ffffffcc;
+		line-height: 35px;
+		letter-spacing: 1.5px;
 	}
 
-	.sitemap {
-		border: 1px solid #ffffff1f;
-		padding: 10px;
+	.sitemap ul a:hover {
+		color: orange;
+	}
+
+	.contact h1 {
+		font-size: 18px;
+		letter-spacing: 2px;
+		font-weight: bold;
+		text-transform: capitalize;
 		margin-bottom: 10px;
 	}
 
-	.sitemap h1 {
-		margin-bottom: 13px;
-	}
-
-	.contact {
-		border: 1px solid #ffffff1f;
-		margin-bottom: 15px;
-		border-radius: 5px;
-		padding: 10px;
-	}
-
-	.copyright {
-		padding: 10px;
+	.wrapper {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.wrapper i {
-		font-size: 20px;
+		font-size: 25px;
 		line-height: 40px;
 	}
 
 	.wrapper span {
-		font-size: small;
-		margin-left: 5px;
+		color: #ffffffcc;
+		font-style: normal;
+		font-size: 15px;
+		margin-left: 4px;
 	}
-}
+
+	.socials {
+		margin-left: -10%;
+	}
+
+	.socials h1 {
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+
+	.icons {
+		line-height: 35px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.icons i {
+		font-size: 25px;
+	}
+
+	.icons span {
+		font-style: normal;
+		font-size: 15px;
+		letter-spacing: 1.5px;
+		color: #ffffffcc;
+	}
+
+	.copyright {
+		text-align: center;
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+
+	@media only screen and (max-width: 600px) {
+		.main-wrapper {
+			display: flex;
+			flex-direction: column;
+			padding: 10px;
+		}
+
+		.socials {
+			margin: 0%;
+			border: 1px solid #ffffff1f;
+			border-radius: 5px;
+			padding: 5px;
+		}
+
+		.sitemap {
+			border: 1px solid #ffffff1f;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+
+		.sitemap h1 {
+			margin-bottom: 13px;
+		}
+
+		.contact {
+			border: 1px solid #ffffff1f;
+			margin-bottom: 15px;
+			border-radius: 5px;
+			padding: 10px;
+		}
+
+		.copyright {
+			padding: 10px;
+		}
+
+		.wrapper i {
+			font-size: 20px;
+			line-height: 40px;
+		}
+
+		.wrapper span {
+			font-size: small;
+			margin-left: 5px;
+		}
+	}
 </style>
