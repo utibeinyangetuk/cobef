@@ -36,10 +36,12 @@
 			</div>
 		</div>
 	</section>
+	<Footer />
 </template>
 
 <script setup>
 	import Currentpage from '../components/CurrentPage.vue';
+import Footer from '@/components/Footer.vue';
 </script>
 
 <style scoped>
