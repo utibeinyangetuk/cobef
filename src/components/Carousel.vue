@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-	import { defineProps, onUnmounted, ref, toRefs } from 'vue';
+	import { onUnmounted, ref, toRefs } from 'vue';
 
 	const props = defineProps({
 		images: {
