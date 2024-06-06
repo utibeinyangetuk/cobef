@@ -7,7 +7,7 @@
 			commercial experience necessary to address technically challenging projects.
 		</p>
 		<div class="projects">
-			<h2>projects we have completed.</h2>
+			<h2>projects we have completed</h2>
 			<ul>
 				<li>REHABILITATION OF ALESA AGBONCHIA AND ALESA WATER WORKS, IN OGONI LAND</li>
 				<li>SUPPLY AND PIPE LAYING IN OBAGI COMMUNITY, RIVERS STATE</li>

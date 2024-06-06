@@ -131,7 +131,7 @@
 			font-size: 14px;
 		}
 		.container h1 {
-			font-size: 35px;
+			font-size: larger;
 		}
 		.wrapper {
 			display: flex;
