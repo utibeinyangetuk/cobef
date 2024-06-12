@@ -11,28 +11,28 @@
 					<li><router-link to="/contact">Contact us</router-link></li>
 				</ul>
 			</div>
-
 			<div class="contact">
 				<h1>How to reach us?</h1>
 				<div class="wrapper">
-					<i class="uil uil-location-point"><span>Km 17 Port Harcourt/Aba Express Way P. O. Box, 2769 Port Harcourt.</span></i>
-					<i class="uil uil-envelope"><span>info@cobefinternationalltd.com</span></i>
+					<i class="uil uil-location-point">
+						<a href="https://www.google.com/maps/place/Cobef+International+Limited/@4.8610877,7.0891647,17.42z/data=!4m9!1m2!2m1!1sKm+17+Port+Harcourt%2FAba+Express+Way+P.+O.+Box,+2769+Port+Harcourt!3m5!1s0x1069d2ad21ae86bd:0x46fb3e4446572965!8m2!3d4.860476!4d7.0880525!16s%2Fg%2F11hzhc6m0m?entry=ttu"
+							target="_blank">Km 17 Port Harcourt/Aba Express Way P. O. Box, 2769 Port Harcourt</a>
+					</i>
+					<i class="uil uil-envelope"><a href="mailto:info@cobefinternationalltd.com">
+							<span> info@cobefinternationalltd.com</span>
+						</a></i>
 					<i class="uil uil-phone">
-						<span class="numbers">
-							(+234) xxx xxx xxxx, (+234) xxx xxx xxxx,<br />
-							(+234) xxx xxx xxxx
-						</span>
+						<a href="tel:+1234567890">
+							+(234) 567-890-9123
+						</a>
 					</i>
 				</div>
 			</div>
-
 			<div class="socials">
 				<h1>Follow us on our socials</h1>
 				<div class="icons">
 					<i class="uil uil-linkedin-alt"><span> Linkedin</span></i>
 					<i class="uil uil-whatsapp"><span> Whatsapp</span></i>
-					<i class="uil uil-twitter-alt"><span> Twitter</span></i>
-					<i class="uil uil-facebook"><span> Facebook</span></i>
 				</div>
 			</div>
 		</div>
@@ -44,135 +44,119 @@
 </template>
 
 <style scoped>
+footer {
+	border: 1px solid rgba(128, 128, 128, 0.211);
+}
+
+.main-wrapper {
+	display: flex;
+	justify-content: space-around;
+	padding: 8px;
+}
+
+.main-wrapper h1 {
+	color: orange;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.sitemap ul li a {
+	color: #000000;
+	line-height: 32px;
+	letter-spacing: 1.5px;
+}
+
+.sitemap ul li a:hover {
+	border-radius: 3px;
+	border: 1px solid #000;
+	padding: 3px;
+	background-color: #000;
+	color: #fff;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper i {
+	font-size: 26px;
+}
+
+.wrapper a {
+	line-height: 40px;
+	color: #000000;
+	font-style: normal;
+	font-size: 14px;
+	margin-left: 4px;
+}
+
+.wrapper a:hover {
+	text-decoration: underline;
+}
+
+.icons {
+	line-height: 35px;
+	display: flex;
+	flex-direction: column;
+}
+
+.icons i {
+	font-size: 20px;
+}
+
+.icons span {
+	font-style: normal;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+	color: #000000;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 600px) {
 	footer {
-		background-color: #020e2a;
-		color: #ffffff;
-	}
-	.main-wrapper {
-		display: flex;
-		justify-content: space-around;
-		padding: 20px;
-	}
-	.main-wrapper h1 {
-		color: orange;
-	}
-	.sitemap h1 {
-		font-size: 18px;
-		letter-spacing: 2px;
-		font-weight: bold;
-		text-transform: capitalize;
+		border: none;
 	}
 
-	.sitemap ul a {
-		color: #ffffffcc;
-		line-height: 35px;
-		letter-spacing: 1.5px;
-	}
-
-	.sitemap ul a:hover {
-		color: orange;
-	}
-
-	.contact h1 {
-		font-size: 18px;
-		letter-spacing: 2px;
-		font-weight: bold;
-		text-transform: capitalize;
-		margin-bottom: 10px;
-	}
-
-	.wrapper {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.wrapper i {
-		font-size: 25px;
-		line-height: 40px;
-	}
-
-	.wrapper span {
-		color: #ffffffcc;
-		font-style: normal;
-		font-size: 15px;
-		margin-left: 4px;
-	}
-
+	.sitemap,
+	.contact,
 	.socials {
-		margin-left: -10%;
-	}
-
-	.socials h1 {
-		font-size: 18px;
+		border: 1px solid;
+		border-radius: 5px;
+		padding: 10px;
+		margin: 0%;
 		margin-bottom: 15px;
 	}
 
-	.icons {
-		line-height: 35px;
+	.main-wrapper {
 		display: flex;
 		flex-direction: column;
 	}
 
-	.icons i {
-		font-size: 25px;
+	.copyright {
+		padding: 10px;
 	}
 
-	.icons span {
-		font-style: normal;
-		font-size: 15px;
-		letter-spacing: 1.5px;
-		color: #ffffffcc;
+	.wrapper i {
+		font-size: 20px;
+		line-height: 35px;
+	}
+
+	.wrapper a {
+		font-size: small;
 	}
 
 	.copyright {
-		text-align: center;
-		font-size: 10px;
-		letter-spacing: 1px;
+		font-size: 12px;
 	}
-
-	@media only screen and (max-width: 600px) {
-		.main-wrapper {
-			display: flex;
-			flex-direction: column;
-			padding: 10px;
-		}
-
-		.socials {
-			margin: 0%;
-			border: 1px solid #ffffff1f;
-			border-radius: 5px;
-			padding: 5px;
-		}
-
-		.sitemap {
-			border: 1px solid #ffffff1f;
-			padding: 10px;
-			margin-bottom: 10px;
-		}
-
-		.sitemap h1 {
-			margin-bottom: 13px;
-		}
-
-		.contact {
-			border: 1px solid #ffffff1f;
-			margin-bottom: 15px;
-			border-radius: 5px;
-			padding: 10px;
-		}
-
-		.copyright {
-			padding: 10px;
-		}
-
-		.wrapper i {
-			font-size: 20px;
-			line-height: 40px;
-		}
-
-		.wrapper span {
-			font-size: small;
-			margin-left: 5px;
-		}
-	}
+}
 </style>
