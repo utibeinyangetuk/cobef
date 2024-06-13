@@ -5,8 +5,8 @@
 				<!-- <img src="../assets/COBEF_LOGO.png" alt="Cobef International Limited Logo" class="logo" /> -->
 			</div>
 			<div class="route-name">
-				<h1>{{ currentRouteName }}</h1>
-				<router-link to="/" class="link">COBEF</router-link> / <span>{{ currentPage }}</span>
+				<h1>Cobef</h1>
+				<router-link to="/" class="link">Home</router-link> <span>/ {{ currentPage }}</span>
 			</div>
 			<navbar />
 		</header>
@@ -52,9 +52,8 @@ router.afterEach(() => {
 
 <style scoped>
 header {
-	background-color: #ffffff;
+	background-color: #111111;
 	border: 1px solid;
-	border-radius: 5px;
 	padding: 5px;
 	text-align: center;
 	display: flex;
@@ -62,16 +61,16 @@ header {
 	align-items: center;
 }
 
-.logo-container img {
+/*.logo-container img {
 	width: 100px;
 	height: 100px;
 	border: 5px solid;
 	border-radius: 50%;
 }
-
+*/
 .route-name h1 {
 	text-transform: uppercase;
-	color: #111111;
+	color: rgb(48, 102, 102);
 	letter-spacing: 2px;
 	font-size: 40px;
 	margin-bottom: 15px;
@@ -83,7 +82,7 @@ header {
 }
 
 .route-name .link {
-	color: #111111;
+	color: #ffffff;
 	font-size: 18px;
 }
 
@@ -93,16 +92,17 @@ header {
 
 @media only screen and (max-width: 600px) {
 	header {
-		padding: 10px;
+		padding: 15px;
 		display: flex;
 		align-items: center;
 	}
 
+	/*
 	.logo-container img {
 		width: 70px;
 		height: 70px;
 	}
-
+*/
 	.route-name {
 		line-height: 15px;
 		align-items: center;
