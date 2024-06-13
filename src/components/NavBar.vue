@@ -147,6 +147,8 @@ const toggleMenu = debounce(() => {
 .fullscreen-menu nav ul li a:hover {
 	border: 1px solid #ffffff;
 	border-radius: 5px;
+	color: #000000;
+	background-color: #ffffff;
 }
 
 .fullscreen-menu nav ul li a {
