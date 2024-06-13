@@ -58,7 +58,7 @@ import Footer from '@/components/Footer.vue';
 		border-bottom: 1px solid rgba(128, 128, 128, 0.263);
 		text-transform: capitalize;
 		letter-spacing: 2px;
-		background-color: #020e2a;
+		background-color: #111111;
 		color: #ffffff;
 	}
 
@@ -140,7 +140,7 @@ import Footer from '@/components/Footer.vue';
 	button {
 		height: 40px;
 		cursor: pointer;
-		background-color: #020e2ade;
+		background-color: #111111;
 		border: none;
 		color: #ffffff;
 		letter-spacing: 2px;
@@ -151,7 +151,7 @@ import Footer from '@/components/Footer.vue';
 	}
 
 	button:hover {
-		background-color: #020e2a;
+		background-color: #111111;
 	}
 
 	@media only screen and (max-width: 600px) {
