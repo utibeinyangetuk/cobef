@@ -12,11 +12,21 @@
 				<!-- Menu items -->
 				<nav>
 					<ul>
-						<li><router-link to="/">Home</router-link></li>
-						<li><router-link to="/about">About us</router-link></li>
-						<li><router-link to="/products">Our products</router-link></li>
-						<li><router-link to="/projects">Projects</router-link></li>
-						<li><router-link to="/contact">Contact us</router-link></li>
+						<li :class="{ active: isActive('/') }">
+							<router-link to="/">Home</router-link>
+						</li>
+						<li :class="{ active: isActive('/about') }">
+							<router-link to="/about">About us</router-link>
+						</li>
+						<li :class="{ active: isActive('/products') }">
+							<router-link to="/products">Our products</router-link>
+						</li>
+						<li :class="{ active: isActive('/projects') }">
+							<router-link to="/projects">Projects</router-link>
+						</li>
+						<li :class="{ active: isActive('/contact') }">
+							<router-link to="/contact">Contact us</router-link>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -26,20 +36,26 @@
 
 <script setup>
 import { ref } from 'vue';
-import { RouterLink } from 'vue-router';
+import { useRouter } from 'vue-router';
 
 const isOpen = ref(false);
+const router = useRouter();
+
 const debounce = (func, delay) => {
 	let timeout;
 	return (...args) => {
 		clearTimeout(timeout);
-		timeout = setTimeout(() =>
-			func.apply(this, args), delay);
+		timeout = setTimeout(() => func.apply(this, args), delay);
 	};
 };
+
 const toggleMenu = debounce(() => {
 	isOpen.value = !isOpen.value;
 }, 100);
+
+const isActive = (route) => {
+	return router.currentRoute.value.path === route;
+};
 </script>
 
 <style scoped>
@@ -147,7 +163,7 @@ const toggleMenu = debounce(() => {
 .fullscreen-menu nav ul li a:hover {
 	border: 1px solid #ffffff;
 	border-radius: 5px;
-	color: #000000;
+	color: rgb(27, 72, 72);
 	background-color: #ffffff;
 }
 
@@ -159,6 +175,13 @@ const toggleMenu = debounce(() => {
 	padding: 5px;
 	color: #ffffff;
 	font-weight: bold;
+}
+
+.fullscreen-menu nav ul li.active a {
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	color: rgb(27, 72, 72);
+	background-color: #ffffff;
 }
 
 @media only screen and (max-width: 600px) {
