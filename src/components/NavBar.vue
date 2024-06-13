@@ -120,7 +120,7 @@ const toggleMenu = debounce(() => {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #020e2a;
+	background-color: #111111;
 	z-index: 999;
 	display: flex;
 	align-items: center;
@@ -144,20 +144,19 @@ const toggleMenu = debounce(() => {
 	text-transform: uppercase;
 }
 
-.fullscreen-menu nav ul li:hover {
-	border: 1px solid #fdf5e5;
+.fullscreen-menu nav ul li a:hover {
+	border: 1px solid #ffffff;
 	border-radius: 5px;
 }
 
 .fullscreen-menu nav ul li a {
 	text-decoration: none;
-	color: #fdf5e5;
 	font-size: 24px;
 	transition: color 0.3s;
-}
-
-.fullscreen-menu nav ul li a:hover {
-	color: #ff5a5f;
+	border-radius: 5px;
+	padding: 5px;
+	color: #ffffff;
+	font-weight: bold;
 }
 
 @media only screen and (max-width: 600px) {
