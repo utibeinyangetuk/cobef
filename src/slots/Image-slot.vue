@@ -19,8 +19,6 @@
 		position: relative;
 		overflow: hidden;
 		text-align: center;
-		background-color: whitesmoke;
-		border-bottom: 1px solid rgba(128, 128, 128, 0.284);
 	}
 
 	.button-container {
