@@ -149,8 +149,7 @@
 	}
 
 	.mission {
-		background-color: #020e2a;
-		border: 1px solid #020e2a;
+		background-color: rgb(20, 52, 52);
 		border-radius: 5px;
 		color: #ffffff;
 		height: 400px;
