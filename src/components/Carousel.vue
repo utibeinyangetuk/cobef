@@ -62,6 +62,9 @@
 		left: 50%;
 		transform: translateX(-50%);
 		display: flex;
+		background-color: #000;
+		padding:5px;
+		border-radius: 10px;
 	}
 
 	.indicator {
@@ -74,7 +77,7 @@
 	}
 
 	.indicator.active {
-		background-color: rgba(255, 255, 255, 1);
+		background-color:#fff;
 	}
 
 	.carousel {

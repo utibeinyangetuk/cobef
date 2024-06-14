@@ -108,7 +108,7 @@
 		border: 1px solid;
 		border-radius: 5px;
 		padding: 10px;
-		background-color: #020e2a;
+		background-color: rgb(20, 52, 52);
 		color: #ffffff;
 		margin-bottom: 2em;
 	}
@@ -134,7 +134,7 @@
 
 	.gallery {
 		margin-bottom: 2em;
-		background-color: #020e2a;
+		background-color: #111111;
 	}
 
 	.gallery h2 {
@@ -150,6 +150,7 @@
 		/*border: 1px solid;*/
 		border-radius: 5px;
 		/*background-color: #020e2a;*/
+
 	}
 
 	.clients h2 {
@@ -215,7 +216,6 @@
 			font-size: 14px;
 		}
 		.clients h2{
-			background-color: #020e2a;
 			border-radius: 5px;
 		}
 	}
