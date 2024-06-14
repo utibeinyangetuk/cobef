@@ -52,12 +52,14 @@ footer {
 	display: flex;
 	justify-content: space-around;
 	padding: 8px;
+	background-color: whitesmoke;
+	line-height: 40px;
 }
 
 .main-wrapper h1 {
 	color: orange;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: 5px;
+	margin-bottom:0px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: bold;
@@ -120,6 +122,7 @@ footer {
 	text-align: center;
 	font-size: 14px;
 	letter-spacing: 1px;
+	background-color: whitesmoke;
 }
 
 @media only screen and (max-width: 600px) {
