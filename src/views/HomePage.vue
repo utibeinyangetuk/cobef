@@ -1,10 +1,10 @@
 <script setup>
-	import CurrentPage from '@/components/CurrentPage.vue';
-	import Footer from '@/components/Footer.vue';
-	import ImageSlot from '@/slots/Image-slot.vue';
-	import { useRouter } from 'vue-router';
-	const router = useRouter();
-	const navigateTo = (path) => router.push(path);
+import CurrentPage from '@/components/CurrentPage.vue';
+import Footer from '@/components/Footer.vue';
+import ImageSlot from '@/slots/Image-slot.vue';
+import { useRouter } from 'vue-router';
+const router = useRouter();
+const navigateTo = (path) => router.push(path);
 </script>
 
 <template>
@@ -14,98 +14,111 @@
 			<template v-slot:title>
 				<h2>Our workforce</h2>
 			</template>
-			<template v-slot:button1>
-				<button @click="navigateTo('/products')" class="button1">View More</button>
-			</template>
 			<template v-slot:button2>
-				<button @click="navigateTo('/products')" class="button2">Order Now</button>
+				<button @click="navigateTo('/#')" class="button">Take a tour</button>
 			</template>
 		</ImageSlot>
-		<ImageSlot class="container1">
+		<ImageSlot class="container2">
 			<template v-slot:title>
-				<h2>Our workforce</h2>
-			</template>
-			<template v-slot:button1>
-				<button @click="navigateTo('/products')" class="button1">View More</button>
+				<h2>About us</h2>
 			</template>
 			<template v-slot:button2>
-				<button @click="navigateTo('/products')" class="button2">Order Now</button>
+				<button @click="navigateTo('/#')" class="button">Learn more</button>
 			</template>
 		</ImageSlot>
-		<ImageSlot class="container1">
+		<ImageSlot class="container3">
 			<template v-slot:title>
-				<h2>Our workforce</h2>
-			</template>
-			<template v-slot:button1>
-				<button @click="navigateTo('/products')" class="button1">View More</button>
+				<h2>Products/Services</h2>
 			</template>
 			<template v-slot:button2>
-				<button @click="navigateTo('/products')" class="button2">Order Now</button>
+				<button @click="navigateTo('/#')" class="button">View Catalog</button>
 			</template>
 		</ImageSlot>
-		<ImageSlot class="container1">
+		<ImageSlot class="container4">
 			<template v-slot:title>
-				<h2>Our workforce</h2>
-			</template>
-			<template v-slot:button1>
-				<button @click="navigateTo('/products')" class="button1">View More</button>
+				<h2>We are hiring</h2>
 			</template>
 			<template v-slot:button2>
-				<button @click="navigateTo('/products')" class="button2">Order Now</button>
+				<button @click="navigateTo('/#')" class="button">Apply Now</button>
 			</template>
 		</ImageSlot>
 	</div>
 	<Footer />
 </template>
 <style scoped>
-	.container1 {
-		/* background-image: url(../assets/projects/three.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; /* Change from 'cover' to 'contain' */
-		background-position: center; /* Optional: Center the image */
-		height: 100vh; /* Set height to cover the entire viewport */
-		position: relative;
-	}
-	h2 {
-		letter-spacing: 2px;
-		font-size: 30px;
-		text-transform: capitalize;
-		margin-top: 100px;
-	}
-	button {
-		padding: 10px 80px;
-		border-radius: 5px;
-		border: 1px solid gray;
-		letter-spacing: 2px;
-		cursor: pointer;
-		background: transparent;
-		font-weight: bold;
-		font-size: 17px;
-	}
-	.button1 {
-		background-color: #fff;
-		color: #000;
-	}
-	.button1:hover {
-		background-color: #000;
-		color: #fff;
-	}
-	.button2 {
-		background-color: #000;
-		color: #fff;
-	}
-	.button2:hover {
-		background-color: #fff;
-		color: #000;
+.container4 {
+	background-image: url(../assets/homepage-images/hiring.jpg);
+	background-position: center;
+}
+
+.container2 {
+	background-image: url(../assets/homepage-images/aboutus.avif);
+	background-position: center;
+}
+
+.container3 {
+	background-image: url(../assets/materials/pipes.jpg);
+	background-position: center;
+}
+
+.container1 {
+	background-image: url(../assets/homepage-images/company.jpg)
+}
+
+.container1,
+.container2,
+.container3,
+.container4 {
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	background-color: #fff;
+}
+
+h2 {
+	letter-spacing: 2px;
+	font-size: 8vw;
+	text-transform: capitalize;
+	margin-top: 100px;
+	color: #ffffff;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	font-family: 'Space Mono';
+}
+
+.button {
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 15px 30px;
+	font-size: 30px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: transform 0.4s ease, box-shadow 0.5s ease;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-family: "space mono"
+}
+
+.button:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 600px) {
+	.button {
+		font-size: 15px;
+		padding: 14px;
 	}
 
-	@media screen and (max-width: 600px) {
-		button {
-			font-size: 15px;
-			padding: 14px;
-		}
-		.container1 {
-			height: 60vh;
-		}
+	.container1,
+	.container2,
+	.container3,
+	.container4 {
+		height: 60vh;
 	}
+}
 </style>
+
+<!-- @media only screen and (min-width: 768px) and (max-width: 991px) {} -->
