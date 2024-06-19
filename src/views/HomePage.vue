@@ -52,17 +52,17 @@ const navigateTo = (path) => router.push(path);
 }
 
 .container2 {
-	background-image: url(../assets/homepage-images/aboutus.avif);
+	background-image: url(../assets/homepage-images/aboutus.jpg);
 	background-position: center;
 }
 
 .container3 {
-	background-image: url(../assets/materials/pipes.jpg);
+	background-image: url(../assets/homepage-images/bluepipes.jpg);
 	background-position: center;
 }
 
 .container1 {
-	background-image: url(../assets/homepage-images/company.jpg)
+	background-image: url(../assets/homepage-images/company.jpg);
 }
 
 .container1,
@@ -73,17 +73,15 @@ const navigateTo = (path) => router.push(path);
 	background-size: cover;
 	height: 100vh;
 	position: relative;
-	background-color: #fff;
 }
 
 h2 {
 	letter-spacing: 2px;
 	font-size: 8vw;
 	text-transform: capitalize;
-	margin-top: 100px;
+	margin-top: 10px;
 	color: #ffffff;
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-	font-family: 'Space Mono';
 }
 
 .button {
@@ -98,7 +96,6 @@ h2 {
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	font-family: "space mono"
 }
 
 .button:hover {
@@ -118,7 +115,13 @@ h2 {
 	.container4 {
 		height: 60vh;
 	}
+
+	.container4 {
+		width: 100%;
+	}
+
+	h2 {
+		margin-top: 100px;
+	}
 }
 </style>
-
-<!-- @media only screen and (min-width: 768px) and (max-width: 991px) {} -->
