@@ -4,8 +4,6 @@
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 #app {
 	font-family: 'Montserrat', sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -29,12 +27,8 @@
 	}
 
 	::-webkit-scrollbar-thumb {
-		background: #fdf5e5;
+		background: orange;
 		border-radius: 10px;
-	}
-
-	::-webkit-scrollbar-thumb:hover {
-		background: #fdf5e5;
 	}
 }
 </style>
