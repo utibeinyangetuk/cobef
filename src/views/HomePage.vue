@@ -71,7 +71,7 @@ const navigateTo = (path) => router.push(path);
 .container4 {
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100vh;
+	height: 130vh;
 	position: relative;
 }
 
