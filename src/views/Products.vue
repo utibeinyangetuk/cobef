@@ -1,141 +1,113 @@
 <template>
-	<currentPage />
-	<div class="container">
-		<p>
-			Cobef International Ltd retains quality delivery and clients satisfaction as its driving force. Based ISO certification, we are guided by the
-			highest safety and quality standards to ensure that our clients receive the highest levels of satisfaction in addition to the commercial
-			experience necessary to address technically challenging projects.
-		</p>
-		<h1>we manufacture</h1>
-		<div class="wrapper">
-			<div class="image-container">
-				<img src="../assets/materials/HDPE-Pipe.jpg" alt="HDPE pipes" class="grid-image" />
-				<div class="image-overlay">HDPE Pipes</div>
-			</div>
-			<div class="image-container">
-				<img src="../assets/materials/LAPETA.jpg" alt="Lapeta" class="grid-image" />
-				<div class="image-overlay">Lapeta</div>
-			</div>
-			<div class="image-container">
-				<img src="../assets/materials/Tank.jpeg" alt="Tanks" class="grid-image" />
-				<div class="image-overlay">Tanks</div>
-			</div>
-			<div class="image-container">
-				<img src="../assets/materials/Pipe1.jpg" alt="Pipes" class="grid-image" />
-				<div class="image-overlay">Pipes</div>
-			</div>
-			<div class="image-container">
-				<img src="../assets/materials/PRESURE.jpg" alt="Pressure pipes" class="grid-image" />
-				<div class="image-overlay">Pressure pipes</div>
-			</div>
-			<div class="image-container">
-				<img src="../assets/materials/#" alt="Suction Hose" class="grid-image" />
-				<div class="image-overlay">Suction Hose</div>
-			</div>
-			<div class="image-container">
-				<img src="../assets/materials/#" alt="Garden Tubes" class="grid-image" />
-				<div class="image-overlay">Garden Tubes</div>
-			</div>
-			<div class="image-container">
-				<img src="../assets/materials/#" alt="Jerry Cans" class="grid-image" />
-				<div class="image-overlay">Jerry Cans</div>
-			</div>
-			<div class="image-container">
-				<img src="../assets/materials/#" alt="Fittings" class="grid-image" />
-				<div class="image-overlay">Fittings</div>
-			</div>
-			<div class="image-container">
-				<img src="../assets/materials/#" alt="Image 4" class="grid-image" />
-				<div class="image-overlay">Image 4</div>
-			</div>
-			<div class="image-container">
-				<img src="../assets/materials/#" alt="Image 4" class="grid-image" />
-				<div class="image-overlay">Image 4</div>
-			</div>
-			<div class="image-container">
-				<img src="../assets/materials/#" alt="Image 4" class="grid-image" />
-				<div class="image-overlay">Image 4</div>
+	<div>
+		<currentPage />
+		<div class="container">
+			<p>
+				Cobef International Ltd retains quality delivery and clients satisfaction as its driving force. Based on ISO certification, we are guided by the highest safety and quality standards to
+				ensure that our clients receive the highest levels of satisfaction in addition to the commercial experience necessary to address technically challenging projects.
+			</p>
+			<h1>We Manufacture</h1>
+			<div class="grid-wrapper">
+				<div class="image-card" v-for="image in images" :key="image.alt">
+					<img :src="image.src" :alt="image.alt" class="card-image" />
+					<div class="card-overlay">{{ image.alt }}</div>
+				</div>
 			</div>
 		</div>
+		<Footer />
 	</div>
-	<Footer />
 </template>
-
 <script setup>
+	import currentPage from '@/components/CurrentPage.vue';
 	import Footer from '@/components/Footer.vue';
-	import currentPage from '../components/CurrentPage.vue';
-</script>
 
+	const images = [
+		{ src: new URL('../assets/materials/HDPE-Pipe.jpg', import.meta.url).href, alt: 'HDPE Pipes' },
+		{ src: new URL('../assets/materials/LAPETA.jpg', import.meta.url).href, alt: 'Lapeta' },
+		{ src: new URL('../assets/materials/Tank.jpeg', import.meta.url).href, alt: 'Tanks' },
+		{ src: new URL('../assets/materials/Pipe1.jpg', import.meta.url).href, alt: 'Pipes' },
+		{ src: new URL('../assets/materials/PRESURE.jpg', import.meta.url).href, alt: 'Pressure pipes' },
+		{ src: new URL('../assets/materials/Tank.jpeg', import.meta.url).href, alt: 'Suction Hose' },
+		{ src: new URL('../assets/materials/Tank.jpeg', import.meta.url).href, alt: 'Garden Tubes' },
+		{ src: new URL('../assets/materials/Tank.jpeg', import.meta.url).href, alt: 'Jerry Cans' },
+		{ src: new URL('../assets/materials/Tank.jpeg', import.meta.url).href, alt: 'Fittings' },
+		{ src: new URL('../assets/materials/Tank.jpeg', import.meta.url).href, alt: 'Fittings' },
+	];
+</script>
 <style scoped>
 	.container {
 		padding: 20px;
+		max-width: 1200px;
+		margin: auto;
+		text-align: center;
 	}
 
 	.container p {
 		letter-spacing: 1.3px;
 		line-height: 2em;
-		font-size: 17px;
+		font-size: 1rem;
 		font-weight: 400;
 		margin-bottom: 20px;
 	}
 
 	.container h1 {
-		text-align: center;
-		color: orange;
+		color: #f57c00;
 		text-transform: capitalize;
-		font-size: 40px;
+		font-size: 2.8rem;
 		letter-spacing: 2px;
 		margin-bottom: 20px;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 	}
 
-	.wrapper {
-		gap: 20px;
+	.grid-wrapper {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 20px;
 	}
 
-	.image-container {
+	.image-card {
 		position: relative;
 		overflow: hidden;
-		display: inline-block;
+		border-radius: 10px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+		transition: transform 0.3s ease-in-out;
 	}
 
-	.grid-image {
+	.card-image {
 		width: 100%;
-		height: 250px;
+		height: 100%;
 		display: block;
-		border: 1px solid;
-		border-radius: 5px;
-		transition: transform 0.5s ease-out;
 	}
 
-	.image-overlay {
+	.card-overlay {
 		position: absolute;
 		bottom: 0;
 		left: 0;
 		width: 100%;
-		background-color: rgba(0, 0, 0, 0.5);
+		background-color: rgba(0, 0, 0, 0.7);
 		color: #fff;
 		text-align: center;
 		padding: 10px;
-		transform: translateY(100%);
-		transition: transform 0.5s ease-out;
+		transition: transform 0.3s ease-in-out;
 	}
 
-	.image-container:hover .image-overlay {
+	.image-card:hover {
+		transform: translateY(-10px);
+	}
+
+	.image-card:hover .card-overlay {
 		transform: translateY(0);
 	}
 
-	@media only screen and (max-width: 600px) {
+	@media (max-width: 600px) {
 		.container p {
-			font-size: 14px;
+			font-size: 0.875rem;
 		}
 		.container h1 {
-			font-size: larger;
+			font-size: 2rem;
 		}
-		.wrapper {
-			display: flex;
-			flex-direction: column;
+		.grid-wrapper {
+			grid-template-columns: 1fr;
 		}
 	}
 </style>
