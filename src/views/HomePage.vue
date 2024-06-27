@@ -52,7 +52,7 @@ const navigateTo = (path) => router.push(path);
 }
 
 .container2 {
-	background-image: url(../assets/homepage-images/aboutus.jpg);
+	background-image: url(../assets/homepage-images/aboutus.avif);
 	background-position: center;
 }
 
