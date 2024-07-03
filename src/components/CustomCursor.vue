@@ -46,7 +46,7 @@ onUnmounted(() => {
 	border-radius: 50%;
 	pointer-events: none;
 	z-index: 10000;
-	transition: transform 0.1s ease-out;
+	transition: transform 0.2s ease-out;
 }
 
 .custom-cursor {
