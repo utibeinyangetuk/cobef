@@ -14,8 +14,9 @@ import CustomCursor from "./components/CustomCursor.vue";
 html {
 	scroll-behaviour: smooth;
 }
-body {
+body, a, * {
 	overflow: hidden;
+	cursor:none;
 }
 #app {
 	font-family: "Poppins", sans-serif;
