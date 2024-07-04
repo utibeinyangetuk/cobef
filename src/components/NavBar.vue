@@ -12,23 +12,22 @@
 				<!-- Menu items -->
 				<nav>
 					<ul>
-						<li :class="{ active: isActive('/') }">
-							<router-link to="/">Home</router-link>
-						</li>
-						<li :class="{ active: isActive('/about') }">
-							<router-link to="/about">About us</router-link>
-						</li>
-						<li :class="{ active: isActive('/products') }">
-							<router-link to="/products">Our products</router-link>
-						</li>
-						<li :class="{ active: isActive('/projects') }">
-							<router-link to="/projects">Projects</router-link>
-						</li>
-						<li :class="{ active: isActive('/contact') }">
-							<router-link to="/contact">Contact us</router-link>
+						<li v-for="(link, index) in links" :key="link.path" :class="{ active: isActive(link.path) }">
+							<span class="link-number">{{ formatNumber(index + 1) }}/</span>
+							<router-link :to="link.path">{{ link.name }}</router-link>
 						</li>
 					</ul>
 				</nav>
+				<!-- Footer section -->
+				<footer class="menu-footer">
+					<h1>Keep in touch with us</h1>
+					<ul class="social-icons">
+						<li class="uil uil-facebook" />
+						<li class="uil uil-linkedin" />
+						<li class="uil uil-envelope" />
+						<li class="uil uil-whatsapp" />
+					</ul>
+				</footer>
 			</div>
 		</transition>
 	</div>
@@ -56,9 +55,29 @@ const toggleMenu = debounce(() => {
 const isActive = (route) => {
 	return router.currentRoute.value.path === route;
 };
+
+const links = [
+	{ name: 'Home', path: '/' },
+	{ name: 'About', path: '/about' },
+	{ name: 'products', path: '/products' },
+	{ name: 'Projects', path: '/projects' },
+	{ name: 'Contact', path: '/contact' },
+	{ name: 'gallery', path: '/#' },
+	{ name: 'services', path: '/#' },
+	{ name: 'newsletter', path: '/#' },
+	{ name: 'random', path: '/#' },
+];
+
+const formatNumber = (number) => {
+	return number < 10 ? `0${number}` : number;
+};
 </script>
 
 <style scoped>
+div {
+	background-color: #131414;
+}
+
 .hamburger-menu {
 	position: fixed;
 	top: 40px;
@@ -66,8 +85,8 @@ const isActive = (route) => {
 	z-index: 1000;
 	background: none;
 	border: none;
-	cursor: pointer;
-	padding: 10px;
+	cursor: none;
+	padding: 30px;
 	transition: transform 0.5s ease;
 }
 
@@ -92,6 +111,17 @@ const isActive = (route) => {
 
 .hamburger-menu.open span:nth-child(3) {
 	transform: translateY(-9px) rotate(-45deg);
+}
+
+.hamburger-menu.open {
+	border: 1px solid gray;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.hamburger-menu.open:hover {
+	border: 1px solid #fff;
+	border-radius: 50%;
 }
 
 .hamburger-menu.open span {
@@ -134,69 +164,96 @@ const isActive = (route) => {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #111111;
+	width: 100vw;
+	height: 100vh;
 	z-index: 999;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.fullscreen-menu nav ul {
-	list-style: none;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.fullscreen-menu nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: calc(100% - 80px);
+	overflow-y: auto;
+}
+
+.fullscreen-menu nav ul {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px 50px;
+	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 }
 
 .fullscreen-menu nav ul li {
-	margin-top: 30px;
+	display: flex;
+	align-items: center;
 	padding: 10px;
-	letter-spacing: 1.2px;
 	text-transform: uppercase;
+	font-size: 30px;
+	letter-spacing: 2px;
 }
 
-.fullscreen-menu nav ul li a:hover {
-	border: 1px solid #ffffff;
-	border-radius: 5px;
-	color: rgb(27, 72, 72);
-	background-color: #ffffff;
+.fullscreen-menu nav ul li .link-number {
+	margin-right: 10px;
+	color: #434343c1;
+	transition: color 0.3s;
+	font-size: 12px;
 }
 
 .fullscreen-menu nav ul li a {
 	text-decoration: none;
-	font-size: 24px;
 	transition: color 0.3s;
-	border-radius: 5px;
-	padding: 5px;
-	color: #ffffff;
-	font-weight: bold;
+	color: #ffffffe2;
+}
+
+.fullscreen-menu nav ul li:hover .link-number,
+.fullscreen-menu nav ul li:hover a {
+	color: rgb(27, 72, 72);
 }
 
 .fullscreen-menu nav ul li.active a {
-	border: 1px solid #ffffff;
-	border-radius: 5px;
 	color: rgb(27, 72, 72);
-	background-color: #ffffff;
 }
 
-@media only screen and (max-width: 600px) {
-	.hamburger-menu {
-		top: 30px;
-		right: 8px;
-	}
+.menu-footer {
+	border-top: 1px solid #434343c1;
+	width: 94%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+}
 
-	.hamburger-menu span {
-		width: 30px;
-		height: 5px;
-	}
+.menu-footer h1 {
+	font-size: 12px;
+	letter-spacing: 2px;
+	color: #434343c1;
+	text-transform: uppercase;
+}
 
-	.hamburger-menu.open span:nth-child(1) {
-		transform: translateY(10px) rotate(45deg);
-	}
+.social-icons {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	gap: 6px;
+}
+
+.social-icons li {
+	padding: 10px;
+	font-size: 25px;
+	color: #434343c1;
+}
+
+.social-icons li:hover {
+	color: rgb(27, 72, 72)
 }
 </style>
