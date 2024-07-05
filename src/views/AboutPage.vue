@@ -1,346 +1,305 @@
 <script setup>
-	import CurrentPage from '@/components/CurrentPage.vue';
-	import Footer from '@/components/Footer.vue';
+import CurrentPage from '@/components/CurrentPage.vue';
+import ProfileCard from '@/components/ProfileCard.vue';
+// import Footer from '@/components/Footer.vue';
 </script>
-
 <template>
-	<currentPage />
-	<div class="container">
-		<div class="row">
-			<div class="wrapper">
-				<h1><span>About</span> Our Company</h1>
-				<p>
-					<span>COBEF INTERNATIONAL LIMITED</span> values quality the most. All its products are manufactured in a state-of-the-art facility with equipment and technology imported from
-					India. Scoring high on the quality quotient, these products are also in strict compliance with DIN and ISO specifications as well as approved by Standard Organization of Nigeria
-					(SON). This commitment to quality has brought rich dividends for Cobef. It has made its products highly trusted for applications in construction, farming, water supply, electrical
-					wiring, sewage.
-				</p>
-			</div>
-			<div class="image-wrapper">
-				<img src="../assets/homepage-images/company.jpg" alt="An image" />
+	<CurrentPage />
+	<div class="main-container">
+		<div class="video-wrapper">
+			<video autoplay muted loop>
+				<source src="../assets/videos/video.mp4" type="video/mp4">
+				Sorry, your browser does not support this video tag.
+			</video>
+			<div class="overlay">
+				<p>This is cobef</p>
+				<h2>Leading company in hdpe manufacturing</h2>
 			</div>
 		</div>
-		<div class="section-wrapper">
-			<div class="vision">
-				<h1>Our <span>vision</span></h1>
-				<p>Our vision is to set a pace in polymer products manufacturing, and ensure the performance and appearance of the products are in accordance with our quality standards.</p>
+		<div class="overview">
+			<div class="headers">
+				<h2>company overview</h2>
+				<p>Cobef, from <br> the ground up</p>
 			</div>
+			<div class="overview-content">
+				<p>Esse commodo amet reprehenderit laboris consequat aute ipsum et aliquip aute. Cillum quis eu velit
+					excepteur anim quis. Anim ipsum in enim quis quis dolore amet in veniam ea magna culpa. Dolore sit Lorem
+					pariatur excepteur dolor cupidatat aute velit labore. Qui veniam deserunt consectetur culpa eu aliquip
+					enim id. Anim magna eu et incididunt non aliqua sint nulla velit incididunt.
+					<br>
+					<br>
+					Dolore eiusmod pariatur labore ea labore quis esse exercitation proident nostrud tempor. Sunt esse Lorem
+					do est tempor. Ipsum nulla pariatur do ipsum adipisicing cillum enim eiusmod id ex aute.
+					<br>
+					<br>
+					Et dolore mollit cupidatat aute consectetur laborum in. Officia consequat minim pariatur cupidatat
+					ullamco veniam anim ut sunt mollit ex. Non mollit culpa eiusmod magna cillum labore commodo reprehenderit
+					consequat non est. Elit enim in minim minim id id irure nulla nulla aute duis ullamco qui. Non veniam
+					aliquip in qui nulla eiusmod. Eiusmod nisi nostrud elit laboris sint.
+				</p>
+			</div>
+		</div>
+		<div class="goals">
 			<div class="mission">
-				<h1>our <span>mission</span></h1>
-				<p>
-					Our mission is to be a world class leader in PVC, HDPE and LLDPE products by offering customer-focused, high quality and exceptional services through precision machining that
-					result to outstanding value for our customers and excellent opportunities for our employees.
-				</p>
+				<div class="mission-overlay">
+					<h1>Our mission</h1>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At libero nulla quasi, illum veritatis
+						deleniti incidunt nam ratione alias doloremque soluta ea asperiores vel temporibus odio cupiditate?
+						Distinctio, dicta reiciendis?</p>
+				</div>
 			</div>
-		</div>
-		<div class="values">
-			<h1>Our <span>core values</span></h1>
-			<div class="cover">
-				<li><span class="heading">Respect</span> ৹-----৹ We demonstrate respect among colleagues, customers and suppliers.</li>
-				<li><span class="heading">Integrity</span> ৹-----৹ Trustworthy and undiluted productions.</li>
-				<li><span class="heading">Innovation</span> ৹-----৹ We drive change and challenge the status quo to exceed our customer's expectation.</li>
-				<li><span class="heading">Consistency</span> ৹-----৹ Constantly maintains high level quality standards.</li>
-				<li><span class="heading">Cooperation</span> ৹-----৹ We work as a team to achieve our common vision.</li>
-				<li><span class="heading">Customer Convenience</span> ৹-----৹ We serve our customers to save their time and efforts.</li>
-				<li><span class="heading">Customer Satisfaction</span> ৹-----৹ Making sure customers' expectations are met timely.</li>
-			</div>
-		</div>
-		<div class="certifications">
-			<h1>certifications</h1>
-			<div class="images">
-				<div class="grid-item"><img src="../assets/homepage-images/iso1.avif" alt="#image 1" /></div>
-				<div class="grid-item"><img src="../assets/homepage-images/iso1.avif" alt="#image 1" /></div>
-				<div class="grid-item"><img src="../assets/homepage-images/iso1.avif" alt="#image 1" /></div>
-				<div class="grid-item"><img src="../assets/homepage-images/iso1.avif" alt="#image 1" /></div>
-				<div class="grid-item"><img src="../assets/homepage-images/iso1.avif" alt="#image 1" /></div>
-				<div class="grid-item"><img src="../assets/homepage-images/iso1.avif" alt="#image 1" /></div>
-				<div class="grid-item"><img src="../assets/homepage-images/iso1.avif" alt="#image 1" /></div>
-				<div class="grid-item"><img src="../assets/homepage-images/iso1.avif" alt="#image 1" /></div>
+			<div class="vision">
+				<div class="vision-overlay">
+					<h1>Our vision</h1>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At libero nulla quasi, illum veritatis
+						deleniti incidunt nam ratione alias doloremque soluta ea asperiores vel temporibus odio cupiditate?
+						Distinctio, dicta reiciendis?</p>
+				</div>
 			</div>
 		</div>
 	</div>
-	<Footer />
+	<div class="secondary-container">
+		<div class="profile">
+			<p>Leadership</p>
+			<h2>The big brains<br> behind the company</h2>
+			<div class="profile-container">
+				<ProfileCard profilePicture="@/assets/certificates/ISO.jpg" name="John Doe" role="CE0" />
+				<ProfileCard profilePicture="@/assets/certificates/ISO.jpg" name="John Doe" role="CHAIRMAN" />
+			</div>
+			<section class="executives">
+				<h3 executive class="line-text">executive leadership</h3>
+				<div class="image-wrapper">
+					<ProfileCard profilePicture="@/assets/certificates/ISO.jpg" name="John Doe" role="CE0"
+						class="exec-images" />
+					<ProfileCard profilePicture="@/assets/certificates/ISO.jpg" name="John Doe" role="CE0"
+						class="exec-images" />
+					<ProfileCard profilePicture="@/assets/certificates/ISO.jpg" name="John Doe" role="CE0"
+						class="exec-images" />
+					<ProfileCard profilePicture="@/assets/certificates/ISO.jpg" name="John Doe" role="CE0"
+						class="exec-images" />
+				</div>
+			</section>
+		</div>
+	</div>
+	<!-- <Footer /> -->
 </template>
-
 <style scoped>
-	.container {
-		width: 100%;
-		height: 100%;
-		padding: 20px;
-	}
+.main-container {
+	width: 100vw;
+	background-color: #ffffff;
+	padding: 50px;
+}
 
-	.row {
-		display: flex;
-		margin-top: 30px;
-	}
+.video-wrapper {
+	height: 90vh;
+	border-radius: 40px;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
 
-	.wrapper {
-		width: 50%;
-		padding: 5px;
-	}
+video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: blur(3px)
+}
 
-	.wrapper h1 {
-		margin-bottom: 15px;
-		text-transform: uppercase;
-		font-weight: bolder;
-		letter-spacing: 2px;
-		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-	}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: Montserrat;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
 
-	.wrapper span {
-		color: orange;
-		font-weight: bold;
-		letter-spacing: 2px;
-	}
+.overlay p {
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 15px;
+	position: absolute;
+	top: 37%;
+}
 
-	.wrapper p {
-		font-size: 16px;
-		line-height: 3.2em;
-		text-align: left;
-		width: 100%;
-		letter-spacing: 1px;
-	}
+.overlay h2 {
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 40px;
+}
 
-	.image-wrapper {
-		width: 50%;
-		padding: 5px;
-	}
+.overview {
+	height: 90vh;
+	width: 100%;
+	display: flex;
+	margin-top: 70px;
+}
 
-	.image-wrapper img {
-		width: 100%;
-		height: 400px;
-		border-radius: 10px;
-	}
+.headers {
+	width: 40%;
+}
 
-	.section-wrapper {
-		display: flex;
-		margin-top: 25px;
-	}
+.headers h2 {
+	color: #00978c;
+	font-family: Montserrat, sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom: 10px;
+}
 
-	.vision {
-		border-right: 1px solid;
-		height: 500px;
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 20px;
-		text-align: center;
-		justify-content: center;
-		background-image: url(../assets/homepage-images/vision.avif);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
-	}
+.headers p {
+	color: #000000;
+	font-family: poppins;
+	font-size: 40px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
 
-	.vision span {
-		color: orange;
-	}
+.overview-content {
+	width: 60%;
+}
 
-	.vision h1 {
-		font-size: 45px;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-	}
+.overview-content p {
+	color: #6c6f73b9;
+	line-height: 40px;
+}
 
-	.vision p {
-		font-size: 20px;
-		line-height: 2em;
-		color: #000000;
-	}
+.goals {
+	display: flex;
+	gap: 50px;
+	margin-top: 30px;
+}
 
-	.mission {
-		height: 500px;
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 20px;
-		text-align: center;
-		justify-content: center;
-		background-image: url(../assets/homepage-images/mission.jpg);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		position: relative;
-	}
+.goals h1 {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
 
-	.mission span {
-		color: orange;
-	}
+.goals p {
+	font-size: 20px;
+	line-height: 40px;
+	color: #ffffff8e;
+	font-family: Montserrat;
+	letter-spacing: 2px;
+}
 
-	.mission h1 {
-		font-size: 45px;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-	}
+.goals .mission,
+.goals .vision {
+	height: 90vh;
+	width: 50%;
+	border-radius: 40px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
 
-	.mission p {
-		font-size: 20px;
-		line-height: 2em;
-		color: #000000;
-	}
+.mission {
+	background-image: url(../assets/homepage-images/mission.jpg);
+}
 
-	.values h1 {
-		font-size: 50px;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		margin-top: 25px;
-		margin-bottom: 25px;
-		text-align: center;
-		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-	}
+.vision {
+	background-image: url(../assets/homepage-images/vision.avif);
+}
 
-	.values span {
-		color: orange;
-	}
+.mission-overlay,
+.vision-overlay {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	text-align: center;
+	justify-content: center;
+	text-transform: uppercase;
+	color: #00978c;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+	box-sizing: border-box;
+}
 
-	.cover .heading {
-		color: #ffffff;
-		background-color: #000000;
-		padding: 10px;
-		border-radius: 5px;
-		font-weight: bold;
-		text-transform: uppercase;
-		font-size: 25px;
-		letter-spacing: 1.5px;
-		line-height: 3.5em;
-	}
+.profile {
+	background-color: #131414;
+	border: 1px solid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
-	.cover li {
-		list-style: none;
-		line-height: 3.5em;
-		font-size: 20px;
-	}
+.profile p {
+	color: #00978c;
+	text-transform: uppercase;
+	margin-top: 100px;
+	letter-spacing: 3px;
+	font-size: 12px;
+}
 
-	.certifications h1 {
-		text-align: center;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-		color: orange;
-		font-weight: bolder;
-		font-size: 50px;
-		margin-top: 50px;
-		margin-bottom: 30px;
-		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-	}
+.profile h2 {
+	color: #ffffff;
+	text-transform: uppercase;
+	padding: 15px;
+	letter-spacing: 4px;
+	text-align: center;
+}
 
-	.images {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		gap: 10px;
-	}
+.profile-container {
+	width: 100%;
+	margin-top: 20px;
+	padding: 40px;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+}
 
-	.grid-item {
-		overflow: hidden;
-		padding: 5px;
-	}
+.executives {
+	width: 100%;
+	padding: 40px;
+	height: 100%;
+}
 
-	.grid-item img:hover {
-		transform: scale(1.1);
-		cursor: pointer;
-	}
+.line-text {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #00978c;
+	font-size: 12px;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
 
-	.grid-item img {
-		display: block;
-		height: 250px;
-		width: 100%;
-		transition: transform 0.3s ease;
-		border-radius: 5px;
-	}
+.line-text::before,
+.line-text::after {
+	content: '';
+	flex: 1;
+	border-bottom: 1px solid rgba(128, 128, 128, 0.501);
+	margin: 0 10px;
+}
 
-	@media only screen and (max-width: 600px) {
-		.images {
-			display: flex;
-			flex-direction: column;
-		}
+.executives .image-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	gap: 10px;
+	margin-top: 80px;
+}
 
-		.grid-item:hover {
-			transform: none;
-		}
-
-		.row {
-			display: flex;
-			flex-direction: column;
-		}
-
-		.wrapper {
-			width: 100%;
-			margin-top: -40px;
-		}
-
-		.wrapper h1 {
-			font-size: 26px;
-		}
-
-		.wrapper span {
-			font-weight: bold;
-		}
-
-		.wrapper p {
-			width: 100%;
-		}
-
-		.image-wrapper {
-			width: 100%;
-		}
-
-		.image-wrapper img {
-			width: 100%;
-			height: 250px;
-		}
-
-		.section-wrapper {
-			display: flex;
-			flex-direction: column;
-		}
-
-		.vision,
-		.mission {
-			width: 100%;
-			height: 100%;
-			margin-bottom: 10px;
-			border: 1px solid;
-			border-radius: 3px;
-		}
-
-		.vision p,
-		.mission p {
-			font-size: 14px;
-		}
-
-		.values {
-			border: 1px solid;
-			padding: 10px;
-			border-radius: 3px;
-		}
-
-		.values h1 {
-			font-size: 25px;
-			text-align: center;
-			width: 100%;
-			margin-bottom: 30px;
-		}
-
-		.cover .heading {
-			font-size: 20px;
-			text-decoration-line: overline;
-		}
-
-		.cover li {
-			list-style-type: none;
-			line-height: 1.5em;
-			margin-bottom: 20px;
-			font-size: 16px;
-		}
-
-		.certifications h1 {
-			background-color: #020e2a;
-			border-radius: 5px;
-			padding: 5px;
-		}
-	}
+.exec-images {
+	height: 400px;
+}
 </style>
