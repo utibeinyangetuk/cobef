@@ -1,7 +1,8 @@
 <script setup>
 import CurrentPage from '@/components/CurrentPage.vue';
+import Footer from '@/components/Footer.vue';
 import ProfileCard from '@/components/ProfileCard.vue';
-// import Footer from '@/components/Footer.vue';
+import TextCarousel from '@/components/TextCarousel.vue';
 </script>
 <template>
 	<CurrentPage />
@@ -79,15 +80,33 @@ import ProfileCard from '@/components/ProfileCard.vue';
 						class="exec-images" />
 				</div>
 			</section>
+			<div class="values">
+				<h3>our core values</h3>
+				<TextCarousel />
+			</div>
+			<div class="certifications">
+				<p>our certificatons</p>
+				<div class="certifications-wrapper">
+					<img src="../assets/certificates/ISO.jpg" alt="certification" />
+					<img src="../assets/certificates/Mancap.jpg" alt="certification" />
+					<img src="../assets/certificates/MemCert.jpg" alt="certification" />
+					<img src="../assets/certificates/MemComence.jpg" alt="certification" />
+					<img src="../assets/certificates/ISO.jpg" alt="certification" />
+					<img src="../assets/certificates/ISO.jpg" alt="certification" />
+					<img src="../assets/certificates/ISO.jpg" alt="certification" />
+					<img src="../assets/certificates/ISO.jpg" alt="certification" />
+				</div>
+			</div>
 		</div>
 	</div>
-	<!-- <Footer /> -->
+	<Footer />
 </template>
 <style scoped>
 .main-container {
 	width: 100vw;
 	background-color: #ffffff;
 	padding: 50px;
+	border-radius: 40px;
 }
 
 .video-wrapper {
@@ -301,5 +320,46 @@ video {
 
 .exec-images {
 	height: 400px;
+}
+
+.profile .values {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.profile .values h3 {
+	color: #00978c;
+	font-weight: 500;
+	font-size: 12px;
+	margin-top: 50px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.profile .certifications {
+	width: 100%;
+	height: 100%;
+}
+
+.profile .certifications p {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.certifications-wrapper {
+	width: 100%;
+	padding: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+
+.certifications-wrapper img {
+	width: 30vw;
+	border-radius: 40px;
 }
 </style>
