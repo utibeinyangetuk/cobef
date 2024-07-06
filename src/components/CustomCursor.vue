@@ -13,8 +13,8 @@ const cursorFollower = ref(null);
 
 const onMouseMove = (e) => {
 	// Calculate the position based on the margin adjustments
-	const x = e.clientX - 19; // Adjust based on your margin-left value
-	const y = e.clientY - 19; // Adjust based on your margin-top value
+	const x = e.clientX - 7.47; // Adjust based on your margin-left value
+	const y = e.clientY - 7; // Adjust based on your margin-top value
 
 	cursor.value.style.transform = `translate3d(${x}px, ${y}px, 0)`;
 	cursorFollower.value.style.transform = `translate3d(${x}px, ${y}px, 0)`;
