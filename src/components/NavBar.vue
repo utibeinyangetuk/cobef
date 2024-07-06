@@ -114,14 +114,13 @@ div {
 }
 
 .hamburger-menu.open {
-	border: 1px solid gray;
+	border: 1px solid rgba(128, 128, 128, 0.792);
 	padding: 10px;
 	border-radius: 5px;
 }
 
 .hamburger-menu.open:hover {
 	border: 1px solid #fff;
-	border-radius: 50%;
 }
 
 .hamburger-menu.open span {
@@ -129,11 +128,11 @@ div {
 }
 
 .slide-fade-enter-active {
-	animation: slide-in 0.5s ease forwards;
+	animation: slide-in 1s ease forwards;
 }
 
 .slide-fade-leave-active {
-	animation: slide-out 0.5s ease forwards;
+	animation: slide-out 1s ease forwards;
 }
 
 @keyframes slide-in {
