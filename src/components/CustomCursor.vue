@@ -1,7 +1,7 @@
 <template>
 	<div class="cursor-container">
-		<div ref="cursor" class="custom-cursor"></div>
-		<div ref="cursorFollower" class="custom-cursor-follower"></div>
+		<div ref="cursor" class="custom-cursor" />
+		<div ref="cursorFollower" class="custom-cursor-follower" />
 	</div>
 </template>
 
@@ -41,8 +41,8 @@ onUnmounted(() => {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 10px;
-	height: 10px;
+	width: 5px;
+	height: 5px;
 	border-radius: 50%;
 	pointer-events: none;
 	z-index: 10000;
@@ -52,13 +52,13 @@ onUnmounted(() => {
 .custom-cursor {
 	background-color: orange;
 	mix-blend-mode: difference;
-	margin-left: 19px;
-	margin-top: 19px;
+	margin-left: 7.47px;
+	margin-top: 7px;
 }
 
 .custom-cursor-follower {
-	width: 50px;
-	height: 50px;
+	width: 20px;
+	height: 20px;
 	border: 3px solid orange;
 	mix-blend-mode: difference;
 }
