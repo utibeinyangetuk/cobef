@@ -95,6 +95,7 @@ import TextCarousel from '@/components/TextCarousel.vue';
 					<img src="../assets/certificates/ISO.jpg" alt="certification" />
 					<img src="../assets/certificates/ISO.jpg" alt="certification" />
 					<img src="../assets/certificates/ISO.jpg" alt="certification" />
+					<img src="../assets/certificates/ISO.jpg" alt="certification" />
 				</div>
 			</div>
 		</div>
@@ -253,8 +254,7 @@ video {
 }
 
 .profile {
-	background-color: #131414;
-	border: 1px solid;
+	background-color: #1D1D1D;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -360,6 +360,6 @@ video {
 
 .certifications-wrapper img {
 	width: 30vw;
-	border-radius: 40px;
+	border:3PX solid #FFF;
 }
 </style>
