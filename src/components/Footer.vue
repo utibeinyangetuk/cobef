@@ -1,8 +1,63 @@
+<script setup>
+import { ref } from "vue";
+const currentYear = ref(new Date().getFullYear());
+</script>
+
 <template>
 	<footer>
-		<div class="main-wrapper">
+		<div class="main-container">
+			<div class="top-wrapper">
+				<h2>Cobef international limited</h2>
+			<img src="../assets/footer/ISO.png"/>
+			</div>
+			<div class="section-wrapper">
+				<div class="year">
+					<p>year founded</p>
+					<h1>2001</h1>
+				</div>
+				<div class="location">
+					<p>Location</p>
+					<h1>Port Harcourt, Nigeria</h1>
+				</div>
+			</div>
+		</div>
+		<div class="secondary-container">
+			<div class="get-in-touch">
+				<p>Get in touch
+				<ul>
+					<li>
+						<i class="uil uil-envelope"><a href="mailto:info@cobefinternationalltd.com">
+								<span> info@cobefinternationalltd.com</span>
+							</a></i>
+					</li>
+					<li>
+						<i class="uil uil-phone">
+							<a href="tel:+1234567890">
+								+(234) 567-890-9123
+							</a></i>
+					</li>
+					<li></li>
+				</ul>
+				</p>
+			</div>
+			<div class="connect">
+				<p>Connect</p>
+				<ul>
+					<li>Linkedin</li>
+					<li>Whatsapp</li>
+					<li>facebook</li>
+				</ul>
+			</div>
+			<div class="learn-more">
+				<p>Company</p>
+				<ul>
+					<li><router-link to="/about">About us</router-link></li>
+					<li><router-link to="/products">Products</router-link></li>
+					<li><router-link to="/projects">Projects</router-link></li>
+				</ul>
+			</div>
 			<div class="sitemap">
-				<h1>sitemap</h1>
+				<p>Site Map</p>
 				<ul>
 					<li><router-link to="/">Home</router-link></li>
 					<li><router-link to="/about">About us</router-link></li>
@@ -10,156 +65,134 @@
 					<li><router-link to="/projects">Projects</router-link></li>
 					<li><router-link to="/contact">Contact us</router-link></li>
 				</ul>
-			</div>
-			<div class="contact">
-				<h1>How to reach us?</h1>
-				<div class="wrapper">
-					<i class="uil uil-location-point">
-						<a href="https://www.google.com/maps/place/Cobef+International+Limited/@4.8610877,7.0891647,17.42z/data=!4m9!1m2!2m1!1sKm+17+Port+Harcourt%2FAba+Express+Way+P.+O.+Box,+2769+Port+Harcourt!3m5!1s0x1069d2ad21ae86bd:0x46fb3e4446572965!8m2!3d4.860476!4d7.0880525!16s%2Fg%2F11hzhc6m0m?entry=ttu"
-							target="_blank">Km 17 Port Harcourt/Aba Express Way P. O. Box, 2769 Port Harcourt</a>
-					</i>
-					<i class="uil uil-envelope"><a href="mailto:info@cobefinternationalltd.com">
-							<span> info@cobefinternationalltd.com</span>
-						</a></i>
-					<i class="uil uil-phone">
-						<a href="tel:+1234567890">
-							+(234) 567-890-9123
-						</a>
-					</i>
-				</div>
-			</div>
-			<div class="socials">
-				<h1>Follow us on our socials</h1>
-				<div class="icons">
-					<i class="uil uil-linkedin-alt"><span> Linkedin</span></i>
-					<i class="uil uil-whatsapp"><span> Whatsapp</span></i>
-				</div>
+
 			</div>
 		</div>
-
 		<div class="copyright">
-			<p>Copyright © 2024 Cobef International Ltd.</p>
+			<p>&copy; {{ currentYear }} COBEF. All rights reserved.</p>
 		</div>
 	</footer>
 </template>
 
 <style scoped>
 footer {
-	border: 1px solid rgba(128, 128, 128, 0.211);
+	padding: 0px 20px 20px 20px;
+	background-color: #1D1D1D;
 }
 
-.main-wrapper {
+.main-container {
+	background: linear-gradient(90deg, #001009, #004d40, #01458560);
+	background-size: 400% 400%;
+	animation: gradientAnimation 15s ease infinite;
+	border-top: 3px solid #1D1D1D;
+	height: 400px;
+	border-radius: 0px 0px 10px 10px;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+	padding: 30px;
+}
+
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.top-wrapper{
 	display: flex;
-	justify-content: space-around;
-	padding: 8px;
-	background-color: whitesmoke;
-	line-height: 40px;
+	justify-content: space-between;
+	height: 130px;
 }
-
-.main-wrapper h1 {
-	color: orange;
-	margin-top: 5px;
-	margin-bottom:0px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: bold;
-	font-size: 18px;
-}
-
-.sitemap ul li a {
-	color: #000000;
-	line-height: 32px;
-	letter-spacing: 1.5px;
-}
-
-.sitemap ul li a:hover {
-	border-radius: 3px;
-	border: 1px solid #000;
-	padding: 3px;
-	background-color: #000;
-	color: #fff;
-}
-
-.wrapper {
-	display: flex;
-	flex-direction: column;
-}
-
-.wrapper i {
-	font-size: 26px;
-}
-
-.wrapper a {
-	line-height: 40px;
-	color: #000000;
-	font-style: normal;
-	font-size: 14px;
-	margin-left: 4px;
-}
-
-.wrapper a:hover {
-	text-decoration: underline;
-}
-
-.icons {
-	line-height: 35px;
-	display: flex;
-	flex-direction: column;
-}
-
-.icons i {
-	font-size: 20px;
-}
-
-.icons span {
-	font-style: normal;
+.top-wrapper h2{
+		color: #ffffff;
+	text-transform: capitalize;
 	font-size: 15px;
-	letter-spacing: 1.5px;
-	color: #000000;
+	letter-spacing: 2px;
+	font-weight: 500;
+	border-bottom: 1px solid #ffffff4b;
+	width: 30%;
+	height: fit-content;
+}
+.top-wrapper img{
+	width:50%;
 }
 
-.copyright {
+.section-wrapper {
+	color: #ffffff;
+	margin-top: 80px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.section-wrapper .year {
+	border-top: 1px solid #ffffff4b;
+	display: flex;
+}
+
+.section-wrapper .location {
+	border-top: 1px solid #ffffff4b;
+	display: flex;
+}
+
+.section-wrapper p {
+	font-size: 13px;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+	height: fit-content;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid rgba(255, 255, 255, 0.173);
+	box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.5);
+	margin-top:2px;
+}
+
+.section-wrapper h1 {
+	font-size: 60px;
+	letter-spacing: 2px;
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+.copyright P {
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 13px;
 	text-align: center;
-	font-size: 14px;
-	letter-spacing: 1px;
-	background-color: whitesmoke;
 }
 
-@media only screen and (max-width: 600px) {
-	footer {
-		border: none;
-	}
+.secondary-container {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: first baseline;
+	color: #ffffff;
+}
 
-	.sitemap,
-	.contact,
-	.socials {
-		border: 1px solid;
-		border-radius: 5px;
-		padding: 10px;
-		margin: 0%;
-		margin-bottom: 15px;
-	}
+.secondary-container p {
+	color: #ffffff;
+	letter-spacing: 2px;
+	margin-bottom: 5px;
+	font-size: 13px;
+}
 
-	.main-wrapper {
-		display: flex;
-		flex-direction: column;
-	}
+.secondary-container li {
+	color: gray;
+	margin-bottom: 10px;
+}
 
-	.copyright {
-		padding: 10px;
-	}
+.secondary-container li a {
+	color: gray;
+	font-style: normal;
+	letter-spacing: 2px;
+}
 
-	.wrapper i {
-		font-size: 20px;
-		line-height: 35px;
-	}
-
-	.wrapper a {
-		font-size: small;
-	}
-
-	.copyright {
-		font-size: 12px;
-	}
+.get-in-touch {
+	border: 1px solid;
 }
 </style>
