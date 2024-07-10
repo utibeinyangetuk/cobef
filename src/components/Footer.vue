@@ -147,7 +147,7 @@ footer {
 .image-container h2 {
 	color: #ffffff;
 	text-transform: capitalize;
-	font-size: 27px;
+	font-size: 1.9vw;
 	letter-spacing: 1px;
 	font-weight: bold;
 	text-shadow: 2px 2px 5px rgba(0, 0.5, 0.5, 0.5);
