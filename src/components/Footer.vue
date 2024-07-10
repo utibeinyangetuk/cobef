@@ -7,8 +7,19 @@ const currentYear = ref(new Date().getFullYear());
 	<footer>
 		<div class="main-container">
 			<div class="top-wrapper">
-				<h2>Cobef international limited</h2>
-			<img src="../assets/footer/ISO.png"/>
+				<section class="description">
+					<div class="image-container">
+						<img src="../assets/COBEF_LOGO.png" />
+						<h2>Cobef international limited</h2>
+					</div>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Exercitationem aperiam a ullam labore provident! Aperiam non,
+						a sed dolorum necessitatibus, iste, ea dolorem explicabo quasi
+						vitae facere excepturi commodi iusto!
+					</p>
+				</section>
+				<img src="../assets/footer/ISO.png" class="iso-image" />
 			</div>
 			<div class="section-wrapper">
 				<div class="year">
@@ -23,49 +34,47 @@ const currentYear = ref(new Date().getFullYear());
 		</div>
 		<div class="secondary-container">
 			<div class="get-in-touch">
-				<p>Get in touch
+				<p>Get in touch</p>
 				<ul>
 					<li>
-						<i class="uil uil-envelope"><a href="mailto:info@cobefinternationalltd.com">
+						<i class="uil uil-envelope">
+							<a href="mailto:info@cobefinternationalltd.com">
 								<span> info@cobefinternationalltd.com</span>
-							</a></i>
+							</a>
+						</i>
 					</li>
 					<li>
 						<i class="uil uil-phone">
-							<a href="tel:+1234567890">
-								+(234) 567-890-9123
-							</a></i>
+							<a href="tel:+1234567890"> +(234) 567-890-9123 </a></i>
 					</li>
 					<li></li>
 				</ul>
-				</p>
 			</div>
 			<div class="connect">
 				<p>Connect</p>
 				<ul>
-					<li>Linkedin</li>
-					<li>Whatsapp</li>
-					<li>facebook</li>
+					<li>> Linkedin</li>
+					<li>> Whatsapp</li>
+					<li>> facebook</li>
 				</ul>
 			</div>
 			<div class="learn-more">
 				<p>Company</p>
 				<ul>
-					<li><router-link to="/about">About us</router-link></li>
-					<li><router-link to="/products">Products</router-link></li>
-					<li><router-link to="/projects">Projects</router-link></li>
+					<li><router-link to="/about">> About us</router-link></li>
+					<li><router-link to="/products">> Products</router-link></li>
+					<li><router-link to="/projects">> Projects</router-link></li>
 				</ul>
 			</div>
 			<div class="sitemap">
 				<p>Site Map</p>
 				<ul>
-					<li><router-link to="/">Home</router-link></li>
-					<li><router-link to="/about">About us</router-link></li>
-					<li><router-link to="/products">Products</router-link></li>
-					<li><router-link to="/projects">Projects</router-link></li>
-					<li><router-link to="/contact">Contact us</router-link></li>
+					<li><router-link to="/">> Home</router-link></li>
+					<li><router-link to="/about">> About us</router-link></li>
+					<li><router-link to="/products">> Products</router-link></li>
+					<li><router-link to="/projects">> Projects</router-link></li>
+					<li><router-link to="/contact">> Contact us</router-link></li>
 				</ul>
-
 			</div>
 		</div>
 		<div class="copyright">
@@ -77,14 +86,14 @@ const currentYear = ref(new Date().getFullYear());
 <style scoped>
 footer {
 	padding: 0px 20px 20px 20px;
-	background-color: #1D1D1D;
+	background-color: #1d1d1d;
 }
 
 .main-container {
 	background: linear-gradient(90deg, #001009, #004d40, #01458560);
 	background-size: 400% 400%;
 	animation: gradientAnimation 15s ease infinite;
-	border-top: 3px solid #1D1D1D;
+	border-top: 3px solid #1d1d1d;
 	height: 400px;
 	border-radius: 0px 0px 10px 10px;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
@@ -104,23 +113,50 @@ footer {
 		background-position: 0% 50%;
 	}
 }
-.top-wrapper{
+
+.top-wrapper {
 	display: flex;
 	justify-content: space-between;
-	height: 130px;
-}
-.top-wrapper h2{
-		color: #ffffff;
-	text-transform: capitalize;
-	font-size: 15px;
-	letter-spacing: 2px;
-	font-weight: 500;
-	border-bottom: 1px solid #ffffff4b;
-	width: 30%;
 	height: fit-content;
 }
-.top-wrapper img{
-	width:50%;
+
+.description {
+	width: 40%;
+	height: 100%;
+}
+
+.description p {
+	color: gray;
+	padding: 0px 0px 0px 10px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 25px;
+}
+
+.image-container {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.image-container img {
+	height: 80px;
+	width: 20%;
+}
+
+.image-container h2 {
+	color: #ffffff;
+	text-transform: capitalize;
+	font-size: 27px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-shadow: 2px 2px 5px rgba(0, 0.5, 0.5, 0.5);
+	width: fit-content;
+}
+
+.top-wrapper .iso-image {
+	height: 130px;
+	width: 40%;
 }
 
 .section-wrapper {
@@ -149,7 +185,7 @@ footer {
 	border-radius: 5px;
 	border: 1px solid rgba(255, 255, 255, 0.173);
 	box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.5);
-	margin-top:2px;
+	margin-top: 2px;
 }
 
 .section-wrapper h1 {
@@ -162,8 +198,9 @@ footer {
 .copyright P {
 	color: #ffffff;
 	font-weight: normal;
-	font-size: 13px;
+	font-size: 11px;
 	text-align: center;
+	letter-spacing: 1px;
 }
 
 .secondary-container {
@@ -177,22 +214,20 @@ footer {
 .secondary-container p {
 	color: #ffffff;
 	letter-spacing: 2px;
-	margin-bottom: 5px;
-	font-size: 13px;
-}
-
-.secondary-container li {
-	color: gray;
 	margin-bottom: 10px;
+	font-size: 20px;
 }
 
-.secondary-container li a {
+.secondary-container li a:hover, .secondary-container li:hover{
+	color: teal;
+}
+
+.secondary-container li a, .secondary-container li {
 	color: gray;
 	font-style: normal;
-	letter-spacing: 2px;
+	letter-spacing: 1.5px;
+	margin-bottom: 10px;
+	font-size: 12px;
 }
 
-.get-in-touch {
-	border: 1px solid;
-}
 </style>
