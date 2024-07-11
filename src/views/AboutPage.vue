@@ -105,7 +105,7 @@ import TextCarousel from '@/components/TextCarousel.vue';
 <style scoped>
 .main-container {
 	width: 100vw;
-	background-color: #ffffff;
+	background-color: #ffffe3;
 	padding: 50px;
 	border-radius: 40px;
 }
@@ -134,12 +134,12 @@ video {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	color: #ffffff;
+	color: #ffffe3;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-family: Montserrat;
+	font-family: poppins;
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -170,7 +170,6 @@ video {
 
 .headers h2 {
 	color: #00978c;
-	font-family: Montserrat, sans-serif;
 	font-size: 11px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -211,8 +210,7 @@ video {
 .goals p {
 	font-size: 20px;
 	line-height: 40px;
-	color: #ffffff8e;
-	font-family: Montserrat;
+	color: #ffffe38e;
 	letter-spacing: 2px;
 }
 
@@ -254,7 +252,7 @@ video {
 }
 
 .profile {
-	background-color: #1D1D1D;
+	background-color: #10100E;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -269,7 +267,7 @@ video {
 }
 
 .profile h2 {
-	color: #ffffff;
+	color: #ffffe3;
 	text-transform: uppercase;
 	padding: 15px;
 	letter-spacing: 4px;
@@ -284,6 +282,7 @@ video {
 	gap: 20px;
 	align-items: center;
 	justify-content: center;
+	font-family: Satoshi;
 }
 
 .executives {
@@ -326,7 +325,7 @@ video {
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	background-color: #ffffff;
+	background-color: #ffffe3;
 }
 
 .profile .values h3 {
