@@ -93,9 +93,9 @@ footer {
 	background: linear-gradient(90deg, #0e0d0d, #1f1f0087, rgb(2, 21, 21));
 	background-size: 400% 400%;
 	animation: gradientAnimation 15s ease infinite;
-	border-top: 3px solid #10100E;
+	border: 1px solid #ffffe32b;
 	height: 400px;
-	border-radius: 0px 0px 10px 10px;
+	border-radius:10px;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 	padding: 30px;
 }
