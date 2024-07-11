@@ -1,5 +1,5 @@
 <script setup>
-// import Footer from '@/components/Footer.vue';
+import Footer from '@/components/Footer.vue';
 import Navbar from "../components/NavBar.vue";
 </script>
 <template>
@@ -34,6 +34,110 @@ import Navbar from "../components/NavBar.vue";
 				</div>
 				<div class="product">
 					<div class="product-description">
+						<h1>LAPETA</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Soluta, nesciunt sed vero sequi molestias quos quod
+							expedita beatae perspiciatis, blanditiis ratione aliquid
+							dignissimos dolores corrupti assumenda earum eum nihil.
+							Est.
+						</p>
+					</div>
+					<img src="../assets/materials/LAPETA.jpg" />
+				</div>
+				<div class="product">
+					<img src="../assets/materials/Tank.jpeg" />
+					<div class="product-description">
+						<h1>TANKS</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Soluta, nesciunt sed vero sequi molestias quos quod
+							expedita beatae perspiciatis, blanditiis ratione aliquid
+							dignissimos dolores corrupti assumenda earum eum nihil.
+							Est.
+						</p>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product-description">
+						<h1>PRESSURE PIPES</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Soluta, nesciunt sed vero sequi molestias quos quod
+							expedita beatae perspiciatis, blanditiis ratione aliquid
+							dignissimos dolores corrupti assumenda earum eum nihil.
+							Est.
+						</p>
+					</div>
+					<img src="../assets/materials/pressure.jpg" />
+				</div>
+				<div class="product">
+					<img src="../assets/materials/pipes.jpg" />
+					<div class="product-description">
+						<h1>HDPE PIPES</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Soluta, nesciunt sed vero sequi molestias quos quod
+							expedita beatae perspiciatis, blanditiis ratione aliquid
+							dignissimos dolores corrupti assumenda earum eum nihil.
+							Est.
+						</p>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product-description">
+						<h1>HDPE PIPES</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Soluta, nesciunt sed vero sequi molestias quos quod
+							expedita beatae perspiciatis, blanditiis ratione aliquid
+							dignissimos dolores corrupti assumenda earum eum nihil.
+							Est.
+						</p>
+					</div>
+					<img src="../assets/materials/HDPE-Pipe.jpg" />
+				</div>
+				<div class="product">
+					<img src="../assets/materials/HDPE-Pipe.jpg" />
+					<div class="product-description">
+						<h1>HDPE PIPES</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Soluta, nesciunt sed vero sequi molestias quos quod
+							expedita beatae perspiciatis, blanditiis ratione aliquid
+							dignissimos dolores corrupti assumenda earum eum nihil.
+							Est.
+						</p>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product-description">
+						<h1>HDPE PIPES</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Soluta, nesciunt sed vero sequi molestias quos quod
+							expedita beatae perspiciatis, blanditiis ratione aliquid
+							dignissimos dolores corrupti assumenda earum eum nihil.
+							Est.
+						</p>
+					</div>
+					<img src="../assets/materials/HDPE-Pipe.jpg" />
+				</div>
+				<div class="product">
+					<img src="../assets/materials/HDPE-Pipe.jpg" />
+					<div class="product-description">
+						<h1>HDPE PIPES</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Soluta, nesciunt sed vero sequi molestias quos quod
+							expedita beatae perspiciatis, blanditiis ratione aliquid
+							dignissimos dolores corrupti assumenda earum eum nihil.
+							Est.
+						</p>
+					</div>
+				</div>
+				<div class="product">
+					<div class="product-description">
 						<h1>HDPE PIPES</h1>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -48,7 +152,7 @@ import Navbar from "../components/NavBar.vue";
 			</div>
 		</div>
 	</div>
-	<!-- <Footer /> -->
+	<Footer />
 </template>
 <style scoped>
 .container {
@@ -78,9 +182,11 @@ import Navbar from "../components/NavBar.vue";
 	letter-spacing: 1px;
 	line-height: 1.6em;
 }
+
 .catalog {
 	border-top: 1px solid #535349;
 }
+
 .catalog p {
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -90,24 +196,28 @@ import Navbar from "../components/NavBar.vue";
 	font-weight: 700;
 	color: #ffffe3;
 }
-.product-container {
-}
+
 .product-container .product {
 	display: flex;
 	gap: 30px;
 	margin-top: 70px;
 	border-bottom: 1px solid #535349;
+	align-items: center
 }
+
 .product-container .product img {
 	width: 100%;
+	height: 80vh;
 	margin-bottom: 70px;
 	border-radius: 10px;
 }
+
 .product-container .product-description h1 {
 	letter-spacing: 2px;
 	font-size: 70px;
 	color: #ffffe3;
 }
+
 .product-container .product-description p {
 	width: 80%;
 	line-height: 50px;
