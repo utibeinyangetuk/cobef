@@ -65,7 +65,7 @@ const links = [
 	{ name: 'gallery', path: '/#' },
 	{ name: 'services', path: '/#' },
 	{ name: 'newsletter', path: '/#' },
-	{ name: 'random', path: '/#' },
+	{ name: 'careers', path: '/#' },
 ];
 
 const formatNumber = (number) => {
@@ -75,7 +75,7 @@ const formatNumber = (number) => {
 
 <style scoped>
 div {
-	background-color: #131414;
+	background-color: #10100E;
 }
 
 .hamburger-menu {
@@ -95,7 +95,7 @@ div {
 	width: 35px;
 	height: 6px;
 	margin-bottom: 5px;
-	background-color: #fff;
+	background-color: #ffffe3;
 	border: 1px solid;
 	border-radius: 5px;
 	transition: transform 0.6s ease, background-color 0.3s ease;
@@ -124,7 +124,7 @@ div {
 }
 
 .hamburger-menu.open span {
-	background-color: #ffffff;
+	background-color: #ffffe3;
 }
 
 .slide-fade-enter-active {
@@ -202,7 +202,7 @@ div {
 
 .fullscreen-menu nav ul li .link-number {
 	margin-right: 10px;
-	color: #434343c1;
+	color: #535349;
 	transition: color 0.3s;
 	font-size: 12px;
 }
@@ -210,7 +210,7 @@ div {
 .fullscreen-menu nav ul li a {
 	text-decoration: none;
 	transition: color 0.3s;
-	color: #ffffffe2;
+	color: #ffffe3;
 }
 
 .fullscreen-menu nav ul li:hover .link-number,
@@ -223,7 +223,7 @@ div {
 }
 
 .menu-footer {
-	border-top: 1px solid #434343c1;
+	border-top: 1px solid #535349;
 	width: 94%;
 	display: flex;
 	justify-content: space-between;
@@ -234,7 +234,7 @@ div {
 .menu-footer h1 {
 	font-size: 12px;
 	letter-spacing: 2px;
-	color: #434343c1;
+	color: #535349;
 	text-transform: uppercase;
 }
 
@@ -249,7 +249,7 @@ div {
 .social-icons li {
 	padding: 10px;
 	font-size: 25px;
-	color: #434343c1;
+	color: #535349;
 }
 
 .social-icons li:hover {
