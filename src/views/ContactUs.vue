@@ -1,10 +1,10 @@
 <script setup>
-import CurrentPage from '@/components/CurrentPage.vue';
 import Footer from '@/components/Footer.vue';
+import Navbar from '@/components/NavBar.vue'
 </script>
 
 <template>
-	<currentPage />
+	<Navbar/>
 	<div class="container">
 		<div class="header">
 			<p>Contact us</p>
@@ -44,7 +44,7 @@ import Footer from '@/components/Footer.vue';
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-size: 14px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	font-weight: 700;
 	color:#ffffe3
 }
