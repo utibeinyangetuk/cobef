@@ -13,10 +13,12 @@ const currentYear = ref(new Date().getFullYear());
 						<h2>Cobef international limited</h2>
 					</div>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Exercitationem aperiam a ullam labore provident! Aperiam non,
-						a sed dolorum necessitatibus, iste, ea dolorem explicabo quasi
-						vitae facere excepturi commodi iusto!
+						COBEF INTERNATIONAL LIMITED  was established in the year 2002 with an aim
+						to manufacture quality PVC piping systems and products and extending into
+						piping and construction projects. A brain-child of Mr Pawan Tekchandani and
+						Chief Christian Ohakwe, both possessing a vast amount of experience in the
+						piping business, the company has been successfully catering to the discerning tastes of
+						customers of various segments through its brand Tigre.
 					</p>
 				</section>
 				<img src="../assets/footer/ISO.png" class="iso-image" />
@@ -24,7 +26,7 @@ const currentYear = ref(new Date().getFullYear());
 			<div class="section-wrapper">
 				<div class="year">
 					<p>year founded</p>
-					<h1>2001</h1>
+					<h1>2002</h1>
 				</div>
 				<div class="location">
 					<p>Location</p>
@@ -90,11 +92,10 @@ footer {
 }
 
 .main-container {
-	background: linear-gradient(90deg, #0e0d0d, #1f1f0087, rgb(2, 21, 21));
+	background: linear-gradient(90deg, #000000, #1d1d1d, rgb(2, 21, 21));
 	background-size: 400% 400%;
 	animation: gradientAnimation 15s ease infinite;
 	border: 1px solid #ffffe32b;
-	height: 400px;
 	border-radius:10px;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 	padding: 30px;
