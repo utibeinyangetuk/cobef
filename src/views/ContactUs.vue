@@ -1,10 +1,10 @@
 <script setup>
 import Footer from '@/components/Footer.vue';
-import Navbar from '@/components/NavBar.vue'
+import Navmenu from '@/components/NavMenu.vue';
 </script>
 
 <template>
-	<Navbar/>
+	<Navmenu/>
 	<div class="container">
 		<div class="header">
 			<p>Contact us</p>
