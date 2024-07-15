@@ -1,222 +1,164 @@
+<script setup>
+import image4 from '@/assets/projects/four.jpg';
+import image1 from '@/assets/projects/one.jpg';
+import image3 from '@/assets/projects/three.jpg';
+import image2 from '@/assets/projects/two.jpg';
+import ImageCarousel from '@/components/ImageCarousel.vue';
+import NavMenu from '@/components/NavMenu.vue';
+const trips = [image1, image2, image3, image4];
+</script>
 <template>
-	<currentPage />
-	<div class="wrapper">
-		<p>
-			COBEF INTERNATIONAL LIMITED retains quality delivery and clients satisfaction as its driving force. Based on ISO certification, we are guided
-			by the highest safety and quality standards to ensure that our clients receive the highest levels of satisfaction in addition to the
-			commercial experience necessary to address technically challenging projects.
-		</p>
-		<div class="projects">
-			<h2>projects we have completed</h2>
-			<ul>
-				<li>REHABILITATION OF ALESA AGBONCHIA AND ALESA WATER WORKS, IN OGONI LAND</li>
-				<li>SUPPLY AND PIPE LAYING IN OBAGI COMMUNITY, RIVERS STATE</li>
-				<li>INSTALLATION OF BOREHOLE AND WATER TREATMENT PLANT</li>
-				<li>MAINTENANCE OF OBUNAGHA MEGA WATER PROJECT AND TRUNK LINES IN GBARAIN KINGDOM</li>
-				<li>RETICULATION OF ELEME WATER SUPPLY SCHEME</li>
-				<li>supply and pipe laying of Obaji Community in Ogba/Egbema/Ndoni</li>
-			</ul>
+	<NavMenu />
+	<div class="container">
+		<div class="header">
+			<p>Our Projects</p>
+			<h2>
+				COBEF INTERNATIONAL LIMITED retains quality delivery and clients satisfaction as its driving force. Based on
+				ISO certification, we are guided by the highest safety and quality standards to
+				ensure that our clients receive the highest levels of satisfaction in addition to the commercial experience
+				necessary to address technically challenging projects.
+			</h2>
 		</div>
-		<div class="gallery">
-			<h2>Gallery</h2>
-			<div class="carousel">
-				<carousel :images="ProjectImages" />
+		<p class="portfolio">Our Portfolio</p>
+		<div class="content">
+			<div class="works-wrapper">
+				<div class="works">
+					<h2>Jan 29, 2022</h2>
+					<h1>REHABILITATION OF ALESA AGBONCHIA AND ALESA WATER WORKS IN OGONI LAND</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus aperiam corrupti a
+						necessitatibus accusantium porro! Voluptatum libero rem eos officia porro ex, nesciunt illum hic eum
+						debitis exercitationem voluptates.</p>
+				</div>
+				<div class="works">
+					<h2>Jan 29, 2022</h2>
+					<h1>SUPPLY AND PIPE LAYING IN OBAGI COMMUNITY, RIVERS STATE</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus aperiam corrupti a
+						necessitatibus accusantium porro! Voluptatum libero rem eos officia porro ex, nesciunt illum hic eum
+						debitis exercitationem voluptates.</p>
+				</div>
+				<div class="works">
+					<h2>Jan 29, 2022</h2>
+					<h1>INSTALLATION OF BOREHOLE AND WATER TREATMENT PLANT</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus aperiam corrupti a
+						necessitatibus accusantium porro! Voluptatum libero rem eos officia porro ex, nesciunt illum hic eum
+						debitis exercitationem voluptates.</p>
+				</div>
+				<div class="works">
+					<h2>Jan 29, 2022</h2>
+					<h1>MAINTENANCE OF OBUNAGHA MEGA WATER PROJECT AND TRUNK LINES IN GBARAIN KINGDOM</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus aperiam corrupti a
+						necessitatibus accusantium porro! Voluptatum libero rem eos officia porro ex, nesciunt illum hic eum
+						debitis exercitationem voluptates.</p>
+				</div>
+				<div class="works">
+					<h2>Jan 29, 2022</h2>
+					<h1>RETICULATION OF ELEME WATER SUPPLY SCHEME</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus aperiam corrupti a
+						necessitatibus accusantium porro! Voluptatum libero rem eos officia porro ex, nesciunt illum hic eum
+						debitis exercitationem voluptates.</p>
+				</div>
+				<div class="works">
+					<h2>Jan 29, 2022</h2>
+					<h1>supply and pipe laying of Obaji Community in Ogba/Egbema/Ndoni</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus aperiam corrupti a
+						necessitatibus accusantium porro! Voluptatum libero rem eos officia porro ex, nesciunt illum hic eum
+						debitis exercitationem voluptates.</p>
+				</div>
 			</div>
 		</div>
-		<div class="clients">
-			<h2>Our clients</h2>
-			<div class="client-container">
-				<div class="client-item">
-					<img src="../assets/client logos/#" alt="company logo" />
-					<li>Hydrocarbon Pollution Remediation Project (HYPREP)</li>
-				</div>
-				<div class="client-item">
-					<img src="../assets/client logos/darycet.webp" alt="company logo" />
-					<li>Darycent International</li>
-				</div>
-				<div class="client-item">
-					<img src="../assets/client logos/briscoeGroup.jpg" alt="company logo" />
-					<li>Briscoe Group Limited</li>
-				</div>
-				<div class="client-item">
-					<img src="../assets/client logos/#" alt="company logo" />
-					<li>Ministry of Water and Rural Development Rivers State</li>
-				</div>
-				<div class="client-item">
-					<img src="../assets/client logos/shell.jpg" alt="company logo" />
-					<li>Shell Petroleum Development Company</li>
-				</div>
-				<div class="client-item">
-					<img src="../assets/client logos/julius berger.jpg" alt="company logo" />
-					<li>Julius Berger</li>
-				</div>
-				<div class="client-item">
-					<img src="../assets/client logos/kinetic.png" alt="company logo" />
-					<li>Kinetic Electromechanic Nigeria Limited</li>
-				</div>
-				<div class="client-item">
-					<img src="../assets/client logos/#" alt="company logo" />
-					<li>Top Engineering International</li>
-				</div>
-				<div class="client-item">
-					<img src="../assets/client logos/#" alt="company logo" />
-					<li>Felian Ventures</li>
-				</div>
-				<div class="client-item">
-					<img src="../assets/client logos/#" alt="company logo" />
-					<li>Cylon Nigeria Limited</li>
-				</div>
-				<div class="client-item">
-					<img src="../assets/client logos/#" alt="company logo" />
-					<li>Altruist Ideals</li>
-				</div>
-				<div class="client-item">
-					<img src="../assets/client logos/#" alt="company logo" />
-					<li>Alcon Nigeria Limited</li>
-				</div>
-			</div>
+		<p class="portfolio">Visuals from our trips</p>
+		<div class="carousel">
+			<ImageCarousel :images="trips" class="image-carousel" />
 		</div>
 	</div>
-	<Footer />
 </template>
-
-<script setup>
-	import image4 from '@/assets/projects/four.jpg';
-	import image1 from '@/assets/projects/one.jpg';
-	import image3 from '@/assets/projects/three.jpg';
-	import image2 from '@/assets/projects/two.jpg';
-	import carousel from '../components/Carousel.vue';
-	import currentPage from '../components/CurrentPage.vue';
-	import Footer from '../components/Footer.vue';
-
-	const ProjectImages = [image1, image2, image3, image4];
-</script>
 <style scoped>
-	.wrapper {
-		padding: 20px;
-	}
+.container {
+	background-color: #10100e;
+}
 
-	.wrapper P {
-		letter-spacing: 1.3px;
-		line-height: 2em;
-		font-size: 17px;
-		font-weight: 400;
-		margin-bottom: 20px;
-	}
+.header {
+	padding: 60px;
+}
 
-	.projects {
-		border: 1px solid;
-		border-radius: 5px;
-		padding: 10px;
-		background-color: rgb(20, 52, 52);
-		color: #ffffff;
-		margin-bottom: 2em;
-	}
+.header p {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 44px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-weight: normal;
+	color: #ffffe3;
+}
 
-	.projects h2 {
-		color: orange;
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		text-align: center;
-	}
+.header h2 {
+	font-weight: 400;
+	font-size: 34px;
+	letter-spacing: 1px;
+	line-height: 1.6em;
+	color: #535349;
+	border-bottom: 1px dashed #5353497a;
+	padding-bottom: 50px;
+}
 
-	.projects ul {
-		margin-left: 30px;
-	}
+.portfolio {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 44px;
+	margin-top: 0px;
+	margin-bottom: 40px;
+	font-weight: normal;
+	color: #ffffe3;
+	padding: 0px 0px 0px 60px;
+	border: 1px dashed #5353497a;
+	align-content: center;
+	height: 100px;
+}
 
-	.projects li {
-		list-style-type: disc;
-		letter-spacing: 1.3px;
-		line-height: 3em;
-		font-size: 14px;
-		text-transform: uppercase;
-	}
+.content {
+	border: 1px dashed #5353497a;
+	padding: 0px 60px 0px 0px;
+}
 
-	.gallery {
-		margin-bottom: 2em;
-		background-color: #111111;
-	}
+.works-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 200px 0px 60px;
+	border: 1px dashed #5353497a;
+}
 
-	.gallery h2 {
-		text-align: center;
-		color: orange;
-		letter-spacing: 2px;
-		font-size: 35px;
-		text-transform: uppercase;
-	}
+.works {
+	width: 50%;
+	border: 1px dashed #5353497a;
+	border-top: none;
+	padding: 40px;
+}
 
-	.clients {
-		margin-top: 0.5em;
-		/*border: 1px solid;*/
-		border-radius: 5px;
-		/*background-color: #020e2a;*/
+.works h2 {
+	text-transform: capitalize;
+	margin-bottom: 20px;
+	color: #ffffe3;
+}
 
-	}
+.works h1 {
+	color: #ffffe3;
+	font-size: 30px;
+	font-family: poppins;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
 
-	.clients h2 {
-		text-align: center;
-		color: orange;
-		letter-spacing: 2px;
-		font-size: 35px;
-		text-transform: uppercase;
-		margin-bottom: 0.5em;
-	}
+.works p {
+	color: #535349;
+	line-height: 1.9em;
+}
 
-	.client-container {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 20px;
-		justify-content: flex-start;
-	}
+.carousel {
+	border: 1px dashed #5353497a;
+}
 
-	.client-item {
-		display: flex;
-		align-items: center;
-		flex: 1 1 auto;
-		padding: 10px;
-		border: 1px solid #ccc;
-		border-radius: 5px;
-	}
-
-	.client-item img {
-		max-width: 50px;
-		margin-right: 10px;
-	}
-
-	.client-item li {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-	}
-
-	@media only screen and (max-width: 600px) {
-		.wrapper {
-			padding: 10px;
-		}
-		.wrapper p {
-			line-height: 1.7em;
-			font-size: 15px;
-			text-align: left;
-		}
-		.projects h2 {
-			font-size: 17px;
-			text-align: center;
-			margin-bottom: 13px;
-		}
-		.projects ul {
-			margin-left: 15px;
-		}
-		.projects li {
-			letter-spacing: 0px;
-			line-height: 1.7em;
-			margin-bottom: 20px;
-			font-size: 14px;
-		}
-		.clients li {
-			font-size: 14px;
-		}
-		.clients h2{
-			border-radius: 5px;
-		}
-	}
+.image-carousel {
+	border: 1px dashed #5353497a;
+}
 </style>
