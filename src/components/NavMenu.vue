@@ -64,7 +64,7 @@ const links = [
 	{ name: 'Contact', path: '/contact' },
 	{ name: 'gallery', path: '/#' },
 	{ name: 'services', path: '/#' },
-	{ name: 'newsletter', path: '/#' },
+	{ name: 'vacancies', path: '/#' },
 	{ name: 'careers', path: '/#' },
 ];
 
@@ -80,7 +80,7 @@ div {
 
 .hamburger-menu {
 	position: fixed;
-	top: 40px;
+	top: 10px;
 	right: 20px;
 	z-index: 1000;
 	background: none;
