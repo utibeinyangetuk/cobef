@@ -88,14 +88,14 @@ const currentYear = ref(new Date().getFullYear());
 <style scoped>
 footer {
 	padding: 0px 20px 20px 20px;
-	background-color: #10100E;
+	background-color: #000000;
 }
 
 .main-container {
 	background: linear-gradient(90deg, #000000, #1d1d1d, rgb(2, 21, 21));
 	background-size: 400% 400%;
 	animation: gradientAnimation 15s ease infinite;
-	border: 1px solid #ffffe32b;
+	border: 1px dashed #ffffe32b;
 	border-radius:10px;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 	padding: 30px;
