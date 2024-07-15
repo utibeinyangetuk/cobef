@@ -17,7 +17,7 @@ import Navbar from "../components/NavMenu.vue";
 			</h2>
 		</div>
 		<div class="catalog">
-			<p>Our Catalog</p>
+			<p class="secondary-header">Our Catalog</p>
 			<div class="product-container">
 				<div class="product">
 					<img src="../assets/materials/HDPE-Pipe.jpg" />
@@ -169,11 +169,13 @@ import Navbar from "../components/NavMenu.vue";
 .header p {
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	font-size: 14px;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	font-weight: 700;
+	font-size: 50px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	font-weight: bold;
 	color: #ffffe3;
+	align-content: center;
+	height: 100px;
 }
 
 .header h2 {
@@ -183,19 +185,23 @@ import Navbar from "../components/NavMenu.vue";
 	line-height: 1.6em;
 }
 
+.secondary-header {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 50px;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	font-weight: bold;
+	color: #ffffe3;
+	align-content: center;
+	height: 100px;
+}
+
 .catalog {
 	border-top: 1px solid #535349;
 }
 
-.catalog p {
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 14px;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	font-weight: 700;
-	color: #ffffe3;
-}
+.catalog p {}
 
 .product-container .product {
 	display: flex;
@@ -224,5 +230,10 @@ import Navbar from "../components/NavMenu.vue";
 	font-weight: normal;
 	color: #535349;
 	margin-right: -780px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 14px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 </style>

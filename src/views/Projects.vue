@@ -5,6 +5,7 @@ import image3 from '@/assets/projects/three.jpg';
 import image2 from '@/assets/projects/two.jpg';
 import ImageCarousel from '@/components/ImageCarousel.vue';
 import NavMenu from '@/components/NavMenu.vue';
+import Footer from '@/components/Footer.vue';
 const trips = [image1, image2, image3, image4];
 </script>
 <template>
@@ -19,7 +20,7 @@ const trips = [image1, image2, image3, image4];
 				necessary to address technically challenging projects.
 			</h2>
 		</div>
-		<p class="portfolio">Our Portfolio</p>
+		<p class="heading">Our Portfolio</p>
 		<div class="content">
 			<div class="works-wrapper">
 				<div class="works">
@@ -66,15 +67,18 @@ const trips = [image1, image2, image3, image4];
 				</div>
 			</div>
 		</div>
-		<p class="portfolio">Visuals from our trips</p>
+		<p class="heading">Visuals from our trips</p>
 		<div class="carousel">
 			<ImageCarousel :images="trips" class="image-carousel" />
 		</div>
+		<p class="heading">Our Clients</p>
+		<div class="marquee"></div>
 	</div>
+<Footer/>
 </template>
 <style scoped>
 .container {
-	background-color: #10100e;
+	background-color: #000000;
 }
 
 .header {
@@ -84,10 +88,10 @@ const trips = [image1, image2, image3, image4];
 .header p {
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	font-size: 44px;
+	font-size: 50px;
 	margin-top: 40px;
 	margin-bottom: 40px;
-	font-weight: normal;
+	font-weight: bold;
 	color: #ffffe3;
 }
 
@@ -101,13 +105,13 @@ const trips = [image1, image2, image3, image4];
 	padding-bottom: 50px;
 }
 
-.portfolio {
+.heading {
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	font-size: 44px;
+	font-size: 50px;
 	margin-top: 0px;
 	margin-bottom: 40px;
-	font-weight: normal;
+	font-weight: bold;
 	color: #ffffe3;
 	padding: 0px 0px 0px 60px;
 	border: 1px dashed #5353497a;
