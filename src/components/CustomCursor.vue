@@ -13,8 +13,8 @@ const cursorFollower = ref(null);
 
 const onMouseMove = (e) => {
 	// Calculate the position based on the margin adjustments
-	const x = e.clientX - 7.47; // Adjust based on your margin-left value
-	const y = e.clientY - 7; // Adjust based on your margin-top value
+	const x = e.clientX - 16; // Adjust based on your margin-left value
+	const y = e.clientY - 18; // Adjust based on your margin-top value
 
 	cursor.value.style.transform = `translate3d(${x}px, ${y}px, 0)`;
 	cursorFollower.value.style.transform = `translate3d(${x}px, ${y}px, 0)`;
@@ -52,14 +52,14 @@ onUnmounted(() => {
 .custom-cursor {
 	background-color: orange;
 	mix-blend-mode: difference;
-	margin-left: 7.47px;
-	margin-top: 7px;
+	margin-left: 16px;
+	margin-top: 18px;
 }
 
 .custom-cursor-follower {
-	width: 20px;
-	height: 20px;
-	border: 3px solid orange;
+	width: 40px;
+	height: 40px;
+	border: 1px solid orange;
 	mix-blend-mode: difference;
 }
 </style>
