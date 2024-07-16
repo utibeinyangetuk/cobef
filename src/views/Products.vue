@@ -1,6 +1,6 @@
 <script setup>
 import Footer from '@/components/Footer.vue';
-import Navbar from "../components/NavMenu.vue";
+import Navbar from "../components/Navbar.vue";
 </script>
 <template>
 	<div class="container">
@@ -156,7 +156,7 @@ import Navbar from "../components/NavMenu.vue";
 </template>
 <style scoped>
 .container {
-	background-color: #10100e;
+	background-color: var(--primary-background);
 	padding: 60px;
 }
 
