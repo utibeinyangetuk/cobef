@@ -1,17 +1,18 @@
 <script setup>
 import Footer from '@/components/Footer.vue';
-import Navmenu from '@/components/NavMenu.vue';
+import Navbar from '@/components/Navbar.vue';
 </script>
 
 <template>
-	<Navmenu/>
+
 	<div class="container">
+		<Navbar />
 		<div class="header">
-			<p>Contact us</p>
+			<p>Get in touch</p>
 			<h2>Do you want to <a href="#">start a project</a>,<br> <a href="#">join the team</a> or just say hi?<br> we'd
 				love to hear from you.</h2>
 		</div>
-		<div class="office">
+		<div class="location-container">
 			<p>Our Office</p>
 			<div class="information">
 				<img src="../assets/homepage-images/company.avif" />
@@ -30,79 +31,95 @@ import Navmenu from '@/components/NavMenu.vue';
 </template>
 <style scoped>
 .container {
-	background-color: #10100E;
-	padding: 60px;
+	background-color: #000000;
 }
 
 .header {
-	width: 70%;
-	color: #535349;
-	margin-bottom: 70px;
+	margin-top: 0px;
+	border-left: 1px dashed #5353497a;
+	border-right: 1px dashed #5353497a;
+	margin: 60px 40px 0 40px;
+	padding: 40px;
+	display: flex;
+	align-items: center;
 }
 
 .header p {
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	font-size: 14px;
+	font-size: 70px;
+	line-height: 2em;
 	margin-bottom: 40px;
-	font-weight: 700;
-	color:#ffffe3
+	font-weight: bolder;
+	color: #ffffe3;
+	width: 50%;
 }
 
 .header h2 {
+	padding: 20px;
 	font-weight: 400;
-	font-size: 45px;
-	letter-spacing: 1px;
-	line-height: 1.6em;
+	font-size: 35px;
+	line-height: 2.5em;
+	color: #535349;
+	width: 50%;
+	border: 1px dashed #5353497a;
 }
 
 .header h2 a {
 	color: #ffffe3;
 	text-decoration: underline;
 	text-transform: uppercase;
+	line-height: 1.6em;
 }
 
-.office {
-	border-top: 1px solid #535349;
-	border-bottom: 1px solid #535349;
+.location-container {
+	border: 1px solid #5353497a;
 }
 
-.office p {
+.location-container p {
 	text-transform: uppercase;
-		letter-spacing: 2px;
-		font-size: 14px;
-		margin-bottom: 40px;
-		margin-top: 40px;
-		font-weight: 700;
-		color: #ffffe3
+	letter-spacing: 2px;
+	font-size: 50px;
+	margin-top: 0px;
+	/* margin-bottom: 40px; */
+	font-weight: bold;
+	color: #ffffe3;
+	padding: 0px 0px 0px 60px;
+	border: 1px dashed #5353497a;
+	align-content: center;
+	height: 100px;
 }
 
 .information {
 	display: flex;
-	gap: 40px;
+	padding: 0px 0px 0px 40px;
 }
 
 .information img {
-	height: 500px;
-	border-radius: 10px;
-	margin-bottom: 70px;
+	border: 1px dashed #5353497a;
+	padding: 7px;
 }
 
 .details {
 	display: flex;
-	flex-direction:column;
-	line-height: 3em;
-	color:#ffffe3;
+	flex-direction: column;
 }
-.details h1{
-	margin-bottom: 20px;
-}
-.details h2{
-	font-size: 1rem;
-}
-.details a{
-	text-decoration: underline;
-	letter-spacing: 2px;
+
+.details h1,
+.details h2,
+.details a {
+	border: 1px dashed #5353497a;
+	padding: 20px;
+	margin-left: 10px;
+	margin-right: 40px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	color: #ffffe3;
+	font-size: 36px;
+	letter-spacing: 2px;
+}
+
+.details a:hover {
+	text-decoration: underline;
 }
 </style>
