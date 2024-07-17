@@ -13,7 +13,7 @@ const currentYear = ref(new Date().getFullYear());
 						<h2>Cobef international limited</h2>
 					</div>
 					<p>
-						COBEF INTERNATIONAL LIMITED  was established in the year 2002 with an aim
+						COBEF INTERNATIONAL LIMITED was established in the year 2002 with an aim
 						to manufacture quality PVC piping systems and products and extending into
 						piping and construction projects. A brain-child of Mr Pawan Tekchandani and
 						Chief Christian Ohakwe, both possessing a vast amount of experience in the
@@ -87,18 +87,18 @@ const currentYear = ref(new Date().getFullYear());
 
 <style scoped>
 footer {
-	padding: 0px 20px 20px 20px;
+	padding: 0px 40px 40px 40px;
 	background-color: #000000;
 }
 
 .main-container {
-	background: linear-gradient(90deg, #000000, #1d1d1d, rgb(2, 21, 21));
+	background: linear-gradient(90deg, #000000, #11110E, #000000);
 	background-size: 400% 400%;
 	animation: gradientAnimation 15s ease infinite;
 	border: 1px dashed #ffffe32b;
-	border-radius:10px;
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 	padding: 30px;
+	margin-top: 40px;
 }
 
 @keyframes gradientAnimation {
@@ -219,16 +219,17 @@ footer {
 	font-size: 20px;
 }
 
-.secondary-container li a:hover, .secondary-container li:hover{
+.secondary-container li a:hover,
+.secondary-container li:hover {
 	color: teal;
 }
 
-.secondary-container li a, .secondary-container li {
+.secondary-container li a,
+.secondary-container li {
 	color: gray;
 	font-style: normal;
 	letter-spacing: 1.5px;
 	margin-bottom: 10px;
 	font-size: 12px;
 }
-
 </style>
