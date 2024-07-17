@@ -1,133 +1,148 @@
 <script setup>
-import CurrentPage from '@/components/CurrentPage.vue';
-import Footer from '@/components/Footer.vue';
-import ProfileCard from '@/components/ProfileCard.vue';
-import TextCarousel from '@/components/TextCarousel.vue';
+import Footer from "@/components/Footer.vue";
+import Navbar from "@/components/Navbar.vue";
+import TextCarousel from "@/components/TextCarousel.vue";
 </script>
 <template>
-	<CurrentPage />
-	<div class="main-container">
+	<Navbar />
+	<div class="container">
 		<div class="video-wrapper">
 			<video autoplay muted loop>
-				<source src="../assets/videos/video.mp4" type="video/mp4">
+				<source src="../assets/videos/video.mp4" type="video/mp4" />
 				Sorry, your browser does not support this video tag.
 			</video>
-			<div class="overlay">
+			<!-- <div class="overlay">
 				<p>This is cobef</p>
 				<h2>Leading company in hdpe manufacturing</h2>
-			</div>
+			</div> -->
 		</div>
-		<div class="overview">
-			<div class="headers">
-				<h2>company overview</h2>
-				<p>Cobef, from <br> the ground up</p>
+		<div class="company-overview">
+			<div class="heading">
+				<p>company overview</p>
+				<h1>
+					<span>Cobef,</span> from <br />
+					the ground up
+				</h1>
 			</div>
-			<div class="overview-content">
-				<p>Esse commodo amet reprehenderit laboris consequat aute ipsum et aliquip aute. Cillum quis eu velit
-					excepteur anim quis. Anim ipsum in enim quis quis dolore amet in veniam ea magna culpa. Dolore sit Lorem
-					pariatur excepteur dolor cupidatat aute velit labore. Qui veniam deserunt consectetur culpa eu aliquip
-					enim id. Anim magna eu et incididunt non aliqua sint nulla velit incididunt.
-					<br>
-					<br>
-					Dolore eiusmod pariatur labore ea labore quis esse exercitation proident nostrud tempor. Sunt esse Lorem
-					do est tempor. Ipsum nulla pariatur do ipsum adipisicing cillum enim eiusmod id ex aute.
-					<br>
-					<br>
-					Et dolore mollit cupidatat aute consectetur laborum in. Officia consequat minim pariatur cupidatat
-					ullamco veniam anim ut sunt mollit ex. Non mollit culpa eiusmod magna cillum labore commodo reprehenderit
-					consequat non est. Elit enim in minim minim id id irure nulla nulla aute duis ullamco qui. Non veniam
-					aliquip in qui nulla eiusmod. Eiusmod nisi nostrud elit laboris sint.
+			<div class="description">
+				<p>
+					Esse commodo amet reprehenderit laboris consequat aute ipsum et
+					aliquip aute. Cillum quis eu velit excepteur anim quis. Anim
+					ipsum in enim quis quis dolore amet in veniam ea magna culpa.
+					Dolore sit Lorem pariatur excepteur dolor cupidatat aute velit
+					labore. Qui veniam deserunt consectetur culpa eu aliquip enim id.
+					Anim magna eu et incididunt non aliqua sint nulla velit
+					incididunt.
+					<br />
+					Dolore eiusmod pariatur labore ea labore quis esse exercitation
+					proident nostrud tempor. Sunt esse Lorem do est tempor. Ipsum
+					nulla pariatur do ipsum adipisicing cillum enim eiusmod id ex
+					aute.
+					<br />
+					Et dolore mollit cupidatat aute consectetur laborum in. Officia
+					consequat minim pariatur cupidatat ullamco veniam anim ut sunt
+					mollit ex. Non mollit culpa eiusmod magna cillum labore commodo
+					reprehenderit consequat non est. Elit enim in minim minim id id
+					irure nulla nulla aute duis ullamco qui. Non veniam aliquip in
+					qui nulla eiusmod. Eiusmod nisi nostrud elit laboris sint.
 				</p>
 			</div>
 		</div>
-		<div class="goals">
-			<div class="mission">
-				<div class="mission-overlay">
-					<h1>Our mission</h1>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At libero nulla quasi, illum veritatis
-						deleniti incidunt nam ratione alias doloremque soluta ea asperiores vel temporibus odio cupiditate?
-						Distinctio, dicta reiciendis?</p>
-				</div>
+		<div class="mission">
+			<p>our mission</p>
+			<h1>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. At libero
+				nulla quasi, illum veritatis deleniti incidunt nam ratione alias
+				doloremque soluta ea asperiores vel temporibus odio cupiditate?
+				Distinctio, dicta reiciendis?
+			</h1>
+		</div>
+		<div class="mission">
+			<p>our vision</p>
+			<h1>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. At libero
+				nulla quasi, illum veritatis deleniti incidunt nam ratione alias
+				doloremque soluta ea asperiores vel temporibus odio cupiditate?
+				Distinctio, dicta reiciendis?
+			</h1>
+		</div>
+		<div class="mission">
+			<p>our Quality</p>
+			<h1>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. At libero
+				nulla quasi, illum veritatis deleniti incidunt nam ratione alias
+				doloremque soluta ea asperiores vel temporibus odio cupiditate?
+				Distinctio, dicta reiciendis?
+			</h1>
+		</div>
+		<div class="core-values">
+			<p>our<br>core<br>values</p>
+			<TextCarousel class="carousel" />
+		</div>
+		<div class="team">
+			<div class="team-heading">
+				<p>Meet the team</p>
+				<h1>Board of<br> <span>directors</span></h1>
 			</div>
-			<div class="vision">
-				<div class="vision-overlay">
-					<h1>Our vision</h1>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At libero nulla quasi, illum veritatis
-						deleniti incidunt nam ratione alias doloremque soluta ea asperiores vel temporibus odio cupiditate?
-						Distinctio, dicta reiciendis?</p>
+			<div class="profile-container">
+				<div class="profile-card">
+					<img src="../assets/homepage-images/iso1.avif" />
+					<h2>John Doe</h2>
+					<p>Ceo</p>
+				</div>
+				<div class="profile-card">
+					<img src="../assets/homepage-images/iso1.avif" />
+					<h2>John Doe</h2>
+					<p>Ceo</p>
+				</div>
+				<div class="profile-card">
+					<img src="../assets/homepage-images/iso1.avif" />
+					<h2>John Doe</h2>
+					<p>Ceo</p>
+				</div>
+				<div class="profile-card">
+					<img src="../assets/homepage-images/iso1.avif" />
+					<h2>John Doe</h2>
+					<p>Ceo</p>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="secondary-container">
-		<div class="profile">
-			<p>Leadership</p>
-			<h2>The big brains<br> behind the company</h2>
-			<div class="profile-container">
-				<ProfileCard profilePicture="@/assets/certificates/ISO.jpg" name="John Doe" role="CE0" />
-				<ProfileCard profilePicture="@/assets/certificates/ISO.jpg" name="John Doe" role="CHAIRMAN" />
-			</div>
-			<section class="executives">
-				<h3 executive class="line-text">executive leadership</h3>
-				<div class="image-wrapper">
-					<ProfileCard profilePicture="@/assets/certificates/ISO.jpg" name="John Doe" role="CE0"
-						class="exec-images" />
-					<ProfileCard profilePicture="@/assets/certificates/ISO.jpg" name="John Doe" role="CE0"
-						class="exec-images" />
-					<ProfileCard profilePicture="@/assets/certificates/ISO.jpg" name="John Doe" role="CE0"
-						class="exec-images" />
-					<ProfileCard profilePicture="@/assets/certificates/ISO.jpg" name="John Doe" role="CE0"
-						class="exec-images" />
-				</div>
-			</section>
-			<div class="values">
-				<h3>our core values</h3>
-				<TextCarousel />
-			</div>
-			<div class="certifications">
-				<p>our certificatons</p>
-				<div class="certifications-wrapper">
-					<img src="../assets/certificates/ISO.jpg" alt="certification" />
-					<img src="../assets/certificates/Mancap.jpg" alt="certification" />
-					<img src="../assets/certificates/MemCert.jpg" alt="certification" />
-					<img src="../assets/certificates/MemComence.jpg" alt="certification" />
-					<img src="../assets/certificates/ISO.jpg" alt="certification" />
-					<img src="../assets/certificates/ISO.jpg" alt="certification" />
-					<img src="../assets/certificates/ISO.jpg" alt="certification" />
-					<img src="../assets/certificates/ISO.jpg" alt="certification" />
-					<img src="../assets/certificates/ISO.jpg" alt="certification" />
-				</div>
+		<div class="certifications">
+			<p>certificatons</p>
+			<div class="certifications-wrapper">
+				<img src="../assets/certificates/ISO.jpg" alt="certification" />
+				<img src="../assets/certificates/Mancap.jpg" alt="certification" />
+				<img src="../assets/certificates/MemCert.jpg" alt="certification" />
+				<img src="../assets/certificates/MemComence.jpg" alt="certification" />
+				<img src="../assets/certificates/ISO.jpg" alt="certification" />
+				<img src="../assets/certificates/ISO.jpg" alt="certification" />
 			</div>
 		</div>
 	</div>
 	<Footer />
 </template>
 <style scoped>
-.main-container {
-	width: 100vw;
-	background-color: #ffffe3;
-	padding: 50px;
-	border-radius: 40px;
+.container {
+	background-color: #000000;
 }
 
 .video-wrapper {
-	height: 90vh;
-	border-radius: 40px;
+	border: 1px dashed #5353497a;
+	margin-top: 60px;
+	margin-right: 40px;
+	margin-left: 40px;
 	position: relative;
-	width: 100%;
 	overflow: hidden;
 }
 
 video {
-	position: absolute;
-	top: 0;
-	left: 0;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	filter: blur(3px)
+	filter: blur(3px);
 }
 
+/*
 .overlay {
 	position: absolute;
 	top: 0;
@@ -156,209 +171,216 @@ video {
 	text-transform: uppercase;
 	font-size: 40px;
 }
-
-.overview {
-	height: 90vh;
-	width: 100%;
+*/
+.company-overview {
+	border: var(--solid-border);
 	display: flex;
-	margin-top: 70px;
+	border-right: none;
 }
 
-.headers {
-	width: 40%;
-}
-
-.headers h2 {
-	color: #00978c;
-	font-size: 11px;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	margin-bottom: 10px;
-}
-
-.headers p {
-	color: #000000;
-	font-family: poppins;
-	font-size: 40px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-}
-
-.overview-content {
-	width: 60%;
-}
-
-.overview-content p {
-	color: #6c6f73b9;
-	line-height: 40px;
-}
-
-.goals {
-	display: flex;
-	gap: 50px;
-	margin-top: 30px;
-}
-
-.goals h1 {
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	font-size: 15px;
-	font-weight: normal;
-	margin-bottom: 10px;
-}
-
-.goals p {
-	font-size: 20px;
-	line-height: 40px;
-	color: #ffffe38e;
-	letter-spacing: 2px;
-}
-
-.goals .mission,
-.goals .vision {
-	height: 90vh;
+.heading {
+	border: var(--solid-border);
+	border-top: 0;
+	border-bottom: 0;
+	border-right: 0;
 	width: 50%;
-	border-radius: 40px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
+	margin-left: 40px;
+	color: var(--primary-text-color);
+	text-transform: uppercase;
+	padding: 40px;
+}
+
+.heading p {
+	margin-bottom: 40px;
+	font-size: 16px;
+	letter-spacing: 2px;
+	color: var(--secondary-text-color);
+}
+
+.heading span {
+	color: var(--hover-color);
+	text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.4);
+}
+
+.heading h1 {
+	line-height: 1.7em;
+	letter-spacing: 2px;
+	font-size: 50px;
+}
+
+.description {
+	border: var(--solid-border);
+	width: 70%;
+	margin-right: 40px;
+	padding: 40px;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.description p {
+	color: var(--secondary-text-color);
+	line-height: 2.3em;
 }
 
 .mission {
-	background-image: url(../assets/homepage-images/mission.jpg);
+	border-bottom: var(--solid-border);
+	padding: 60px;
 }
 
-.vision {
-	background-image: url(../assets/homepage-images/vision.avif);
-}
-
-.mission-overlay,
-.vision-overlay {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 20px;
-	text-align: center;
-	justify-content: center;
+.mission p {
+	color: var(--secondary-text-color);
 	text-transform: uppercase;
-	color: #00978c;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: rgba(0, 0, 0, 0.8);
-	box-sizing: border-box;
+	font-size: 20px;
+	margin-bottom: 25px;
+	letter-spacing: 1px;
 }
 
-.profile {
-	background-color: #10100E;
+.mission h1 {
+	color: var(--primary-text-color);
+	width: 80%;
+	line-height: 1.6em;
+	font-size: 40px;
+}
+
+.core-values {
+	border: var(--solid-border);
+	margin-right: 40px;
+	margin-left: 40px;
+	border-top: 0;
+	border-bottom: 0;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 }
 
-.profile p {
-	color: #00978c;
+.core-values p {
+	color: var(--secondary-text-color);
 	text-transform: uppercase;
-	margin-top: 100px;
-	letter-spacing: 3px;
-	font-size: 12px;
+	font-size: 45px;
+	line-height: 1.6em;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding: 40px;
 }
 
-.profile h2 {
-	color: #ffffe3;
+.carousel {
+	border: var(--dashed-border);
+	border-radius: 0;
+	margin: 5px;
+}
+
+.team {
+	border: var(--solid-border);
+	display: flex;
+	padding: 0px 0px 0px 39px;
+	border-right: 0;
+	height: 450px;
+}
+
+.team-heading {
+	border: var(--solid-border);
+	padding: 40px;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.team-heading p {
+	color: var(--secondary-text-color);
+	letter-spacing: 2px;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.team-heading h1 {
+	text-transform: capitalize;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 25px;
+	color: var(--primary-text-color);
+	line-height: 2em;
+}
+
+.team-heading h1 span {
+	font-size: 50px;
 	text-transform: uppercase;
-	padding: 15px;
-	letter-spacing: 4px;
-	text-align: center;
 }
 
 .profile-container {
-	width: 100%;
-	margin-top: 20px;
-	padding: 40px;
+	padding: 10px;
 	display: flex;
 	gap: 20px;
-	align-items: center;
-	justify-content: center;
-	font-family: Satoshi;
-}
-
-.executives {
-	width: 100%;
-	padding: 40px;
-	height: 100%;
-}
-
-.line-text {
-	display: flex;
-	align-items: center;
-	text-align: center;
-	color: #00978c;
-	font-size: 12px;
-	font-weight: normal;
-	text-transform: uppercase;
-	letter-spacing: 3px;
-}
-
-.line-text::before,
-.line-text::after {
-	content: '';
+	flex-wrap: wrap;
 	flex: 1;
-	border-bottom: 1px solid rgba(128, 128, 128, 0.501);
-	margin: 0 10px;
+	overflow-y: scroll;
+	border-right: var(--solid-border);
+	margin-right: 40px;
 }
 
-.executives .image-wrapper {
+.profile-card {
+	width: fit-content;
+	height: fit-content;
+	border: var(--dashed-border);
+	padding: 3px;
+}
+
+.profile-card img {
+	width: fit-content;
+	height: 350px;
+}
+
+.profile-card h2 {
+	text-transform: Capitalize;
+	color: var(--primary-text-color);
+	letter-spacing: 1px;
+}
+
+.profile-card p {
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--secondary-text-color);
+}
+
+.certifications {
+	border: var(--solid-border);
+	border-top: 0;
+	border-right: 0;
+	margin-left: 40px;
+	margin-right: 40px;
 	display: flex;
-	justify-content: space-evenly;
 	gap: 10px;
-	margin-top: 80px;
+	height: 550px;
 }
 
-.exec-images {
-	height: 400px;
-}
-
-.profile .values {
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	background-color: #ffffe3;
-}
-
-.profile .values h3 {
-	color: #00978c;
-	font-weight: 500;
-	font-size: 12px;
-	margin-top: 50px;
+.certifications p {
+	color: var(--secondary-text-color);
 	text-transform: uppercase;
-	letter-spacing: 3px;
-}
-
-.profile .certifications {
-	width: 100%;
-	height: 100%;
-}
-
-.profile .certifications p {
-	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 30px;
+	font-size: 50px;
+	padding: 60px;
+	font-weight: bold;
+	margin-bottom: 25px;
+	width: 15%;
+	border: var(--solid-border);
+	border-top: 0;
+	border-left: 0;
+	display: flex;
+	letter-spacing: 6px;
+	writing-mode: vertical-rl;
+	height: 550px;
 }
 
 .certifications-wrapper {
 	width: 100%;
-	padding: 40px;
 	display: flex;
+	gap: 10px;
 	flex-wrap: wrap;
-	gap: 20px;
-	justify-content: center;
+	flex: 1;
+	overflow-y: scroll;
+	padding: 3px;
 }
 
 .certifications-wrapper img {
-	width: 30vw;
-	border:3PX solid #FFF;
+	width: 49.4%;
+	height: 550px;
+	border: var(--dashed-border);
+	padding: 5px;
 }
 </style>
