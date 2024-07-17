@@ -1,18 +1,17 @@
 <template>
 	<div class="cursor-container">
-		<div ref="cursor" class="custom-cursor" />
-		<div ref="cursorFollower" class="custom-cursor-follower" />
+		<div ref="cursor" class="custom-cursor"></div>
+		<div ref="cursorFollower" class="custom-cursor-follower"></div>
 	</div>
 </template>
 
 <script setup>
-import { onMounted, onUnmounted, ref } from "vue";
+import { onMounted, onUnmounted, ref } from 'vue';
 
 const cursor = ref(null);
 const cursorFollower = ref(null);
 
 const onMouseMove = (e) => {
-	// Calculate the position based on the margin adjustments
 	const x = e.clientX - 16; // Adjust based on your margin-left value
 	const y = e.clientY - 18; // Adjust based on your margin-top value
 
@@ -20,14 +19,34 @@ const onMouseMove = (e) => {
 	cursorFollower.value.style.transform = `translate3d(${x}px, ${y}px, 0)`;
 };
 
+const onMouseEnter = () => {
+	cursorFollower.value.classList.add('hover');
+};
+
+const onMouseLeave = () => {
+	cursorFollower.value.classList.remove('hover');
+};
+
 onMounted(() => {
-	document.addEventListener("mousemove", onMouseMove);
-	document.body.style.cursor = "none"; // Hide default cursor
+	document.addEventListener('mousemove', onMouseMove);
+	document.body.style.cursor = 'none'; // Hide default cursor
+
+	const hoverableElements = document.querySelectorAll('a, button, p, span, div');
+	hoverableElements.forEach(element => {
+		element.addEventListener('mouseenter', onMouseEnter);
+		element.addEventListener('mouseleave', onMouseLeave);
+	});
 });
 
 onUnmounted(() => {
-	document.removeEventListener("mousemove", onMouseMove);
-	document.body.style.cursor = ""; // Reset default cursor
+	document.removeEventListener('mousemove', onMouseMove);
+	document.body.style.cursor = ''; // Reset default cursor
+
+	const hoverableElements = document.querySelectorAll('a, button, p, span, div');
+	hoverableElements.forEach(element => {
+		element.removeEventListener('mouseenter', onMouseEnter);
+		element.removeEventListener('mouseleave', onMouseLeave);
+	});
 });
 </script>
 
@@ -59,7 +78,13 @@ onUnmounted(() => {
 .custom-cursor-follower {
 	width: 40px;
 	height: 40px;
-	border: 1px solid orange;
+	border: 3px solid orange;
 	mix-blend-mode: difference;
+	transition: transform 0.2s ease-out, width 0.3s ease-out, height 0.3s ease-out;
+}
+
+.custom-cursor-follower.hover {
+	width: 60px;
+	height: 60px;
 }
 </style>
