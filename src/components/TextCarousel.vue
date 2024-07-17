@@ -74,11 +74,11 @@ autoSlide();
 }
 
 .carousel-content h2 {
-	font-weight: 300;
+	font-weight: bold;
 	letter-spacing: 2px;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	font-size: 60px;
-	font-family: poppins;
+	color:var(--hover-color);
 }
 
 .carousel-content p {
@@ -86,7 +86,7 @@ autoSlide();
 	font-weight: 200;
 	letter-spacing: 1px;
 	margin-top: 12px;
-	font-family: Montserrat;
+	color:var(--primary-text-color);
 }
 
 .carousel-controls {
@@ -98,7 +98,7 @@ autoSlide();
 
 .carousel-controls button {
 	background: transparent;
-	color: gray;
+	color: #ffffff;
 	border: none;
 	padding: 10px 20px;
 	border-radius: 5px;
@@ -115,17 +115,17 @@ autoSlide();
 	display: block;
 	width: 10px;
 	height: 10px;
-	background-color: #E0F2F1;
+	background-color: var(--secondary-text-color);
 	border-radius: 50%;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 }
 
 .indicators span.active {
-	background-color: #004D40;
+	background-color: #ffffe3;
 }
 
 .indicators span:hover {
-	background-color: #00362F;
+	background-color: #ffffe3;
 }
 </style>
