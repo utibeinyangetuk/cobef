@@ -75,12 +75,12 @@ const formatNumber = (number) => {
 
 <style scoped>
 div {
-	background-color: #10100E;
+	background-color: #000000;
 }
 
 .hamburger-menu {
 	position: fixed;
-	top: 10px;
+	top: -10px;
 	right: 20px;
 	z-index: 1000;
 	background: none;
@@ -93,10 +93,10 @@ div {
 .hamburger-menu span {
 	display: block;
 	width: 35px;
-	height: 6px;
+	height: 3px;
 	margin-bottom: 5px;
 	background-color: #ffffe3;
-	border: 1px solid;
+	border: none;
 	border-radius: 5px;
 	transition: transform 0.6s ease, background-color 0.3s ease;
 }
@@ -110,17 +110,11 @@ div {
 }
 
 .hamburger-menu.open span:nth-child(3) {
-	transform: translateY(-9px) rotate(-45deg);
+	transform: translateY(-3px) rotate(-45deg);
 }
 
 .hamburger-menu.open {
-	border: 1px solid rgba(128, 128, 128, 0.792);
-	padding: 10px;
-	border-radius: 5px;
-}
-
-.hamburger-menu.open:hover {
-	border: 1px solid #fff;
+	position: fixed;
 }
 
 .hamburger-menu.open span {
@@ -171,6 +165,8 @@ div {
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
+	border-radius: 40px;
+	border: 2px dashed #5353497a;
 }
 
 .fullscreen-menu nav {
@@ -189,6 +185,7 @@ div {
 	list-style: none;
 	margin: 0;
 	padding: 10px;
+	border: 1px dashed #5353497a;
 }
 
 .fullscreen-menu nav ul li {
@@ -198,6 +195,7 @@ div {
 	text-transform: uppercase;
 	font-size: 30px;
 	letter-spacing: 2px;
+	border: 1px dashed #5353497a;
 }
 
 .fullscreen-menu nav ul li .link-number {
@@ -223,7 +221,8 @@ div {
 }
 
 .menu-footer {
-	border-top: 1px solid #535349;
+	border-top: 1px dashed #5353497a;
+	;
 	width: 94%;
 	display: flex;
 	justify-content: space-between;
