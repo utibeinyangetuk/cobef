@@ -3,13 +3,13 @@ import image4 from '@/assets/projects/four.jpg';
 import image1 from '@/assets/projects/one.jpg';
 import image3 from '@/assets/projects/three.jpg';
 import image2 from '@/assets/projects/two.jpg';
-import ImageCarousel from '@/components/ImageCarousel.vue';
-import NavMenu from '@/components/NavMenu.vue';
 import Footer from '@/components/Footer.vue';
+import ImageCarousel from '@/components/ImageCarousel.vue';
+import Navbar from '@/components/Navbar.vue';
 const trips = [image1, image2, image3, image4];
 </script>
 <template>
-	<NavMenu />
+	<Navbar />
 	<div class="container">
 		<div class="header">
 			<p>Our Projects</p>
@@ -71,10 +71,10 @@ const trips = [image1, image2, image3, image4];
 		<div class="carousel">
 			<ImageCarousel :images="trips" class="image-carousel" />
 		</div>
-		<p class="heading">Our Clients</p>
-		<div class="marquee"></div>
+		<p class="client-heading">Our Clients</p>
+		<div class="marquee-wrapper"></div>
 	</div>
-<Footer/>
+	<Footer />
 </template>
 <style scoped>
 .container {
@@ -164,5 +164,19 @@ const trips = [image1, image2, image3, image4];
 
 .image-carousel {
 	border: 1px dashed #5353497a;
+}
+
+.client-heading {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 50px;
+	margin-top: 0px;
+	/* margin-bottom: 40px; */
+	font-weight: bold;
+	color: #ffffe3;
+	padding: 0px 0px 0px 60px;
+	border: 1px dashed #5353497a;
+	align-content: center;
+	height: 100px;
 }
 </style>
