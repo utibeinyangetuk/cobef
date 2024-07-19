@@ -72,7 +72,24 @@ const trips = [image1, image2, image3, image4];
 			<ImageCarousel :images="trips" class="image-carousel" />
 		</div>
 		<p class="client-heading">Our Clients</p>
-		<div class="marquee-wrapper"></div>
+		<div class="logos">
+			<div class="logos-slide">
+				<img src="../assets/client logos/ALCON.png" />
+				<img src="../assets/client logos/briscoegroup.jpg" />
+				<img src="../assets/client logos/darycet.webp" />
+				<img src="../assets/client logos/julius berger.jpg" />
+				<img src="../assets/client logos/kinetic.png" />
+				<img src="../assets/client logos/shell.jpg" />
+			</div>
+			<div class="logos-slide" aria-hidden="true">
+				<img src="../assets/client logos/ALCON.png" />
+				<img src="../assets/client logos/briscoegroup.jpg" />
+				<img src="../assets/client logos/darycet.webp" />
+				<img src="../assets/client logos/julius berger.jpg" />
+				<img src="../assets/client logos/kinetic.png" />
+				<img src="../assets/client logos/shell.jpg" />
+			</div>
+		</div>
 	</div>
 	<Footer />
 </template>
@@ -178,5 +195,52 @@ const trips = [image1, image2, image3, image4];
 	border: 1px dashed #5353497a;
 	align-content: center;
 	height: 100px;
+}
+
+.logos {
+	overflow: hidden;
+	padding: 60px 0;
+	background-image: var(--checkered-background);
+	background-size: var(--checkered-background-size);
+	white-space: nowrap;
+	position: relative;
+}
+
+.logos:hover .logos-slide {
+	animation-play-state: paused;
+}
+
+/*
+.logos::before,
+.logos::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 100%;
+	content: "";
+	z-index: 2;
+	background: linear-gradient( #000000ca,#000000);
+}
+*/
+.logos-slide {
+	display: inline-block;
+	animation: 30s slide linear infinite;
+}
+
+.logos-slide img {
+	height: 70px;
+	margin: 0 40px;
+	filter: grayscale();
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
 }
 </style>
