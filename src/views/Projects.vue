@@ -229,7 +229,7 @@ const trips = [image1, image2, image3, image4];
 }
 
 .logos-slide img {
-	height: 70px;
+	height: 80px;
 	margin: 0 40px;
 	filter: grayscale();
 }
