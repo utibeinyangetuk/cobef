@@ -162,8 +162,10 @@ import Navbar from "../components/Navbar.vue";
 
 .header {
 	width: 90%;
-	color: #535349;
+	color: #fafafa;
 	margin-bottom: 70px;
+	background: var(--checkered-background);
+	background-size: var(--checkered-background-size);
 }
 
 .header p {
@@ -199,9 +201,9 @@ import Navbar from "../components/Navbar.vue";
 
 .catalog {
 	border-top: 1px solid #535349;
+	background: var(--checkered-background);
+	background-size: var(--checkered-background-size);
 }
-
-.catalog p {}
 
 .product-container .product {
 	display: flex;
@@ -228,7 +230,7 @@ import Navbar from "../components/Navbar.vue";
 	width: 80%;
 	line-height: 50px;
 	font-weight: normal;
-	color: #535349;
+	color: #fafafa;
 	margin-right: -780px;
 	text-transform: uppercase;
 	letter-spacing: 2px;
