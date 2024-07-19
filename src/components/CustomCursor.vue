@@ -31,7 +31,8 @@ onMounted(() => {
 	document.addEventListener('mousemove', onMouseMove);
 	document.body.style.cursor = 'none'; // Hide default cursor
 
-	const hoverableElements = document.querySelectorAll('a, button, p, span, div');
+	// select the elements you want to apply the hover effects on
+	const hoverableElements = document.querySelectorAll('a, button, p, span,li');
 	hoverableElements.forEach(element => {
 		element.addEventListener('mouseenter', onMouseEnter);
 		element.addEventListener('mouseleave', onMouseLeave);
@@ -42,7 +43,7 @@ onUnmounted(() => {
 	document.removeEventListener('mousemove', onMouseMove);
 	document.body.style.cursor = ''; // Reset default cursor
 
-	const hoverableElements = document.querySelectorAll('a, button, p, span, div');
+	const hoverableElements = document.querySelectorAll('a, button, p, span,li');
 	hoverableElements.forEach(element => {
 		element.removeEventListener('mouseenter', onMouseEnter);
 		element.removeEventListener('mouseleave', onMouseLeave);
@@ -66,10 +67,14 @@ onUnmounted(() => {
 	pointer-events: none;
 	z-index: 10000;
 	transition: transform 0.2s ease-out;
+	background-color: orange;
 }
 
 .custom-cursor {
-	background-color: orange;
+	background-color: transparent;
+	border: 1px solid gray;
+	width: 0px;
+	height: 0px;
 	mix-blend-mode: difference;
 	margin-left: 16px;
 	margin-top: 18px;
