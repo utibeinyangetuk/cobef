@@ -13,11 +13,17 @@ import CustomCursor from "./components/CustomCursor.vue";
 
 :root {
 	--primary-background: #000000;
+	--secondary-background: #ffffe3;
+	--checkered-background: linear-gradient(90deg, #cccccc14 1%, transparent 1%), linear-gradient(-1deg, #cccccc14 1%, transparent 5%);
+	--checkered-background-size: 65.6px 60px;
+	--btn-background: #ffb655;
 	--primary-text-color: #ffffe3;
-	--secondary-text-color: #535349;
+	--secondary-text-color: gray;
 	--hover-color: rgb(27, 72, 72);
 	--solid-border: 1px solid #5353497a;
 	--dashed-border: 1px dashed #5353497a;
+	--text-shadow: 2px 9px 3px rgba(0, 0, 0, 1);
+	--box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
 }
 
 body,
