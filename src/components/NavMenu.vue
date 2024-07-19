@@ -62,10 +62,6 @@ const links = [
 	{ name: 'products', path: '/products' },
 	{ name: 'Projects', path: '/projects' },
 	{ name: 'Contact', path: '/contact' },
-	{ name: 'gallery', path: '/#' },
-	{ name: 'services', path: '/#' },
-	{ name: 'vacancies', path: '/#' },
-	{ name: 'careers', path: '/#' },
 ];
 
 const formatNumber = (number) => {
@@ -92,8 +88,8 @@ div {
 
 .hamburger-menu span {
 	display: block;
-	width: 35px;
-	height: 3px;
+	width: 30px;
+	height: 2px;
 	margin-bottom: 5px;
 	background-color: #ffffe3;
 	border: none;
@@ -102,7 +98,7 @@ div {
 }
 
 .hamburger-menu.open span:nth-child(1) {
-	transform: translateY(14px) rotate(45deg);
+	transform: translateY(13px) rotate(45deg);
 }
 
 .hamburger-menu.open span:nth-child(2) {
@@ -110,7 +106,7 @@ div {
 }
 
 .hamburger-menu.open span:nth-child(3) {
-	transform: translateY(-3px) rotate(-45deg);
+	transform: translateY(-2px) rotate(-45deg);
 }
 
 .hamburger-menu.open {
@@ -165,8 +161,9 @@ div {
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
-	border-radius: 40px;
-	border: 2px dashed #5353497a;
+	background: var(--checkered-background);
+	background-size: var(--checkered-background-size);
+	background-color: var(--primary-background);
 }
 
 .fullscreen-menu nav {
@@ -185,7 +182,7 @@ div {
 	list-style: none;
 	margin: 0;
 	padding: 10px;
-	border: 1px dashed #5353497a;
+	border: var(--dashed-border);
 }
 
 .fullscreen-menu nav ul li {
@@ -195,25 +192,26 @@ div {
 	text-transform: uppercase;
 	font-size: 30px;
 	letter-spacing: 2px;
-	border: 1px dashed #5353497a;
+	border: var(--dashed-border);
 }
 
 .fullscreen-menu nav ul li .link-number {
 	margin-right: 10px;
 	color: #535349;
-	transition: color 0.3s;
+	transition: color 0.6s ease-in-out;
 	font-size: 12px;
 }
 
 .fullscreen-menu nav ul li a {
 	text-decoration: none;
-	transition: color 0.3s;
+	transition: color 0.6s ease-in-out;
 	color: #ffffe3;
 }
 
 .fullscreen-menu nav ul li:hover .link-number,
 .fullscreen-menu nav ul li:hover a {
 	color: rgb(27, 72, 72);
+	transition: 0.6s ease-in-out;
 }
 
 .fullscreen-menu nav ul li.active a {
@@ -221,8 +219,7 @@ div {
 }
 
 .menu-footer {
-	border-top: 1px dashed #5353497a;
-	;
+	border-top: var(--solid-border);
 	width: 94%;
 	display: flex;
 	justify-content: space-between;
@@ -233,7 +230,7 @@ div {
 .menu-footer h1 {
 	font-size: 12px;
 	letter-spacing: 2px;
-	color: #535349;
+	color: #ffffe381;
 	text-transform: uppercase;
 }
 
@@ -248,7 +245,7 @@ div {
 .social-icons li {
 	padding: 10px;
 	font-size: 25px;
-	color: #535349;
+	color: #ffffe381;
 }
 
 .social-icons li:hover {
