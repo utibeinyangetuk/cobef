@@ -75,19 +75,23 @@ const trips = [image1, image2, image3, image4];
 		<div class="logos">
 			<div class="logos-slide">
 				<img src="../assets/client logos/ALCON.png" />
-				<img src="../assets/client logos/briscoegroup.jpg" />
+				<img src="../assets/client logos/briscoegroup.png" />
 				<img src="../assets/client logos/darycet.webp" />
-				<img src="../assets/client logos/julius berger.jpg" />
+				<img src="../assets/client logos/julius-berger.png" />
 				<img src="../assets/client logos/kinetic.png" />
-				<img src="../assets/client logos/shell.jpg" />
+				<img src="../assets/client logos/shell.png" />
+				<img src="../assets/client logos/rivers-state.png" />
+				<img src="../assets/client logos/Hyprep.png" />
 			</div>
 			<div class="logos-slide" aria-hidden="true">
 				<img src="../assets/client logos/ALCON.png" />
-				<img src="../assets/client logos/briscoegroup.jpg" />
+				<img src="../assets/client logos/briscoegroup.png" />
 				<img src="../assets/client logos/darycet.webp" />
-				<img src="../assets/client logos/julius berger.jpg" />
+				<img src="../assets/client logos/julius-berger.png" />
 				<img src="../assets/client logos/kinetic.png" />
-				<img src="../assets/client logos/shell.jpg" />
+				<img src="../assets/client logos/shell.png" />
+				<img src="../assets/client logos/rivers-state.png" />
+				<img src="../assets/client logos/Hyprep.png" />
 			</div>
 		</div>
 	</div>
