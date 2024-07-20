@@ -15,7 +15,7 @@ import Navbar from '@/components/Navbar.vue';
 		<div class="location-container">
 			<p>Our Office</p>
 			<div class="information">
-				<img src="../assets/homepage-images/company.avif" />
+				<img src="../assets/homepage-images/cobef-building.jpeg" />
 				<div class="details">
 					<h1>Port Harcourt, Nigeria</h1>
 					<h2>Km 17 Port Harcourt/Aba Express Way P. O. Box, 2769 Port Harcourt</h2>
@@ -32,6 +32,8 @@ import Navbar from '@/components/Navbar.vue';
 <style scoped>
 .container {
 	background-color: #000000;
+	background-image: var(--checkered-background);
+	background-size: var(--checkered-background-size);
 }
 
 .header {
