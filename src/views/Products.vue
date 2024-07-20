@@ -20,7 +20,7 @@ import Navbar from "../components/Navbar.vue";
 			<p class="secondary-header">Our Catalog</p>
 			<div class="product-container">
 				<div class="product">
-					<img src="../assets/materials/HDPE-Pipe.jpg" />
+					<img src="../assets/materials/hdpe.jpg" />
 					<div class="product-description">
 						<h1>HDPE PIPES</h1>
 						<p>
@@ -72,9 +72,9 @@ import Navbar from "../components/Navbar.vue";
 					<img src="../assets/materials/pressure.jpg" />
 				</div>
 				<div class="product">
-					<img src="../assets/materials/pipes.jpg" />
+					<img src="../assets/materials/suction-hose.jpg" />
 					<div class="product-description">
-						<h1>HDPE PIPES</h1>
+						<h1>SUCTION HOSE</h1>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							Soluta, nesciunt sed vero sequi molestias quos quod
@@ -86,7 +86,7 @@ import Navbar from "../components/Navbar.vue";
 				</div>
 				<div class="product">
 					<div class="product-description">
-						<h1>HDPE PIPES</h1>
+						<h1>CONDUIT PIPES</h1>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							Soluta, nesciunt sed vero sequi molestias quos quod
@@ -95,38 +95,12 @@ import Navbar from "../components/Navbar.vue";
 							Est.
 						</p>
 					</div>
-					<img src="../assets/materials/HDPE-Pipe.jpg" />
+					<img src="../assets/materials/conduit.jpg" />
 				</div>
 				<div class="product">
-					<img src="../assets/materials/HDPE-Pipe.jpg" />
+					<img src="../assets/materials/corrugated-pipe.jpg" />
 					<div class="product-description">
-						<h1>HDPE PIPES</h1>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Soluta, nesciunt sed vero sequi molestias quos quod
-							expedita beatae perspiciatis, blanditiis ratione aliquid
-							dignissimos dolores corrupti assumenda earum eum nihil.
-							Est.
-						</p>
-					</div>
-				</div>
-				<div class="product">
-					<div class="product-description">
-						<h1>HDPE PIPES</h1>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Soluta, nesciunt sed vero sequi molestias quos quod
-							expedita beatae perspiciatis, blanditiis ratione aliquid
-							dignissimos dolores corrupti assumenda earum eum nihil.
-							Est.
-						</p>
-					</div>
-					<img src="../assets/materials/HDPE-Pipe.jpg" />
-				</div>
-				<div class="product">
-					<img src="../assets/materials/HDPE-Pipe.jpg" />
-					<div class="product-description">
-						<h1>HDPE PIPES</h1>
+						<h1>CORRUGATED PIPES</h1>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							Soluta, nesciunt sed vero sequi molestias quos quod
@@ -138,7 +112,7 @@ import Navbar from "../components/Navbar.vue";
 				</div>
 				<div class="product">
 					<div class="product-description">
-						<h1>HDPE PIPES</h1>
+						<h1>MARINE ROPES</h1>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							Soluta, nesciunt sed vero sequi molestias quos quod
@@ -147,7 +121,20 @@ import Navbar from "../components/Navbar.vue";
 							Est.
 						</p>
 					</div>
-					<img src="../assets/materials/HDPE-Pipe.jpg" />
+					<img src="../assets/materials/marine-rope.jpg" />
+				</div>
+				<div class="product">
+					<img src="../assets/materials/pvc.jpg" />
+					<div class="product-description">
+						<h1>PVC PIPES</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Soluta, nesciunt sed vero sequi molestias quos quod
+							expedita beatae perspiciatis, blanditiis ratione aliquid
+							dignissimos dolores corrupti assumenda earum eum nihil.
+							Est.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
