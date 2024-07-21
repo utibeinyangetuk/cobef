@@ -1,7 +1,11 @@
 <template>
 	<div>
 		<!-- Hamburger menu -->
-		<button @click="toggleMenu" :class="{ open: isOpen }" class="hamburger-menu">
+		<button
+			@click="toggleMenu"
+			:class="{ open: isOpen }"
+			class="hamburger-menu"
+		>
 			<span></span>
 			<span></span>
 			<span></span>
@@ -12,8 +16,14 @@
 				<!-- Menu items -->
 				<nav>
 					<ul>
-						<li v-for="(link, index) in links" :key="link.path" :class="{ active: isActive(link.path) }">
-							<span class="link-number">{{ formatNumber(index + 1) }}/</span>
+						<li
+							v-for="(link, index) in links"
+							:key="link.path"
+							:class="{ active: isActive(link.path) }"
+						>
+							<span class="link-number"
+								>{{ formatNumber(index + 1) }}/</span
+							>
 							<router-link :to="link.path">{{ link.name }}</router-link>
 						</li>
 					</ul>
@@ -34,8 +44,8 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import { useRouter } from 'vue-router';
+import { ref } from "vue";
+import { useRouter } from "vue-router";
 
 const isOpen = ref(false);
 const router = useRouter();
@@ -57,27 +67,26 @@ const isActive = (route) => {
 };
 
 const links = [
-	{ name: 'Home', path: '/' },
-	{ name: 'About', path: '/about' },
-	{ name: 'products', path: '/products' },
-	{ name: 'Projects', path: '/projects' },
-	{ name: 'Contact', path: '/contact' },
+	{ name: "Home", path: "/" },
+	{ name: "About", path: "/about" },
+	{ name: "products", path: "/products" },
+	{ name: "Projects", path: "/projects" },
+	{ name: "Contact", path: "/contact" },
 ];
 
 const formatNumber = (number) => {
 	return number < 10 ? `0${number}` : number;
 };
 </script>
-
 <style scoped>
 div {
-	background-color: #000000;
+	background-color: var(--pry-background);
 }
 
 .hamburger-menu {
 	position: fixed;
 	top: -10px;
-	right: 20px;
+	right: 40px;
 	z-index: 1000;
 	background: none;
 	border: none;
@@ -91,7 +100,7 @@ div {
 	width: 30px;
 	height: 2px;
 	margin-bottom: 5px;
-	background-color: #ffffe3;
+	background-color: var(--sec-background);
 	border: none;
 	border-radius: 5px;
 	transition: transform 0.6s ease, background-color 0.3s ease;
@@ -114,7 +123,7 @@ div {
 }
 
 .hamburger-menu.open span {
-	background-color: #ffffe3;
+	background-color: var(--sec-background);
 }
 
 .slide-fade-enter-active {
@@ -161,9 +170,9 @@ div {
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
-	background: var(--checkered-background);
-	background-size: var(--checkered-background-size);
-	background-color: var(--primary-background);
+	background: var(--ter-background);
+	background-size: var(--ter-background-size);
+	background-color: var(--pry-background);
 }
 
 .fullscreen-menu nav {
@@ -182,7 +191,7 @@ div {
 	list-style: none;
 	margin: 0;
 	padding: 10px;
-	border: var(--dashed-border);
+	border: var(--sec-border);
 }
 
 .fullscreen-menu nav ul li {
@@ -192,12 +201,12 @@ div {
 	text-transform: uppercase;
 	font-size: 30px;
 	letter-spacing: 2px;
-	border: var(--dashed-border);
+	border: var(--sec-border);
 }
 
 .fullscreen-menu nav ul li .link-number {
 	margin-right: 10px;
-	color: #535349;
+	color: var(--sec-text);
 	transition: color 0.6s ease-in-out;
 	font-size: 12px;
 }
@@ -205,21 +214,21 @@ div {
 .fullscreen-menu nav ul li a {
 	text-decoration: none;
 	transition: color 0.6s ease-in-out;
-	color: #ffffe3;
+	color: var(--pry-text);
 }
 
 .fullscreen-menu nav ul li:hover .link-number,
 .fullscreen-menu nav ul li:hover a {
-	color: rgb(27, 72, 72);
+	color: var(--link-hover);
 	transition: 0.6s ease-in-out;
 }
 
 .fullscreen-menu nav ul li.active a {
-	color: rgb(27, 72, 72);
+	color: var(--link-hover);
 }
 
 .menu-footer {
-	border-top: var(--solid-border);
+	border-top: var(--pry-border);
 	width: 94%;
 	display: flex;
 	justify-content: space-between;
@@ -245,10 +254,12 @@ div {
 .social-icons li {
 	padding: 10px;
 	font-size: 25px;
-	color: #ffffe381;
+	color: var(--sec-text);
+	transition: 0.6s ease-in-out;
 }
 
 .social-icons li:hover {
-	color: rgb(27, 72, 72)
+	color: var(--link-hover);
+	transition: 0.6s ease-in-out;
 }
 </style>
