@@ -1,10 +1,8 @@
 <script setup>
 import Footer from '@/components/Footer.vue';
-import Navbar from "../components/Navbar.vue";
 </script>
 <template>
 	<div class="container">
-		<Navbar />
 		<div class="header">
 			<p>Our Products</p>
 			<h2>
@@ -143,26 +141,27 @@ import Navbar from "../components/Navbar.vue";
 </template>
 <style scoped>
 .container {
-	background-color: var(--primary-background);
-	padding: 60px;
+	background-color: var(--pry-background);
+	background: var(--ter-background);
+	background-size: var(--ter-background-size);
+	margin-top: 30px;
+	padding: 0 40px;
 }
 
 .header {
-	width: 90%;
+	width: 100%;
 	color: #fafafa;
 	margin-bottom: 70px;
-	background: var(--checkered-background);
-	background-size: var(--checkered-background-size);
 }
 
 .header p {
-	text-transform: uppercase;
+	text-transform: capitalize;
 	letter-spacing: 2px;
 	font-size: 50px;
 	margin-top: 0px;
 	margin-bottom: 30px;
 	font-weight: bold;
-	color: #ffffe3;
+	color: var(--pry-text);
 	align-content: center;
 	height: 100px;
 }
@@ -175,7 +174,7 @@ import Navbar from "../components/Navbar.vue";
 }
 
 .secondary-header {
-	text-transform: uppercase;
+	text-transform: capitalize;
 	letter-spacing: 2px;
 	font-size: 50px;
 	margin-top: 0px;
@@ -186,18 +185,12 @@ import Navbar from "../components/Navbar.vue";
 	height: 100px;
 }
 
-.catalog {
-	border-top: 1px solid #535349;
-	background: var(--checkered-background);
-	background-size: var(--checkered-background-size);
-}
-
 .product-container .product {
 	display: flex;
 	gap: 30px;
 	margin-top: 70px;
-	border-bottom: 1px solid #535349;
-	align-items: center
+	align-items: center;
+	justify-content: center;
 }
 
 .product-container .product img {
