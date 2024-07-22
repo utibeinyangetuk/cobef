@@ -1,11 +1,7 @@
 <template>
 	<div>
 		<!-- Hamburger menu -->
-		<button
-			@click="toggleMenu"
-			:class="{ open: isOpen }"
-			class="hamburger-menu"
-		>
+		<button @click="toggleMenu" :class="{ open: isOpen }" class="hamburger-menu">
 			<span></span>
 			<span></span>
 			<span></span>
@@ -16,15 +12,9 @@
 				<!-- Menu items -->
 				<nav>
 					<ul>
-						<li
-							v-for="(link, index) in links"
-							:key="link.path"
-							:class="{ active: isActive(link.path) }"
-						>
-							<span class="link-number"
-								>{{ formatNumber(index + 1) }}/</span
-							>
-							<router-link :to="link.path">{{ link.name }}</router-link>
+						<li v-for="(link, index) in links" :key="link.path" :class="{ active: isActive(link.path) }">
+							<span class="link-number">{{ formatNumber(index + 1) }}/</span>
+							<router-link :to="link.path" @click.native="closeMenu">{{ link.name }}</router-link>
 						</li>
 					</ul>
 				</nav>
@@ -62,6 +52,10 @@ const toggleMenu = debounce(() => {
 	isOpen.value = !isOpen.value;
 }, 100);
 
+const closeMenu = () => {
+	isOpen.value = false;
+};
+
 const isActive = (route) => {
 	return router.currentRoute.value.path === route;
 };
@@ -69,7 +63,7 @@ const isActive = (route) => {
 const links = [
 	{ name: "Home", path: "/" },
 	{ name: "About", path: "/about" },
-	{ name: "products", path: "/products" },
+	{ name: "Products", path: "/products" },
 	{ name: "Projects", path: "/projects" },
 	{ name: "Contact", path: "/contact" },
 ];
@@ -78,21 +72,23 @@ const formatNumber = (number) => {
 	return number < 10 ? `0${number}` : number;
 };
 </script>
+
 <style scoped>
 div {
 	background-color: var(--pry-background);
 }
 
 .hamburger-menu {
-	position: fixed;
-	top: -10px;
-	right: 40px;
+	position: absolute;
+	top: -5px;
+	right: 0px;
 	z-index: 1000;
 	background: none;
 	border: none;
 	cursor: none;
 	padding: 30px;
 	transition: transform 0.5s ease;
+	border-left: var(--pry-border);
 }
 
 .hamburger-menu span {
@@ -119,7 +115,7 @@ div {
 }
 
 .hamburger-menu.open {
-	position: fixed;
+	position: absolute;
 }
 
 .hamburger-menu.open span {
@@ -136,12 +132,12 @@ div {
 
 @keyframes slide-in {
 	from {
-		transform: translateY(100%);
+		transform: translateX(100%);
 		opacity: 0;
 	}
 
 	to {
-		transform: translateY(0);
+		transform: translateX(0);
 		opacity: 1;
 	}
 }
@@ -159,11 +155,12 @@ div {
 }
 
 .fullscreen-menu {
+	border-radius: 20px;
 	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
+	top: 1.6%;
+	left: 61.6%;
+	width: 35vw;
+	height: 98vh;
 	z-index: 999;
 	display: flex;
 	flex-direction: column;
@@ -173,6 +170,8 @@ div {
 	background: var(--ter-background);
 	background-size: var(--ter-background-size);
 	background-color: var(--pry-background);
+	box-shadow: var(--box-shadow);
+	border: var(--pry-border);
 }
 
 .fullscreen-menu nav {
@@ -185,9 +184,6 @@ div {
 }
 
 .fullscreen-menu nav ul {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px 50px;
 	list-style: none;
 	margin: 0;
 	padding: 10px;
@@ -202,6 +198,7 @@ div {
 	font-size: 30px;
 	letter-spacing: 2px;
 	border: var(--sec-border);
+	margin-bottom: 10px;
 }
 
 .fullscreen-menu nav ul li .link-number {
@@ -214,7 +211,7 @@ div {
 .fullscreen-menu nav ul li a {
 	text-decoration: none;
 	transition: color 0.6s ease-in-out;
-	color: var(--pry-text);
+	color: #ffffe3a6;
 }
 
 .fullscreen-menu nav ul li:hover .link-number,
@@ -223,8 +220,13 @@ div {
 	transition: 0.6s ease-in-out;
 }
 
+.fullscreen-menu nav ul li.active {
+	background-color: var(--sec-background);
+	border-radius: 10px;
+}
+
 .fullscreen-menu nav ul li.active a {
-	color: var(--link-hover);
+	color: var(--pry-text);
 }
 
 .menu-footer {
