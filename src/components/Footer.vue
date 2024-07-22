@@ -18,7 +18,8 @@ const currentYear = ref(new Date().getFullYear());
 					</li>
 					<li>
 						<i class="uil uil-phone">
-							<a href="tel:+1234567890"> +(234) 567-890-9123 </a></i>
+							<a href="tel:+1234567890"> +(234) 567-890-9123 </a></i
+						>
 					</li>
 					<li></li>
 				</ul>
@@ -34,19 +35,51 @@ const currentYear = ref(new Date().getFullYear());
 			<div class="learn-more">
 				<p>Company</p>
 				<ul>
-					<li><router-link to="/about"><i class="uil uil-arrow-right" /> About us</router-link></li>
-					<li><router-link to="/products"><i class="uil uil-arrow-right" /> Products</router-link></li>
-					<li><router-link to="/projects"><i class="uil uil-arrow-right" /> Projects</router-link></li>
+					<li>
+						<router-link to="/about"
+							><i class="uil uil-arrow-right" /> About us</router-link
+						>
+					</li>
+					<li>
+						<router-link to="/products"
+							><i class="uil uil-arrow-right" /> Products</router-link
+						>
+					</li>
+					<li>
+						<router-link to="/projects"
+							><i class="uil uil-arrow-right" /> Projects</router-link
+						>
+					</li>
 				</ul>
 			</div>
 			<div class="sitemap">
 				<p>Site Map</p>
 				<ul>
-					<li><router-link to="/"><i class="uil uil-arrow-right" /> Home</router-link></li>
-					<li><router-link to="/about"><i class="uil uil-arrow-right" /> About us</router-link></li>
-					<li><router-link to="/products"><i class="uil uil-arrow-right" /> Products</router-link></li>
-					<li><router-link to="/projects"><i class="uil uil-arrow-right" /> Projects</router-link></li>
-					<li><router-link to="/contact"><i class="uil uil-arrow-right" /> Contact us</router-link></li>
+					<li>
+						<router-link to="/"
+							><i class="uil uil-arrow-right" /> Home</router-link
+						>
+					</li>
+					<li>
+						<router-link to="/about"
+							><i class="uil uil-arrow-right" /> About us</router-link
+						>
+					</li>
+					<li>
+						<router-link to="/products"
+							><i class="uil uil-arrow-right" /> Products</router-link
+						>
+					</li>
+					<li>
+						<router-link to="/projects"
+							><i class="uil uil-arrow-right" /> Projects</router-link
+						>
+					</li>
+					<li>
+						<router-link to="/contact"
+							><i class="uil uil-arrow-right" /> Contact us</router-link
+						>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -59,14 +92,13 @@ const currentYear = ref(new Date().getFullYear());
 <style scoped>
 footer {
 	padding: 0px 40px 40px 40px;
-	background-color: #000000;
-	background-image: var(--checkered-background);
-	background-size: var(--checkered-background-size);
-
+	background-color: var(--pry-background);
+	background-image: var(--ter-background);
+	background-size: var(--ter-background-size);
 }
 
 .copyright P {
-	color: #ffffff;
+	color: var(--pry-text);
 	font-weight: normal;
 	font-size: 15px;
 	text-align: center;
@@ -78,11 +110,11 @@ footer {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: first baseline;
-	color: #ffffff;
+	color: var(--pry-text);
 }
 
 .secondary-container p {
-	color: #ffffff;
+	color: var(--pry-text);
 	letter-spacing: 2px;
 	margin-bottom: 10px;
 	font-size: 22px;
@@ -91,12 +123,12 @@ footer {
 
 .secondary-container li a:hover,
 .secondary-container li:hover {
-	color: teal;
+	color: var(--link-hover);
 }
 
 .secondary-container li a,
 .secondary-container li {
-	color: gray;
+	color: var(--sec-text);
 	font-style: normal;
 	letter-spacing: 1.5px;
 	margin-bottom: 10px;
