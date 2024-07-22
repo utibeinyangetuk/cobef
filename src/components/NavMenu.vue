@@ -20,7 +20,7 @@
 				</nav>
 				<!-- Footer section -->
 				<footer class="menu-footer">
-					<h1>Keep in touch with us</h1>
+					<!-- <h1>Keep in touch with us</h1> -->
 					<ul class="social-icons">
 						<li class="uil uil-facebook" />
 						<li class="uil uil-linkedin" />
@@ -229,8 +229,8 @@ div {
 	color: var(--pry-text);
 }
 
+/*
 .menu-footer {
-	border-top: var(--pry-border);
 	width: 94%;
 	display: flex;
 	justify-content: space-between;
@@ -244,7 +244,7 @@ div {
 	color: #ffffe381;
 	text-transform: uppercase;
 }
-
+*/
 .social-icons {
 	list-style: none;
 	display: flex;
@@ -255,7 +255,7 @@ div {
 
 .social-icons li {
 	padding: 10px;
-	font-size: 25px;
+	font-size: 30px;
 	color: var(--sec-text);
 	transition: 0.6s ease-in-out;
 }
