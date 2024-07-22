@@ -94,28 +94,32 @@ import Footer from "@/components/Footer.vue";
 						<h1>Lapeta</h1>
 					</div>
 				</div>
-				<div class="vacancy-container">
+			</div>
+			<div class="vacancy-container">
+				<div class="vacancy-header">
 					<h1>Want to work with us?</h1>
-					<div class="vacancy">
-						<div class="hiring-image-wrapper">
-							<img src="../assets/homepage-images/hiring.jpg" />
-						</div>
-						<div class="hiring-text-wrapper">
-							<span class=""></span>
-							<h2>We are hiring</h2>
-							<ul>
-								<li>Nysc Corpers</li>
-								<li>Student Interns</li>
-								<li>Full-time workers</li>
-								<li>Contract Workers</li>
-							</ul>
-							<div class="button-wrapper">
-								<router-link to="/contact">Contact us<i class="uil uil-arrow-right" /></router-link>
-							</div>
+					<P>Benefits include Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus et quae eaque
+						odio maxime magnam accusantium corrupti modi reiciendis? Totam minus reprehenderit fugiat, numquam
+						consectetur omnis rerum aliquid corrupti repellendus?</P>
+				</div>
+				<div class="vacancy">
+					<div class="hiring-image-wrapper">
+						<img src="../assets/homepage-images/hiring.jpg" />
+					</div>
+					<div class="hiring-text-wrapper">
+						<span class=""></span>
+						<h2>We are hiring</h2>
+						<ul>
+							<li>Nysc Corpers</li>
+							<li>Student Interns</li>
+							<li>Full-time workers</li>
+							<li>Contract Workers</li>
+						</ul>
+						<div class="button-wrapper">
+							<router-link to="/contact">Contact us<i class="uil uil-arrow-right" /></router-link>
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
@@ -301,21 +305,37 @@ import Footer from "@/components/Footer.vue";
 }
 
 .vacancy-container {
-	margin-top: 40px;
 	border: var(--pry-border);
 	border-right: none;
 	border-left: none;
+	border-bottom: 0;
 	background: var(--checkered-background);
 	background-size: var(--checkered-background-size);
 	background-repeat: repeat;
 }
 
-.vacancy-container h1 {
+.vacancy-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.vacancy-header p {
+	width: 30%;
+	margin-top: 20px;
+	color: var(--sec-text);
+	font-size: 14px;
+	line-height: 1.5em;
+}
+
+.vacancy-header h1 {
 	font-size: 50px;
 	color: #ffffe3;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	margin-left: 40px;
 	letter-spacing: 2px;
+	margin-top: 20px;
 }
 
 .vacancy {
