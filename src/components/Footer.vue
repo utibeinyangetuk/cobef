@@ -124,6 +124,10 @@ footer {
 		padding: 0;
 	}
 
+	.secondary-container {
+		height: 100%;
+	}
+
 	.copyright p {
 		font-size: .7rem;
 	}
@@ -151,6 +155,7 @@ footer {
 	.secondary-container {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 10px;
 		width: 100%;
 	}
 
@@ -168,7 +173,9 @@ footer {
 	.connect,
 	.learn-more,
 	.sitemap {
-		text-align: center;
+		text-align: left;
+		margin-left: 20px;
+		width: 100%;
 	}
 }
 </style>
