@@ -18,8 +18,7 @@ const currentYear = ref(new Date().getFullYear());
 					</li>
 					<li>
 						<i class="uil uil-phone">
-							<a href="tel:+1234567890"> +(234) 567-890-9123 </a></i
-						>
+							<a href="tel:+1234567890"> +(234) 567-890-9123 </a></i>
 					</li>
 					<li></li>
 				</ul>
@@ -36,19 +35,13 @@ const currentYear = ref(new Date().getFullYear());
 				<p>Company</p>
 				<ul>
 					<li>
-						<router-link to="/about"
-							><i class="uil uil-arrow-right" /> About us</router-link
-						>
+						<router-link to="/about"><i class="uil uil-arrow-right" /> About us</router-link>
 					</li>
 					<li>
-						<router-link to="/products"
-							><i class="uil uil-arrow-right" /> Products</router-link
-						>
+						<router-link to="/products"><i class="uil uil-arrow-right" /> Products</router-link>
 					</li>
 					<li>
-						<router-link to="/projects"
-							><i class="uil uil-arrow-right" /> Projects</router-link
-						>
+						<router-link to="/projects"><i class="uil uil-arrow-right" /> Projects</router-link>
 					</li>
 				</ul>
 			</div>
@@ -56,29 +49,19 @@ const currentYear = ref(new Date().getFullYear());
 				<p>Site Map</p>
 				<ul>
 					<li>
-						<router-link to="/"
-							><i class="uil uil-arrow-right" /> Home</router-link
-						>
+						<router-link to="/"><i class="uil uil-arrow-right" /> Home</router-link>
 					</li>
 					<li>
-						<router-link to="/about"
-							><i class="uil uil-arrow-right" /> About us</router-link
-						>
+						<router-link to="/about"><i class="uil uil-arrow-right" /> About us</router-link>
 					</li>
 					<li>
-						<router-link to="/products"
-							><i class="uil uil-arrow-right" /> Products</router-link
-						>
+						<router-link to="/products"><i class="uil uil-arrow-right" /> Products</router-link>
 					</li>
 					<li>
-						<router-link to="/projects"
-							><i class="uil uil-arrow-right" /> Projects</router-link
-						>
+						<router-link to="/projects"><i class="uil uil-arrow-right" /> Projects</router-link>
 					</li>
 					<li>
-						<router-link to="/contact"
-							><i class="uil uil-arrow-right" /> Contact us</router-link
-						>
+						<router-link to="/contact"><i class="uil uil-arrow-right" /> Contact us</router-link>
 					</li>
 				</ul>
 			</div>
@@ -133,5 +116,59 @@ footer {
 	letter-spacing: 1.5px;
 	margin-bottom: 10px;
 	font-size: 15px;
+}
+
+/*Tablets*/
+@media only screen and (min-width:650px) and (max-width:900px) {
+	footer {
+		padding: 0;
+	}
+
+	.copyright p {
+		font-size: .7rem;
+	}
+
+	.secondary-container p {
+		font-size: 1.1em;
+	}
+
+	.secondary-container li,
+	.secondary-container li a {
+		font-size: .8em;
+	}
+}
+
+/*Phones*/
+@media only screen and (max-width:649px) {
+	footer {
+		padding: 0;
+	}
+
+	.copyright p {
+		font-size: .6em;
+	}
+
+	.secondary-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		width: 100%;
+	}
+
+	.secondary-container p {
+		font-size: 1em;
+		margin-top: 10px;
+	}
+
+	.secondary-container li,
+	.secondary-container li a {
+		font-size: .8em;
+	}
+
+	.get-in-touch,
+	.connect,
+	.learn-more,
+	.sitemap {
+		text-align: center;
+	}
 }
 </style>
