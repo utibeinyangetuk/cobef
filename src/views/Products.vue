@@ -218,4 +218,107 @@ import Footer from '@/components/Footer.vue';
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
+
+@media only screen and (min-width:601px) and (max-width:1024px) {
+	.container {
+		padding: 0 10px;
+	}
+
+	.header {
+		margin-bottom: 50px;
+	}
+
+	.header p {
+		margin-bottom: -.5em;
+	}
+
+	.header h2 {
+		font-size: 1.3em;
+		line-height: 2em;
+	}
+
+	.secondary-header {
+		margin-bottom: -1.2em;
+	}
+
+	.product {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.product:nth-child(even) {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.product-container .product img {
+		height: 60vh;
+		background-size: cover;
+		object-fit: cover;
+		margin-bottom: -1em;
+	}
+
+	.product-container .product-description h1 {
+		font-size: 2em;
+	}
+
+	.product-container .product-description p {
+		font-size: .8em;
+		margin-top: 0em;
+		line-height: 3em;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		padding: 0 10px;
+	}
+
+	.header {
+		margin-bottom: 25px;
+	}
+
+	.header p {
+		font-size: 2.4em;
+		margin-bottom: -.9em;
+	}
+
+	.header h2 {
+		font-size: 1em;
+		line-height: 2em;
+	}
+
+	.secondary-header {
+		margin-bottom: -1.2em;
+	}
+
+	.product {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.product:nth-child(even) {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.product-container .product img {
+		height: 60vh;
+		background-size: cover;
+		object-fit: cover;
+		margin-bottom: -1em;
+	}
+
+	.product-container .product-description h1 {
+		font-size: 1.7em;
+	}
+
+	.product-container .product-description p {
+		font-size: .6em;
+		margin-top: 0em;
+		line-height: 3em;
+		width: 100%;
+	}
+}
 </style>
