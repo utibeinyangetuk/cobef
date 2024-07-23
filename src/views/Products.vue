@@ -291,6 +291,9 @@ import Footer from '@/components/Footer.vue';
 
 	.secondary-header {
 		margin-bottom: -1.2em;
+		font-size: 2.8em;
+		width: 100%;
+		height: fit-content;
 	}
 
 	.product {
