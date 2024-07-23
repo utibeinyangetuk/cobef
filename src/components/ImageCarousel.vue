@@ -74,7 +74,6 @@ onUnmounted(() => {
 	width: 100%;
 	/* Adjust width to occupy full space */
 	box-sizing: border-box;
-	padding: 0px 60px 0px 60px;
 }
 
 .carousel-item img {
@@ -85,9 +84,9 @@ onUnmounted(() => {
 
 .carousel-control {
 	position: absolute;
-	top: 50%;
+	top: 96%;
 	transform: translateY(-50%);
-	background-color: #000000bc;
+	background-color: transparent;
 	border: none;
 	color: white;
 	font-size: 20px;
@@ -95,18 +94,15 @@ onUnmounted(() => {
 	padding: 10px;
 	height: 50px;
 	width: 50px;
-	border-radius: 50%;
 	z-index: 1;
 }
 
 .carousel-control.prev {
-	left: 80px;
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5)
+	left: 520px;
 }
 
 .carousel-control.next {
-	right: 80px;
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5)
+	right: 520px;
 }
 
 .carousel-indicators {
@@ -118,8 +114,8 @@ onUnmounted(() => {
 
 .indicator {
 	display: inline-block;
-	width: 10px;
-	height: 10px;
+	width: 6px;
+	height: 6px;
 	margin: 0 5px;
 	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 50%;
