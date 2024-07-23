@@ -5,7 +5,7 @@ const currentYear = ref(new Date().getFullYear());
 
 <template>
 	<footer>
-		<div class="secondary-container">
+		<div class="container">
 			<div class="get-in-touch">
 				<p>Get in touch</p>
 				<ul>
@@ -71,111 +71,79 @@ const currentYear = ref(new Date().getFullYear());
 		</div>
 	</footer>
 </template>
-
 <style scoped>
 footer {
-	padding: 0px 40px 40px 40px;
+	padding: 0px 0px 0px 10px;
 	background-color: var(--pry-background);
 	background-image: var(--ter-background);
 	background-size: var(--ter-background-size);
 }
 
-.copyright P {
-	color: var(--pry-text);
-	font-weight: normal;
-	font-size: 15px;
+.copyright {
 	text-align: center;
+	margin-top: 20px;
+}
+
+.copyright p {
+	font-size: .8em;
+	color: var(--pry-text);
 	letter-spacing: 1px;
 }
 
-.secondary-container {
-	margin-top: 40px;
+.container {
 	display: flex;
+	width: 100%;
 	justify-content: space-evenly;
-	align-items: first baseline;
-	color: var(--pry-text);
 }
 
-.secondary-container p {
+.container p {
 	color: var(--pry-text);
 	letter-spacing: 2px;
-	margin-bottom: 10px;
-	font-size: 22px;
-	font-weight: 700;
+	margin-bottom: 5px;
 }
 
-.secondary-container li a:hover,
-.secondary-container li:hover {
+.container a,
+li {
+	color: var(--sec-text);
+	font-style: normal;
+	letter-spacing: 1px;
+	font-size: .9em;
+	line-height: 2em;
+}
+
+.container li a:hover,
+.container li:hover {
 	color: var(--link-hover);
 }
 
-.secondary-container li a,
-.secondary-container li {
-	color: var(--sec-text);
-	font-style: normal;
-	letter-spacing: 1.5px;
-	margin-bottom: 10px;
-	font-size: 15px;
-}
-
-/*Tablets*/
-@media only screen and (min-width:650px) and (max-width:900px) {
-	footer {
-		padding: 0;
+@media only screen and (min-width:401px) and (max-width:600px) {
+	.container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 	}
 
-	.secondary-container {
-		height: 100%;
+	.container p {
+		margin-top: 20px;
 	}
 
 	.copyright p {
-		font-size: .7rem;
-	}
-
-	.secondary-container p {
-		font-size: 1.1em;
-	}
-
-	.secondary-container li,
-	.secondary-container li a {
-		font-size: .8em;
+		font-size: .7em;
 	}
 }
 
-/*Phones*/
-@media only screen and (max-width:649px) {
-	footer {
-		padding: 0;
+@media only screen and (max-width:490px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		text-wrap: wrap;
+	}
+
+	.container p {
+		margin-top: 20px;
 	}
 
 	.copyright p {
 		font-size: .6em;
-	}
-
-	.secondary-container {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-		gap: 10px;
-		width: 100%;
-	}
-
-	.secondary-container p {
-		font-size: 1em;
-		margin-top: 10px;
-	}
-
-	.secondary-container li,
-	.secondary-container li a {
-		font-size: .8em;
-	}
-
-	.get-in-touch,
-	.connect,
-	.learn-more,
-	.sitemap {
-		text-align: left;
-		margin-left: 20px;
-		width: 100%;
 	}
 }
 </style>
