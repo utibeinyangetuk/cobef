@@ -59,7 +59,6 @@ autoSlide();
 	justify-content: center;
 	width: 80%;
 	margin: auto;
-	margin-top: 10px;
 	padding: 20px;
 	height: 60vh;
 	border-radius: 0 40px;
@@ -82,11 +81,11 @@ autoSlide();
 }
 
 .carousel-content p {
-	font-size: 25px;
+	font-size: 1em;
 	font-weight: 200;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	margin-top: 12px;
-	color:var(--primary-text-color);
+	color:var(--pry-text);
 }
 
 .carousel-controls {
@@ -115,7 +114,7 @@ autoSlide();
 	display: block;
 	width: 10px;
 	height: 10px;
-	background-color: var(--secondary-text-color);
+	background-color: var(--sec-text);
 	border-radius: 50%;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
