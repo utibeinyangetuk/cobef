@@ -236,13 +236,12 @@ const formatNumber = (number) => {
 
 .fullscreen-menu ul li a {
 	padding: 5px;
-	letter-spacing: 2px;
-	font-size: 1.5em;
+	letter-spacing: 1px;
+	font-size: 1.3em;
 	transition: 0.6s ease-in-out;
 	color: var(--pry-text);
 	font-weight: bold;
-	font-family: poppins;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 .fullscreen-menu ul li a:hover {
