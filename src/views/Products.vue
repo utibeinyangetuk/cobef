@@ -214,7 +214,7 @@
 	letter-spacing: 2px;
 	font-size: 1em;
 	margin-top: 1em;
-	margin-right: -40rem;
+	margin-right: -50em;
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
