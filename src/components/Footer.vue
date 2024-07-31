@@ -74,9 +74,7 @@ const currentYear = ref(new Date().getFullYear());
 <style scoped>
 footer {
 	padding: 0px 0px 0px 10px;
-	background-color: var(--pry-background);
-	background-image: var(--ter-background);
-	background-size: var(--ter-background-size);
+	margin-top: 20px;
 }
 
 .copyright {
@@ -116,10 +114,14 @@ li {
 	color: var(--link-hover);
 }
 
-@media only screen and (min-width:401px) and (max-width:600px) {
+@media only screen and (min-width:530px) and (max-width:672px) {
 	.container {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.container > div:nth-child(even) {
+		margin-left: 40px;
 	}
 
 	.container p {
@@ -131,7 +133,7 @@ li {
 	}
 }
 
-@media only screen and (max-width:490px) {
+@media only screen and (max-width:529px) {
 	.container {
 		display: flex;
 		flex-direction: column;
