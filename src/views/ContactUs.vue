@@ -1,127 +1,177 @@
-<script setup>
-import Footer from '@/components/Footer.vue';
-import Navbar from '@/components/Navbar.vue';
-</script>
-
 <template>
-
-	<div class="container">
-		<Navbar />
-		<div class="header">
-			<p>Get in touch</p>
-			<h2>Do you want to <a href="#">start a project</a>,<br> <a href="#">join the team</a> or just say hi?<br> we'd
-				love to hear from you.</h2>
+	<div class="main-container">
+		<div class="title">
+			<h1>Contact us</h1>
 		</div>
-		<div class="location-container">
-			<p>Our Office</p>
-			<div class="information">
-				<img src="../assets/homepage-images/cobef-building.jpeg" />
-				<div class="details">
-					<h1>Port Harcourt, Nigeria</h1>
-					<h2>Km 17 Port Harcourt/Aba Express Way P. O. Box, 2769 Port Harcourt</h2>
-					<a href="mailto:info@cobefinternationalltd.com">info@cobefinternationalltd.com</a>
-					<a href="tel:+1234567890">+(234) 567-890-9123</a>
-					<a href="https://www.google.com/maps/place/Cobef+International+Limited/@4.8610877,7.0891647,17.42z/data=!4m9!1m2!2m1!1sKm+17+Port+Harcourt%2FAba+Express+Way+P.+O.+Box,+2769+Port+Harcourt!3m5!1s0x1069d2ad21ae86bd:0x46fb3e4446572965!8m2!3d4.860476!4d7.0880525!16s%2Fg%2F11hzhc6m0m?entry=ttu"
-						target="_blank">View in maps</a>
+		<div class="company-info">
+			<div class="write-up">
+				<h1>Our inbox is open</h1>
+				<p>
+					The best part of our job is being able to please our customers
+					and neighbors. Whether you need help starting a new project, have
+					a question about our products and services, or need us to come
+					back for a repair, get in touch with our form.
+				</p>
+			</div>
+			<div class="form">
+				<div class="image-wrapper">
+					<img src="../assets/homepage-images/team.jpg" />
+				</div>
+				<div class="company-details">
+					<div class="location">
+						<h1>Our Office</h1>
+						<p>
+							Km 17 Port Harcourt/Aba Express Way P. O. Box, 2769 Port
+							Harcourt
+						</p>
+						<div class="button">
+							<a
+								href="https://www.google.com/maps/place/Cobef+International+Limited/@4.8610877,7.0891647,17.42z/data=!4m9!1m2!2m1!1sKm+17+Port+Harcourt%2FAba+Express+Way+P.+O.+Box,+2769+Port+Harcourt!3m5!1s0x1069d2ad21ae86bd:0x46fb3e4446572965!8m2!3d4.860476!4d7.0880525!16s%2Fg%2F11hzhc6m0m?entry=ttu"
+								target="_blank"
+								>View in maps</a
+							>
+						</div>
+					</div>
+					<div class="Phone">
+						<h1>Phone</h1>
+						<div class="number-wrapper">
+							<a href="tel:+1234567890">+(234) 567-890-9123</a>
+							<a href="tel:+1234567890">+(234) 567-890-9123</a>
+							<a href="tel:+1234567890">+(234) 567-890-9123</a>
+						</div>
+					</div>
+					<div class="email">
+						<h1>Email</h1>
+						<a href="mailto:info@cobefinternationalltd.com"
+							>info@cobefinternationalltd.com</a
+						>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<Footer />
 </template>
 <style scoped>
-.container {
-	background-color: #000000;
-	background-image: var(--checkered-background);
-	background-size: var(--checkered-background-size);
+.main-container {
+	margin-top: 50px;
 }
-
-.header {
-	margin-top: 0px;
-	border-left: 1px dashed #5353497a;
-	border-right: 1px dashed #5353497a;
-	margin: 60px 40px 0 40px;
-	padding: 40px;
-	display: flex;
-	align-items: center;
-}
-
-.header p {
+.title {
 	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 70px;
-	line-height: 2em;
-	margin-bottom: 40px;
-	font-weight: bolder;
-	color: #ffffe3;
-	width: 50%;
-}
-
-.header h2 {
 	padding: 20px;
-	font-weight: 400;
-	font-size: 35px;
-	line-height: 2.5em;
-	color: #535349;
-	width: 50%;
-	border: 1px dashed #5353497a;
 }
-
-.header h2 a {
-	color: #ffffe3;
-	text-decoration: underline;
-	text-transform: uppercase;
-	line-height: 1.6em;
+.title h1 {
+	font-size: 4em;
+	text-shadow: 2px 6px 3px rgba(0, 0, 0, 0.7);
+	text-align: center;
+	letter-spacing: 3px;
+	font-family: satoshi;
 }
-
-.location-container {
-	border: 1px solid #5353497a;
+.company-info {
+	width: 100%;
+	background: linear-gradient(to top, #fdf5e5, #ffffe3);
+	border-top-right-radius: 20%;
+	border-top-left-radius: 20%;
 }
-
-.location-container p {
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 50px;
-	margin-top: 0px;
-	/* margin-bottom: 40px; */
-	font-weight: bold;
-	color: #ffffe3;
-	padding: 0px 0px 0px 60px;
-	border: 1px dashed #5353497a;
-	align-content: center;
-	height: 100px;
-}
-
-.information {
-	display: flex;
-	padding: 0px 0px 0px 40px;
-}
-
-.information img {
-	border: 1px dashed #5353497a;
-	padding: 7px;
-}
-
-.details {
+.write-up {
 	display: flex;
 	flex-direction: column;
+	text-align: center;
+	align-items: center;
 }
-
-.details h1,
-.details h2,
-.details a {
-	border: 1px dashed #5353497a;
-	padding: 20px;
-	margin-left: 10px;
-	margin-right: 40px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	color: #ffffe3;
-	font-size: 36px;
+.write-up h1 {
+	width: 80%;
+	text-transform: uppercase;
 	letter-spacing: 2px;
+	margin-top: 20px;
+	font-size: 1.7em;
+}
+.write-up p {
+	font-size: 1.6em;
+	width: 70%;
+	line-height: 2em;
+	margin-top: 10px;
+	font-weight: 200;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.image-wrapper {
+	width: 90%;
+}
+.image-wrapper img {
+	width: 100%;
+	height: 500px;
+	border-radius: 1em;
+	object-fit: cover;
 }
 
-.details a:hover {
-	text-decoration: underline;
+.company-details {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 100%;
+}
+.company-details h1 {
+	font-size: 0.9em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.button {
+	padding: 10px 0;
+	margin-top: 6px;
+}
+.button a {
+	border: 1px solid;
+	padding: 6px;
+	border-radius: 3px;
+	color: #212121;
+}
+.button a:hover {
+	background-color: #212121;
+	color: #ffffe3;
+	border: none;
+}
+.email a,
+.number-wrapper a {
+	font-size: 0.8em;
+	letter-spacing: 1px;
+	color: #212121;
+}
+.email a:hover,
+.number-wrapper a:hover {
+	color: var(--link-hover);
+}
+.number-wrapper {
+	display: flex;
+	flex-direction: column;
+	line-height: 2em;
+}
+.location p {
+	font-size: 0.9em;
+}
+
+@media only screen and (max-width: 768px) {
+	.title h1 {
+		font-size: 3em;
+		text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.7);
+		width: 100%;
+	}
+	.company-info {
+		border-top-right-radius: 10%;
+		border-top-left-radius: 10%;
+	}
+	.write-up h1 {
+		font-size: 1.6em;
+		font-weight: 800;
+		width: 100%;
+	}
+	.write-up p {
+		font-size: 1em;
+		width: 90%;
+	}
 }
 </style>
