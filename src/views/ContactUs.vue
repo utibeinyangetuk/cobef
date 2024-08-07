@@ -64,7 +64,8 @@
 	text-shadow: 2px 6px 3px rgba(0, 0, 0, 0.7);
 	text-align: center;
 	letter-spacing: 3px;
-	font-family: satoshi;
+	font-family: poppins;
+	width: 100%;
 }
 .company-info {
 	width: 100%;
@@ -165,13 +166,36 @@
 		border-top-left-radius: 10%;
 	}
 	.write-up h1 {
-		font-size: 1.6em;
-		font-weight: 800;
+		font-size: 1em;
 		width: 100%;
+		letter-spacing: 1px;
+		font-family: poppins;
 	}
 	.write-up p {
 		font-size: 1em;
 		width: 90%;
+	}
+	.image-wrapper img {
+		height: 250px;
+		object-fit: fill;
+	}
+	.company-details {
+		display: flex;
+		flex-direction: column-reverse;
+		padding: 0 20px;
+	}
+	.company-details h1 {
+		margin-bottom: 5px;
+	}
+	.location,
+	.Phone,
+	.email {
+		border-bottom: var(--pry-border);
+	}
+	.email a,
+	.number-wrapper,
+	.location a {
+		margin-bottom: 10px;
 	}
 }
 </style>
