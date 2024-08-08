@@ -1,7 +1,7 @@
 <template>
 	<div class="container">
 		<div class="header">
-			<h1>Our Products</h1>
+			<h1>Products</h1>
 			<p>
 				Cobef International Ltd retains quality delivery and clients
 				satisfaction as its driving force. Based on ISO certification, we
@@ -12,7 +12,7 @@
 			</p>
 		</div>
 		<div class="catalog">
-			<p class="secondary-header">Our Catalog</p>
+			<h1 class="secondary-header">Catalog</h1>
 			<div class="product-container">
 				<div class="product">
 					<img src="../assets/materials/hdpe.jpg" />
@@ -28,6 +28,7 @@
 					</div>
 				</div>
 				<div class="product">
+					<img src="../assets/materials/LAPETA.jpg" />
 					<div class="product-description">
 						<h1>LAPETA</h1>
 						<p>
@@ -38,7 +39,6 @@
 							Est.
 						</p>
 					</div>
-					<img src="../assets/materials/LAPETA.jpg" />
 				</div>
 				<div class="product">
 					<img src="../assets/materials/Tank.jpeg" />
@@ -54,6 +54,7 @@
 					</div>
 				</div>
 				<div class="product">
+					<img src="../assets/materials/pressure.jpg" />
 					<div class="product-description">
 						<h1>PRESSURE PIPES</h1>
 						<p>
@@ -64,7 +65,6 @@
 							Est.
 						</p>
 					</div>
-					<img src="../assets/materials/pressure.jpg" />
 				</div>
 				<div class="product">
 					<img src="../assets/materials/suction-hose.jpg" />
@@ -80,6 +80,7 @@
 					</div>
 				</div>
 				<div class="product">
+					<img src="../assets/materials/conduit.jpg" />
 					<div class="product-description">
 						<h1>CONDUIT PIPES</h1>
 						<p>
@@ -90,7 +91,6 @@
 							Est.
 						</p>
 					</div>
-					<img src="../assets/materials/conduit.jpg" />
 				</div>
 				<div class="product">
 					<img src="../assets/materials/corrugated-pipe.jpg" />
@@ -106,6 +106,7 @@
 					</div>
 				</div>
 				<div class="product">
+					<img src="../assets/materials/marine-rope.jpg" />
 					<div class="product-description">
 						<h1>MARINE ROPES</h1>
 						<p>
@@ -116,7 +117,6 @@
 							Est.
 						</p>
 					</div>
-					<img src="../assets/materials/marine-rope.jpg" />
 				</div>
 				<div class="product">
 					<img src="../assets/materials/pvc.jpg" />
@@ -137,34 +137,31 @@
 </template>
 <style scoped>
 .container {
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
 .header {
 	width: 100%;
 	color: var(--ter-text-color);
 	margin-top: 20px;
-	border-bottom: var(--pry-border);
 }
 
 .header h1 {
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-size: var(--pry-font-size);
-	font-weight: bold;
+	font-size: 2em;
 	color: var(--pry-text-color);
 	align-content: center;
 	height: fit-content;
-	margin-top: 0.4em;
-	margin-bottom: 0.3em;
 	text-align: center;
+	text-shadow: var(--text-shadow);
 }
 
 .header p {
 	font-weight: 100;
 	font-family: "satoshi", sans-serif;
-	font-size: 1.25rem;
-	line-height: 1.6em;
+	font-size: 1.2rem;
+	line-height: 1.8em;
 	letter-spacing: 2px;
 	padding: 0 40px;
 	margin-bottom: 1rem;
@@ -172,129 +169,68 @@
 
 .secondary-header {
 	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: var(--pry-font-size);
-	margin-top: 0px;
-	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 2em;
 	color: var(--pry-text-color);
-	text-align: center;
-	height: 100px;
-	border-bottom: var(--pry-border);
 	align-content: center;
+	height: fit-content;
+	text-align: center;
+	text-shadow: var(--text-shadow);
+	margin-bottom: 0.7em;
 }
-
-.product-container .product {
-	display: flex;
-	gap: 30px;
-	align-items: center;
+.product-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-gap: 10px;
+	padding: 0 10px;
+}
+.product {
 	border: var(--pry-border);
-	border-top: 0;
-	padding: 10px;
+	border-radius: 10px;
+	transition: 0.7s ease-in-out;
+}
+.product:hover {
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+	transition: 0.7s ease-in-out;
 }
 
 .product-container .product img {
 	width: 100%;
 	height: 50vh;
-	border-radius: 10px;
-	border: var(--pry-border);
-	object-fit: fill;
+	object-fit: cover;
+}
+.product-description {
+	margin-left: 5px;
 }
 
-.product-container .product-description h1 {
-	letter-spacing: 2px;
-	font-size: var(--pry-font-size);
+.product-description h1 {
+	letter-spacing: 1px;
+	font-size: 2em;
 	color: var(--pry-text-color);
+	text-decoration: underline;
 }
 
-.product-container .product-description p {
-	width: 80%;
-	line-height: 2rem;
+.product-description p {
+	line-height: 1.7rem;
 	font-weight: 300;
 	color: var(--pry-text-color);
 	letter-spacing: 2px;
-	font-size: 1em;
-	margin-top: 1em;
-	margin-right: -50em;
+	font-size: 0.8em;
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-	.header p {
-		line-height: 1.7em;
-		text-align: center;
-	}
-
-	.product {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.product:nth-child(even) {
-		display: flex;
-		flex-direction: column-reverse;
-	}
-
-	.product-container .product img {
-		height: 50vh;
-		background-size: cover;
-		object-fit: fill;
-		margin-bottom: -1em;
-	}
-
-	.product-container .product-description h1 {
-		font-size: 2em;
-	}
-
-	.product-container .product-description p {
-		font-size: 1em;
-		margin-top: 0em;
-		line-height: 2em;
-		width: 100%;
-		font-weight: 300;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.container {
-		margin-top: 55px;
-	}
+@media only screen and (max-width: 768px) {
 	.header {
-		margin-top: 0.1rem;
+		padding: 0 10px;
 	}
-
 	.header p {
-		font-weight: 400;
-		font-size: 1em;
-		padding: 0.4em;
+		padding: 0;
+		font-size: 1.2em;
 		text-align: center;
-	}
-
-	.product {
-		display: flex;
-		flex-direction: column;
-	}
-	.product:nth-child(even) {
-		display: flex;
-		flex-direction: column-reverse;
-	}
-
-	.product-container .product img {
-		height: 40vh;
-		background-size: cover;
-		object-fit: fill;
-	}
-
-	.product-container .product-description h1 {
-		font-size: 1.4em;
-		margin-bottom: 0.2em;
-	}
-
-	.product-container .product-description p {
-		font-size: 1em;
-		line-height: 2em;
-		width: 100%;
-		margin-top: 0px;
-		letter-spacing: 1px;
 		font-weight: 400;
+		line-height: 1.6em;
+	}
+	.product-description h1 {
+		font-size: 1.6em;
 	}
 }
 </style>
