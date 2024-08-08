@@ -1,78 +1,108 @@
 <script setup>
-import image4 from '@/assets/projects/four.jpg';
-import image1 from '@/assets/projects/one.jpg';
-import image3 from '@/assets/projects/three.jpg';
-import image2 from '@/assets/projects/two.jpg';
-import Footer from '@/components/Footer.vue';
-import ImageCarousel from '@/components/ImageCarousel.vue';
-import Navbar from '@/components/Navbar.vue';
 const trips = [image1, image2, image3, image4];
+import image4 from "@/assets/projects/four.jpg";
+import image1 from "@/assets/projects/one.jpg";
+import image3 from "@/assets/projects/three.jpg";
+import image2 from "@/assets/projects/two.jpg";
+import ImageCarousel from "@/components/ImageCarousel.vue";
 </script>
 <template>
-	<Navbar />
 	<div class="container">
 		<div class="header">
-			<p>Our Projects</p>
-			<h2>
-				COBEF INTERNATIONAL LIMITED retains quality delivery and clients satisfaction as its driving force. Based on
-				ISO certification, we are guided by the highest safety and quality standards to
-				ensure that our clients receive the highest levels of satisfaction in addition to the commercial experience
-				necessary to address technically challenging projects.
-			</h2>
+			<h1 class="heading">Projects</h1>
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+				alias, iste atque laboriosam ab soluta officiis, qui, vitae
+				accusantium assumenda aliquid. Ipsa consectetur delectus repellendus
+				numquam perspiciatis molestias suscipit! Est. Lorem ipsum, dolor sit
+				amet consectetur adipisicing elit. Iusto beatae soluta eius delectus
+				atque veniam nam quisquam, excepturi ab alias quod id rem, error,
+				blanditiis pariatur harum similique illum nihil. Lorem ipsum dolor
+				sit, amet consectetur adipisicing elit. Eligendi, architecto! Quasi
+				tempora numquam odio? Excepturi sit hic, similique eius distinctio
+				tempore ullam fugiat cupiditate voluptates recusandae? Vero qui aut
+				maiores.
+			</p>
 		</div>
-		<p class="heading">Our Portfolio</p>
 		<div class="content">
+			<h1 class="heading">Portfolio</h1>
 			<div class="works-wrapper">
 				<div class="works">
 					<h2>Jan 29, 2022</h2>
-					<h1>REHABILITATION OF ALESA AGBONCHIA AND ALESA WATER WORKS IN OGONI LAND</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus aperiam corrupti a
-						necessitatibus accusantium porro! Voluptatum libero rem eos officia porro ex, nesciunt illum hic eum
-						debitis exercitationem voluptates.</p>
+					<h1>
+						REHABILITATION OF ALESA AGBONCHIA AND ALESA WATER WORKS IN
+						OGONI LAND
+					</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Mollitia possimus aperiam corrupti a necessitatibus
+						accusantium porro! Voluptatum libero rem eos officia porro ex,
+						nesciunt illum hic eum debitis exercitationem voluptates.
+					</p>
 				</div>
 				<div class="works">
 					<h2>Jan 29, 2022</h2>
 					<h1>SUPPLY AND PIPE LAYING IN OBAGI COMMUNITY, RIVERS STATE</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus aperiam corrupti a
-						necessitatibus accusantium porro! Voluptatum libero rem eos officia porro ex, nesciunt illum hic eum
-						debitis exercitationem voluptates.</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Mollitia possimus aperiam corrupti a necessitatibus
+						accusantium porro! Voluptatum libero rem eos officia porro ex,
+						nesciunt illum hic eum debitis exercitationem voluptates.
+					</p>
 				</div>
 				<div class="works">
 					<h2>Jan 29, 2022</h2>
 					<h1>INSTALLATION OF BOREHOLE AND WATER TREATMENT PLANT</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus aperiam corrupti a
-						necessitatibus accusantium porro! Voluptatum libero rem eos officia porro ex, nesciunt illum hic eum
-						debitis exercitationem voluptates.</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Mollitia possimus aperiam corrupti a necessitatibus
+						accusantium porro! Voluptatum libero rem eos officia porro ex,
+						nesciunt illum hic eum debitis exercitationem voluptates.
+					</p>
 				</div>
 				<div class="works">
 					<h2>Jan 29, 2022</h2>
-					<h1>MAINTENANCE OF OBUNAGHA MEGA WATER PROJECT AND TRUNK LINES IN GBARAIN KINGDOM</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus aperiam corrupti a
-						necessitatibus accusantium porro! Voluptatum libero rem eos officia porro ex, nesciunt illum hic eum
-						debitis exercitationem voluptates.</p>
+					<h1>
+						MAINTENANCE OF OBUNAGHA MEGA WATER PROJECT AND TRUNK LINES IN
+						GBARAIN KINGDOM
+					</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Mollitia possimus aperiam corrupti a necessitatibus
+						accusantium porro! Voluptatum libero rem eos officia porro ex,
+						nesciunt illum hic eum debitis exercitationem voluptates.
+					</p>
 				</div>
 				<div class="works">
 					<h2>Jan 29, 2022</h2>
 					<h1>RETICULATION OF ELEME WATER SUPPLY SCHEME</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus aperiam corrupti a
-						necessitatibus accusantium porro! Voluptatum libero rem eos officia porro ex, nesciunt illum hic eum
-						debitis exercitationem voluptates.</p>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Mollitia possimus aperiam corrupti a necessitatibus
+						accusantium porro! Voluptatum libero rem eos officia porro ex,
+						nesciunt illum hic eum debitis exercitationem voluptates.
+					</p>
 				</div>
 				<div class="works">
 					<h2>Jan 29, 2022</h2>
-					<h1>supply and pipe laying of Obaji Community in Ogba/Egbema/Ndoni</h1>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus aperiam corrupti a
-						necessitatibus accusantium porro! Voluptatum libero rem eos officia porro ex, nesciunt illum hic eum
-						debitis exercitationem voluptates.</p>
+					<h1>
+						supply and pipe laying of Obaji Community in Ogba/Egbema/Ndoni
+					</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Mollitia possimus aperiam corrupti a necessitatibus
+						accusantium porro! Voluptatum libero rem eos officia porro ex,
+						nesciunt illum hic eum debitis exercitationem voluptates.
+					</p>
 				</div>
 			</div>
 		</div>
-		<p class="heading">Visuals from our trips</p>
 		<div class="carousel">
+			<h1 class="heading">Visuals from our trips</h1>
 			<ImageCarousel :images="trips" class="image-carousel" />
 		</div>
-		<p class="client-heading">Our Clients</p>
 		<div class="logos">
+			<h1 class="heading">Clients</h1>
 			<div class="logos-slide">
 				<img src="../assets/client logos/ALCON.png" />
 				<img src="../assets/client logos/briscoegroup.png" />
@@ -95,147 +125,83 @@ const trips = [image1, image2, image3, image4];
 			</div>
 		</div>
 	</div>
-	<Footer />
 </template>
 <style scoped>
 .container {
-	background-color: #000000;
+	margin-top: 50px;
 }
 
 .header {
-	padding: 60px;
-}
-
-.header p {
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 50px;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	font-weight: bold;
-	color: #ffffe3;
-}
-
-.header h2 {
-	font-weight: 400;
-	font-size: 34px;
-	letter-spacing: 1px;
-	line-height: 1.6em;
-	color: #535349;
-	border-bottom: 1px dashed #5353497a;
-	padding-bottom: 50px;
+	padding: 0 40px;
+	text-align: center;
 }
 
 .heading {
 	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 50px;
-	margin-top: 0px;
-	margin-bottom: 40px;
-	font-weight: bold;
-	color: #ffffe3;
-	padding: 0px 0px 0px 60px;
-	border: 1px dashed #5353497a;
-	align-content: center;
-	height: 100px;
+	font-size: 2em;
+	color: var(--pry-text-color);
+	margin-bottom: 0.4em;
+	text-align: center;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.content {
-	border: 1px dashed #5353497a;
-	padding: 0px 60px 0px 0px;
+.header p {
+	line-height: 2.3em;
+	font-size: 1rem;
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 1em;
+	color: var(--sec-text-color);
 }
 
 .works-wrapper {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 200px 0px 60px;
-	border: 1px dashed #5353497a;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	width: 100%;
+	padding: 0 40px;
 }
 
 .works {
-	width: 50%;
-	border: 1px dashed #5353497a;
-	border-top: none;
-	padding: 40px;
-}
-
-.works h2 {
-	text-transform: capitalize;
-	margin-bottom: 20px;
-	color: #ffffe3;
+	width: fit-content;
+	border: var(--pry-border);
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 1em;
 }
 
 .works h1 {
-	color: #ffffe3;
-	font-size: 30px;
-	font-family: poppins;
-	letter-spacing: 1px;
-	margin-bottom: 20px;
+	color: var(--pry-text-color);
+	font-size: 1.6em;
 	text-transform: uppercase;
+	line-height: 1.4em;
+	margin-bottom: 10px;
+}
+
+.works h2 {
+	color: var(--sec-text);
+	font-size: 12px;
+	margin-bottom: 10px;
 }
 
 .works p {
-	color: #535349;
-	line-height: 1.9em;
+	width: 100%;
+	color: var(--sec-text-color);
+	line-height: 2em;
 }
-
-.carousel {
-	border: 1px dashed #5353497a;
-}
-
-.image-carousel {
-	border: 1px dashed #5353497a;
-}
-
-.client-heading {
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-size: 50px;
-	margin-top: 0px;
-	/* margin-bottom: 40px; */
-	font-weight: bold;
-	color: #ffffe3;
-	padding: 0px 0px 0px 60px;
-	border: 1px dashed #5353497a;
-	align-content: center;
-	height: 100px;
+.carousel .heading {
+	width: 100%;
 }
 
 .logos {
 	overflow: hidden;
-	padding: 60px 0;
-	background-image: var(--checkered-background);
-	background-size: var(--checkered-background-size);
 	white-space: nowrap;
 	position: relative;
 }
-
-.logos:hover .logos-slide {
-	animation-play-state: paused;
-}
-
-/*
-.logos::before,
-.logos::after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 150px;
-	height: 100%;
-	content: "";
-	z-index: 2;
-	background: linear-gradient( #000000ca,#000000);
-}
-*/
-.logos-slide {
-	display: inline-block;
-	animation: 30s slide linear infinite;
-}
-
-.logos-slide img {
-	height: 80px;
-	margin: 0 40px;
-	filter: grayscale();
+.logos .heading {
+	padding: 10px;
+	width: 100%;
+	margin-top: 30px;
 }
 
 @keyframes slide {
@@ -245,6 +211,44 @@ const trips = [image1, image2, image3, image4];
 
 	to {
 		transform: translateX(-100%);
+	}
+}
+
+.logos-slide {
+	display: inline-block;
+	animation: 30s slide linear infinite;
+	padding: 20px;
+}
+
+.logos-slide img {
+	height: 50px;
+	margin: 0 40px;
+}
+
+@media only screen and (max-width: 768px) {
+	.header {
+		padding: 0 10px;
+	}
+	.header p {
+		text-align: center;
+	}
+	.works-wrapper {
+		display: flex;
+		flex-direction: column;
+		padding: 0 10px;
+	}
+	.works {
+		width: 100%;
+	}
+	.works h1 {
+		font-size: 1.2em;
+		width: 100%;
+	}
+	.works p {
+		width: 100%;
+	}
+	.carousel .heading {
+		font-size: 1.5em;
 	}
 }
 </style>
