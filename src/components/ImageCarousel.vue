@@ -7,8 +7,6 @@
 				<img :src="image" :alt="'Slide ' + index" />
 			</div>
 		</div>
-		<button class="carousel-control prev" @click="prevSlide">&#10094;</button>
-		<button class="carousel-control next" @click="nextSlide">&#10095;</button>
 		<div class="carousel-indicators">
 			<span v-for="(image, index) in images" :key="index" class="indicator"
 				:class="{ active: index === currentIndex }" @click="goToSlide(index)"></span>
@@ -82,29 +80,6 @@ onUnmounted(() => {
 	object-fit: cover;
 }
 
-.carousel-control {
-	position: absolute;
-	top: 96%;
-	transform: translateY(-50%);
-	background-color: transparent;
-	border: none;
-	color: white;
-	font-size: 20px;
-	cursor: pointer;
-	padding: 10px;
-	height: 50px;
-	width: 50px;
-	z-index: 1;
-}
-
-.carousel-control.prev {
-	left: 520px;
-}
-
-.carousel-control.next {
-	right: 520px;
-}
-
 .carousel-indicators {
 	position: absolute;
 	bottom: 10px;
@@ -124,5 +99,30 @@ onUnmounted(() => {
 
 .indicator.active {
 	background-color: #ffffe3;
+}
+@media only screen and (max-width:768px){
+	.carousel{
+		height: 40vh;
+	}
+	.carousel-item img{
+		height: 40vh;
+	}
+	.indicator{
+		height:10px;
+		width: 10px;
+	}
+}
+@media only screen and (min-width:769px)and (max-width:1160px){
+	.carousel{
+		height:50vh;
+	}
+	.carousel-item img{
+		height: 50vh;
+		object-fit: cover;
+	}
+	.indicator{
+		height:10px;
+		width: 10px;
+	}
 }
 </style>
