@@ -179,7 +179,7 @@ import ImageCarousel from "@/components/ImageCarousel.vue";
 }
 
 .works h2 {
-	color: var(--sec-text);
+	color: var(--sec-text-color);
 	font-size: 12px;
 	margin-bottom: 10px;
 }
