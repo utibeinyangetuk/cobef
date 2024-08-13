@@ -1,70 +1,50 @@
 <template>
 	<div class="container">
 		<header>
-			<h1>Careers</h1>
+			<h1>Careers at COBEF</h1>
 			<p>
-				Be part of an innovative and dynamic company. We are always looking
-				for talented individuals to join our team and help us shape the
-				future.
+				Join our innovative and dynamic team, where your talents will help
+				shape the future. We’re on a mission to create a better tomorrow, and we need passionate individuals to be a
+				part of that journey.
 			</p>
 		</header>
 		<div class="write-up-container">
 			<div class="heading-wrapper">
-				<h2>our culture</h2>
-				<h1>why <span style="color: var(--hover);font-weight: bold;">COBEF?</span></h1>
+				<h2>Our Culture</h2>
+				<h1>Why <span>COBEF?</span></h1>
 				<p>
-					Cobef is a great place to work for many reasons. It starts with a
-					mission that drives everything we do and shapes how we do it.
+					At COBEF, our mission drives everything we do and shapes how we work. We believe in fostering a
+					collaborative and inclusive environment where every team member can thrive.
 				</p>
 			</div>
 			<div class="list-wrapper">
 				<ul>
 					<li>
-						<h3>
-							lorem ipsum dolor sit emet asperiores voluptate suscipit
-							est provident amet repellat
-						</h3>
+						<h3>Innovative Environment</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Rem ad tempora veniam, asperiores voluptate suscipit est
-							provident amet repellat magni! Perspiciatis eligendi nemo
-							quisquam ea nulla vel aliquam cum animi!
+							Join a team that is constantly pushing the boundaries of what's possible. We encourage creative
+							thinking and provide the resources needed to turn ideas into reality.
 						</p>
 					</li>
 					<li>
-						<h3>
-							lorem ipsum dolor sit emet asperiores voluptate suscipit
-							est provident amet repellat
-						</h3>
+						<h3>Growth Opportunities</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Rem ad tempora veniam, asperiores voluptate suscipit est
-							provident amet repellat magni! Perspiciatis eligendi nemo
-							quisquam ea nulla vel aliquam cum animi!
+							At COBEF, your growth is our priority. We offer ample opportunities for professional development
+							and career advancement within our organization.
 						</p>
 					</li>
 					<li>
-						<h3>
-							lorem ipsum dolor sit emet asperiores voluptate suscipit
-							est provident amet repellat
-						</h3>
+						<h3>Work-Life Balance</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Rem ad tempora veniam, asperiores voluptate suscipit est
-							provident amet repellat magni! Perspiciatis eligendi nemo
-							quisquam ea nulla vel aliquam cum animi!
+							We understand the importance of a healthy work-life balance. Our flexible work policies ensure that
+							you can achieve your career goals while maintaining your personal well-being.
 						</p>
 					</li>
 					<li>
-						<h3>
-							lorem ipsum dolor sit emet asperiores voluptate suscipit
-							est provident amet repellat
-						</h3>
+						<h3>Inclusive Culture</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Rem ad tempora veniam, asperiores voluptate suscipit est
-							provident amet repellat magni! Perspiciatis eligendi nemo
-							quisquam ea nulla vel aliquam cum animi!
+							Diversity and inclusion are at the heart of our culture. We celebrate differences and strive to
+							create a workplace where everyone feels valued and respected.
 						</p>
 					</li>
 				</ul>
@@ -76,15 +56,13 @@
 				<section>
 					<h1>Cobef Internships</h1>
 					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-						Autem dicta numquam deserunt dignissimos repudiandae voluptas
-						iste molestiae fuga! Dicta voluptatem consectetur et nobis
-						totam quia mollitia, architecto delectus facere dolore.
+						Start your career with us! Our internship program provides hands-on experience and an opportunity to
+						learn from industry experts.
 					</p>
 					<ul>
-						<li>Transport manager</li>
-						<li>Legal head</li>
-						<li>Machine operator</li>
+						<li>Transport Manager</li>
+						<li>Legal Head</li>
+						<li>Machine Operator</li>
 						<li>Canteen</li>
 					</ul>
 					<div class="link-wrapper">
@@ -94,15 +72,13 @@
 				<section>
 					<h1>NYSC Corpers</h1>
 					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-						Autem dicta numquam deserunt dignissimos repudiandae voluptas
-						iste molestiae fuga! Dicta voluptatem consectetur et nobis
-						totam quia mollitia, architecto delectus facere dolore.
+						Join us during your service year and gain valuable experience while making a difference. We offer a
+						supportive environment for NYSC corp members.
 					</p>
 					<ul>
-						<li>Transport manager</li>
-						<li>Legal head</li>
-						<li>Machine operator</li>
+						<li>Transport Manager</li>
+						<li>Legal Head</li>
+						<li>Machine Operator</li>
 						<li>Canteen</li>
 					</ul>
 					<div class="link-wrapper">
@@ -110,17 +86,15 @@
 					</div>
 				</section>
 				<section>
-					<h1>Cobef Internships</h1>
+					<h1>NYSC Corpers</h1>
 					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-						Autem dicta numquam deserunt dignissimos repudiandae voluptas
-						iste molestiae fuga! Dicta voluptatem consectetur et nobis
-						totam quia mollitia, architecto delectus facere dolore.
+						Join us during your service year and gain valuable experience while making a difference. We offer a
+						supportive environment for NYSC corp members.
 					</p>
 					<ul>
-						<li>Transport manager</li>
-						<li>Legal head</li>
-						<li>Machine operator</li>
+						<li>Transport Manager</li>
+						<li>Legal Head</li>
+						<li>Machine Operator</li>
 						<li>Canteen</li>
 					</ul>
 					<div class="link-wrapper">
@@ -128,17 +102,15 @@
 					</div>
 				</section>
 				<section>
-					<h1>Cobef Internships</h1>
+					<h1>NYSC Corpers</h1>
 					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-						Autem dicta numquam deserunt dignissimos repudiandae voluptas
-						iste molestiae fuga! Dicta voluptatem consectetur et nobis
-						totam quia mollitia, architecto delectus facere dolore.
+						Join us during your service year and gain valuable experience while making a difference. We offer a
+						supportive environment for NYSC corp members.
 					</p>
 					<ul>
-						<li>Transport manager</li>
-						<li>Legal head</li>
-						<li>Machine operator</li>
+						<li>Transport Manager</li>
+						<li>Legal Head</li>
+						<li>Machine Operator</li>
 						<li>Canteen</li>
 					</ul>
 					<div class="link-wrapper">
@@ -146,17 +118,15 @@
 					</div>
 				</section>
 				<section>
-					<h1>Cobef Internships</h1>
+					<h1>NYSC Corpers</h1>
 					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-						Autem dicta numquam deserunt dignissimos repudiandae voluptas
-						iste molestiae fuga! Dicta voluptatem consectetur et nobis
-						totam quia mollitia, architecto delectus facere dolore.
+						Join us during your service year and gain valuable experience while making a difference. We offer a
+						supportive environment for NYSC corp members.
 					</p>
 					<ul>
-						<li>Transport manager</li>
-						<li>Legal head</li>
-						<li>Machine operator</li>
+						<li>Transport Manager</li>
+						<li>Legal Head</li>
+						<li>Machine Operator</li>
 						<li>Canteen</li>
 					</ul>
 					<div class="link-wrapper">
@@ -164,17 +134,15 @@
 					</div>
 				</section>
 				<section>
-					<h1>Cobef Internships</h1>
+					<h1>NYSC Corpers</h1>
 					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-						Autem dicta numquam deserunt dignissimos repudiandae voluptas
-						iste molestiae fuga! Dicta voluptatem consectetur et nobis
-						totam quia mollitia, architecto delectus facere dolore.
+						Join us during your service year and gain valuable experience while making a difference. We offer a
+						supportive environment for NYSC corp members.
 					</p>
 					<ul>
-						<li>Transport manager</li>
-						<li>Legal head</li>
-						<li>Machine operator</li>
+						<li>Transport Manager</li>
+						<li>Legal Head</li>
+						<li>Machine Operator</li>
 						<li>Canteen</li>
 					</ul>
 					<div class="link-wrapper">
@@ -185,9 +153,11 @@
 		</div>
 	</div>
 </template>
+
 <style scoped>
 	.container {
 		margin-top: 50px;
+		padding: 20px;
 	}
 
 	header {
@@ -195,198 +165,233 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin-bottom: 50px;
 	}
 
 	header h1 {
-		color: var(--pry-text-color);
-		letter-spacing: 4px;
+		color: var(--sec-text-color);
+		font-weight: 700;
+		letter-spacing: 2px;
 		text-transform: uppercase;
-		font-size: 2em;
+		font-size: 2.5em;
 		margin-bottom: 10px;
 	}
 
 	header p {
-		color: var(--sec-text-color);
+		color: var(--ter-text-color);
 		font-size: 1.2em;
-		width: 60%;
-		line-height: 1.4em;
+		width: 80%;
+		line-height: 1.5em;
 		letter-spacing: 2px;
 	}
 
 	.write-up-container {
 		display: flex;
-		padding: 10px;
+		padding: 20px;
+		background-color: var(--sec-background);
+		border-radius: 10px;
 	}
 
 	.heading-wrapper {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		width: 48%;
+		width: 50%;
+		margin-right: 2%;
 	}
 
 	.write-up-container .heading-wrapper h2 {
 		font-size: 1.2em;
-		letter-spacing: 2px;
-		color: var(--pry-text-color);
-		margin-bottom: 7px;
+		font-weight: 400;
+		color: var(--sec-text-color);
+		margin-bottom: 10px;
 	}
 
 	.write-up-container .heading-wrapper h1 {
-		color: var(--pry-text-color);
-		letter-spacing: 2px;
-		font-size: 3.2em;
-		font-weight: 100;
-		margin-bottom: 6px;
+		color: var(--sec-text-color);
+		font-size: 2.5em;
+		font-weight: 500;
+		margin-bottom: 15px;
+	}
+
+	.write-up-container .heading-wrapper span {
+		color: rgb(18, 18, 244);
+		font-weight: 700;
 	}
 
 	.write-up-container .heading-wrapper p {
-		color: var(--sec-text-color);
+		color: var(--ter-text-color);
 		line-height: 1.8em;
-		width: 100%;
-		font-size: 1.2em;
-		margin-bottom: 10px;
+		font-size: 1.1em;
+		margin-bottom: 20px;
 	}
 
-	.write-up-container .list-wrapper ul {
-		margin-top: 60px;
+	.list-wrapper ul {
+		margin-top: 30px;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 10px;
-		padding: 10px;
+		gap: 20px;
 	}
 
 	.list-wrapper li {
-		margin-bottom: 20px;
-		list-style: decimal;
-		padding: 6px;
+		list-style: none;
+		background-color: var(--ter-background);
+		border-radius: 10px;
+		padding: 20px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	}
+
+	.list-wrapper li:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 	}
 
 	.list-wrapper li h3 {
-		color: var(--pry-text-color);
-		font-size: 1em;
-		line-height: 1.5em;
 		letter-spacing: 1px;
-		margin-bottom: 10px;
+		color: var(--pry-text-color);
+		font-size: 1.2em;
+		margin-bottom: 15px;
 	}
 
 	.list-wrapper li p {
-		color: var(--sec-text-color);
-		font-size: 0.9em;
-		line-height: 2em;
-	}
-
-	.list-wrapper li::marker {
-		color: var(--highlight);
+		color: var(--text);
+		font-size: 1em;
+		line-height: 1.6em;
 	}
 
 	.open-positions h1 {
 		text-align: center;
 		font-size: 3em;
-		color: var(--pry-text-color);
+		color: var(--sec-text-color);
+		text-transform: uppercase;
 		letter-spacing: 2px;
-		margin-bottom: 20px;
+		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 
 	.position-wrapper {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-		padding: 10px;
-		gap: 10px;
-		width: 100%;
+		gap: 20px;
 	}
 
 	.position-wrapper > section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		border: var(--pry-border);
-		border-radius: 5px;
-		padding: 10px;
-		width: 100%;
+		background-color: var(--ter-background);
+		border-radius: 10px;
+		padding: 20px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	}
+
+	.position-wrapper > section:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 	}
 
 	.position-wrapper > section h1 {
-		text-align: center;
+		text-align: left;
 		font-size: 2em;
 		letter-spacing: 2px;
+		color: var(--pry-text-color);
+		margin-bottom: 10px;
 	}
 
 	.position-wrapper > section p {
-		color: var(--sec-text-color);
+		color: var(--pry-text-color);
 		text-align: left;
 		line-height: 1.8em;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 
 	.position-wrapper > section ul {
 		margin-left: 20px;
+		list-style: none;
+		padding-left: 0;
 	}
 
 	.position-wrapper > section ul li {
-		margin-bottom: 7px;
+		margin-bottom: 10px;
 		color: var(--pry-text-color);
-		letter-spacing: 1px;
+		font-size: 1.1em;
+		text-align: left;
 	}
 
-	.position-wrapper > section ul li::marker {
-		color: var(--highlight);
+	.position-wrapper > section ul li::before {
+		content: '•';
+		color: #000000;
+		font-weight: bold;
+		display: inline-block;
+		width: 1em;
+		margin-left: -1em;
 	}
 
 	.position-wrapper > section .link-wrapper {
-		margin: 10px 10px;
+		text-align: left;
+		margin-top: 20px;
 	}
 
 	.position-wrapper > section .link-wrapper a {
-		background-color: var(--pry-btn);
 		border-radius: 5px;
-		padding: 8px;
+		padding: 10px 20px;
 		letter-spacing: 2px;
-		color: var(--ter-text-color);
+		color: var(--pry-text-color);
+		border: 1px solid #000000;
 		font-weight: bold;
-		font-size: 0.8em;
+		font-size: 0.9em;
+		transition: background-color 0.5s ease-in-out;
 	}
 
 	.position-wrapper > section .link-wrapper a:hover {
-		background-color: var(--hover);
-		color: var(--pry-text-color);
+		background-color: var(--sec-background);
+		color: var(--sec-text-color);
+		border: none;
+		transition: background-color 0.5s ease-in-out;
 	}
 
-	@media only screen and (max-width:867px) {
-		header p {
+	@media only screen and (max-width:1024px) {
+		header {
+			text-align: center;
+		}
+
+		header h1 {
+			font-size: 2rem;
 			width: 100%;
 		}
 
-		.write-up-container {
-			display: flex;
-			flex-wrap: wrap;
-			flex-grow: 1;
-		}
-
-		.heading-wrapper {
-			margin-top: 20px;
+		header p {
+			font-size: 1rem;
 			width: 100%;
 			text-align: center;
 		}
 
-		.heading-wrapper h1 {
-			margin-top: 10px;
+		.write-up-container {
+			display: flex;
+			flex-direction: column;
+			padding: 0;
+			text-align: center;
 		}
 
-		.list-wrapper {
-			margin-top: -60px;
-		}
-
-		.list-wrapper ul {
-			padding: 0px;
-		}
-
-		.list-wrapper li {
-			border: var(--pry-border);
-			border-radius: 5px;
-			padding: 0 10px;
+		.heading-wrapper {
 			width: 100%;
-			list-style: none;
+		}
+
+		.open-positions h1 {
+			font-size: 2em;
+		}
+
+		.position-wrapper {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.position-wrapper > section {
+			width: 100%;
+		}
+
+		.position-wrapper > section h1 {
+			font-size: 1.6em;
+			margin-top: -1px;
 		}
 	}
 </style>
