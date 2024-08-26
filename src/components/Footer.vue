@@ -1,151 +1,182 @@
-<script setup>
-import { ref } from "vue";
-const currentYear = ref(new Date().getFullYear());
-</script>
-
 <template>
-	<footer>
-		<div class="container">
-			<div class="get-in-touch">
-				<p>Get in touch</p>
-				<ul>
-					<li>
-						<i class="uil uil-envelope">
-							<a href="mailto:info@cobefinternationalltd.com">
-								<span> info@cobefinternationalltd.com</span>
-							</a>
-						</i>
-					</li>
-					<li>
-						<i class="uil uil-phone">
-							<a href="tel:+1234567890"> +(234) 567-890-9123 </a></i>
-					</li>
-					<li></li>
-				</ul>
-			</div>
-			<div class="connect">
-				<p>Connect</p>
-				<ul>
-					<li><i class="uil uil-linkedin" /> Linkedin</li>
-					<li><i class="uil uil-whatsapp" /> Whatsapp</li>
-					<li><i class="uil uil-facebook" /> facebook</li>
-				</ul>
-			</div>
-			<div class="learn-more">
-				<p>Company</p>
-				<ul>
-					<li>
-						<router-link to="/about"><i class="uil uil-arrow-right" /> About us</router-link>
-					</li>
-					<li>
-						<router-link to="/products"><i class="uil uil-arrow-right" /> Products</router-link>
-					</li>
-					<li>
-						<router-link to="/projects"><i class="uil uil-arrow-right" /> Projects</router-link>
-					</li>
-				</ul>
-			</div>
-			<div class="sitemap">
-				<p>Site Map</p>
-				<ul>
-					<li>
-						<router-link to="/"><i class="uil uil-arrow-right" /> Home</router-link>
-					</li>
-					<li>
-						<router-link to="/about"><i class="uil uil-arrow-right" /> About us</router-link>
-					</li>
-					<li>
-						<router-link to="/products"><i class="uil uil-arrow-right" /> Products</router-link>
-					</li>
-					<li>
-						<router-link to="/projects"><i class="uil uil-arrow-right" /> Projects</router-link>
-					</li>
-					<li>
-						<router-link to="/contact"><i class="uil uil-arrow-right" /> Contact us</router-link>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="copyright">
-			<p>&copy; {{ currentYear }} COBEF. All rights reserved.</p>
-		</div>
-	</footer>
+   <footer>
+      <div class="container">
+         <div class="index">
+            <h1>Cobef Index</h1>
+            <ul>
+               <li><router-link to="/">Home</router-link></li>
+               <li><router-link to="about">About</router-link></li>
+               <li><router-link to="workforce">Workforce</router-link></li>
+               <li><router-link to="products">Products</router-link></li>
+               <li><router-link to="projects">Projects</router-link></li>
+               <li><router-link to="careers">Careers</router-link></li>
+               <li><router-link to="contact">Contact</router-link></li>
+            </ul>
+         </div>
+         <div class="social">
+            <h1>Social</h1>
+            <ul>
+               <li><a href="#">Linkedin</a></li>
+               <li><a href="#">Whatsapp</a></li>
+            </ul>
+         </div>
+         <div class="connect">
+            <h1>Interested in learning more?</h1>
+            <div class="link-wrapper">
+               <router-link to="contact">Let's connect</router-link>
+            </div>
+         </div>
+      </div>
+      <div class="bottom-footer">
+         <p>© {{ currentYear }} . COBEF International Limited . All rights reserved.</p>
+         <p>Website by utibe</p>
+      </div>
+   </footer>
 </template>
 <style scoped>
-footer {
-	padding: 0px 0px 0px 10px;
-	margin-top: 20px;
-}
+   footer {
+      background: var(--pry-background);
+   }
 
-.copyright {
-	text-align: center;
-	margin-top: 20px;
-}
+   .container {
+      display: flex;
+      background-color: #ffffff;
+   }
 
-.copyright p {
-	font-size: .8em;
-	color: var(--pry-text);
-	letter-spacing: 1px;
-}
+   .index,
+   .social {
+      height: 100%;
+      width: 60vw;
+      padding: 10px;
+   }
 
-.container {
-	display: flex;
-	width: 100%;
-	justify-content: space-evenly;
-}
+   .index li,
+   .social li {
+      list-style-type: decimal;
+      list-style-position: inside;
+      border-bottom: var(--sec-border);
+      padding: 3px;
+      font-size: .8em;
+      transition: 1s ease-in-out;
+   }
 
-.container p {
-	color: var(--pry-text);
-	letter-spacing: 2px;
-	margin-bottom: 5px;
-}
+   .index li:hover,
+   .social li:hover {
+      background: #000000;
+      cursor: pointer;
+      color: #ffffff;
+      transition: 1s ease-in-out;
+   }
 
-.container a,
-li {
-	color: var(--sec-text);
-	font-style: normal;
-	letter-spacing: 1px;
-	font-size: .9em;
-	line-height: 2em;
-}
+   .index a:hover,
+   .social a:hover {
+      color: #ffffff;
+      transition: 1s ease-in-out;
+   }
 
-.container li a:hover,
-.container li:hover {
-	color: var(--link-hover);
-}
+   .index a,
+   .social a {
+      color: var(--pry-text-color);
+      margin-left: 50px;
+   }
 
-@media only screen and (min-width:530px) and (max-width:672px) {
-	.container {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-	}
+   .index h1,
+   .social h1 {
+      border-bottom: 1px solid;
+      font-weight: 400;
+      letter-spacing: 1px;
+      font-size: 1em;
+   }
 
-	.container > div:nth-child(even) {
-		margin-left: 40px;
-	}
+   .connect {
+      margin: 8px;
+      min-width: 450px;
+      min-height: 40vh;
+      border-radius: 10px;
+      position: relative;
+      background-image: url(../assets/homepage-images/team.jpg);
+      background-size: cover;
+   }
 
-	.container p {
-		margin-top: 20px;
-	}
+   .connect h1 {
+      font-weight: normal;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+      padding: 10px;
+      color: #ffffff;
+   }
 
-	.copyright p {
-		font-size: .7em;
-	}
-}
+   .link-wrapper {
+      width: fit-content;
+   }
 
-@media only screen and (max-width:529px) {
-	.container {
-		display: flex;
-		flex-direction: column;
-		text-wrap: wrap;
-	}
+   .link-wrapper a {
+      color: #ffffff;
+      border: 1px solid;
+      padding: 30px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 6px 6px 6px;
+      border-radius: 5px;
+      transition: 1s ease-in-out;
+   }
 
-	.container p {
-		margin-top: 20px;
-	}
+   .link-wrapper a:hover {
+      background-color: #ffffff;
+      color: #000000;
+      transition: 1s ease-in-out;
+   }
 
-	.copyright p {
-		font-size: .6em;
-	}
-}
+   .bottom-footer {
+      padding: 8px;
+      display: flex;
+      justify-content: space-between;
+      border-top: var(--sec-border);
+   }
+
+   .bottom-footer p {
+      font-size: .7em;
+      margin-right: 10em;
+   }
+
+   @media only screen and (max-width:850px) {
+      .container {
+         display: flex;
+         flex-direction: column;
+      }
+
+      .index,
+      .social {
+         width: 100%;
+         padding: 3px;
+      }
+
+      .index a,
+      .social a {
+         margin-left: 10px;
+      }
+
+      .connect {
+         min-width: 100%;
+         margin: 0;
+         border-radius: 2px;
+      }
+
+      .bottom-footer {
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         padding: 0;
+      }
+
+      .bottom-footer p {
+         margin: 0;
+         padding: 2px;
+      }
+   }
 </style>
+<script setup>
+   import { ref } from 'vue';
+   const currentYear = ref(new Date().getFullYear());
+</script>
