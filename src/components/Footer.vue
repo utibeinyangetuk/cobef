@@ -111,7 +111,8 @@
    }
 
    .link-wrapper a {
-      color: #ffffff;
+      background: #ffffff;
+      color: #000000;
       border: 1px solid;
       padding: 30px;
       position: absolute;
@@ -119,13 +120,6 @@
       right: 0;
       margin: 6px 6px 6px;
       border-radius: 5px;
-      transition: 1s ease-in-out;
-   }
-
-   .link-wrapper a:hover {
-      background-color: #ffffff;
-      color: #000000;
-      transition: 1s ease-in-out;
    }
 
    .bottom-footer {
@@ -159,6 +153,7 @@
 
       .connect {
          min-width: 100%;
+         min-height: 30vh;
          margin: 0;
          border-radius: 2px;
       }
