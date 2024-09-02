@@ -70,7 +70,6 @@ onUnmounted(() => {
 
 .carousel-item {
 	width: 100%;
-	/* Adjust width to occupy full space */
 	box-sizing: border-box;
 }
 

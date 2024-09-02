@@ -171,7 +171,6 @@
    header h1 {
       color: var(--sec-text-color);
       font-weight: 700;
-      letter-spacing: 3px;
       text-transform: uppercase;
       font-size: 2.5em;
       margin-bottom: 10px;
@@ -182,7 +181,7 @@
       font-size: 1.2em;
       width: 80%;
       line-height: 1.5em;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
    }
 
    .write-up-container {
@@ -350,17 +349,24 @@
    }
 
    @media only screen and (max-width:1024px) {
+      .container {
+         padding: 5px;
+      }
+
       header {
          text-align: center;
       }
 
       header h1 {
-         font-size: 2rem;
+         margin-top: 10px;
+         margin-bottom: 0px;
+         font-size: 1.5em;
          width: 100%;
       }
 
       header p {
-         font-size: 1rem;
+         font-size: .9em;
+         line-height: 2em;
          width: 100%;
          text-align: center;
       }
@@ -370,10 +376,29 @@
          flex-direction: column;
          padding: 0;
          text-align: center;
+         margin-top: -20px;
       }
 
       .heading-wrapper {
          width: 100%;
+      }
+
+      .write-up-container .heading-wrapper h2 {
+         margin-bottom: 0px;
+      }
+
+      .write-up-container .heading-wrapper h1 {
+         margin-top: 0px;
+         font-size: 2em;
+         letter-spacing: 2px;
+         margin-bottom: 0;
+      }
+
+      .write-up-container .heading-wrapper p {
+         margin-bottom: 0;
+         margin-top: 0;
+         font-size: .9em;
+         letter-spacing: 1px;
       }
 
       .open-positions h1 {
