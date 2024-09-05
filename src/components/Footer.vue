@@ -40,7 +40,6 @@
 
    .container {
       display: flex;
-      background-color: #ffffff;
    }
 
    .index,
