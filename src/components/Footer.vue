@@ -3,27 +3,26 @@
       <div class="container">
          <div class="index">
             <h1>Cobef Index</h1>
-            <ul>
-               <li><router-link to="/">Home</router-link></li>
-               <li><router-link to="about">About</router-link></li>
-               <li><router-link to="workforce">Workforce</router-link></li>
-               <li><router-link to="products">Products</router-link></li>
-               <li><router-link to="projects">Projects</router-link></li>
-               <li><router-link to="careers">Careers</router-link></li>
-               <li><router-link to="contact">Contact</router-link></li>
-            </ul>
+            <divv class="links">
+               <router-link to="/">Home</router-link>
+               <router-link to="about">About</router-link>
+               <router-link to="products">Products</router-link>
+               <router-link to="projects">Projects</router-link>
+               <router-link to="careers">Careers</router-link>
+               <router-link to="contact">Contact</router-link>
+            </divv>
          </div>
          <div class="social">
             <h1>Social</h1>
-            <ul>
-               <li><a href="#">Linkedin</a></li>
-               <li><a href="#">Whatsapp</a></li>
-            </ul>
+            <div class="links">
+               <a href="#">Linkedin</a>
+               <a href="#">Whatsapp</a>
+            </div>
          </div>
          <div class="connect">
-            <h1>Interested in learning more?</h1>
+            <h1>Interested in learning more or collaborating?</h1>
             <div class="link-wrapper">
-               <router-link to="contact">Let's connect</router-link>
+               <router-link to="contact">Leave us a message</router-link>
             </div>
          </div>
       </div>
@@ -36,6 +35,7 @@
 <style scoped>
    footer {
       background: var(--pry-background);
+      border-top: var(--pry-border);
    }
 
    .container {
@@ -49,60 +49,58 @@
       padding: 10px;
    }
 
-   .index li,
-   .social li {
-      list-style-type: decimal;
-      list-style-position: inside;
-      border-bottom: var(--sec-border);
-      padding: 3px;
-      font-size: .8em;
-      transition: 1s ease-in-out;
-   }
-
-   .index li:hover,
-   .social li:hover {
-      background: #000000;
-      cursor: pointer;
-      color: #ffffff;
-      transition: 1s ease-in-out;
-   }
-
-   .index a:hover,
-   .social a:hover {
-      color: #ffffff;
-      transition: 1s ease-in-out;
+   .links {
+      display: flex;
+      flex-direction: column;
    }
 
    .index a,
    .social a {
+      border: var(--sec-border);
+      transition: 1s ease-in-out;
+      margin-top: 10px;
+      border-radius: 3px;
+      font-size: .7em;
       color: var(--pry-text-color);
-      margin-left: 50px;
+      padding: 3px;
+      letter-spacing: 1px;
+   }
+
+   .index a:hover,
+   .social a:hover {
+      background: var(--sec-background);
+      color: var(--hover);
+      transition: 1s ease-in-out;
    }
 
    .index h1,
    .social h1 {
-      border-bottom: 1px solid;
-      font-weight: 400;
+      border-bottom: var(--pry-border);
+      font-weight: 600;
       letter-spacing: 1px;
-      font-size: 1em;
+      font-size: .8em;
+      text-transform: uppercase;
    }
 
    .connect {
       margin: 8px;
       min-width: 450px;
-      min-height: 40vh;
+      min-height: 30vh;
       border-radius: 10px;
       position: relative;
-      background-image: url(../assets/homepage-images/team.jpg);
+      background-color: var(--sec-background);
       background-size: cover;
    }
 
    .connect h1 {
-      font-weight: normal;
-      font-size: 1.1em;
-      letter-spacing: 1px;
+      font-family: planer;
+      font-weight: 600;
+      font-size: 1em;
+      letter-spacing: 3px;
+      line-height: 2rem;
+      text-transform: uppercase;
       padding: 10px;
-      color: #ffffff;
+      color: var(--ter-text-color);
    }
 
    .link-wrapper {
@@ -110,15 +108,27 @@
    }
 
    .link-wrapper a {
-      background: #ffffff;
+      font-size: .7em;
+      background: var(--pry-background);
       color: #000000;
-      border: 1px solid;
-      padding: 30px;
+      padding: 18px;
       position: absolute;
+      letter-spacing: 2px;
+      font-family: planer;
+      font-weight: 600;
+      text-transform: uppercase;
       bottom: 0;
       right: 0;
       margin: 6px 6px 6px;
       border-radius: 5px;
+      transition: 1s ease-in-out;
+   }
+
+   .link-wrapper a:hover {
+      padding: 20px 100px;
+      transition: 1s ease-in-out;
+      background: var(--hover);
+      color: #ffffff;
    }
 
    .bottom-footer {
@@ -133,7 +143,7 @@
       margin-right: 10em;
    }
 
-   @media only screen and (max-width:850px) {
+   @media only screen and (max-width:700px) {
       .container {
          display: flex;
          flex-direction: column;
@@ -145,9 +155,10 @@
          padding: 3px;
       }
 
-      .index a,
-      .social a {
-         margin-left: 10px;
+      .index h1,
+      .social h1 {
+         margin-top: 10px;
+         margin-bottom: 5px;
       }
 
       .connect {
