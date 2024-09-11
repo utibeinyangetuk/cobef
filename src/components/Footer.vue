@@ -3,14 +3,14 @@
       <div class="container">
          <div class="index">
             <h1>Cobef Index</h1>
-            <divv class="links">
+            <div class="links">
                <router-link to="/">Home</router-link>
                <router-link to="about">About</router-link>
                <router-link to="products">Products</router-link>
                <router-link to="projects">Projects</router-link>
                <router-link to="careers">Careers</router-link>
                <router-link to="contact">Contact</router-link>
-            </divv>
+            </div>
          </div>
          <div class="social">
             <h1>Social</h1>
@@ -27,7 +27,10 @@
          </div>
       </div>
       <div class="bottom-footer">
-         <p>© {{ currentYear }} . COBEF International Limited . All rights reserved.</p>
+         <p>
+            © {{ currentYear }} . COBEF International Limited . All rights
+            reserved.
+         </p>
          <p>Website by utibe</p>
       </div>
    </footer>
@@ -35,7 +38,6 @@
 <style scoped>
    footer {
       background: var(--pry-background);
-      border-top: var(--pry-border);
    }
 
    .container {
@@ -60,10 +62,10 @@
       transition: 1s ease-in-out;
       margin-top: 10px;
       border-radius: 3px;
-      font-size: .7em;
+      font-size: 0.7em;
       color: var(--pry-text-color);
-      padding: 3px;
-      letter-spacing: 1px;
+      padding: 10px;
+      letter-spacing: 1.5px;
    }
 
    .index a:hover,
@@ -75,11 +77,14 @@
 
    .index h1,
    .social h1 {
-      border-bottom: var(--pry-border);
       font-weight: 600;
-      letter-spacing: 1px;
-      font-size: .8em;
+      letter-spacing: 2px;
+      font-size: 0.8em;
       text-transform: uppercase;
+      padding: 10px;
+      border-radius: 5px;
+      color: var(--ter-text-color);
+      background-color: var(--sec-background);
    }
 
    .connect {
@@ -108,7 +113,7 @@
    }
 
    .link-wrapper a {
-      font-size: .7em;
+      font-size: 0.7em;
       background: var(--pry-background);
       color: #000000;
       padding: 18px;
@@ -132,18 +137,18 @@
    }
 
    .bottom-footer {
-      padding: 8px;
+      padding: 20px;
       display: flex;
       justify-content: space-between;
       border-top: var(--sec-border);
    }
 
    .bottom-footer p {
-      font-size: .7em;
+      font-size: 0.7em;
       margin-right: 10em;
    }
 
-   @media only screen and (max-width:700px) {
+   @media only screen and (max-width: 700px) {
       .container {
          display: flex;
          flex-direction: column;
@@ -177,11 +182,11 @@
 
       .bottom-footer p {
          margin: 0;
-         padding: 2px;
+         padding:6px;
       }
    }
 </style>
 <script setup>
-   import { ref } from 'vue';
+   import { ref } from "vue";
    const currentYear = ref(new Date().getFullYear());
 </script>
