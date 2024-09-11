@@ -12,7 +12,6 @@
          </p>
       </div>
       <div class="catalog">
-         <h1 class="secondary-header">Catalog</h1>
          <div class="product-container">
             <div class="product">
                <img src="../assets/materials/hdpe.jpg" />
@@ -150,28 +149,19 @@
 
    .header h1 {
       text-transform: uppercase;
-      font-size: 2em;
+      font-size: 5em;
       font-weight: 700;
       color: var(--pry-text-color);
       height: fit-content;
       margin-bottom: 10px;
+      letter-spacing: 2px;
    }
 
    .header p {
-      font-size: 1.2em;
+      font-size: 1em;
       line-height: 1.8em;
-      padding: 0 40px;
+      padding: 0 60px;
       margin-bottom: 1rem;
-   }
-
-   .secondary-header {
-      text-transform: uppercase;
-      font-size: 2em;
-      color: var(--pry-text-color);
-      align-content: center;
-      height: fit-content;
-      text-align: center;
-      margin-bottom: 0.7em;
    }
 
    .product-container {
@@ -183,7 +173,7 @@
 
    .product {
       border-radius: 10px;
-      border: 1px solid #00000040;
+      border: var(--pry-border);
       transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
       margin-bottom: 20px;
       padding: 1px;
@@ -213,6 +203,7 @@
 
    .product-description h1 {
       font-size: 1.7em;
+      letter-spacing: 1px;
       color: var(--pry-text-color);
    }
 
@@ -220,7 +211,6 @@
       line-height: 1.5rem;
       font-weight: 300;
       color: var(--pry-text-color);
-      letter-spacing: 2px;
       font-size: 0.9em;
    }
 
