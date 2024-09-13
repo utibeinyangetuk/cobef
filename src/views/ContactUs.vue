@@ -51,18 +51,17 @@
    }
 
    .section2 {
-      height: 100vh;
       width: 100%;
-      background-color: var(--pry-background);
       padding: 40px;
       display: flex;
       flex-direction: column;
    }
 
    .section2 a {
-      color: var(--pry-text-color);
+      color: var(--sec-text-color);
       font-size: .8em;
       letter-spacing: .7px;
+      margin-left: 5px;
    }
 
    .section2 a:hover {
@@ -70,62 +69,52 @@
    }
 
    .section2 i {
-      display: inline-block;
       width: 23px;
       height: 23px;
-      border-radius: 50%;
-      border: 1px solid #000;
       text-align: center;
       font-size: 14px;
       margin-bottom: .7em;
-      margin-right: 3px;
+      color: var(--sec-text-color);
    }
 
    .section2 h1 {
       color: var(--pry-text-color);
-      font-family: Planer;
       letter-spacing: 2px;
       font-size: 3.8em;
       margin-bottom: 20px;
       text-transform: uppercase;
    }
 
-   .find-us {
-      margin-bottom: 2em;
-   }
-
+   .find-us,
+   .links,
    .enquiry {
-      margin-bottom: 1.3em;
+      margin-bottom: 2em;
+      border-top: var(--pry-border);
    }
 
    .find-us h2,
-   .enquiry h2 {
+   .enquiry h2,
+   .links h2 {
       font-weight: 600;
       font-size: .8em;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
+      margin-top: 10px;
       letter-spacing: 1px;
       text-transform: uppercase;
    }
 
    .find-us p,
    .enquiry p {
-      font-size: .8em;
+      font-size: .73em;
+      letter-spacing: .4px;
       margin-bottom: 6px;
       line-height: 2em;
+      color: var(--sec-text-color);
    }
 
    .links {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-   }
-
-   .links h2 {
-      margin-bottom: 4px;
-      letter-spacing: 1px;
-      font-size: .8em;
-      font-weight: 600;
-      text-transform: uppercase;
-      margin-bottom: .5em;
    }
 
    .logo-wrapper img {
@@ -143,7 +132,8 @@
       .section2 h1 {
          font-size: 2.5em;
       }
-      .section2{
+
+      .section2 {
          padding: 20px;
       }
 

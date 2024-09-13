@@ -98,7 +98,6 @@
    }
 
    .connect h1 {
-      font-family: planer;
       font-weight: 600;
       font-size: 1em;
       letter-spacing: 3px;
@@ -116,10 +115,9 @@
       font-size: 0.7em;
       background: var(--pry-background);
       color: #000000;
-      padding: 18px;
+      padding: 30px 60px;
       position: absolute;
       letter-spacing: 2px;
-      font-family: planer;
       font-weight: 600;
       text-transform: uppercase;
       bottom: 0;
@@ -130,7 +128,7 @@
    }
 
    .link-wrapper a:hover {
-      padding: 20px 100px;
+      padding: 30px 100px;
       transition: 1s ease-in-out;
       background: var(--hover);
       color: #ffffff;
@@ -148,7 +146,7 @@
       margin-right: 10em;
    }
 
-   @media only screen and (max-width: 700px) {
+   @media only screen and (max-width: 850px) {
       .container {
          display: flex;
          flex-direction: column;
