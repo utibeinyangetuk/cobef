@@ -6,8 +6,7 @@
          <div class="find-us">
             <h2>Find us</h2>
             <p>Km 17 Port Harcourt/Aba Express Way, P. O. Box 2769, Port Harcourt</p>
-            <i class="uil uil-location-point" /> <a href="https://www.google.com/maps/place/Cobef+International+Limited"
-               target="_blank" class="button">
+            <a href="https://www.google.com/maps/place/Cobef+International+Limited" target="_blank" class="button">
                View in Maps
             </a>
          </div>
@@ -38,7 +37,6 @@
 </template>
 <style scoped>
    .container {
-      margin-top: 50px;
       display: flex;
    }
 
@@ -55,17 +53,16 @@
       padding: 40px;
       display: flex;
       flex-direction: column;
+      background-color: var(--background3);
+      border: var(--border);
    }
 
    .section2 a {
-      color: var(--sec-text-color);
+      color: var(--pry-text);
       font-size: .8em;
+      font-weight: 700;
       letter-spacing: .7px;
-      margin-left: 5px;
-   }
-
-   .section2 a:hover {
-      color: var(--hover);
+      margin-left: 7px;
    }
 
    .section2 i {
@@ -89,27 +86,43 @@
    .links,
    .enquiry {
       margin-bottom: 2em;
-      border-top: var(--pry-border);
+      border-top: var(--border);
    }
 
    .find-us h2,
    .enquiry h2,
    .links h2 {
       font-weight: 600;
-      font-size: .8em;
-      margin-bottom: 10px;
+      font-size: .6em;
+      margin-bottom: 6px;
       margin-top: 10px;
       letter-spacing: 1px;
       text-transform: uppercase;
    }
 
-   .find-us p,
+   .find-us p {
+      font-size: .8em;
+      letter-spacing: .4px;
+      margin-bottom: 20px;
+      font-weight: 700;
+   }
+
+   .find-us a {
+      border: var(--border);
+      padding: 10px;
+      margin: 0;
+   }
+
+   .find-us a:hover {
+      background-color: var(--background2);
+      color: var(--sec-text);
+   }
+
    .enquiry p {
       font-size: .73em;
       letter-spacing: .4px;
       margin-bottom: 6px;
       line-height: 2em;
-      color: var(--sec-text-color);
    }
 
    .links {
