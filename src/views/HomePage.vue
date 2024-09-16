@@ -1,163 +1,131 @@
 <template>
-	<div class="container">
-		<div class="home-container">
-			<video autoplay muted loop>
-				<source src="../assets/videos/video.mp4" type="video/mp4" />
-				Sorry, your browser does not support this video tag.
-			</video>
-		</div>
-		<div class="about-us-container">
-			<div class="header">
-				<h1>A deep dive into COBEF</h1>
-			</div>
-			<div class="about-us-content">
-				<div class="company-video">
-					<video autoplay muted loop>
-						<source src="../assets/videos/video.mp4" type="video/mp4" />
-						Sorry, your browser does not support this video tag.
-					</video>
-				</div>
-				<div class="description">
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-						ducimus blanditiis repudiandae adipisci aspernatur laborum
-						corporis unde explicabo commodi officiis, magnam quaerat
-						repudiandae adipisci aspernatur laborum corporis laborum
-						corporis unde explicabo commodi officiis, magnam quaerat
-						repudiandae adipisci aspernatur laborum corporis unde
-						explicabo commodi officiis, magnam quaerat dolor saepe, veniam
-						voluptatum maxime. Itaque, dolorem.
-					</p>
-					<div class="link-wrapper">
-						<router-link to="/about">
-							About us <i class="uil uil-arrow-right" />
-						</router-link>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="team">
-			<img src="../assets/homepage-images/team.jpg" />
-		</div>
-		<div class="product">
-			<img src="../assets/homepage-images/product.jpg" />
-		</div>
-		<div class="project">
-			<img src="../assets/homepage-images/project.jpg" />
-		</div>
-		<div class="hiring">
-			<img src="../assets/homepage-images/hiring.jpg" />
-		</div>
-		<div class="contact">
-			<img src="../assets/homepage-images/contact-us.jpg" />
-		</div>
-	</div>
+   <div id="app">
+      <!-- Hero Section -->
+      <section class="hero">
+         <div class="hero-content">
+            <h1>Welcome to Our Company</h1>
+            <p>Innovating the future with clean energy solutions.</p>
+         </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section" id="about">
+         <div class="section-content">
+            <h2>About Us</h2>
+            <p>We are pioneers in sustainable technologies that drive innovation.</p>
+         </div>
+      </section>
+
+      <!-- Products Section -->
+      <section class="section" id="products">
+         <div class="section-content">
+            <h2>Our Products</h2>
+            <p>We offer a range of energy-efficient solutions for the modern world.</p>
+         </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="section" id="projects">
+         <div class="section-content">
+            <h2>Our Projects</h2>
+            <p>Explore the groundbreaking projects we've completed worldwide.</p>
+         </div>
+      </section>
+
+      <!-- Careers Section -->
+      <section class="section" id="careers">
+         <div class="section-content">
+            <h2>Careers</h2>
+            <p>Join our team and help shape the future of sustainable energy.</p>
+         </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section" id="contact">
+         <div class="section-content">
+            <h2>Contact Us</h2>
+            <p>Reach out to us for more information on our services and solutions.</p>
+         </div>
+      </section>
+   </div>
 </template>
 <style scoped>
-.container {
-	margin-top: 50px;
-}
+   #app {
+      scroll-behavior: smooth;
+   }
 
-.home-container {
-	width: 100%;
-}
+   .hero {
+      height: 100vh;
+      background: url('../assets/homepage-images/team.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+   }
 
-.home-container video {
-	width: 100%;
-}
+   .hero-content {
+      text-align: center;
+      color: #fff;
+   }
 
-.contact,
-.team,
-.product,
-.project,
-.hiring {
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
+   h1 {
+      font-size: 3rem;
+      margin: 0;
+   }
 
-.contact img,
-.team img,
-.product img,
-.project img,
-.hiring img {
-	background-size: cover;
-	background-repeat: no-repeat;
-	object-fit: fill;
-	width: 100%;
-	height: 100vh;
-}
+   p {
+      font-size: 1.2rem;
+   }
 
-.about-us-container {
-	background-color: var(--sec-background);
-}
+   .section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('../assets/homepage-images/team.jpg') no-repeat center center/cover;
+      color: #fff;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+   }
 
-.header h1 {
-	font-size: 0.7em;
-	text-transform: capitalize;
-	letter-spacing: 2px;
-	line-height: 1.2em;
-	margin-left: 20px;
-	margin-top: 20px;
-	border-radius: 5px;
-	width: fit-content;
-	padding: 10px;
-	background-color: var(--pry-background);
-	color: #ffffe3;
-}
+   .section-content {
+      text-align: center;
+   }
 
-.about-us-content {
-	display: flex;
-	justify-content: space-between;
-	padding: 20px;
-	gap: 40px;
-}
+   .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+   }
 
-.company-video {
-	width: 200vw;
-	border-radius: 0.4em;
-}
+   @media (max-width: 768px) {
+      h1 {
+         font-size: 2rem;
+      }
 
-.company-video video {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.description {
-	margin-left: 20px;
-}
-
-.description p {
-	font-size: 15px;
-	font-weight: 400;
-	line-height: 1.8em;
-	letter-spacing: 1px;
-	margin-bottom: 20px;
-	padding: 10px;
-	color: #001317;
-}
-
-.link-wrapper {
-	padding: 15px;
-}
-
-.link-wrapper a {
-	background-color: transparent;
-	text-transform: capitalize;
-	font-weight: bold;
-	padding: 13px 20px;
-	transition: 1s ease-in-out;
-	border-radius: 0.4em;
-	border: 1px solid #000000;
-	font-size: 14px;
-	color: var(--ter-text);
-	letter-spacing: 1px;
-}
-
-.link-wrapper a:hover {
-	transition: 1s ease-in-out;
-	background-color: #000000;
-	color: #ffffff;
-}
+      p {
+         font-size: 1rem;
+      }
+   }
 </style>
+
+<script>
+   export default {
+      mounted() {
+         // Create an intersection observer to observe each section
+         const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+               if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+               } else {
+                  entry.target.classList.remove('visible');
+               }
+            });
+         }, { threshold: 0.1 }); // Adjust threshold as needed
+
+         // Observe each section
+         const sections = document.querySelectorAll('.section');
+         sections.forEach(section => observer.observe(section));
+      }
+   };
+</script>
