@@ -1,15 +1,15 @@
 <template>
    <div class="container">
-      <div class="header">
+      <div class="header fade">
          <div class="image-wrapper">
             <video autoplay loop muted>
                <source src="../assets/videos/factory.mp4" type="video/mp4" />
                Your browser does not support the video tag.
             </video>
          </div>
-         <div class="header-content">
+         <div class="header-content fade">
             <h1>Careers</h1>
-            <div class="content-wrapper">
+            <div class="content-wrapper fade">
                <p>
                   Join our innovative and dynamic team, where your talents will
                   help shape the future. We're on a mission to create a better
@@ -21,7 +21,7 @@
          </div>
       </div>
       <div class="write-up-container">
-         <div class="heading-wrapper">
+         <div class="heading-wrapper fade">
             <h2>Our Culture</h2>
             <h1>Why COBEF?</h1>
             <p>
@@ -30,7 +30,7 @@
                environment where every team member can thrive.
             </p>
          </div>
-         <div class="list-wrapper">
+         <div class="list-wrapper fade">
             <ul>
                <li>
                   <h3>Innovative Environment</h3>
@@ -68,7 +68,7 @@
             </ul>
          </div>
       </div>
-      <div class="open-positions">
+      <div class="open-positions fade">
          <h1>open positions</h1>
          <table>
             <thead>
@@ -114,6 +114,17 @@
    .container {
       min-height: 100vh;
       background-color: var(--background5);
+   }
+
+   .fade {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+   }
+
+   .fade.visible {
+      opacity: 1;
+      transform: translateY(0);
    }
 
    .header {
@@ -219,7 +230,7 @@
       border: var(--border);
       list-style: none;
       padding: 20px;
-      box-shadow:var(--box-shadow);
+      box-shadow: var(--box-shadow);
    }
 
    .list-wrapper li h3 {
@@ -325,14 +336,38 @@
          font-size: 2.3em;
          letter-spacing: 1px;
          margin-bottom: .6em;
-
       }
 
       .open-positions table {
          width: 100%;
       }
-      td{
+
+      td {
          font-size: .7em;
       }
    }
 </style>
+
+<script setup>
+
+   import { onMounted } from 'vue';
+
+   // Function to observe the fade-in effect
+   const observeElements = () => {
+      const observer = new IntersectionObserver((entries) => {
+         entries.forEach(entry => {
+            if (entry.isIntersecting) {
+               entry.target.classList.add('visible');
+            } else {
+               entry.target.classList.remove('visible');
+            }
+         });
+      }, { threshold: 0.1 }); // Adjust threshold as needed
+
+      document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+   };
+
+   onMounted(() => {
+      observeElements();
+   });
+</script>
