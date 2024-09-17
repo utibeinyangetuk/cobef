@@ -115,7 +115,7 @@
 
    .find-us a:hover {
       background-color: var(--background2);
-      color: var(--sec-text);
+      color: var(--background3);
    }
 
    .enquiry p {
