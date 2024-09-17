@@ -23,7 +23,7 @@
       <div class="write-up-container">
          <div class="heading-wrapper">
             <h2>Our Culture</h2>
-            <h1>Why<span> COBEF?</span></h1>
+            <h1>Why COBEF?</h1>
             <p>
                At COBEF, our mission drives everything we do and shapes how we
                work. We believe in fostering a collaborative and inclusive
@@ -73,7 +73,7 @@
          <table>
             <thead>
                <tr>
-                  <th>Open Positions</th>
+                  <th>Position</th>
                   <th>Department</th>
                   <th>Location</th>
                </tr>
@@ -82,21 +82,6 @@
                <tr>
                   <td>Transport Manager</td>
                   <td>Transport</td>
-                  <td>Port Harcourt</td>
-               </tr>
-               <tr>
-                  <td>NYSC Corpers</td>
-                  <td>Any</td>
-                  <td>Port Harcourt</td>
-               </tr>
-               <tr>
-                  <td>NYSC Corpers</td>
-                  <td>Any</td>
-                  <td>Port Harcourt</td>
-               </tr>
-               <tr>
-                  <td>NYSC Corpers</td>
-                  <td>Any</td>
                   <td>Port Harcourt</td>
                </tr>
                <tr>
@@ -128,7 +113,7 @@
 <style scoped>
    .container {
       min-height: 100vh;
-      margin-top: 50px;
+      background-color: var(--background5);
    }
 
    .header {
@@ -138,20 +123,17 @@
    .image-wrapper {
       width: 60%;
       height: 100vh;
-      background-color: var(--sec-background);
    }
 
    .image-wrapper video {
+      border: var(--border);
       width: 100%;
       height: 100vh;
       object-fit: cover;
-      border: none;
    }
 
    .header-content {
-      background: var(--sec-background);
       width: 40%;
-      color: #ffffff;
       display: flex;
       flex-direction: column;
    }
@@ -176,26 +158,27 @@
    .content-wrapper p {
       line-height: 2em;
       margin-bottom: 20px;
+      font-size: 1em;
    }
 
    .content-wrapper a {
-      border: 1px solid #fff;
-      border-radius: 5px;
+      font-weight: bold;
+      border: var(--border);
       padding: 10px;
       width: fit-content;
-      color: #fff;
       letter-spacing: 1px;
+      background-color: transparent;
+      color: #000000;
    }
 
    .content-wrapper a:hover {
-      background-color: #ffffff;
-      color: #000000;
+      color: var(--background5);
+      background-color: var(--background2);
    }
 
    .write-up-container {
       display: flex;
       padding: 20px;
-      background-color: var(--sec-background);
    }
 
    .heading-wrapper {
@@ -206,28 +189,20 @@
       margin-right: 2%;
    }
 
-   .write-up-container .heading-wrapper h2 {
-      font-size: 1em;
+   .heading-wrapper h2 {
+      font-size: .7em;
       letter-spacing: 2px;
-      font-weight: 400;
-      color: var(--ter-text-color);
-      margin-bottom: 5px;
+      font-weight: 700;
    }
 
-   .write-up-container .heading-wrapper h1 {
-      color: var(--ter-text-color);
+   .heading-wrapper h1 {
       letter-spacing: 2px;
-      font-size: 2.5em;
-      font-weight: 500;
+      font-size: 2em;
+      font-weight: 700;
       margin-bottom: 15px;
    }
 
-   .write-up-container .heading-wrapper span {
-      font-weight: bold;
-   }
-
-   .write-up-container .heading-wrapper p {
-      color: var(--ter-text-color);
+   .heading-wrapper p {
       line-height: 2em;
       font-size: 0.8em;
       margin-bottom: 20px;
@@ -241,41 +216,32 @@
    }
 
    .list-wrapper li {
-      border: 1px solid #fdf1f128;
+      border: var(--border);
       list-style: none;
-      background-color: var(--ter-background);
-      border-radius: 10px;
       padding: 20px;
-      box-shadow: 0 4px 8px rgba(49, 48, 48, 0.228);
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-   }
-
-   .list-wrapper li:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      box-shadow:var(--box-shadow);
    }
 
    .list-wrapper li h3 {
-      letter-spacing: 1px;
-      color: var(--ter-text-color);
-      font-size: 1.2em;
+      font-size: 1em;
       margin-bottom: 15px;
+      text-transform: uppercase;
    }
 
    .list-wrapper li p {
-      font-size: 0.8em;
+      font-size: .7em;
       line-height: 1.6em;
-      color: #fdf1f150;
    }
 
    .open-positions {
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color: var(--background1);
    }
 
    .open-positions h1 {
-      font-size: 4em;
+      font-size: 5em;
       text-transform: uppercase;
       margin-top: 20px;
       letter-spacing: 2px;
@@ -285,18 +251,20 @@
       width: 80%;
       border-collapse: collapse;
       text-align: left;
-      margin-bottom: 20px;
+      margin-bottom: 3em;
    }
 
    th,
    td {
-      border: var(--pry-border);
+      border: var(--border);
       padding: 10px;
    }
 
    th {
-      background-color: var(--sec-background);
-      color: var(--ter-text-color);
+      background-color: var(--background2);
+      color: var(--sec-text);
+      text-transform: uppercase;
+      letter-spacing: 1px;
    }
 
    @media only screen and (max-width: 768px) {
@@ -314,7 +282,6 @@
       .image-wrapper video {
          width: 100%;
          height: 100%;
-         border-radius: 5px;
       }
 
       .header-content {
@@ -324,7 +291,7 @@
 
       .header-content h1 {
          font-size: 4em;
-         margin-top: 10px;
+         margin-top: 0px;
          text-align: left;
       }
 
@@ -355,13 +322,17 @@
       }
 
       .open-positions h1 {
-         font-size: 2em;
+         font-size: 2.3em;
          letter-spacing: 1px;
          margin-bottom: .6em;
+
       }
 
       .open-positions table {
          width: 100%;
+      }
+      td{
+         font-size: .7em;
       }
    }
 </style>
