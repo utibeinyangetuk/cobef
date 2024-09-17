@@ -5,16 +5,37 @@
    import image3 from "@/assets/projects/three.jpg";
    import image2 from "@/assets/projects/two.jpg";
    import ImageCarousel from "@/components/ImageCarousel.vue";
+
+   import { onMounted } from 'vue';
+
+   // Function to observe the fade-in effect
+   const observeElements = () => {
+      const observer = new IntersectionObserver((entries) => {
+         entries.forEach(entry => {
+            if (entry.isIntersecting) {
+               entry.target.classList.add('visible');
+            } else {
+               entry.target.classList.remove('visible');
+            }
+         });
+      }, { threshold: 0.1 }); // Adjust threshold as needed
+
+      document.querySelectorAll('.fade').forEach(el => observer.observe(el));
+   };
+
+   onMounted(() => {
+      observeElements();
+   });
 </script>
 <template>
    <div class="container">
-      <div class="header-wrapper">
-         <div class="header-carousel">
+      <div class="header-wrapper fade">
+         <div class="header-carousel fade">
             <ImageCarousel :images="trips" class="image-carousel" />
          </div>
          <div class="header-content">
             <h1>Projects</h1>
-            <div class="write-up">
+            <div class="write-up fade">
                <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vero vitae possimus, qui ab molestias
                   non voluptates eum recusandae, officia nesciunt repellat temporibus eos, asperiores saepe magnam?
@@ -33,7 +54,7 @@
             </div>
          </div>
       </div>
-      <div class="works">
+      <div class="works fade">
          <div class="work-wrapper">
             <div class="work-heading">
                <h1> REHABILITATION OF ALESA AGBONCHIA AND ALESA WATER WORKS IN
@@ -115,7 +136,7 @@
             </div>
          </div>
       </div>
-      <div class="logos">
+      <div class="logos fade">
          <h1>Trusted By</h1>
          <div class="logos-slide">
             <img src="../assets/client logos/ALCON.png" />
@@ -142,6 +163,17 @@
 </template>
 
 <style scoped>
+   .fade {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+   }
+
+   .fade.visible {
+      opacity: 1;
+      transform: translateY(0);
+   }
+
    .container {
       background-color: var(--background1);
    }
@@ -269,7 +301,7 @@
 
    .logos-slide {
       display: inline-block;
-      animation: 20s slide linear infinite;
+      animation: 14s slide linear infinite;
       padding: 30px 0;
    }
 
