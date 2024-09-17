@@ -143,7 +143,7 @@
 
 <style scoped>
    .container {
-      margin-top: 50px;
+      background-color: var(--background1);
    }
 
    .header-wrapper {
@@ -152,87 +152,94 @@
    }
 
    .header-carousel {
+      height: 100vh;
+      border: var(--border);
+   }
+
+   .image-carousel {
       height: 100%;
    }
 
    .header-content {
-      background-color: var(--sec-background);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
    }
 
    .header-content h1 {
-      color: var(--ter-text-color);
-      text-align: center;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       text-transform: uppercase;
       font-size: 4em;
    }
 
    .write-up {
-      padding: 30px;
-      height: 80%;
+      padding: 0 30px;
+      height: fit-content;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
    }
 
    .write-up p {
-      color: var(--ter-text-color);
       font-size: .8em;
-      line-height: 2em;
-      text-align: left;
+      line-height: 2.3em;
+      text-align: center;
    }
 
    .works {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      background-color: var(--pry-background);
       padding: 10px;
+      gap: 10px;
    }
 
    .work-wrapper {
-      border-right: 1px solid rgba(128, 128, 128, 0.382);
-      border-bottom: 1px solid rgba(128, 128, 128, 0.382);
+      border: var(--border);
       padding: 5px;
-   }
-
-   .link-wrapper {
-      border-radius: 5px;
-      width: fit-content;
-      padding: 6px 2px;
-      background-color: var(--sec-background);
-   }
-
-   .link-wrapper a {
-      font-size: .8em;
-      letter-spacing: 1px;
-      color: #fff;
-      height: 100%;
-      padding: 3px;
-   }
-
-   .work-heading {
-      margin-bottom: 2em;
+      box-shadow: var(--box-shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
    }
 
    .work-heading h1 {
-      font-size: 1em;
+      font-size: 1.4em;
       margin-bottom: 7px;
    }
 
    .work-heading span {
       font-style: normal;
-      font-weight: bold;
+      font-weight: 600;
       line-height: 1.7em;
       font-size: .8em;
-      color: var(--sec-text-color);
    }
 
    .work-heading p {
-      color: var(--sec-text-color);
       margin-top: 7px;
       margin-bottom: 10px;
       font-size: .8em;
       line-height: 2em;
+   }
+
+   .link-wrapper {
+      margin-top: 20px;
+      margin-bottom: 10px;
+   }
+
+   .link-wrapper a {
+      font-size: .8em;
+      letter-spacing: 1px;
+      height: 100%;
+      border: var(--border);
+      color: var(--pry-text);
+      font-weight: bold;
+      padding: 10px;
+   }
+
+   .link-wrapper a:hover {
+      background: var(--background2);
+      color: var(--sec-text);
    }
 
    @keyframes slide {
@@ -246,7 +253,7 @@
    }
 
    .logos {
-      background-color: var(--sec-background);
+      background-color: var(--background2);
       overflow: hidden;
       white-space: nowrap;
       position: relative;
@@ -254,30 +261,34 @@
 
    .logos h1 {
       text-align: center;
-      color: var(--ter-text-color);
+      color: var(--sec-text);
       font-size: 5em;
       text-transform: uppercase;
+      padding: 10px;
    }
 
    .logos-slide {
       display: inline-block;
-      animation: 10s slide linear infinite;
-      padding: 30px;
+      animation: 20s slide linear infinite;
+      padding: 30px 0;
    }
 
    .logos-slide img {
       height: 100px;
-      margin: 0 15px;
-      border: 1px solid #f4f4f427;
+      margin: 0 5px;
       padding: 20px;
-      border-radius: 5px;
-      box-shadow: 5px 5px 5px rgba(253, 252, 252, 0.114);
+      filter: grayscale();
    }
 
-   @media only screen and (max-width:800px) {
+   @media only screen and (max-width:1024px) {
       .header-wrapper {
-         display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+         display: flex;
+         flex-direction: column;
+      }
+
+      .header-carousel {
+         height: 100%;
+         border: none;
       }
 
       .logos h1 {
