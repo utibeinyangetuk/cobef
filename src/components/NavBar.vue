@@ -40,58 +40,50 @@
 </script>
 
 <template>
-   <div class="container">
-      <div class="main-wrapper">
-         <div class="logo">
-            <h1>Cobef</h1>
-         </div>
-         <div class="nav-links">
-            <router-link to="/about">About</router-link>
-            <router-link to="/projects">Project</router-link>
-            <router-link to="/products">Product</router-link>
-            <router-link to="/contact">Contact</router-link>
-         </div>
-         <div class="hamburger">
-            <button @click="toggleMenu" :class="{ open: isOpen }" class="hamburger-menu">
-               <span />
-               <span />
-               <span />
-            </button>
-            <transition name="slide-fade">
-               <div v-if="isOpen" class="fullscreen-menu">
-                  <!-- Menu items -->
-                  <ul>
-                     <li v-for="(link, index) in links" :key="link.path" :class="{ active: isActive(link.path) }">
-                        <router-link :to="link.path" @click.native="closeMenu">
-                           <span class="link-number">
-                              {{ formatNumber(index + 1) }}/</span>{{ link.name }}</router-link>
-                     </li>
-                  </ul>
-               </div>
-            </transition>
-         </div>
+   <div class="main-wrapper">
+      <div class="logo">
+         <h1>Cobef</h1>
+      </div>
+      <div class="nav-links">
+         <router-link to="/about">About</router-link>
+         <router-link to="/projects">Project</router-link>
+         <router-link to="/products">Product</router-link>
+         <router-link to="/contact">Contact</router-link>
+      </div>
+      <div class="hamburger">
+         <button @click="toggleMenu" :class="{ open: isOpen }" class="hamburger-menu">
+            <span />
+            <span />
+            <span />
+         </button>
+         <transition name="slide-fade">
+            <div v-if="isOpen" class="fullscreen-menu">
+               <!-- Menu items -->
+               <ul>
+                  <li v-for="(link, index) in links" :key="link.path" :class="{ active: isActive(link.path) }">
+                     <router-link :to="link.path" @click.native="closeMenu">
+                        <span class="link-number">
+                           {{ formatNumber(index + 1) }}/</span>{{ link.name }}</router-link>
+                  </li>
+               </ul>
+            </div>
+         </transition>
       </div>
    </div>
 </template>
 <style scoped>
-   .container {
-      background: var(--pry-background);
-      height: 50px;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 999;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-   }
-
    .main-wrapper {
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      background: var(--background1);
+      border: var(--border);
+      height: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 999;
    }
 
    .logo {
@@ -100,11 +92,11 @@
    }
 
    .logo h1 {
-      font-size: 20px;
+      font-size: 1.5em;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: transparent;
-      -webkit-text-stroke-width: 0.06rem;
+      color: var(--background5);
+      -webkit-text-stroke-width: 0.09rem;
       -webkit-text-stroke-color: #000000;
       white-space: nowrap;
    }
@@ -112,26 +104,31 @@
    .nav-links {
       display: flex;
       justify-content: space-evenly;
-      width: 30%;
+      width: 100%;
    }
 
    .nav-links a {
+      text-transform: uppercase;
       letter-spacing: 2px;
-      font-size: 13px;
-      transition: 0.6s ease-in-out;
-      color: var(--sec-text);
+      font-size: 1em;
+      border: var(--border);
+      color: var(--pry-text);
+      padding: 0 10px;
+      transition: 1s ease-in-out;
+      box-shadow: var(--box-shadow);
    }
 
    .nav-links a:hover {
-      transition: 0.6s ease-in-out;
-      color: var(--link-hover);
+      transition: 1s ease-in-out;
+      box-shadow: none;
    }
 
    .hamburger-menu {
       transition: transform 0.6s ease-in-out;
-      background: transparent;
+      background: inherit;
       border: none;
       padding: 10px;
+      height: 100%;
    }
 
    .hamburger-menu span {
@@ -139,7 +136,7 @@
       height: 2px;
       width: 2em;
       margin-bottom: 5px;
-      background-color: var(--pry-text-color);
+      background-color: var(--pry-text);
       transition: transform 0.6s ease, background-color 0.3s ease;
    }
 
@@ -167,18 +164,20 @@
       }
    }
 
+   /**
    .hamburger-menu.open span:nth-child(1) {
       transform: translateY(13px) rotate(45deg);
    }
-
+  **/
    .hamburger-menu.open span:nth-child(2) {
-      opacity: 0;
+      transform: translateX(7px);
    }
 
+   /**
    .hamburger-menu.open span:nth-child(3) {
-      transform: translateY(-2px) rotate(-45deg);
+     transform: translateY(-2px) rotate(-45deg);
    }
-
+     **/
    .hamburger-menu.open {
       position: absolute;
       top: 0;
@@ -187,7 +186,7 @@
    }
 
    .hamburger-menu.open span {
-      background-color: var(--sec-background);
+      background-color: var(--background2);
    }
 
    .slide-fade-enter-active {
@@ -200,11 +199,9 @@
 
    .fullscreen-menu {
       position: fixed;
-      top: 50px;
+      top: 60px;
       right: 2px;
-      background-color: var(--pry-background);
-      background-image: var(--ter-background);
-      background-size: var(--ter-background-size);
+      background-color: var(--background1);
       z-index: 999;
       width: fit-content;
       height: fit-content;
@@ -213,8 +210,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      border: var(--pry-border);
-      padding: 20px;
+      border: var(--border);
+      padding: 0 20px;
    }
 
    .fullscreen-menu ul {
@@ -230,8 +227,8 @@
 
    .fullscreen-menu ul li {
       margin-bottom: 15px;
-      border: var(--pry-border);
-      height: fit-content;
+      box-shadow: var(--box-shadow);
+      border: var(--border);
    }
 
    .fullscreen-menu ul li a {
@@ -243,22 +240,20 @@
       text-transform: capitalize;
    }
 
-   .fullscreen-menu ul li a:hover {
-      color: var(--link-hover);
+   .fullscreen-menu ul li:hover {
       transition: 0.6s ease-in-out;
+      box-shadow: none;
    }
 
    .fullscreen-menu ul li span {
-      color: var(--sec-text);
+      color: var(--pry-text);
       font-size: 0.6em;
       margin-right: 6px;
    }
 
    .fullscreen-menu ul li.active {
-      font-size: 0.8rem;
-      background-color: var(--sec-background);
-      width: fit-content;
-      border: none;
+      transition: 0.6s ease-in-out;
+      box-shadow: none;
    }
 
    @media only screen and (max-width: 600px) {
