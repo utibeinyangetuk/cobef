@@ -114,6 +114,7 @@
    .container {
       min-height: 100vh;
       background-color: var(--background5);
+      margin-top: 60px;
    }
 
    .fade {

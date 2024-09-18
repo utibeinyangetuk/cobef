@@ -38,6 +38,7 @@
 <style scoped>
    .container {
       display: flex;
+      margin-top: 60px;
    }
 
    .section1 {

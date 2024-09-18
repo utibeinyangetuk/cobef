@@ -74,6 +74,7 @@
       height: 100vh;
       width: 100%;
       background-color: var(--background2);
+      margin-top: 60px;
    }
 
    .left {

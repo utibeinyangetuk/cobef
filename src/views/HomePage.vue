@@ -85,6 +85,7 @@
    .container {
       scroll-behavior: smooth;
       background-color: var(--background2);
+      margin-top: 60px;
    }
 
    .about {
@@ -173,7 +174,6 @@
       letter-spacing: 2px;
       text-transform: uppercase;
       font-weight: 700;
-      transition: background-color 0.3s, color 0.3s;
       position: relative;
       box-shadow: var(--box-shadow);
       transition: 1s ease-in-out;

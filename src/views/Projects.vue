@@ -55,7 +55,7 @@
          </div>
       </div>
       <div class="works fade">
-         <div class="work-wrapper">
+         <div class="work-wrapper fade">
             <div class="work-heading">
                <h1> REHABILITATION OF ALESA AGBONCHIA AND ALESA WATER WORKS IN
                   OGONI LAND</h1>
@@ -69,7 +69,7 @@
                </div>
             </div>
          </div>
-         <div class="work-wrapper">
+         <div class="work-wrapper fade">
             <div class="work-heading">
                <h1>SUPPLY AND PIPE LAYING IN OBAGI COMMUNITY, RIVERS STATE</h1>
                <span class="uil uil-clock"> Jan 14, 2021</span><br>
@@ -82,7 +82,7 @@
                </div>
             </div>
          </div>
-         <div class="work-wrapper">
+         <div class="work-wrapper fade">
             <div class="work-heading">
                <h1>INSTALLATION OF BOREHOLE AND WATER TREATMENT PLANT</h1>
                <span class="uil uil-clock"> Jan 14, 2021</span><br>
@@ -95,7 +95,7 @@
                </div>
             </div>
          </div>
-         <div class="work-wrapper">
+         <div class="work-wrapper fade">
             <div class="work-heading">
                <h1> MAINTENANCE OF OBUNAGHA MEGA WATER PROJECT AND TRUNK LINES IN
                   GBARAIN KINGDOM</h1>
@@ -109,7 +109,7 @@
                </div>
             </div>
          </div>
-         <div class="work-wrapper">
+         <div class="work-wrapper fade">
             <div class="work-heading">
                <h1> supply and pipe laying of Obaji Community in Ogba/Egbema/Ndoni</h1>
                <span class="uil uil-clock"> Jan 14, 2021</span><br>
@@ -122,7 +122,7 @@
                </div>
             </div>
          </div>
-         <div class="work-wrapper">
+         <div class="work-wrapper fade">
             <div class="work-heading">
                <h1> RETICULATION OF ELEME WATER SUPPLY SCHEME</h1>
                <span class="uil uil-clock"> Jan 14, 2021</span><br>
@@ -176,6 +176,7 @@
 
    .container {
       background-color: var(--background1);
+      margin-top: 60px;
    }
 
    .header-wrapper {
@@ -289,6 +290,7 @@
       overflow: hidden;
       white-space: nowrap;
       position: relative;
+      height: 100%;
    }
 
    .logos h1 {
@@ -323,12 +325,16 @@
          border: none;
       }
 
+      .write-up {
+         padding: 0 10px;
+      }
+
       .logos h1 {
          font-size: 3em;
       }
 
       .logos img {
-         height: 70px;
+         height: 90px;
          margin: 0 8px;
       }
    }
