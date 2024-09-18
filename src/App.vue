@@ -13,15 +13,16 @@
    @import url("https://fonts.cdnfonts.com/css/poppins");
 
    :root {
-      --pry-background: #F9F6E7;
-      --sec-background: #0E100F;
-      --pry-text-color: #000000;
-      --sec-text-color: #625a46;
-      --ter-text-color: #ffffff;
-      --hover: #2A868D;
-      --pry-border: 1px solid #d2c7ab;
-      --sec-border: 1px solid #1c1c1c32;
-      --box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+      --background1: #F9F6E7;
+      --background2: #0E100F;
+      --background3: #D7AB76;
+      --background4: #DB5850;
+      --background5: #459EB1;
+      --pry-text: #040405;
+      --sec-text: #ffffff;
+      --border: 2px solid #040405;
+      --sec-border: 2px solid #ffffff;
+      --box-shadow: -4px 8px 0 0 var(--background2);
    }
 
    #app {
@@ -31,14 +32,6 @@
       height: 100vh;
       overflow: auto;
       scroll-behavior: smooth;
-      background-color: var(--pry-background);
-      /**
-      background-image:
-         linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
-         linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
-      background-size: 40px 40px;
-
-      **/
    }
 
    * {
@@ -46,17 +39,18 @@
       padding: 0;
       box-sizing: border-box;
       text-decoration: none;
+      list-style: none;
 
       ::-webkit-scrollbar {
-         width: 3px;
+         width: 5px;
       }
 
       ::-webkit-scrollbar-track {
-         background: var(--pry-background);
+         background: var(--background1);
       }
 
       ::-webkit-scrollbar-thumb {
-         background: var(--sec-background);
+         background: var(--background2);
          border-radius: 10px;
       }
    }
