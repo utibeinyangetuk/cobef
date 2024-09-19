@@ -86,6 +86,7 @@
       padding: 10px 0;
       width: 100%;
       height: 100vh;
+      scroll-snap-align: start;
    }
 
    .box img {
@@ -143,7 +144,7 @@
       }
 
       .right h1 {
-         font-size: 2.3em;
+         font-size: 2em;
          margin-bottom: .6em;
       }
    }
