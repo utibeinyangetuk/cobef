@@ -1,9 +1,8 @@
 <template>
    <div class="container">
       <div class="left" ref="leftDiv">
-         <div v-for="(image, index) in images" :key="index" class="box" :style="{ backgroundImage: `url(${image})` }"
-            :data-index="index">
-            <!-- Image will be set via CSS background -->
+         <div v-for="(image, index) in images" :key="index" class="box" :data-index="index">
+            <img :src="image" alt="Material Image" />
          </div>
       </div>
       <div class="right">
@@ -25,20 +24,18 @@
    import suction from '../assets/materials/suction-hose.jpg';
    import tank from '../assets/materials/Tank.jpeg';
 
-   // Create an array of the images
    const images = [hdpe, lapeta, tank, pressure, suction, conduit, corrugated, marine_rope, pvc];
-
-   // Define headings and corresponding contents
    const headings = [
       'hdpe', 'lapeta', 'Plastic tanks',
       'pressure pipes', 'suction hose', 'conduit pipes',
       'corrugated pipes', 'marine rope', 'pvc pipes'
    ];
-
    const contents = [
-      '   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, officia quaerat quis doloribus, natus nisi, rerum amet nobis vel ullam enim. In odit eligendi architecto repellendus et illo dolorum delectus.', '   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, officia quaerat quis doloribus, natus nisi, rerum amet nobis vel ullam enim. In odit eligendi architecto repellendus et illo dolorum delectus.', '   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, officia quaerat quis doloribus, natus nisi, rerum amet nobis vel ullam enim. In odit eligendi architecto repellendus et illo dolorum delectus.',
-      '   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, officia quaerat quis doloribus, natus nisi, rerum amet nobis vel ullam enim. In odit eligendi architecto repellendus et illo dolorum delectus.', '   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, officia quaerat quis doloribus, natus nisi, rerum amet nobis vel ullam enim. In odit eligendi architecto repellendus et illo dolorum delectus.', '   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, officia quaerat quis doloribus, natus nisi, rerum amet nobis vel ullam enim. In odit eligendi architecto repellendus et illo dolorum delectus.',
-      '   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, officia quaerat quis doloribus, natus nisi, rerum amet nobis vel ullam enim. In odit eligendi architecto repellendus et illo dolorum delectus.', '   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, officia quaerat quis doloribus, natus nisi, rerum amet nobis vel ullam enim. In odit eligendi architecto repellendus et illo dolorum delectus.', '   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, officia quaerat quis doloribus, natus nisi, rerum amet nobis vel ullam enim. In odit eligendi architecto repellendus et illo dolorum delectus.',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
    ];
 
    const currentHeading = ref(headings[0]);
@@ -57,7 +54,7 @@
    onMounted(() => {
       const observer = new IntersectionObserver(updateRightDivContent, {
          root: document.querySelector('.left'),
-         threshold: 0.5 // Trigger update when 50% of the box is visible
+         threshold: 0.5
       });
 
       const boxes = document.querySelectorAll('.box');
@@ -69,81 +66,85 @@
 
 <style scoped>
    .container {
-      display: grid;
-      grid-template-columns: 3fr 1fr;
+      padding: 0 50px;
+      margin-top: 60px;
       height: 100vh;
       width: 100%;
-      background-color: var(--background2);
-      margin-top: 60px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
    }
 
    .left {
-      flex: 1;
-      gap: 10px;
+      background-color: var(--background1);
       overflow-y: scroll;
       scroll-snap-type: y mandatory;
-      border-right: var(--border);
-      filter: grayscale();
+      flex: 1;
+      gap: 10px;
+   }
+
+   .box {
+      padding: 10px 0;
+      width: 100%;
+      height: 100vh;
+   }
+
+   .box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: var(--border);
+      border-radius: 10px;
    }
 
    .right {
-      position: -webkit-sticky;
-      position: sticky;
-      top: 0;
+      background: var(--background4);
+      height: 90vh;
       width: 100%;
-      height: 100vh;
-      padding: 1rem;
-      background-color: var(--background2);
-      transition: background-color 0.3s ease;
+      border: var(--border);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      margin-top: 3px;
+      margin-bottom: 5px;
+      border-radius: 10px;
    }
 
    .right h1 {
       text-transform: uppercase;
-      text-align: left;
-      letter-spacing: 1px;
       font-size: 3em;
-      color: var(--sec-text);
+      line-height: 1em;
+      text-align: left;
    }
 
    .right p {
-      font-size: .8em;
       line-height: 2em;
-      color: var(--sec-text);
    }
 
-   .box {
-      height: 100vh;
-      scroll-snap-align: start;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      border: var(--border);
-   }
-
-   @media (max-width: 1024px) {
+   @media only screen and (max-width:1024px) {
       .container {
          display: flex;
          flex-direction: column;
-         height: 100vh;
-      }
-
-      .right {
-         position: relative;
-         padding-top: 2rem;
-         height: fit-content;
-         border: 2px solid #fff;
-      }
-
-      .right h1 {
-         font-size: 2em;
-         margin-bottom: .3em;
+         padding: 5px;
       }
 
       .box {
-         background-size: contain;
+         height: 70vh;
+      }
+
+      .box img {
+         object-fit: fill;
+      }
+
+      .right {
+         height: fit-content;
+      }
+
+      .right h1 {
+         font-size: 2.3em;
+         margin-bottom: .6em;
       }
    }
 </style>
