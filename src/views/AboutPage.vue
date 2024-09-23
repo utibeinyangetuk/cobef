@@ -87,6 +87,7 @@
             fuga accusamus accusantium iusto aperiam eos.
          </p>
 
+
          <div class="products-section">
             <div class="video-wrapper">
                <video autoplay loop muted>
@@ -110,7 +111,7 @@
 
    /* General Styles */
    .about-container {
-      background: var(--pry-background);
+      background: var(--background4);
       padding: 50px 20px;
    }
 
@@ -303,6 +304,7 @@
    }
 </style>
 
+
 <script setup>
    import { onMounted } from 'vue';
    import TextCarousel from "@/components/TextCarousel.vue";
@@ -313,7 +315,8 @@
          entries.forEach(entry => {
             if (entry.isIntersecting) {
                entry.target.classList.add('visible');
-               observer.unobserve(entry.target); // Optional: stop observing once it becomes visible
+            } else {
+               entry.target.classList.remove('visible');
             }
          });
       }, { threshold: 0.1 }); // Adjust threshold as needed

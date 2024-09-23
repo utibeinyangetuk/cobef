@@ -55,6 +55,7 @@
    .carousel-container {
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
       margin-bottom: auto;
    }
@@ -72,6 +73,7 @@
       font-size: .7em;
       color: var(--sec-text-color);
       margin-bottom: 6px;
+      text-align: center;
    }
 
    .carousel-content p {
