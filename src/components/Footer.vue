@@ -38,7 +38,7 @@
 </template>
 <style scoped>
    footer {
-      background: var(--background1);
+      background:#d7ab768e;
       border: var(--border);
       width: 100%;
    }
