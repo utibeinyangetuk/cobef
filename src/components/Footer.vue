@@ -20,12 +20,6 @@
                <a href="#">Facebook</a>
             </div>
          </div>
-         <div class="connect">
-            <h1>Interested in learning more or collaborating?</h1>
-            <div class="link-wrapper">
-               <router-link to="contact">Leave us a message</router-link>
-            </div>
-         </div>
       </div>
       <div class="bottom-footer">
          <p>
@@ -38,8 +32,7 @@
 </template>
 <style scoped>
    footer {
-      background:#d7ab768e;
-      border: var(--border);
+      background: #ffffff;
       width: 100%;
    }
 
@@ -47,16 +40,17 @@
       display: grid;
       gap: 10px;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      padding: 10px;
+      padding: 20px;
    }
 
    .container h1 {
       font-size: 1em;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       background-color: var(--background2);
       padding: 5px;
       color: var(--sec-text);
+      border-radius: 5px;
    }
 
    .links {
@@ -65,50 +59,24 @@
    }
 
    .links a {
-      border: var(--border);
+      width: fit-content;
       margin-top: 10px;
       padding: 5px;
       color: var(--pry-text);
-      font-size: .8em;
+      font-size: .7em;
       letter-spacing: .6px;
-      text-transform: uppercase;
+      text-transform: capitalize;
    }
 
    .links a:hover {
-      background-color: var(--background2);
-      color: var(--sec-text);
-   }
-
-   .connect {
-      background-color: var(--background2);
-      padding: 10px;
-      min-height: 40vh;
-      position: relative;
-   }
-
-   .link-wrapper a {
-      border: var(--sec-border);
-      padding: 10px;
-      color: var(--sec-text);
-      text-transform: uppercase;
-      font-size: .8em;
-      letter-spacing: 1px;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      margin: 6px 6px;
-   }
-
-   .link-wrapper a:hover {
-      background-color: var(--background1);
-      color: var(--pry-text);
+      text-decoration: underline;
    }
 
    .bottom-footer {
       padding: 10px;
       display: flex;
       justify-content: space-between;
-      border-top: var(--border);
+      background: rgb(229, 227, 227);
    }
 
    .bottom-footer p {
