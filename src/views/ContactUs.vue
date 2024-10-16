@@ -38,7 +38,7 @@
 <style scoped>
    .container {
       display: flex;
-      margin-top: 60px;
+      margin-top: 40px;
    }
 
    .section1 {
@@ -129,6 +129,10 @@
    .links {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   }
+
+   .links a:hover {
+      text-decoration: underline;
    }
 
    .logo-wrapper img {
