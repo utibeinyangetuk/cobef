@@ -20,8 +20,8 @@
       --background5: #459EB1;
       --pry-text: #040405;
       --sec-text: #ffffff;
-      --border: 2px solid #040405;
-      --sec-border: 2px solid #ffffff;
+      --border: 1px solid #040405;
+      --sec-border: 1px solid #ffffff;
       --box-shadow: -4px 8px 0 0 var(--background2);
    }
 
@@ -46,7 +46,7 @@
       }
 
       ::-webkit-scrollbar-track {
-         background: var(--background1);
+         background: #ffffff;
       }
 
       ::-webkit-scrollbar-thumb {

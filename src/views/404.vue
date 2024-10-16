@@ -18,7 +18,7 @@
 <style scoped>
    .container {
       height: 100vh;
-      margin-top: 60px;
+      margin-top: 40px;
       display: flex;
       flex-direction: column;
       justify-content: center;
