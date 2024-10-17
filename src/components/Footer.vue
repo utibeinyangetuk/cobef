@@ -1,10 +1,10 @@
-<script>
+<script setup>
    import { ref } from "vue";
    const currentYear = ref(new Date().getFullYear());
 </script>
 <template>
    <footer>
-      <p> © {{ currentYear }}COBEF International Limited. All rights reserved.</p>
+      <p> ©{{ currentYear }} COBEF International Limited. All rights reserved.</p>
       <a href="https://t.me/+2348055041145">website by utibe</a>
    </footer>
 </template>
