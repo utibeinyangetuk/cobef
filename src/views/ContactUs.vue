@@ -1,19 +1,19 @@
 <template>
    <div class="container">
-      <div class="section1"></div>
+      <div class="section1" />
       <div class="section2">
-         <h1>Get in touch.</h1>
+         <h1>Get in touch</h1>
          <div class="find-us">
             <h2>Find us</h2>
-            <p>Km 17 Port Harcourt/Aba Express Way, P. O. Box 2769, Port Harcourt</p>
+            <p>Km 17 Port Harcourt/Aba Express Way, P. O. Box 2769, Port Harcourt.</p>
             <a href="https://www.google.com/maps/place/Cobef+International+Limited" target="_blank" class="button">
                View in Maps
             </a>
          </div>
          <div class="enquiry">
             <h2>Have an enquiry?</h2>
-            <p>Whether you have a question about a future project,want to know more about how
-               we work or are interested in a career with us,you can email us or give us a call by
+            <p>Whether you have a question about a future project, want to know more about how
+               we work or are interested in a career with us, you can email us or give us a call by
                using the links below.
             </p>
          </div>
@@ -55,13 +55,11 @@
       display: flex;
       flex-direction: column;
       background-color: var(--background3);
-      border: var(--border);
    }
 
    .section2 a {
       color: var(--pry-text);
-      font-size: .8em;
-      font-weight: 700;
+      font-size: .7em;
       letter-spacing: .7px;
       margin-left: 7px;
    }
@@ -72,11 +70,11 @@
       text-align: center;
       font-size: 14px;
       margin-bottom: .7em;
-      color: var(--sec-text-color);
+      color: var(--pry-text);
    }
 
    .section2 h1 {
-      color: var(--pry-text-color);
+      color: var(--pry-text);
       letter-spacing: 2px;
       font-size: 3.8em;
       margin-bottom: 20px;
@@ -86,14 +84,14 @@
    .find-us,
    .links,
    .enquiry {
-      margin-bottom: 2em;
+      margin-bottom: 1.5em;
       border-top: var(--border);
    }
 
    .find-us h2,
    .enquiry h2,
    .links h2 {
-      font-weight: 600;
+      font-weight: bold;
       font-size: .6em;
       margin-bottom: 6px;
       margin-top: 10px;
@@ -102,10 +100,9 @@
    }
 
    .find-us p {
-      font-size: .8em;
+      font-size: .7em;
       letter-spacing: .4px;
       margin-bottom: 20px;
-      font-weight: 700;
    }
 
    .find-us a {
@@ -122,28 +119,11 @@
    .enquiry p {
       font-size: .73em;
       letter-spacing: .4px;
-      margin-bottom: 6px;
       line-height: 2em;
-   }
-
-   .links {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
    }
 
    .links a:hover {
       text-decoration: underline;
-   }
-
-   .logo-wrapper img {
-      height: 80px;
-      width: 80px;
-   }
-
-   .footer-wrapper {
-      width: 35%;
-      display: flex;
-      justify-content: space-between;
    }
 
    @media only screen and (max-width:920px) {

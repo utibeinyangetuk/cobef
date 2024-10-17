@@ -27,6 +27,7 @@
          display: flex;
          flex-direction: column;
          line-height: 1.7em;
+         padding: 10px 20px;
       }
    }
 </style>
