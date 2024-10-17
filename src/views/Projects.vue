@@ -138,7 +138,7 @@
    }
 
    .image-carousel {
-      height: 50vh;
+      height: 93vh;
    }
 
    .right-content {

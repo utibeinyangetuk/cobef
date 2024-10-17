@@ -28,7 +28,7 @@
 
          <section class="section product" id="products">
             <div class="section-content">
-               <h2>Our Products</h2>
+               <h2>Products</h2>
                <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
                   similique laudantium distinctio debitis quia, unde sequi harum.
@@ -43,9 +43,11 @@
 
          <section class="section project" id="projects">
             <div class="section-content">
-               <h2>Our Projects</h2>
+               <h2>Projects</h2>
                <p>
-                  Explore the groundbreaking projects we've completed worldwide.
+                  Explore the groundbreaking projects we've completed worldwide. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Ipsum sint illo amet hic sequi ut, fuga optio id culpa corrupti, deserunt rerum
+                  beatae quis perspiciatis omnis natus laboriosam voluptatem? Veniam!
                </p>
                <router-link to="projects" class="btn-link">
                   View projects
@@ -72,8 +74,9 @@
             <div class="section-content">
                <h2>Contact Us</h2>
                <p>
-                  Reach out to us for more information on our services and
-                  solutions.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, maxime officia ut unde cum aliquid
+                  facere aperiam cupiditate illum, culpa nulla quidem quod distinctio dicta sapiente excepturi nisi?
+                  Repellendus, dignissimos.
                </p>
                <router-link to="contact" class="btn-link">
                   Leave us a message
@@ -87,12 +90,12 @@
 <style scoped>
    .container {
       scroll-behavior: smooth;
-      background-color: #ffffff;
+      background-color: var(--background1);
       margin-top: 40px;
    }
 
    .hero {
-      height: 90vh;
+      height: 100vh;
       background: url("../assets/homepage-images/home.jpg") no-repeat center center/cover;
       display: flex;
       align-items: last baseline;
@@ -100,10 +103,11 @@
    }
 
    .hero-content {
-      color: #fff;
-      text-align: left;
-      margin-bottom: 100px;
-      margin-left: 50px;
+      color: var(--sec-text);
+      padding: 10px 30px;
+      background-color: rgba(128, 128, 128, 0.47);
+      width: 60%;
+      margin: 7px;
    }
 
    .hero-content h1 {
@@ -111,14 +115,12 @@
    }
 
    .hero-content p {
-      width: 60%;
-      font-size: .9em;
+      font-size: .8em;
       line-height: 2em;
-      font-weight: bold;
    }
 
    .sections-wrapper {
-      padding: 30px;
+      padding: 10px;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -156,30 +158,33 @@
    .section {
       height: 100vh;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      align-items: last baseline;
       color: var(--sec-text);
       opacity: 0;
       transform: translateY(20px);
       transition: opacity .5s ease-in-out, transform .5s ease-in-out;
       position: relative;
-      border-radius: 15px;
    }
 
    .section-content {
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: last baseline;
+      position: relative;
+      padding: 10px 30px;
+      background-color: rgba(128, 128, 128, 0.47);
+      width: 60%;
+      margin: 7px;
    }
 
    .section-content h2 {
-      font-size: 3em;
+      font-size: 2.5em;
       text-transform: uppercase;
-      letter-spacing: 1px;
    }
 
    .section-content p {
-      font-size: 1em;
-      font-weight: 400;
-      padding: 0 15em;
+      font-size: .8em;
+      line-height: 2em;
    }
 
    .section.visible {
@@ -192,33 +197,24 @@
       align-items: center;
       margin-top: 1rem;
       padding: 0.6rem 2rem;
-      background-color: #ffffff;
+      background-color: var(--background1);
       color: var(--pry-text);
       font-size: .8rem;
       letter-spacing: 1px;
       font-weight: 600;
       text-transform: capitalize;
       position: relative;
-      transition: 1s ease-in-out;
-      border-radius: 5px;
+      border: 1px solid #ffffff;
    }
 
    .btn-link:hover {
-      background-color: rgba(198, 197, 197, 0.81);
-      transition: 1s ease-in-out;
-   }
-
-   .btn-link:hover i {
-      opacity: 1;
+      background-color: transparent;
+      color: var(--sec-text);
    }
 
    @media only screen and (max-width: 1024px) {
       .sections-wrapper {
-         padding: 10px;
-      }
-
-      .section-content p {
-         padding: 0 6em;
+         padding: 5px;
       }
 
       .btn-link {
@@ -238,28 +234,19 @@
          width: 100%;
          margin-left: 10px;
       }
-   }
 
-   @media only screen and (max-width: 550px) {
+      .section-content p {
+         font-size: .7em;
+      }
+
       .section-content h2 {
          font-size: 2.5em;
       }
+   }
 
-      .section-content p {
-         padding: 0;
-      }
-
-      .btn-link {
-         font-size: 1em;
-      }
-
-      h1 {
-         font-size: 2em;
-      }
-
-      p {
-         font-size: .9em;
-         line-height: 2em;
+   @media only screen and (max-width: 550px) {
+      .section-content {
+         width: 100%;
       }
    }
 </style>

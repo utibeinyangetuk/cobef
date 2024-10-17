@@ -75,8 +75,8 @@ onUnmounted(() => {
 
 .carousel-item img {
 	width: 100%;
-	height: 100;
-	object-fit: cover;
+	height: 100vh;
+	object-fit: fill;
 }
 
 .carousel-indicators {
@@ -103,9 +103,6 @@ onUnmounted(() => {
 	.carousel{
 		height: 50vh;
 	}
-	.carousel-item img{
-		height: 50vh;
-	}
 	.indicator{
 		height:10px;
 		width: 10px;
@@ -114,10 +111,6 @@ onUnmounted(() => {
 @media only screen and (min-width:769px)and (max-width:1160px){
 	.carousel{
 		height:60vh;
-	}
-	.carousel-item img{
-		height: 60vh;
-		object-fit: cover;
 	}
 	.indicator{
 		height:10px;
