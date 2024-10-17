@@ -66,8 +66,8 @@
 
 <style scoped>
    .container {
-      padding: 0 50px;
-      margin-top: 60px;
+      padding: 0 20px;
+      margin-top: 40px;
       height: 100vh;
       width: 100%;
       display: grid;
@@ -79,13 +79,12 @@
       overflow-y: scroll;
       scroll-snap-type: y mandatory;
       flex: 1;
-      gap: 10px;
    }
 
    .box {
-      padding: 10px 0;
+      padding: 7px 0;
       width: 100%;
-      height: 100vh;
+      height: 90vh;
       scroll-snap-align: start;
    }
 
@@ -93,59 +92,52 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border: var(--border);
-      border-radius: 10px;
    }
 
    .right {
       background: var(--background4);
       height: 90vh;
       width: 100%;
-      border: var(--border);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       padding: 20px;
       position: sticky;
       top: 0;
-      margin-top: 3px;
-      margin-bottom: 5px;
-      border-radius: 10px;
    }
 
    .right h1 {
       text-transform: uppercase;
-      font-size: 3em;
+      font-size: 2em;
       line-height: 1em;
       text-align: left;
+      color: var(--pry-text);
    }
 
    .right p {
       line-height: 2em;
+      font-size: .8em;
+      color: var(--pry-text);
    }
 
-   @media only screen and (max-width:1024px) {
+   @media only screen and (max-width:1000px) {
       .container {
          display: flex;
          flex-direction: column;
-         padding: 5px;
       }
 
       .box {
-         height: 70vh;
-      }
-
-      .box img {
-         object-fit: fill;
+         height: 85vh;
       }
 
       .right {
          height: fit-content;
+         margin-bottom: 5px;
       }
 
       .right h1 {
-         font-size: 2em;
-         margin-bottom: .6em;
+         margin-bottom: 10px;
+         font-size: 1.5em;
       }
    }
 </style>
