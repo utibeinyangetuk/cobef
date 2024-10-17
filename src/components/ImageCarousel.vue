@@ -75,7 +75,7 @@ onUnmounted(() => {
 
 .carousel-item img {
 	width: 100%;
-	height: 150vh;
+	height: 100;
 	object-fit: cover;
 }
 
@@ -83,13 +83,13 @@ onUnmounted(() => {
 	position: absolute;
 	bottom: 10px;
 	width: 100%;
-	text-align: center;
+	text-align: left;
 }
 
 .indicator {
 	display: inline-block;
-	width: 6px;
-	height: 6px;
+	width: 15px;
+	height: 15px;
 	margin: 0 5px;
 	background-color: rgba(0, 0, 0, 0.5);
 	border-radius: 50%;
@@ -97,14 +97,14 @@ onUnmounted(() => {
 }
 
 .indicator.active {
-	background-color: #ffffe3;
+	background-color: var(--background1);
 }
 @media only screen and (max-width:768px){
 	.carousel{
-		height: 40vh;
+		height: 50vh;
 	}
 	.carousel-item img{
-		height: 40vh;
+		height: 50vh;
 	}
 	.indicator{
 		height:10px;
@@ -113,10 +113,10 @@ onUnmounted(() => {
 }
 @media only screen and (min-width:769px)and (max-width:1160px){
 	.carousel{
-		height:50vh;
+		height:60vh;
 	}
 	.carousel-item img{
-		height: 50vh;
+		height: 60vh;
 		object-fit: cover;
 	}
 	.indicator{
