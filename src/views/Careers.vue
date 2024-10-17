@@ -1,15 +1,20 @@
+<script setup>
+   const trips = [image1, image2, image3, image4];
+   import image4 from "@/assets/projects/four.jpg";
+   import image1 from "@/assets/projects/one.jpg";
+   import image3 from "@/assets/projects/three.jpg";
+   import image2 from "@/assets/projects/two.jpg";
+   import ImageCarousel from "@/components/ImageCarousel.vue";
+</script>
 <template>
    <div class="container">
-      <div class="header fade">
+      <div class="header">
          <div class="image-wrapper">
-            <video autoplay loop muted>
-               <source src="../assets/videos/factory.mp4" type="video/mp4" />
-               Your browser does not support the video tag.
-            </video>
+            <ImageCarousel :images="trips" />
          </div>
-         <div class="header-content fade">
+         <div class="header-content">
             <h1>Careers</h1>
-            <div class="content-wrapper fade">
+            <div class="content-wrapper">
                <p>
                   Join our innovative and dynamic team, where your talents will
                   help shape the future. We're on a mission to create a better
@@ -21,7 +26,7 @@
          </div>
       </div>
       <div class="write-up-container">
-         <div class="heading-wrapper fade">
+         <div class="heading-wrapper">
             <h2>Our Culture</h2>
             <h1>Why COBEF?</h1>
             <p>
@@ -30,7 +35,7 @@
                environment where every team member can thrive.
             </p>
          </div>
-         <div class="list-wrapper fade">
+         <div class="list-wrapper">
             <ul>
                <li>
                   <h3>Innovative Environment</h3>
@@ -68,45 +73,6 @@
             </ul>
          </div>
       </div>
-      <div class="open-positions fade">
-         <h1>open positions</h1>
-         <table>
-            <thead>
-               <tr>
-                  <th>Position</th>
-                  <th>Department</th>
-                  <th>Location</th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td>Transport Manager</td>
-                  <td>Transport</td>
-                  <td>Port Harcourt</td>
-               </tr>
-               <tr>
-                  <td>NYSC Corpers</td>
-                  <td>Any</td>
-                  <td>Port Harcourt</td>
-               </tr>
-               <tr>
-                  <td>NYSC Corpers</td>
-                  <td>Any</td>
-                  <td>Port Harcourt</td>
-               </tr>
-               <tr>
-                  <td>NYSC Corpers</td>
-                  <td>Any</td>
-                  <td>Port Harcourt</td>
-               </tr>
-               <tr>
-                  <td>Internships</td>
-                  <td>Any</td>
-                  <td>Port Harcourt</td>
-               </tr>
-            </tbody>
-         </table>
-      </div>
    </div>
 </template>
 
@@ -114,18 +80,7 @@
    .container {
       min-height: 100vh;
       background-color: var(--background5);
-      margin-top: 60px;
-   }
-
-   .fade {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-   }
-
-   .fade.visible {
-      opacity: 1;
-      transform: translateY(0);
+      margin-top: 40px;
    }
 
    .header {
@@ -134,53 +89,40 @@
 
    .image-wrapper {
       width: 60%;
-      height: 100vh;
-   }
-
-   .image-wrapper video {
-      border: var(--border);
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
    }
 
    .header-content {
       width: 40%;
       display: flex;
       flex-direction: column;
+      padding: 0 30px;
    }
 
    .header-content h1 {
-      font-size: 6em;
-      text-align: center;
+      font-size: 80px;
+      text-align: left;
       text-transform: uppercase;
-      letter-spacing: 2px;
-      margin-top: 20px;
    }
 
    .content-wrapper {
       height: 100%;
-      text-align: bottom;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      padding: 0 30px;
    }
 
    .content-wrapper p {
       line-height: 2em;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       font-size: 1em;
    }
 
    .content-wrapper a {
-      font-weight: bold;
       border: var(--border);
       padding: 10px;
       width: fit-content;
       letter-spacing: 1px;
-      background-color: transparent;
-      color: #000000;
+      color: var(--pry-text);
    }
 
    .content-wrapper a:hover {
@@ -203,21 +145,18 @@
 
    .heading-wrapper h2 {
       font-size: .7em;
-      letter-spacing: 2px;
-      font-weight: 700;
+      letter-spacing: 1px;
    }
 
    .heading-wrapper h1 {
-      letter-spacing: 2px;
       font-size: 2em;
-      font-weight: 700;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
    }
 
    .heading-wrapper p {
       line-height: 2em;
       font-size: 0.8em;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
    }
 
    .list-wrapper ul {
@@ -237,7 +176,7 @@
    .list-wrapper li h3 {
       font-size: 1em;
       margin-bottom: 15px;
-      text-transform: uppercase;
+      text-transform: capitalize;
    }
 
    .list-wrapper li p {
@@ -245,38 +184,14 @@
       line-height: 1.6em;
    }
 
-   .open-positions {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: var(--background1);
-   }
+   @media only screen and (max-width:1000px) {
+      .header-content h1 {
+         font-size: 3.5em;
+      }
 
-   .open-positions h1 {
-      font-size: 5em;
-      text-transform: uppercase;
-      margin-top: 20px;
-      letter-spacing: 2px;
-   }
-
-   table {
-      width: 80%;
-      border-collapse: collapse;
-      text-align: left;
-      margin-bottom: 3em;
-   }
-
-   th,
-   td {
-      border: var(--border);
-      padding: 10px;
-   }
-
-   th {
-      background-color: var(--background2);
-      color: var(--sec-text);
-      text-transform: uppercase;
-      letter-spacing: 1px;
+      .header-content p {
+         font-size: .9em;
+      }
    }
 
    @media only screen and (max-width: 768px) {
@@ -287,23 +202,17 @@
 
       .image-wrapper {
          width: 100%;
-         height: 50vh;
-         padding: 2px;
-      }
-
-      .image-wrapper video {
-         width: 100%;
-         height: 100%;
+         padding: 10px;
       }
 
       .header-content {
          width: 100%;
-         padding: 5px;
+         padding: 0 10px;
       }
 
       .header-content h1 {
          font-size: 4em;
-         margin-top: 0px;
+         margin-top: -10px;
          text-align: left;
       }
 
@@ -315,7 +224,7 @@
       .content-wrapper p {
          font-size: 0.9em;
          text-align: left;
-         margin-bottom: 10px;
+         margin-top: -10px;
       }
 
       .write-up-container {
@@ -333,42 +242,20 @@
          margin-top: 2em;
       }
 
-      .open-positions h1 {
-         font-size: 2.3em;
-         letter-spacing: 1px;
-         margin-bottom: .6em;
+      .list-wrapper ul {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+      }
+   }
+
+   @media only screen and (max-width:450px) {
+      .list-wrapper ul {
+         display: flex;
+         flex-direction: column;
       }
 
-      .open-positions table {
-         width: 100%;
-      }
-
-      td {
-         font-size: .7em;
+      .header-content h1 {
+         font-size: 3em;
       }
    }
 </style>
-
-<script setup>
-
-   import { onMounted } from 'vue';
-
-   // Function to observe the fade-in effect
-   const observeElements = () => {
-      const observer = new IntersectionObserver((entries) => {
-         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-               entry.target.classList.add('visible');
-            } else {
-               entry.target.classList.remove('visible');
-            }
-         });
-      }, { threshold: 0.1 }); // Adjust threshold as needed
-
-      document.querySelectorAll('.fade').forEach(el => observer.observe(el));
-   };
-
-   onMounted(() => {
-      observeElements();
-   });
-</script>
