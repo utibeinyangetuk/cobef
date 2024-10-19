@@ -11,7 +11,7 @@
 <style scoped>
    footer {
       width: 100%;
-      background: var(--background4);
+      background: var(--background1);
       padding: 8px;
       display: flex;
       justify-content: space-between;
@@ -28,6 +28,9 @@
          flex-direction: column;
          line-height: 1.7em;
          padding: 10px 20px;
+      }
+      footer p{
+         margin-bottom: 5px;
       }
    }
 </style>
