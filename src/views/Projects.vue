@@ -134,11 +134,11 @@
    }
 
    .carousel-wrapper {
-      height: 100%;
+      height: 90vh;
    }
 
    .image-carousel {
-      height: 93vh;
+      height: 100%;
    }
 
    .right-content {
@@ -147,12 +147,14 @@
 
    .right-content h1 {
       text-transform: uppercase;
-      font-size: 4em;
+      font-size: 3em;
+      text-align: center;
    }
 
    .right-content p {
       font-size: .8em;
       line-height: 2.5em;
+      text-align: center;
    }
 
    .projects {
@@ -163,7 +165,8 @@
    }
 
    .project-wrapper {
-      border: var(--border);
+      background: var(--background4);
+      border-radius: 5px;
       padding: 5px;
       display: flex;
       flex-direction: column;
@@ -173,7 +176,6 @@
    .project-wrapper h1 {
       font-size: 15px;
       text-transform: uppercase;
-      text-decoration: underline;
       margin-bottom: 10px;
    }
 
@@ -198,7 +200,8 @@
 
    .project-wrapper a {
       color: var(--pry-text);
-      border: var(--border);
+      border: 1px solid #00000028;
+      border-radius: 5px;
       padding: 4px;
       text-align: center;
       text-transform: capitalize;
@@ -245,17 +248,28 @@
       padding: 25px;
    }
 
-   @media only screen and (max-width:500px) {
-      .right-content {
-         padding: 10px;
+   @media only screen and (max-width:670px) {
+      .carousel-wrapper {
+         height: fit-content;
       }
 
       .right-content h1 {
-         font-size: 35px;
+         font-size: 2em;
+         text-align: left;
       }
 
       .right-content p {
          font-size: .7em;
+         text-align: left;
+      }
+   }
+
+   @media only screen and (max-width:481px) {
+      .right-content {
+         padding: 10px;
+      }
+      .right-content h1, .right-content p{
+         text-align: left;
       }
 
       .projects {
