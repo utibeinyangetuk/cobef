@@ -7,12 +7,52 @@
    import { ref } from "vue";
    const pictures = [image1, image2, image3, image4]; //TODO:Import the pictures and add them to the array
 
-   const coreValues = ref([    //TODO: Add other core values
-      { id: 1, title: 'Innovation', description: 'Pioneering solutions that redefine industries', icon: 'uil uil-lightbulb' },
-      { id: 2, title: 'Integrity', description: 'Upholding the highest ethical standards in all we do', icon: 'uil uil-shield' },
-      { id: 3, title: 'Collaboration', description: 'Fostering partnerships to achieve shared success', icon: 'uil uil-lightbulb' },
-      { id: 4, title: 'Excellence', description: 'Pursuing perfection in every aspect of our work', icon: 'uil uil-award' },
-   ]);
+   const coreValues = ref(
+      [
+         {
+            id: 1,
+            title: 'Innovation',
+            description: 'Pioneering solutions that redefine industries',
+            icon: 'uil uil-lightbulb'
+         },
+         {
+            id: 2,
+            title: 'Integrity',
+            description: 'Upholding the highest ethical standards in all we do',
+            icon: 'uil uil-shield'
+         },
+         {
+            id: 3,
+            title: 'Consistency',
+            description: 'Constantly maintains high level quality standards',
+            icon: 'uil uil-process'
+         },
+         {
+            id: 4,
+            title: 'Cooperation',
+            description: 'We work as a team to achieve our common vision',
+            icon: 'uil uil-users-alt'
+         },
+         {
+            id: 5,
+            title: 'Respect',
+            description: 'we demostrate respect among colleagues, customers and suppliers',
+            icon: 'uil uil-heart'
+         },
+         {
+            id: 6,
+            title: 'Customer Satisfaction',
+            description: `Making sure customers' expectations are met timely`,
+            icon: 'uil uil-smile'
+         },
+         {
+            id: 7,
+            title: 'Customer Convenience',
+            description: 'We serve our customers to save their time and effort',
+            icon: 'uil uil-shopping-cart'
+         }
+      ]
+   );
 
    const timeline = ref([
       { id: 1, year: '2010', description: 'Cobef founded with a vision to revolutionize the industry' },
@@ -48,6 +88,10 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa autem laborum dicta exercitationem,
                commodi, voluptatem facere ipsum nobis animi, ut nostrum cum vitae odio odit repudiandae nulla debitis
                molestiae nisi.</p>
+         </section>
+         <section class="vision-wrapper">
+            <h1>Our Quality</h1>
+            <p>Upholds uncompromising quality management system in line with ISO standards among others.</p>
          </section>
       </div>
       <div class="values">
@@ -180,7 +224,7 @@
    .mission-wrapper p {
       font-size: .8r3em;
       line-height: 2em;
-      padding: 0 50px;
+      padding: 0 20px;
    }
 
    .values {
