@@ -11,7 +11,7 @@
 <style scoped>
    footer {
       width: 100%;
-      background: var(--background1);
+      background: var(--background4);
       padding: 8px;
       display: flex;
       justify-content: space-between;

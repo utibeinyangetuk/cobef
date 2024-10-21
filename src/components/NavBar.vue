@@ -33,10 +33,6 @@
       { name: "Careers", path: "/careers" },
       { name: "Contact", path: "/contact" },
    ];
-
-   const formatNumber = (number) => {
-      return number < 10 ? `0${number}` : number;
-   };
 </script>
 
 <template>
@@ -45,9 +41,11 @@
          <h1>Cobef</h1>
       </div>
       <div class="nav-links">
+         <router-link to="/">Home</router-link>
          <router-link to="/about">About</router-link>
-         <router-link to="/projects">Project</router-link>
-         <router-link to="/products">Product</router-link>
+         <router-link to="/projects">Projects</router-link>
+         <router-link to="/products">Products</router-link>
+         <router-link to="/careers">Careers</router-link>
          <router-link to="/contact">Contact</router-link>
       </div>
       <div class="hamburger">
@@ -58,12 +56,10 @@
          </button>
          <transition name="slide-fade">
             <div v-if="isOpen" class="fullscreen-menu">
-               <!-- Menu items -->
                <ul>
                   <li v-for="(link, index) in links" :key="link.path" :class="{ active: isActive(link.path) }">
                      <router-link :to="link.path" @click.native="closeMenu">
-                        <span class="link-number">
-                           {{ formatNumber(index + 1) }}/</span>{{ link.name }}</router-link>
+                        {{ link.name }}</router-link>
                   </li>
                </ul>
             </div>
@@ -78,8 +74,7 @@
       justify-content: space-between;
       align-items: center;
       background: var(--background1);
-      border: var(--border);
-      height: 60px;
+      height: 40px;
       position: absolute;
       top: 0;
       left: 0;
@@ -91,36 +86,28 @@
       padding: 5px;
    }
 
+   /*FIXME: Find a better font for the logo*/
    .logo h1 {
       font-size: 1.5em;
-      letter-spacing: 2px;
       text-transform: uppercase;
-      color: var(--background5);
-      -webkit-text-stroke-width: 0.09rem;
-      -webkit-text-stroke-color: #000000;
-      white-space: nowrap;
    }
 
    .nav-links {
       display: flex;
       justify-content: space-evenly;
-      width: 100%;
+      width: 50%;
    }
 
    .nav-links a {
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 1em;
-      border: var(--border);
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      font-size: .7em;
       color: var(--pry-text);
-      padding: 0 10px;
-      transition: 1s ease-in-out;
-      box-shadow: var(--box-shadow);
+      padding: 0 8px;
    }
 
    .nav-links a:hover {
-      transition: 1s ease-in-out;
-      box-shadow: none;
+      text-decoration: underline;
    }
 
    .hamburger-menu {
@@ -129,6 +116,7 @@
       border: none;
       padding: 10px;
       height: 100%;
+      display: none;
    }
 
    .hamburger-menu span {
@@ -164,29 +152,23 @@
       }
    }
 
-   /**
    .hamburger-menu.open span:nth-child(1) {
-      transform: translateY(13px) rotate(45deg);
-   }
-  **/
-   .hamburger-menu.open span:nth-child(2) {
-      transform: translateX(7px);
+      transform: translateY(5px);
    }
 
-   /**
-   .hamburger-menu.open span:nth-child(3) {
-     transform: translateY(-2px) rotate(-45deg);
+   .hamburger-menu.open span:nth-child(2) {
+      transform: rotate(90deg) translateY(0px);
    }
-     **/
+
+   .hamburger-menu.open span:nth-child(3) {
+      transform: translateY(-5px);
+   }
+
    .hamburger-menu.open {
       position: absolute;
       top: 0;
       right: 0;
       z-index: 1000;
-   }
-
-   .hamburger-menu.open span {
-      background-color: var(--background2);
    }
 
    .slide-fade-enter-active {
@@ -199,8 +181,8 @@
 
    .fullscreen-menu {
       position: fixed;
-      top: 60px;
-      right: 2px;
+      top: 44px;
+      right: 6px;
       background-color: var(--background1);
       z-index: 999;
       width: fit-content;
@@ -210,7 +192,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      border: var(--border);
+      border-radius: 5px;
       padding: 0 20px;
    }
 
@@ -227,14 +209,14 @@
 
    .fullscreen-menu ul li {
       margin-bottom: 15px;
-      box-shadow: var(--box-shadow);
-      border: var(--border);
+      border: 1px solid #00000013;
+      border-radius: 5px;
    }
 
    .fullscreen-menu ul li a {
       padding: 5px;
       letter-spacing: 1px;
-      font-size: 1.3em;
+      font-size: 1.1em;
       transition: 0.6s ease-in-out;
       color: var(--pry-text);
       text-transform: capitalize;
@@ -242,18 +224,12 @@
 
    .fullscreen-menu ul li:hover {
       transition: 0.6s ease-in-out;
-      box-shadow: none;
-   }
-
-   .fullscreen-menu ul li span {
-      color: var(--pry-text);
-      font-size: 0.6em;
-      margin-right: 6px;
+      background-color: var(--background4);
    }
 
    .fullscreen-menu ul li.active {
       transition: 0.6s ease-in-out;
-      box-shadow: none;
+      background-color: var(--background4);
    }
 
    @media only screen and (max-width: 600px) {
@@ -265,15 +241,9 @@
          width: fit-content;
          padding: 20px 10px;
       }
-   }
 
-   @media only screen and (min-width: 601px) {
-      .nav-links {
-         width: fit-content;
-      }
-
-      .nav-links a {
-         margin-right: 10px;
+      .hamburger-menu {
+         display: block;
       }
    }
 </style>

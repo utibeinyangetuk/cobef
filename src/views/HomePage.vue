@@ -164,7 +164,7 @@
       color: var(--sec-text);
       opacity: 0;
       transform: translateY(20px);
-      transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+      transition: opacity .4s ease-in-out, transform .4s ease-in-out;
       position: relative;
    }
 

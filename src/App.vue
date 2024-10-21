@@ -13,15 +13,14 @@
    @import url("https://fonts.cdnfonts.com/css/poppins");
 
    :root {
-      --background1: #F9F6E7;
+      --background1: #FFFFFF;
       --background2: #0E100F;
       --background3: #D7AB76;
-      --background4: #DB5850;
+      --background4: rgba(234, 230, 230, 0.401);
       --background5: #459EB1;
       --pry-text: #040405;
       --sec-text: #ffffff;
       --border: 1px solid #040405;
-      --sec-border: 1px solid #ffffff;
       --box-shadow: -4px 8px 0 0 var(--background2);
    }
 

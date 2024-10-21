@@ -6,256 +6,179 @@
    import image2 from "@/assets/projects/two.jpg";
    import ImageCarousel from "@/components/ImageCarousel.vue";
 </script>
+
 <template>
    <div class="container">
       <div class="header">
-         <div class="image-wrapper">
-            <ImageCarousel :images="trips" />
+         <div class="carousel-wrapper">
+            <ImageCarousel :images="trips" class="images" />
          </div>
-         <div class="header-content">
-            <h1>Careers</h1>
+         <div class="sec-wrapper">
             <div class="content-wrapper">
-               <p>
-                  Join our innovative and dynamic team, where your talents will
+               <h1>Careers</h1>
+               <p> Join our innovative and dynamic team, where your talents will
                   help shape the future. We're on a mission to create a better
                   tomorrow, and we need passionate individuals to be a part of
-                  that journey.
-               </p>
-               <router-link to="contact">Join us now</router-link>
+                  that journey.</p>
+            </div>
+            <div class="content2-wrapper">
+               <h1>why cobef?</h1>
+               <p> At COBEF, our mission drives everything we do and shapes how we
+                  work. We believe in fostering a collaborative and inclusive
+                  environment where every team member can thrive.</p>
+            </div>
+         </div>
+         <div class="culture">
+            <h1>our culture</h1>
+            <div class="card-container">
+               <ul>
+                  <li>
+                     <h3>Innovative Environment</h3>
+                     <p>
+                        Join a team that is constantly pushing the boundaries of
+                        what's possible. We encourage creative thinking and provide
+                        the resources needed to turn ideas into reality.
+                     </p>
+                  </li>
+                  <li>
+                     <h3>Growth Opportunities</h3>
+                     <p>
+                        At COBEF, your growth is our priority. We offer ample
+                        opportunities for professional development and career
+                        advancement within our organization.
+                     </p>
+                  </li>
+                  <li>
+                     <h3>Work-Life Balance</h3>
+                     <p>
+                        We understand the importance of a healthy work-life
+                        balance. Our flexible work policies ensure that you can
+                        achieve your career goals while maintaining your personal
+                        well-being.
+                     </p>
+                  </li>
+                  <li>
+                     <h3>Inclusive Culture</h3>
+                     <p>
+                        Diversity and inclusion are at the heart of our culture. We
+                        celebrate differences and strive to create a workplace
+                        where everyone feels valued and respected.
+                     </p>
+                  </li>
+               </ul>
             </div>
          </div>
       </div>
-      <div class="write-up-container">
-         <div class="heading-wrapper">
-            <h2>Our Culture</h2>
-            <h1>Why COBEF?</h1>
-            <p>
-               At COBEF, our mission drives everything we do and shapes how we
-               work. We believe in fostering a collaborative and inclusive
-               environment where every team member can thrive.
-            </p>
-         </div>
-         <div class="list-wrapper">
-            <ul>
-               <li>
-                  <h3>Innovative Environment</h3>
-                  <p>
-                     Join a team that is constantly pushing the boundaries of
-                     what's possible. We encourage creative thinking and provide
-                     the resources needed to turn ideas into reality.
-                  </p>
-               </li>
-               <li>
-                  <h3>Growth Opportunities</h3>
-                  <p>
-                     At COBEF, your growth is our priority. We offer ample
-                     opportunities for professional development and career
-                     advancement within our organization.
-                  </p>
-               </li>
-               <li>
-                  <h3>Work-Life Balance</h3>
-                  <p>
-                     We understand the importance of a healthy work-life
-                     balance. Our flexible work policies ensure that you can
-                     achieve your career goals while maintaining your personal
-                     well-being.
-                  </p>
-               </li>
-               <li>
-                  <h3>Inclusive Culture</h3>
-                  <p>
-                     Diversity and inclusion are at the heart of our culture. We
-                     celebrate differences and strive to create a workplace
-                     where everyone feels valued and respected.
-                  </p>
-               </li>
-            </ul>
-         </div>
-      </div>
+
    </div>
+
 </template>
 
 <style scoped>
    .container {
-      min-height: 100vh;
-      background-color: var(--background5);
       margin-top: 40px;
    }
 
-   .header {
-      display: flex;
+   .carousel-wrapper {
+      height: 90vh;
    }
 
-   .image-wrapper {
-      width: 60%;
+   .images {
+      height: 100%;
    }
 
-   .header-content {
-      width: 40%;
-      display: flex;
-      flex-direction: column;
-      padding: 0 30px;
+   .sec-wrapper {
+      padding: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: center;
    }
 
-   .header-content h1 {
-      font-size: 80px;
-      text-align: left;
+   .sec-wrapper h1 {
       text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 2.5em;
+   }
+
+   .sec-wrapper p {
+      font-size: .8em;
+      line-height: 2em;
    }
 
    .content-wrapper {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-   }
-
-   .content-wrapper p {
-      line-height: 2em;
-      margin-bottom: 10px;
-      font-size: 1em;
-   }
-
-   .content-wrapper a {
-      border: var(--border);
       padding: 10px;
-      width: fit-content;
-      letter-spacing: 1px;
-      color: var(--pry-text);
    }
 
-   .content-wrapper a:hover {
-      color: var(--background5);
-      background-color: var(--background2);
+   .content2-wrapper {
+      padding: 10px;
    }
 
-   .write-up-container {
-      display: flex;
-      padding: 20px;
+   .culture h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2.5em;
    }
 
-   .heading-wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 50%;
-      margin-right: 2%;
-   }
-
-   .heading-wrapper h2 {
-      font-size: .7em;
-      letter-spacing: 1px;
-   }
-
-   .heading-wrapper h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-   }
-
-   .heading-wrapper p {
-      line-height: 2em;
-      font-size: 0.8em;
-      margin-bottom: 0px;
-   }
-
-   .list-wrapper ul {
-      margin-top: 30px;
+   .card-container ul {
+      padding: 10px;
+      gap: 10px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-bottom: 20px;
    }
 
-   .list-wrapper li {
-      border: var(--border);
-      list-style: none;
-      padding: 20px;
-      box-shadow: var(--box-shadow);
+   .card-container ul li {
+      border-radius: 5px;
+      padding: 10px;
+      background-color: var(--background4)
    }
 
-   .list-wrapper li h3 {
-      font-size: 1em;
-      margin-bottom: 15px;
-      text-transform: capitalize;
+   .card-container ul h3 {
+      margin-bottom: 5px;
    }
 
-   .list-wrapper li p {
+   .card-container ul p {
       font-size: .7em;
-      line-height: 1.6em;
+      line-height: 2em;
    }
 
-   @media only screen and (max-width:1000px) {
-      .header-content h1 {
-         font-size: 3.5em;
+   @media only screen and (max-width:660px) {
+      .carousel-wrapper {
+         height: fit-content;
       }
 
-      .header-content p {
-         font-size: .9em;
-      }
-   }
-
-   @media only screen and (max-width: 768px) {
-      .header {
+      .sec-wrapper {
          display: flex;
          flex-direction: column;
       }
 
-      .image-wrapper {
-         width: 100%;
-         padding: 10px;
+      .sec-wrapper h1 {
+         font-size: 1.5em;
+         letter-spacing: 1px;
       }
 
-      .header-content {
-         width: 100%;
-         padding: 0 10px;
-      }
-
-      .header-content h1 {
-         font-size: 4em;
-         margin-top: -10px;
+      .sec-wrapper h1,
+      .sec-wrapper p {
          text-align: left;
       }
 
-      .content-wrapper {
-         width: 100%;
-         padding: 5px;
-      }
-
-      .content-wrapper p {
-         font-size: 0.9em;
+      .culture h1 {
          text-align: left;
-         margin-top: -10px;
+         margin-left: 20px;
+         font-size: 1.5em;
+         letter-spacing: 1px;
       }
 
-      .write-up-container {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
+      .card-container ul h3 {
+         font-size: .8em;
+         margin-bottom: 7px;
       }
+   }
 
-      .heading-wrapper {
-         width: 100%;
-         text-align: left;
-      }
-
-      .heading-wrapper h2 {
-         margin-top: 2em;
-      }
-
-      .list-wrapper ul {
+   @media only screen and (max-width:800px) {
+      .card-container ul {
          display: grid;
-         grid-template-columns: 1fr 1fr;
-      }
-   }
-
-   @media only screen and (max-width:450px) {
-      .list-wrapper ul {
-         display: flex;
-         flex-direction: column;
-      }
-
-      .header-content h1 {
-         font-size: 3em;
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       }
    }
 </style>
