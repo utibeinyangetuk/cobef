@@ -66,9 +66,9 @@
 
 <style scoped>
    .container {
-      padding: 0 20px;
+      padding: 0 10px;
       margin-top: 40px;
-      height: 100vh;
+      height: 100dvh;
       width: 100%;
       display: grid;
       grid-template-columns: 3fr 1fr;
@@ -82,21 +82,22 @@
    }
 
    .box {
-      padding: 7px 0;
+      padding: 2px 0;
       width: 100%;
       height: 90vh;
       scroll-snap-align: start;
    }
 
    .box img {
+      border-radius: 5px;
       width: 100%;
       height: 100%;
       object-fit: cover;
    }
 
    .right {
-      background: var(--background4);
-      height: 90vh;
+      background: rgba(192, 192, 192, 0.619);
+      height: 90dvh;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -104,6 +105,7 @@
       padding: 20px;
       position: sticky;
       top: 0;
+      border-radius: 5px;
    }
 
    .right h1 {
@@ -124,10 +126,11 @@
       .container {
          display: flex;
          flex-direction: column;
+         padding: 0 5px;
       }
 
       .box {
-         height: 85vh;
+         height: 77vh;
       }
 
       .right {
