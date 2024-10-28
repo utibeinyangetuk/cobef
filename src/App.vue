@@ -13,15 +13,16 @@
    @import url("https://fonts.cdnfonts.com/css/poppins");
 
    :root {
-      --background1: #FFFFFF;
-      --background2: #0E100F;
+      --background1: #FDF5E5;
+      --background2: #231F20;
       --background3: #D7AB76;
-      --background4: rgba(234, 230, 230, 0.401);
-      --background5: #459EB1;
-      --pry-text: #040405;
-      --sec-text: #ffffff;
-      --border: 1px solid #040405;
+      --background4: #F2EBDB;
+      --background5: #ADB3C2;
+      --pry-text: #231F20;
+      --sec-text: #FDF5E5;
+      --border: 1px solid #8784848b;
       --box-shadow: -4px 8px 0 0 var(--background2);
+      --border-radius: 5px;
    }
 
    #app {
@@ -31,6 +32,7 @@
       height: 100vh;
       overflow: auto;
       scroll-behavior: smooth;
+      background-color: var(--background1);
    }
 
    * {
@@ -45,12 +47,12 @@
       }
 
       ::-webkit-scrollbar-track {
-         background: #ffffff;
+         background: var(--background1);
       }
 
       ::-webkit-scrollbar-thumb {
          background: var(--background2);
-         border-radius: 10px;
+         border-radius: var(--border-radius);
       }
    }
 </style>
