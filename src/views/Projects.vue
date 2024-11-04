@@ -1,9 +1,12 @@
 <script setup>
-   const trips = [image1, image2, image3, image4];
-   import image4 from "@/assets/projects/four.jpg";
-   import image1 from "@/assets/projects/one.jpg";
-   import image3 from "@/assets/projects/three.jpg";
-   import image2 from "@/assets/projects/two.jpg";
+   const trips = [hole_camera, pump_reinstallation, camera_inspection, well_development, tripod_setup, briefing, splashing];
+   import briefing from "@/assets/projects/briefing.png";
+   import camera_inspection from "@/assets/projects/camera_inspection.png";
+   import hole_camera from "@/assets/projects/hole_camera.png";
+   import pump_reinstallation from "@/assets/projects/pump_reinstallation.png";
+   import splashing from "@/assets/projects/splashing.png";
+   import tripod_setup from "@/assets/projects/tripod_setup.png";
+   import well_development from "@/assets/projects/well_development.png";
    import ImageCarousel from "@/components/ImageCarousel.vue";
 </script>
 <template>
@@ -15,19 +18,14 @@
          <div class="right-content">
             <h1>Projects</h1>
             <p>
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vero vitae possimus, qui ab molestias
-               non voluptates eum recusandae, officia nesciunt repellat temporibus eos, asperiores saepe magnam?
-               Ipsum, sunt nesciunt? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
-               alias, iste atque laboriosam ab soluta officiis, qui, vitae
-               accusantium assumenda aliquid. Ipsa consectetur delectus repellendus
-               numquam perspiciatis molestias suscipit! Est. Lorem ipsum, dolor sit
-               amet consectetur adipisicing elit. Iusto beatae soluta eius delectus
-               atque veniam nam quisquam, excepturi ab alias quod id rem, error,
-               blanditiis pariatur harum similique illum nihil. Lorem ipsum dolor
-               sit, amet consectetur adipisicing elit. Eligendi, architecto! Quasi
-               tempora numquam odio? Excepturi sit hic, similique eius distinctio
-               tempore ullam fugiat cupiditate voluptates recusandae? Vero qui aut
-               maiores.
+               The projects page presents a portfolio of impactful infrastructure and water management initiatives led
+               by the company, emphasizing its dedication to delivering sustainable and reliable solutions across
+               various communities. Each project highlights key aspects like project objectives, scope, and geographic
+               focus areas, demonstrating a track record of addressing community needs through strategic
+               resource management. This company retains quality delivery and clients satisfaction as its driving force.
+               Based ISO certification, we are guided by the highest safety and quality standards to ensure that our
+               clients receive the highest levels of satisfaction in addition to the commercial experience necessary to
+               address technically challenging projects. Key initiatives include:
             </p>
          </div>
       </div>
@@ -36,68 +34,87 @@
             <h1> REHABILITATION OF ALESA AGBONCHIA AND ALESA WATER WORKS IN
                OGONI LAND</h1>
             <div class="timeline">
-               <span class="uil uil-clock"> Jan 14, 2021</span>
+               <span class="uil uil-clock"> Jan, 2021</span>
                <span class="uil uil-location-point"> Port Harcourt</span>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas explicabo optio dolor,
-               molestiae delectus tempora facere magni laborum sunt placeat minima aliquam, quae mollitia fugiat sint
-               dolores nostrum.</p>
+            <p>This project focused on the revitalization of critical water works facilities in the Ogoni communities of
+               Alesa and Agbonchia. The rehabilitation aims to restore water infrastructure for reliable distribution,
+               ensuring sustainable access to clean water for the local population. Undertaken in January 2021 in Port
+               Harcourt, this project supports community well-being and aligns with environmental improvement goals..
+            </p>
             <a href="#">Read more</a>
          </div>
          <div class="project-wrapper">
             <h1>SUPPLY AND PIPE LAYING IN OBAGI COMMUNITY, RIVERS STATE</h1>
             <div class="timeline">
-               <span class="uil uil-clock"> Jan 14, 2021</span>
+               <span class="uil uil-clock"> Jan, 2021</span>
                <span class="uil uil-location-point"> Port Harcourt</span>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas explicabo optio dolor,
-               molestiae delectus tempora facere magni laborum sunt placeat minima aliquam, quae mollitia fugiat sint
-               dolores nostrum.</p>
+            <p>In response to the need for improved water supply, this initiative involved the installation of new
+               pipelines within the Obagi community. Through precise pipe laying and supply logistics, the project aimed
+               to enhance water distribution capabilities, making safe and accessible water available for more
+               households. Conducted in January 2021, it contributes to essential infrastructure upgrades in Port
+               Harcourt.</p>
             <a href="#">Read more</a>
          </div>
          <div class="project-wrapper">
             <h1>INSTALLATION OF BOREHOLE AND WATER TREATMENT PLANT</h1>
             <div class="timeline">
-               <span class="uil uil-clock"> Jan 14, 2021</span>
+               <span class="uil uil-clock"> Jan, 2021</span>
                <span class="uil uil-location-point"> Port Harcourt</span>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas explicabo optio dolor,
-               molestiae delectus tempora facere magni laborum sunt placeat minima aliquam, quae mollitia fugiat sint
-               dolores nostrum.</p>
+            <p> As part of efforts to improve local water quality, this project focused on constructing a borehole and
+               equipping it with a modern water treatment plant. The installation addresses both supply and purification
+               needs, ensuring that residents in the area have access to potable water. Completed in January 2021, the
+               plant stands as a crucial infrastructure for public health in Port Harcourt.</p>
             <a href="#">Read more</a>
          </div>
          <div class="project-wrapper">
             <h1> MAINTENANCE OF OBUNAGHA MEGA WATER PROJECT AND TRUNK LINES IN
                GBARAIN KINGDOM</h1>
             <div class="timeline">
-               <span class="uil uil-clock"> Jan 14, 2021</span>
+               <span class="uil uil-clock"> Jan, 2021</span>
                <span class="uil uil-location-point"> Port Harcourt</span>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas explicabo optio dolor,
-               molestiae delectus tempora facere magni laborum sunt placeat minima aliquam, quae mollitia fugiat sint
-               dolores nostrum.</p>
+            <p>Aiming to sustain and enhance water accessibility in Gbarain Kingdom, this maintenance project includes
+               the upkeep of the mega water project infrastructure and the connected trunk lines. By reinforcing these
+               essential facilities, the project ensures long-term water supply reliability and supports the community's
+               resource needs. Located in Port Harcourt, the maintenance initiative commenced in January 2021.</p>
             <a href="#">Read more</a>
          </div>
          <div class="project-wrapper">
             <h1> supply and pipe laying of Obaji Community in Ogba/Egbema/Ndoni</h1>
             <div class="timeline">
-               <span class="uil uil-clock"> Jan 14, 2021</span>
+               <span class="uil uil-clock"> Jan, 2021</span>
                <span class="uil uil-location-point"> Port Harcourt</span>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas explicabo optio dolor,
-               molestiae delectus tempora facere magni laborum sunt placeat minima aliquam, quae mollitia fugiat sint
-               dolores nostrum.</p>
+            <p>Through strategic pipe laying in Obaji, this project enhances local water infrastructure to meet rising
+               demand. Situated in the Ogba/Egbema/Ndoni region, it provides a crucial improvement to water distribution
+               networks, securing access for residents and supporting sustainable development goals. Initiated in
+               January 2021, the project exemplifies the company’s commitment to effective community infrastructure.</p>
             <a href="#">Read more</a>
          </div>
          <div class="project-wrapper">
             <h1> RETICULATION OF ELEME WATER SUPPLY SCHEME</h1>
             <div class="timeline">
-               <span class="uil uil-clock"> Jan 14, 2021</span>
+               <span class="uil uil-clock"> June, 2021</span>
                <span class="uil uil-location-point"> Port Harcourt</span>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas explicabo optio dolor,
-               molestiae delectus tempora facere magni laborum sunt placeat minima aliquam, quae mollitia fugiat sint
-               dolores nostrum.</p>
+            <p> This project in Eleme addressed water distribution through system upgrades, ensuring consistent and
+               efficient water access across the area. The reticulation work completed in June 2021, reflects the
+               company’s dedication to reliable water infrastructure and its role in community development in Port
+               Harcourt.</p>
+            <a href="#">Read more</a>
+         </div>
+
+         <div class="project-wrapper">
+            <h1> maintenance of four existing water boreholes at the ALESA ELEME WATER WORKS</h1>
+            <div class="timeline">
+               <span class="uil uil-clock"> July, 2021</span>
+               <span class="uil uil-location-point"> Port Harcourt</span>
+            </div>
+            <p>The aim of this project was the Ogoni Clean Up and to ensure a sustainable potable water supply for the
+               Alesa Eleme Community to meet their present and future needs.</p>
             <a href="#">Read more</a>
          </div>
       </div>
@@ -134,7 +151,7 @@
    }
 
    .carousel-wrapper {
-      height: 90vh;
+      height: 94vh;
    }
 
    .image-carousel {
@@ -147,30 +164,33 @@
 
    .right-content h1 {
       text-transform: uppercase;
-      font-size: 3em;
-      text-align: center;
+      font-size: 2em;
+      text-align: left;
    }
 
    .right-content p {
       font-size: .8em;
       line-height: 2.5em;
-      text-align: center;
+      text-align: left;
    }
 
    .projects {
-      padding: 0 20px;
+      padding: 20px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 5px;
+      gap: 10px;
+      background: var(--background4);
+      margin: 10px;
+      border-radius: var(--border-radius);
    }
 
    .project-wrapper {
-      background: var(--background4);
-      border-radius: 5px;
-      padding: 5px;
+      background: var(--background1);
+      border-radius: var(--border-radius);
+      padding: 10px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: flex-start;
    }
 
    .project-wrapper h1 {
@@ -185,7 +205,7 @@
       gap: 4px;
       justify-content: space-between;
       width: 70%;
-      margin-bottom: 8px;
+      margin-bottom: 15px;
    }
 
    .project-wrapper .timeline span {
@@ -200,16 +220,18 @@
 
    .project-wrapper a {
       color: var(--pry-text);
-      border: 1px solid #00000028;
-      border-radius: 5px;
+      border: var(--border);
+      font-size: 14px;
+      border-radius: 3px;
       padding: 4px;
-      text-align: center;
+      text-align: left;
       text-transform: capitalize;
+      width: fit-content;
    }
 
    .project-wrapper a:hover {
       background-color: var(--background2);
-      color: #ffffff;
+      color: var(--sec-text)
    }
 
    .logos {
@@ -253,14 +275,8 @@
          height: fit-content;
       }
 
-      .right-content h1 {
-         font-size: 2em;
-         text-align: left;
-      }
-
       .right-content p {
          font-size: .7em;
-         text-align: left;
       }
    }
 
@@ -268,16 +284,13 @@
       .right-content {
          padding: 10px;
       }
-      .right-content h1, .right-content p{
-         text-align: left;
-      }
 
       .projects {
-         padding: 0 10px;
+         padding: 10px;
       }
 
       .logos h1 {
-         font-size: 2.5em;
+         font-size: 2em;
       }
    }
 </style>

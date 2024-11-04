@@ -54,7 +54,7 @@
       padding: 40px;
       display: flex;
       flex-direction: column;
-      background-color: var(--background3);
+      background-color: var(--background1);
    }
 
    .section2 i {
@@ -63,11 +63,11 @@
       text-align: center;
       font-size: 14px;
       margin-bottom: .7em;
-      color: var(--sec-text-color);
+      color: var(--pry-text);
    }
 
    .section2 h1 {
-      color: var(--pry-text-color);
+      color: var(--pry-text);
       letter-spacing: 2px;
       font-size: 3.8em;
       margin-bottom: 20px;
@@ -104,12 +104,13 @@
       margin: 0;
       color: var(--pry-text);
       font-size: .8em;
-      border-radius: 5px;
+      border-radius: var(--border-radius);
+      letter-spacing: 1px;
    }
 
    .find-us a:hover {
       background-color: var(--background2);
-      color: var(--background3);
+      color: var(--sec-text);
    }
 
    .enquiry p {

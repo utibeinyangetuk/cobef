@@ -1,9 +1,8 @@
 <script setup>
-   const trips = [image1, image2, image3, image4];
-   import image4 from "@/assets/projects/four.jpg";
-   import image1 from "@/assets/projects/one.jpg";
-   import image3 from "@/assets/projects/three.jpg";
-   import image2 from "@/assets/projects/two.jpg";
+   const trips = [vest_man, engineer, ict];
+   import engineer from "@/assets/careers/engineer.jpg";
+   import ict from '@/assets/careers/ict.jpg';
+   import vest_man from "@/assets/careers/vest_man.webp";
    import ImageCarousel from "@/components/ImageCarousel.vue";
 </script>
 
@@ -82,14 +81,6 @@
       margin-top: 40px;
    }
 
-   .carousel-wrapper {
-      height: 93.7vh;
-   }
-
-   .images {
-      height: 100%;
-   }
-
    .sec-wrapper {
       padding: 10px 40px;
       display: grid;
@@ -155,7 +146,7 @@
 
    @media only screen and (max-width:660px) {
       .carousel-wrapper {
-         height: fit-content;
+         height: 60vh;
       }
 
       .sec-wrapper {
@@ -194,6 +185,28 @@
 
       .sec-wrapper {
          gap: 10px;
+      }
+   }
+
+   @media only screen and (max-width:500px) {
+      .sec-wrapper {
+         padding: 10px;
+      }
+
+      .culture-container {
+         padding: 20px;
+      }
+
+      .culture {
+         padding: 10px;
+      }
+
+      .carousel-wrapper {
+         height: 100%;
+      }
+
+      .carousel-wrapper .images {
+         height: 100%;
       }
    }
 </style>

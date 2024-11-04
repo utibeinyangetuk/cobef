@@ -84,20 +84,20 @@
    .box {
       padding: 2px 0;
       width: 100%;
-      height: 90vh;
+      height: 93vh;
       scroll-snap-align: start;
    }
 
    .box img {
-      border-radius: 5px;
+      border-radius: var(--border-radius);
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: fill;
    }
 
    .right {
-      background: rgba(192, 192, 192, 0.619);
-      height: 90dvh;
+      background: var(--background4);
+      height: 93dvh;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -105,7 +105,7 @@
       padding: 20px;
       position: sticky;
       top: 0;
-      border-radius: 5px;
+      border-radius: var(--border-radius);
    }
 
    .right h1 {
@@ -122,7 +122,7 @@
       color: var(--pry-text);
    }
 
-   @media only screen and (max-width:1000px) {
+   @media only screen and (max-width:800px) {
       .container {
          display: flex;
          flex-direction: column;
@@ -130,12 +130,18 @@
       }
 
       .box {
-         height: 77vh;
+         height: 70vh;
+         margin-bottom: 10px;
+      }
+
+      .box img {
+         object-fit: fill;
       }
 
       .right {
          height: fit-content;
          margin-bottom: 5px;
+         border: var(--border)
       }
 
       .right h1 {

@@ -1,28 +1,18 @@
 <template>
    <div class="container">
-      <div class="hero">
-         <div class="hero-content">
-            <h1>Welcome to COBEF</h1>
-            <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-               a recusandae quis dolore velit mollitia dignissimos, consectetur
-               iste exercitationem similique neque cumque atque reprehenderit
-               minima quam nostrum repellat eveniet culpa?
-            </p>
-         </div>
-      </div>
-
+      <div class="hero" />
       <div class="sections-wrapper">
          <section class="section about" id="about">
             <div class="section-content">
                <h2>About Us</h2>
                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Distinctio voluptatum optio possimus eaque, dolor corrupti
-                  dignissimos sunt reiciendis provident laboriosam, laborum nihil
-                  nemo ex! Praesentium ab expedita eaque pariatur et.
+                  The About Us section provides an overview of COBEF's mission, history, and values. It highlights the
+                  company’s commitment to excellence and innovation, inviting visitors to explore more about COBEF’s
+                  background and ethos.
                </p>
-               <router-link to="about" class="btn-link"> Explore </router-link>
+               <div class="button-wrapper">
+                  <router-link to="about" class="btn-link"> Explore </router-link>
+               </div>
             </div>
          </section>
 
@@ -30,14 +20,15 @@
             <div class="section-content">
                <h2>Products</h2>
                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
-                  similique laudantium distinctio debitis quia, unde sequi harum.
-                  Quisquam debitis aspernatur culpa labore beatae reprehenderit.
-                  Mollitia velit odit cum inventore quis?
+                  This section showcases COBEF's range of products, emphasizing quality and innovation. Visitors are
+                  encouraged to learn about COBEF’s product offerings, which meet industry standards and customer needs,
+                  with a link to view the full product catalog.
                </p>
-               <router-link to="products" class="btn-link">
-                  View products
-               </router-link>
+               <div class="button-wrapper">
+                  <router-link to="products" class="btn-link">
+                     View products
+                  </router-link>
+               </div>
             </div>
          </section>
 
@@ -45,13 +36,15 @@
             <div class="section-content">
                <h2>Projects</h2>
                <p>
-                  Explore the groundbreaking projects we've completed worldwide. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Ipsum sint illo amet hic sequi ut, fuga optio id culpa corrupti, deserunt rerum
-                  beatae quis perspiciatis omnis natus laboriosam voluptatem? Veniam!
+                  COBEF’s "Projects" section displays its portfolio of completed and ongoing projects across various
+                  regions. This section highlights the company’s impact through successful project implementations and
+                  invites users to explore project details.
                </p>
-               <router-link to="projects" class="btn-link">
-                  View projects
-               </router-link>
+               <div class="button-wrapper">
+                  <router-link to="projects" class="btn-link">
+                     View projects
+                  </router-link>
+               </div>
             </div>
          </section>
 
@@ -59,14 +52,15 @@
             <div class="section-content">
                <h2>Careers</h2>
                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                  quae voluptatibus provident nemo, similique iusto vero sed
-                  dolores cumque inventore explicabo natus est molestias esse sequi
-                  quo enim magnam facere!
+                  The "Careers" section outlines opportunities for individuals interested in joining COBEF. It conveys
+                  COBEF's supportive work environment and growth opportunities, encouraging potential applicants to get
+                  started on their career path with the company.
                </p>
-               <router-link to="careers" class="btn-link">
-                  Get started
-               </router-link>
+               <div class="button-wrapper">
+                  <router-link to="careers" class="btn-link">
+                     Get started
+                  </router-link>
+               </div>
             </div>
          </section>
 
@@ -74,13 +68,16 @@
             <div class="section-content">
                <h2>Contact Us</h2>
                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, maxime officia ut unde cum aliquid
-                  facere aperiam cupiditate illum, culpa nulla quidem quod distinctio dicta sapiente excepturi nisi?
-                  Repellendus, dignissimos.
+                  This section provides a convenient way for visitors to reach out to COBEF for inquiries, support, or
+                  partnerships. It encourages communication and includes a link for leaving messages, ensuring users
+                  feel connected to the company.
                </p>
-               <router-link to="contact" class="btn-link">
-                  Leave us a message
-               </router-link>
+               <div class="button-wrapper">
+                  <router-link to="contact" class="btn-link">
+                     Leave us a message
+                  </router-link>
+               </div>
+
             </div>
          </section>
       </div>
@@ -101,23 +98,6 @@
       align-items: last baseline;
       position: relative;
       padding: 5px;
-   }
-
-   .hero-content {
-      color: var(--sec-text);
-      background-color: rgba(128, 128, 128, 0.47);
-      width: 50%;
-      padding: 10px 30px;
-      border-radius: 5px;
-   }
-
-   .hero-content h1 {
-      text-transform: uppercase;
-   }
-
-   .hero-content p {
-      font-size: .7em;
-      line-height: 2em;
    }
 
    .sections-wrapper {
@@ -144,7 +124,7 @@
    }
 
    .contact {
-      background: url("../assets/homepage-images/contact2.jpg") no-repeat center center/cover;
+      background: url("../assets/homepage-images/contact.jpg") no-repeat center center/cover;
    }
 
    .section h1 {
@@ -207,7 +187,7 @@
       font-weight: 600;
       text-transform: capitalize;
       position: relative;
-      border: 1px solid #ffffff;
+      border: var(--border);
       border-radius: 5px;
    }
 
@@ -219,10 +199,6 @@
    @media only screen and (max-width: 1024px) {
       .sections-wrapper {
          padding: 5px;
-      }
-
-      .btn-link {
-         padding: 0.8rem 2rem;
       }
 
       .hero-content {
@@ -244,11 +220,11 @@
       }
 
       .section-content h2 {
-         font-size: 2.5em;
+         font-size: 1.5em;
       }
    }
 
-   @media only screen and (max-width: 550px) {
+   @media only screen and (max-width: 600px) {
       .hero {
          height: 90vh;
       }
@@ -256,6 +232,28 @@
       .section-content,
       .hero-content {
          width: 100%;
+         padding: 10px;
+      }
+
+      .section-content h2 {
+         text-align: left;
+         width: 100%;
+      }
+   }
+
+   @media only screen and (min-width:601px) and (max-width:800px) {
+      .section-content {
+         width: 70%;
+      }
+   }
+
+   @media only screen and (max-width:500px) {
+      .button-wrapper {
+         width: 100%;
+      }
+
+      .button-wrapper a {
+         width: fit-content;
       }
    }
 </style>

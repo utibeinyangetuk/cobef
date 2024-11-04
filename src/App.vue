@@ -15,7 +15,7 @@
    :root {
       --background1: #FDF5E5;
       --background2: #231F20;
-      --background3: #D7AB76;
+      --background3: #EDEEE7;
       --background4: #F2EBDB;
       --background5: #ADB3C2;
       --pry-text: #231F20;
@@ -44,6 +44,7 @@
 
       ::-webkit-scrollbar {
          width: 5px;
+         display: none;
       }
 
       ::-webkit-scrollbar-track {

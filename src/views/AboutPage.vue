@@ -5,7 +5,7 @@
    import image2 from "@/assets/projects/two.jpg";
    import ImageCarousel from "@/components/ImageCarousel.vue";
    import { ref } from "vue";
-   const pictures = [image1, image2, image3, image4]; //TODO:Import the pictures and add them to the array
+   const pictures = [image1, image2, image3, image4];
 
    const coreValues = ref(
       [
@@ -55,11 +55,11 @@
    );
 
    const timeline = ref([
-      { id: 1, year: '2010', description: 'Cobef founded with a vision to revolutionize the industry' },
-      { id: 2, year: '2015', description: 'Launch of our flagship product, setting new industry standards' },
-      { id: 3, year: '2018', description: 'Expansion into international markets, establishing global presence' },
-      { id: 4, year: '2022', description: 'Achieved 100% carbon neutrality across all operations' },
-      { id: 5, year: '2024', description: 'Celebrating a decade of innovation and sustainable growth' },
+      { id: 1, year: '1993', description: 'C.OHAKWE was established to deliver metal materials for construction.' },
+      { id: 2, year: '2002', description: 'Cobef International Limited was established to manufacture quality PVC pipes.' },
+      { id: 2, year: '2006', description: 'Cobef International Limited expanded to FACO Enterprise Limited' },
+      { id: 3, year: '2018', description: 'The company started venturing into projects.' },
+      { id: 4, year: '2021', description: 'completion of many of our notable projects.' },
    ]);
 </script>
 <template>
@@ -69,13 +69,29 @@
       </div>
       <div class="about">
          <h1>About Us</h1>
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero molestiae voluptatum est possimus
-            reiciendis, ipsam quidem iure, tempora sapiente recusandae corporis sequi consectetur illum. Veritatis quia
-            atque incidunt fugiat ab? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, dolores ullam
-            perferendis repellat doloremque suscipit earum, unde exercitationem quibusdam natus quaerat alias dolorem
-            similique? Inventore ipsa magnam quae facilis eaque. perferendis repellat doloremque suscipit earum, unde
-            exercitationem quibusdam natus quaerat alias dolorem
-            similique? Inventore ipsa magnam quae facilis eaque.</p>
+         <p>COBEF INTERNATIONAL LIMITED was established in the year 2002, under the laws of the Federal Republic of
+            Nigeria R.C: 312938 with the aim to manufacture quality PVC pipes and products and extending into water
+            construction projects. A brain-child of Mr. Pawan Tekchandani and Chief Christian Ohakwe, both possessing a
+            vast
+            amount of experience in the piping business, the company has be successfully catering to the discerning
+            tastes of customers of various segments through its brand.<br><br>
+
+            COBEF INTERNATIONAL LIMITED values quality the most. All its products are manufactured in a state-of-the-art
+            facility with equipment and technology of world class standard. Scoring high on the quality quotient, these
+            products are also in strict compliance with DIN and ISO specifications as approved Standard Organization of
+            Nigeria (SON). This commitment to quality has brought rich dividends for Cobef. It has made its products
+            highly trustworthy for
+            applications in construction, farming, water supply, electrical and sewage, etc. <br><br>
+
+            COBEF INTERNATIONAL LIMITED as a contracting firm have designed, constructed and managed waste projects in
+            different states of the federation for both private and government. You can find some of the projects in our
+            projects section. We
+            are an indigenous firm with expertise and dedicated men and women who bellow that competency is a trade mark
+            for perfection. The company also retains quality delivery and client satisfaction as its driving force.
+            Based on our ISO
+            certifications, we are guided by the highest safety and quality standards to ensure that our clients receive
+            the highest levels of satisfaction in addition to the commercial experience necessary to address technically
+            challenging projects.</p>
       </div>
       <div class="mission-container">
          <section class="mission-wrapper">
@@ -85,11 +101,10 @@
          </section>
          <section class="vision-wrapper">
             <h1>Our Vision</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa autem laborum dicta exercitationem,
-               commodi, voluptatem facere ipsum nobis animi, ut nostrum cum vitae odio odit repudiandae nulla debitis
-               molestiae nisi.</p>
+            <p>Our vision is to set a pace in polymer products manufacturing, and ensure the performance and appearance
+               of the products are in accordance with our quality standards.</p>
          </section>
-         <section class="vision-wrapper">
+         <section class="vision-wrapper quality">
             <h1>Our Quality</h1>
             <p>Upholds uncompromising quality management system in line with ISO standards among others.</p>
          </section>
@@ -111,38 +126,47 @@
          <div class="team-wrapper">
             <div class="profile-card">
                <div class="profile-image">
-                  <img src="#" alt="Profile picture" />
+                  <img src="../assets/azaman.jpg" alt="Profile picture" />
                </div>
                <div class="profile-content">
-                  <h1> Adam Sanders</h1>
-                  <p>Chief Technology Officer</p>
+                  <h1> Stanley</h1>
+                  <p>Chairman</p>
                </div>
             </div>
             <div class="profile-card">
                <div class="profile-image">
-                  <img src="#" alt="Profile picture" />
+                  <img src="../assets/azaman.jpg" alt="Profile picture" />
                </div>
                <div class="profile-content">
-                  <h1> Adam Sanders</h1>
-                  <p>Chief Technology Officer</p>
+                  <h1> Stanley</h1>
+                  <p>Managing Director</p>
                </div>
             </div>
             <div class="profile-card">
                <div class="profile-image">
-                  <img src="#" alt="Profile picture" />
+                  <img src="../assets/azaman.jpg" alt="Profile picture" />
                </div>
                <div class="profile-content">
-                  <h1> Adam Sanders</h1>
-                  <p>Chief Technology Officer</p>
+                  <h1> Stanley</h1>
+                  <p>Admin Director</p>
                </div>
             </div>
             <div class="profile-card">
                <div class="profile-image">
-                  <img src="#" alt="Profile picture" />
+                  <img src="../assets/azaman.jpg" alt="Profile picture" />
                </div>
                <div class="profile-content">
-                  <h1> Adam Sanders</h1>
-                  <p>Chief Technology Officer</p>
+                  <h1> Stanley</h1>
+                  <p>Finance Director</p>
+               </div>
+            </div>
+            <div class="profile-card">
+               <div class="profile-image">
+                  <img src="../assets/azaman.jpg" alt="Profile picture" />
+               </div>
+               <div class="profile-content">
+                  <h1> Stanley</h1>
+                  <p>Middleman</p>
                </div>
             </div>
          </div>
@@ -177,100 +201,108 @@
    }
 
    .about {
-      padding: 5px;
+      padding: 20px;
    }
 
    .about h1 {
-      text-align: center;
-      font-size: 2.5em;
+      text-align: left;
+      font-size: 2em;
       text-transform: uppercase;
    }
 
    .about p {
       font-size: .8em;
-      line-height: 2em;
-      text-align: center;
+      line-height: 2.5em;
+      text-align: left;
    }
 
    .mission-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 10px;
-      padding: 10px;
-      margin-bottom: 10px;
+      padding: 0 20px;
+      margin-bottom: 20px;
    }
 
    .mission-wrapper h1,
    .vision-wrapper h1 {
-      margin-bottom: 10px;
-      font-size: 2.5rem;
+      font-size: 1em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
    }
 
    .mission-wrapper {
-      text-align: center;
-      padding: 0 10px;
-      background-color: var(--background4);
+      text-align: left;
+      padding: 10px;
+      background-color: var(--background5);
       border-radius: 5px;
    }
 
    .vision-wrapper {
-      text-align: center;
-      padding: 0 10px;
-      background-color: var(--background4);
+      text-align: left;
+      padding: 10px;
+      background-color: var(--background3);
       border-radius: 5px;
+   }
+
+   .quality {
+      background-color: var(--background4);
    }
 
    .vision-wrapper p,
    .mission-wrapper p {
-      font-size: .8r3em;
+      font-size: .8rem;
       line-height: 2em;
-      padding: 0 20px;
    }
 
    .values {
       margin-bottom: 10px;
+      background-color: var(--background4);
+      margin: 20px;
+      border-radius: var(--border-radius);
+      padding: 10px;
    }
 
    .values h1 {
       text-align: center;
       text-transform: uppercase;
-      font-size: 2.5em;
+      letter-spacing: 1px;
+      font-size: 2em;
    }
 
    .values-wrapper {
       padding: 10px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 10px;
    }
 
    .value-card {
-      background-color: var(--background4);
-      padding: 20px;
-      border-radius: 5px;
-      transition: transform 0.3s ease;
-      text-align: center;
-   }
-
-   .value-card:hover {
-      transform: translateY(-10px);
+      background-color: var(--background1);
+      padding: 10px;
+      border-radius: var(--border-radius);
+      text-align: left;
    }
 
    .value-icon {
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: var(--pry-text);
-      margin-bottom: 20px;
+      margin-bottom: 10px;
    }
 
    .value-card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
       color: var(--pry-text);
    }
 
+   .value-card p {
+      font-size: .8em;
+      line-height: 1.7em;
+   }
+
    .team {
-      padding: 10px;
-      background-color: var(--background4);
+      padding: 20px;
    }
 
    .team h1 {
@@ -278,19 +310,18 @@
       font-size: 2.5rem;
       text-transform: uppercase;
       letter-spacing: 1px;
+      margin-bottom: 10px;
    }
 
    .team-wrapper {
-      gap: 10px;
+      gap: 15px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
    }
 
    .profile-card {
-      background-color: #f0f4f848;
       border-radius: 5px;
       overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
       padding: 5px;
       display: flex;
       flex-direction: column;
@@ -298,34 +329,43 @@
 
    .profile-image {
       height: 300px;
+      margin-bottom: 3px;
    }
 
    .profile-image img {
       width: 100%;
       height: 100%;
-      object-fit: fill;
+      object-fit: cover;
+      border-radius: var(--border-radius);
    }
 
    .profile-content {
       text-align: left;
       padding: 5px;
+      border: var(--border);
+      border-radius: var(--border-radius);
    }
 
    .profile-content h1 {
-      font-size: .9rem;
+      font-size: .7rem;
       text-align: left;
       letter-spacing: 0;
+      margin-bottom: 5px;
    }
 
    .profile-content p {
       font-size: .7em;
    }
 
+   .timeline {
+      background-color: var(--background4);
+   }
+
    .timeline h1 {
-      font-size: 2.5em;
+      font-size: 2em;
       text-transform: uppercase;
       text-align: center;
-      margin: 10px 0;
+      padding: 10px;
    }
 
    .timeline-container {
@@ -362,10 +402,9 @@
 
    .timeline-content {
       padding: 20px 30px;
-      background-color: white;
+      background-color: var(--background5);
       position: relative;
-      border-radius: 6px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      border-radius: 5px;
    }
 
    .timeline-marker {
@@ -400,32 +439,35 @@
          height: fit-content;
       }
 
+      .profile-content h1 {
+         font-size: 1rem;
+      }
+
+      .profile-content p {
+         font-size: .8em;
+      }
+
       .about {
-         padding: 10px;
+         padding: 20px;
       }
 
-      .about h1 {
-         text-align: left;
-      }
-
-      .about p {
-         text-align: left;
+      .mission-container {
+         gap: 20px;
       }
 
       .vision-wrapper h1,
       .mission-wrapper h1 {
-         text-align: left;
-         font-size: 1.8em;
+         font-size: 1.5em;
       }
 
       .vision-wrapper p,
       .mission-wrapper p {
          padding: 0;
-         text-align: left;
+         font-size: .8em;
       }
 
       .values h1 {
-         font-size: 2em;
+         font-size: 1.5em;
       }
 
       .timeline-container::after {

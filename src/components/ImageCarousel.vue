@@ -1,10 +1,12 @@
 <template>
    <div class="carousel">
-      <div class="carousel-inner"
-         :style="{ width: `${images.length * 100}%`, transform: `translateX(-${currentIndex * (100 / images.length)}%)` }">
+      <div class="carousel-inner" :style="{
+         width: `${images.length * 100}%`,
+         transform: `translateX(-${currentIndex * (100 / images.length)}%)`
+      }">
          <div class="carousel-item" v-for="(image, index) in images" :key="index"
             :style="{ width: `${100 / images.length}%` }">
-            <img :src="image" :alt="'Slide ' + index" />
+            <img loading="lazy" :src="image" :alt="'Slide ' + index" />
          </div>
       </div>
       <div class="carousel-indicators">
@@ -28,11 +30,15 @@
    const timer = ref(null);
 
    const prevSlide = () => {
-      currentIndex.value = currentIndex.value === 0 ? props.images.length - 1 : currentIndex.value - 1;
+      currentIndex.value = currentIndex.value === 0
+         ? props.images.length - 1
+         : currentIndex.value - 1;
    };
 
    const nextSlide = () => {
-      currentIndex.value = currentIndex.value === props.images.length - 1 ? 0 : currentIndex.value + 1;
+      currentIndex.value = currentIndex.value === props.images.length - 1
+         ? 0
+         : currentIndex.value + 1;
    };
 
    const goToSlide = (index) => {
@@ -58,7 +64,8 @@
    .carousel {
       position: relative;
       width: 100%;
-      height: 94vh;
+      height: 100vh;
+      max-height: 94vh;
       margin: auto;
       overflow: hidden;
    }
@@ -66,52 +73,97 @@
    .carousel-inner {
       display: flex;
       transition: transform 0.5s ease-in-out;
+      height: 100%;
    }
 
    .carousel-item {
       width: 100%;
+      height: 100%;
       box-sizing: border-box;
+      flex-shrink: 0;
    }
 
    .carousel-item img {
       width: 100%;
-      height: 94vh;
+      height: 100%;
       object-fit: cover;
+      object-position: center;
    }
 
    .carousel-indicators {
       position: absolute;
-      bottom: 10px;
+      bottom: 20px;
+      left: 0;
       width: 100%;
-      text-align: left;
+      text-align: center;
+      z-index: 2;
    }
 
    .indicator {
       display: inline-block;
-      width: 15px;
-      height: 15px;
-      margin: 0 5px;
-      background-color: rgba(0, 0, 0, 0.5);
+      width: 12px;
+      height: 12px;
+      margin: 0 6px;
+      background-color: rgba(255, 255, 255, 0.6);
       border-radius: 50%;
       cursor: pointer;
+      transition: all 0.3s ease;
    }
 
    .indicator.active {
       background-color: var(--background1);
+      transform: scale(1.2);
    }
 
-   @media only screen and (max-width:768px) {
+   /* Large devices (desktops) */
+   @media screen and (min-width: 1200px) {
       .carousel {
-         height: 70vh;
+         height: 94vh;
       }
 
       .carousel-item img {
-         height: 100%;
+         height: 94vh;
+         object-fit: fill;
+      }
+   }
+
+   /* Medium devices (tablets) */
+   @media screen and (max-width: 991px) {
+      .carousel {
+         height: 80vh;
+      }
+
+      .carousel-item img {
+         height: 80vh;
+      }
+   }
+
+   /* Small devices (mobile phones) */
+   @media screen and (max-width: 767px) {
+      .carousel {
+         height: 60vh;
+      }
+
+      .carousel-item img {
+         height: 60vh;
       }
 
       .indicator {
-         height: 10px;
-         width: 10px;
+         width: 8px;
+         height: 8px;
+         margin: 0 4px;
+      }
+   }
+
+   /* Extra small devices */
+   @media screen and (max-width: 480px) {
+      .carousel {
+         height: 50vh;
+      }
+
+      .carousel-item img {
+         height: 40vh;
+         object-fit: contain;
       }
    }
 </style>
