@@ -1,21 +1,21 @@
 <script setup>
-const trips = [
-   hole_camera,
-   pump_reinstallation,
-   camera_inspection,
-   well_development,
-   tripod_setup,
-   briefing,
-   splashing,
-];
-import briefing from "@/assets/projects/briefing.png";
-import camera_inspection from "@/assets/projects/camera_inspection.png";
-import hole_camera from "@/assets/projects/hole_camera.png";
-import pump_reinstallation from "@/assets/projects/pump_reinstallation.png";
-import splashing from "@/assets/projects/splashing.png";
-import tripod_setup from "@/assets/projects/tripod_setup.png";
-import well_development from "@/assets/projects/well_development.png";
-import ImageCarousel from "@/components/ImageCarousel.vue";
+   const trips = [
+      hole_camera,
+      pump_reinstallation,
+      camera_inspection,
+      well_development,
+      tripod_setup,
+      briefing,
+      splashing,
+   ];
+   import briefing from "@/assets/projects/briefing.png";
+   import camera_inspection from "@/assets/projects/camera_inspection.png";
+   import hole_camera from "@/assets/projects/hole_camera.png";
+   import pump_reinstallation from "@/assets/projects/pump_reinstallation.png";
+   import splashing from "@/assets/projects/splashing.png";
+   import tripod_setup from "@/assets/projects/tripod_setup.png";
+   import well_development from "@/assets/projects/well_development.png";
+   import ImageCarousel from "@/components/ImageCarousel.vue";
 </script>
 <template>
    <div class="container">
@@ -196,142 +196,142 @@ import ImageCarousel from "@/components/ImageCarousel.vue";
 </template>
 
 <style scoped>
-.container {
-   background: var(--background1);
-   margin-top: 40px;
-}
-
-.carousel-wrapper {
-   height: fit-content;
-}
-
-.right-content {
-   padding: 20px;
-}
-
-.right-content h1 {
-   text-transform: uppercase;
-   font-size: 2em;
-   text-align: left;
-}
-
-.right-content p {
-   font-size: 0.8em;
-   line-height: 2.5em;
-   text-align: left;
-}
-
-.projects {
-   padding: 20px;
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-   gap: 10px;
-   background: var(--background4);
-   margin: 10px;
-   border-radius: var(--border-radius);
-}
-
-.project-wrapper {
-   background: var(--background1);
-   border-radius: var(--border-radius);
-   padding: 10px;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-}
-
-.project-wrapper h1 {
-   font-size: 15px;
-   text-transform: uppercase;
-   margin-bottom: 10px;
-}
-
-.project-wrapper .timeline {
-   display: flex;
-   flex-direction: column;
-   gap: 4px;
-   justify-content: space-between;
-   width: 70%;
-   margin-bottom: 15px;
-}
-
-.project-wrapper .timeline span {
-   font-size: 0.7em;
-}
-
-.project-wrapper p {
-   font-size: 12px;
-   line-height: 2em;
-   margin-bottom: 8px;
-}
-
-.project-wrapper a {
-   color: var(--pry-text);
-   border: var(--border);
-   font-size: 14px;
-   border-radius: 3px;
-   padding: 4px;
-   text-align: left;
-   text-transform: capitalize;
-   width: fit-content;
-}
-
-.project-wrapper a:hover {
-   background-color: var(--background2);
-   color: var(--sec-text);
-}
-
-.logos {
-   padding: 20px;
-   overflow: hidden;
-   white-space: nowrap;
-   position: relative;
-   height: 100%;
-}
-
-.logos h1 {
-   text-align: center;
-   font-size: 4em;
-   text-transform: uppercase;
-}
-
-@keyframes slide {
-   from {
-      transform: translateX(0);
+   .container {
+      background: var(--background1);
+      margin-top: 40px;
    }
 
-   to {
-      transform: translateX(-100%);
-   }
-}
-
-.logos-slide {
-   display: inline-block;
-   animation: 14s slide linear infinite;
-   padding: 5px 0;
-}
-
-.logos-slide img {
-   height: 100px;
-   margin: 0 5px;
-   padding: 25px;
-}
-
-@media only screen and (max-width: 670px) {
-   .right-content p {
-      font-size: 0.7em;
+   .carousel-wrapper {
+      height: fit-content;
    }
 
    .right-content {
-      padding: 10px;
+      padding: 20px;
+   }
+
+   .right-content h1 {
+      text-transform: uppercase;
+      font-size: 2em;
+      text-align: left;
+   }
+
+   .right-content p {
+      font-size: 0.8em;
+      line-height: 2.5em;
+      text-align: left;
    }
 
    .projects {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 10px;
+      background: var(--background4);
+      margin: 10px;
+      border-radius: var(--border-radius);
+   }
+
+   .project-wrapper {
+      background: var(--background1);
+      border-radius: var(--border-radius);
       padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+   }
+
+   .project-wrapper h1 {
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+   }
+
+   .project-wrapper .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      justify-content: space-between;
+      width: 70%;
+      margin-bottom: 15px;
+   }
+
+   .project-wrapper .timeline span {
+      font-size: 0.7em;
+   }
+
+   .project-wrapper p {
+      font-size: 12px;
+      line-height: 2em;
+      margin-bottom: 8px;
+   }
+
+   .project-wrapper a {
+      color: var(--pry-text);
+      border: var(--border);
+      font-size: 14px;
+      border-radius: 3px;
+      padding: 4px;
+      text-align: left;
+      text-transform: capitalize;
+      width: fit-content;
+   }
+
+   .project-wrapper a:hover {
+      background-color: var(--background2);
+      color: var(--sec-text);
+   }
+
+   .logos {
+      padding: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      height: 100%;
    }
 
    .logos h1 {
-      font-size: 2em;
+      text-align: center;
+      font-size: 4em;
+      text-transform: uppercase;
    }
-}
+
+   @keyframes slide {
+      from {
+         transform: translateX(0);
+      }
+
+      to {
+         transform: translateX(-100%);
+      }
+   }
+
+   .logos-slide {
+      display: inline-block;
+      animation: 14s slide linear infinite;
+      padding: 5px 0;
+   }
+
+   .logos-slide img {
+      height: 100px;
+      margin: 0 5px;
+      padding: 25px;
+   }
+
+   @media only screen and (max-width: 670px) {
+      .right-content p {
+         font-size: 0.7em;
+      }
+
+      .right-content {
+         padding: 10px;
+      }
+
+      .projects {
+         padding: 10px;
+      }
+
+      .logos h1 {
+         font-size: 2em;
+      }
+   }
 </style>
