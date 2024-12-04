@@ -541,5 +541,10 @@ const timeline = ref([
    .timeline-item:nth-child(even) .timeline-marker {
       left: 23px;
    }
+   @media only screen and (max-width:415px){
+      .team h1{
+         font-size: 2rem;
+      }
+   }
 }
 </style>

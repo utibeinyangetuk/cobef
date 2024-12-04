@@ -86,7 +86,6 @@
       padding: 5px;
    }
 
-   /*FIXME: Find a better font for the logo*/
    .logo h1 {
       font-size: 1.5em;
       text-transform: uppercase;
