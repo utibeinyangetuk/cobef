@@ -188,6 +188,15 @@ const timeline = ref([
                </div>
                <div class="profile-content">
                   <h1>Stanley</h1>
+                  <p>Operations Director</p>
+               </div>
+            </div>
+            <div class="profile-card">
+               <div class="profile-image">
+                  <img src="../assets/azaman.jpg" alt="Profile picture" />
+               </div>
+               <div class="profile-content">
+                  <h1>Stanley</h1>
                   <p>Admin Director</p>
                </div>
             </div>
@@ -198,15 +207,6 @@ const timeline = ref([
                <div class="profile-content">
                   <h1>Stanley</h1>
                   <p>Finance Director</p>
-               </div>
-            </div>
-            <div class="profile-card">
-               <div class="profile-image">
-                  <img src="../assets/azaman.jpg" alt="Profile picture" />
-               </div>
-               <div class="profile-content">
-                  <h1>Stanley</h1>
-                  <p>Middleman</p>
                </div>
             </div>
          </div>
